@@ -1,0 +1,258 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100011,
+  100012,
+  100016,
+  100019,
+  100021,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100029,
+  100030,
+  100031,
+  100033,
+  100034,
+  100036,
+  100039,
+  100042,
+  100045,
+  100048,
+  100050,
+  100052,
+  100054,
+  100055,
+  100057,
+  100058,
+  100059,
+  100062,
+  100063,
+  100064,
+  100065,
+  100066,
+  100067,
+  100071,
+  100072,
+  100073,
+  100074,
+  100075,
+  100076,
+  100078
+ ],
+ "infos": [
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "056_switch/base1",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100079
+}

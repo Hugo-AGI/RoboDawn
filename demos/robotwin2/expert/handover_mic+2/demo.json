@@ -1,0 +1,349 @@
+{
+ "task": "handover_mic",
+ "instruction": "Take hold of the switchable microphone with teal body and hand it over.",
+ "kind": "task",
+ "source": {
+  "task": "handover_mic",
+  "task_config": "demo_clean",
+  "seed": 100018,
+  "instruction": "Take hold of the switchable microphone with teal body and hand it over.",
+  "turns": 18,
+  "commands": 56,
+  "sides": "LL",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the microphone, which was at x = -17 (left half of the table); the RIGHT arm grasped the microphone, which was at x = -1 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "microphone",
+   "x": -17.11
+  },
+  "right": {
+   "object": "microphone",
+   "x": -0.86
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper toward the microphone at (-17, -6, 85) and rotate roll -85 degrees to align for grasping.",
+   "commands": [
+    "left move y +13.5",
+    "left move x +13.0",
+    "left rotate roll -84.5",
+    "left move z -9.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+13, +13, -9) cm, now 6 cm (horizontal) / +11 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-17, -6, 85) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to z=78, move slightly forward, and close gripper around the microphone handle.",
+   "commands": [
+    "left move y +1.5",
+    "left move z -7.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +2, -7) cm, now 4 cm (horizontal) / +4 cm (vertical) from the microphone; closed the gripper (opening 0.22: holding the microphone)",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-16, -4, 78) opening 0.22; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift microphone up to z=95, move toward center, and orient gripper forward.",
+   "commands": [
+    "left move z +17.5",
+    "left move x +7.5",
+    "left move y +5.5",
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+7, +6, +17) cm, now 4 cm (horizontal) / -4 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-9, 1, 95) opening 0.23; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw -45 degrees and lift higher to z=101 to prepare for handover.",
+   "commands": [
+    "left rotate yaw -45.0",
+    "left move z +6.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +6) cm, now 4 cm (horizontal) / -4 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-9, 1, 101) opening 0.23; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Shift microphone toward handover point near (-2, -6, 101).",
+   "commands": [
+    "left move y -8.0",
+    "left move x +7.0",
+    "left rotate roll +5.8",
+    "left rotate pitch -5.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+7, -8, +0) cm, now 4 cm (horizontal) / -4 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -6, 101) opening 0.23; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Slightly adjust left gripper height to z=102.5.",
+   "commands": [
+    "left move z +1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +1) cm, now 4 cm (horizontal) / -4 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -6, 102) opening 0.23; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine tune left gripper position slightly.",
+   "commands": [
+    "left move x +0.5",
+    "left move y -0.5",
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -0) cm, now 4 cm (horizontal) / -4 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 102) opening 0.23; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Raise right arm to z=100, yaw +49 degrees, and move left toward center.",
+   "commands": [
+    "right move z +6.0",
+    "right rotate pitch -5.4",
+    "right rotate yaw +49.1",
+    "right move x -11.8"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-11, +0, +5) cm, now 24 cm (horizontal) / -7 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 102) opening 0.23; RIGHT fingertips (19, -19, 100) opening 0.95; table z = 74",
+   "plan": "Move right gripper closer to the microphone: x to 7, y to -11, z to 108.",
+   "commands": [
+    "right move x -11.8",
+    "right move y +8.0",
+    "right move z +8.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-12, +8, +7) cm, now 10 cm (horizontal) / +0 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 102) opening 0.23; RIGHT fingertips (7, -11, 107) opening 0.94; table z = 74",
+   "plan": "Adjust right gripper slightly closer.",
+   "commands": [
+    "right move x -0.5",
+    "right move y -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +0) cm, now 10 cm (horizontal) / +0 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 102) opening 0.23; RIGHT fingertips (7, -11, 107) opening 0.94; table z = 74",
+   "plan": "Move right gripper forward and left toward the microphone handle.",
+   "commands": [
+    "right move x -1.9",
+    "right move y +1.6",
+    "right move x -1.9",
+    "right move y +1.6"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-4, +3, -0) cm, now 6 cm (horizontal) / +0 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 102) opening 0.23; RIGHT fingertips (3, -8, 107) opening 0.94; table z = 74",
+   "plan": "Continue moving right gripper toward microphone handle at (0, -4, 107).",
+   "commands": [
+    "right move x -1.9",
+    "right move y +1.6",
+    "right move x -1.9",
+    "right move y +1.6"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-3, +3, +1) cm, now 3 cm (horizontal) / +1 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-3, -6, 102) opening 0.29; RIGHT fingertips (1, -5, 107) opening 0.74; table z = 74",
+   "plan": "Fine-adjust right gripper position and yaw to enclose the microphone handle.",
+   "commands": [
+    "right move x -1.5",
+    "right move y +0.2",
+    "right move z -0.4",
+    "right rotate yaw +3.7"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +1, +1) cm, now 2 cm (horizontal) / +1 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-3, -6, 103) opening 0.24; RIGHT fingertips (0, -4, 108) opening 0.75; table z = 74",
+   "plan": "Close right gripper to grasp the microphone.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 3 cm (horizontal) / +1 cm (vertical) from the microphone; closed the gripper (opening 0.31: holding the microphone)",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-3, -6, 103) opening 0.25; RIGHT fingertips (0, -4, 108) opening 0.31; table z = 74",
+   "plan": "Open left gripper to release the microphone.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 5 cm (horizontal) / -5 cm (vertical) from the microphone; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "turn 16",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-3, -6, 103) opening 0.92; RIGHT fingertips (0, -4, 108) opening 0.29; table z = 74",
+   "plan": "Retreat left gripper away to the left and back.",
+   "commands": [
+    "left move x -1.8",
+    "left move y -1.5",
+    "left move z -0.6",
+    "left move x -1.8"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-3, -1, -0) cm, now 8 cm (horizontal) / -5 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 17,
+   "label": "turn 17",
+   "images": [
+    "frame017_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, -7, 102) opening 0.94; RIGHT fingertips (0, -5, 108) opening 0.29; table z = 74",
+   "plan": "Continue retracting left gripper away from handover zone.",
+   "commands": [
+    "left move y -1.5",
+    "left move z -0.6",
+    "left move x -1.8",
+    "left move y -1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-2, -3, -0) cm, now 11 cm (horizontal) / -5 cm (vertical) from the microphone",
+   "scene": ""
+  },
+  {
+   "turn": 18,
+   "label": "turn 18",
+   "images": [
+    "frame018_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -10, 102) opening 0.94; RIGHT fingertips (0, -5, 108) opening 0.29; table z = 74",
+   "plan": "Retract left arm slightly and settle right arm to conclude handover.",
+   "commands": [
+    "left move z -0.6",
+    "left rotate roll -3.0",
+    "right move z -1.5",
+    "right move x +1.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 19,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame019_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

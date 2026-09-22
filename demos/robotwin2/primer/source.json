@@ -1,0 +1,9 @@
+{
+ "model": "primer",
+ "task": "command primer",
+ "task_config": "demo_clean",
+ "seed": 100021,
+ "instruction": "(command primer - no task; shows what each command does)",
+ "turns": 6,
+ "table_z_cm": 74.0
+}

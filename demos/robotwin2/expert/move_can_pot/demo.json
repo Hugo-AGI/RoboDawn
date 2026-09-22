@@ -1,0 +1,143 @@
+{
+ "task": "move_can_pot",
+ "instruction": "Grab the medium-size cylindrical sauce can and move it near the kitchenpot for stovetop boiling",
+ "kind": "task",
+ "source": {
+  "task": "move_can_pot",
+  "task_config": "demo_clean",
+  "seed": 100019,
+  "instruction": "Grab the medium-size cylindrical sauce can and move it near the kitchenpot for stovetop boiling",
+  "turns": 6,
+  "commands": 22,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the can, which was at x = -27 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "can",
+   "x": -27.48
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Rotate left gripper to align with can, lower to z=89, and move forward toward y=-4.",
+   "commands": [
+    "left rotate roll -72.8",
+    "left rotate yaw -37.2",
+    "left move z -5.0",
+    "left move y +15.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +15, -5) cm, now 17 cm (horizontal) / +15 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -4, 89) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Advance left gripper to y=11.5, x=-28, lowering slightly to z=87.5 directly above the can.",
+   "commands": [
+    "left move y +15.5",
+    "left move x +2.0",
+    "left move z -1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +16, -2) cm, now 2 cm (horizontal) / +14 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-29, 11, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to z=83 around the can and close gripper to grasp it firmly.",
+   "commands": [
+    "left move x +1.5",
+    "left move y +1.5",
+    "left move z -5.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +1, -5) cm, now 0 cm (horizontal) / +9 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-27, 13, 83) opening 0.85; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift can up to z=93.5 and pull back slightly to y=3 to prepare for transport near the pot.",
+   "commands": [
+    "left move z +5.5",
+    "left move y -10.0",
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -10, +10) cm, now 0 cm (horizontal) / +9 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-28, 3, 93) opening 0.87; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move can rightward to x=-19, y=-1, rotate yaw to straighten, and descend toward table level at z=89.",
+   "commands": [
+    "left move x +9.5",
+    "left move y -4.0",
+    "left rotate yaw +36.1",
+    "left move z -5.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+9, -4, -5) cm, now 0 cm (horizontal) / +9 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-19, -1, 89) opening 0.87; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower can to table level (z=83.5) and release gripper to complete task.",
+   "commands": [
+    "left move x +1.0",
+    "left move y +0.5",
+    "left move z -5.5",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

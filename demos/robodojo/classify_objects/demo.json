@@ -1,0 +1,617 @@
+{
+ "task": "classify_objects",
+ "instruction": "Sort the objects by category into the three baskets.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 5744,
+  "decisions": 133,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 0 of 7 objects are in their basket, still to put away: both watches (for the middle basket); both pens (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand pen into the right basket: orient the right gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the pen, then move at travel height until the fingertip cross in the head image is over (22, -14).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -60.0",
+    "right move x -8.2",
+    "right move y +6.7"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -60.0: ok; right move x -8.2: ok; right move y +6.7: ok; right fingertips now at (21.8, -14.0, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 0 of 7 objects are in their basket, still to put away: both watches (for the middle basket); both pens (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand pen into the right basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (21.8, -14.0, 77.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 172",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.31: something is between them (probably grasped)); right fingertips now at (21.8, -14.0, 77.8), opening 0.312",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 0 of 7 objects are in their basket, still to put away: both watches (for the middle basket); both pens (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand pen into the right basket: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (21.8, -14.0, 89.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 249\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right move x +8.2",
+    "right move y +14.2"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -90.0: ok; right move x +8.2: ok; right move y +14.2: ok; right fingertips now at (29.9, 0.2, 89.8), opening 0.312",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand pen into the right basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, 0.5, 87.2) cm, approach = (0.50, 0.00, -0.87), finger axis = (-0.00, 1.00, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 402\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (29.9, 0.5, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (first set it down at the centre for the other arm): orient the left gripper and travel above the object",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 92.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 522",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the pen, then move at travel height until the fingertip cross in the head image is over (-5, -16).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +30.0",
+    "left move x +20.0",
+    "left move x +5.4"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +30.0: ok; left move x +20.0: ok; left move x +5.4: ok; left fingertips now at (-4.6, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (first set it down at the centre for the other arm): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.6, -16.1, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 92.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 710",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.33: something is between them (probably grasped)); left fingertips now at (-4.6, -16.1, 78.5), opening 0.328",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (first set it down at the centre for the other arm): release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.1, -13.9, 79.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.33 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 92.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 815\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-6.1, -13.9, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.1, -13.9, 79.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 92.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 832",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "left move z +12.0",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket: orient the right gripper and travel above the object",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 92.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1033",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the pen, then move at travel height until the fingertip cross in the head image is over (-8, -15).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +30.0",
+    "right move x -20.0",
+    "right move x -17.4"
+   ],
+   "failed": [
+    "right move x -17.4"
+   ],
+   "effect": "right point down: ok; right rotate yaw +30.0: ok; right move x -20.0: ok; right move x -17.4: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right fingertips now at (9.9, -14.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket: restore the finger axis after the preset change",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.9, -14.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1155",
+   "plan": "The preset reset the finger axis to x; turn it back across the narrow side.",
+   "commands": [
+    "right rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +30.0: ok; right fingertips now at (9.8, -14.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.5, -14.8, 78.2) cm, approach = (-0.13, 0.22, -0.97), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1281",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.34: something is between them (probably grasped)); right fingertips now at (-7.5, -14.8, 78.2), opening 0.337",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket: carry the object over the target",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.5, -14.9, 90.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.34 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1352\nRIGHT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right move x +20.0",
+    "right move x +17.5",
+    "right move y +15.1"
+   ],
+   "failed": [
+    "right rotate yaw -90.0"
+   ],
+   "effect": "right rotate yaw -90.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right move x +20.0: ok; right move x +17.5: ok; right move y +15.1: ok; right fingertips now at (30.0, 0.2, 90.2), opening 0.337",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 2 of 7 objects are in their basket, still to put away: both watches (for the middle basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, 0.2, 90.2) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, 0.00), opening = 0.34 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1472\nRIGHT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -90.0: ok; right fingertips now at (30.0, 0.0, 90.1), opening 0.338",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand watch into the middle basket: orient the right gripper and travel above the object",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-9.1, -29.9, 97.5) cm, approach = (-0.21, 0.72, -0.66), finger axis = (-0.60, 0.43, 0.67), opening = 0.33 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1868\nRIGHT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the watch, then move at travel height until the fingertip cross in the head image is over (5, -12).",
+   "commands": [
+    "right gripper 1.00",
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move x +13.9"
+   ],
+   "failed": [
+    "right point down"
+   ],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right rotate yaw +45.0: ok; right move x +13.9: ok; right fingertips now at (4.8, -29.9, 97.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand watch into the middle basket: restore the finger axis after the preset change",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.8, -29.9, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2003",
+   "plan": "The preset reset the finger axis to x; turn it back across the narrow side.",
+   "commands": [
+    "right rotate yaw +45.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +45.0: ok; right fingertips now at (4.8, -29.9, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 1 of 7 objects are in their basket, still to put away: both watches (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand watch into the middle basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.7, -12.3, 78.5) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2111",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.72: something is between them (probably grasped)); right fingertips now at (4.7, -12.3, 78.5), opening 0.724",
+   "source_index": null
+  },
+  {
+   "turn": 56,
+   "label": "turn 56: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 2 of 7 objects are in their basket, still to put away: the left-hand watch (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right-hand watch into the middle basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.9, 0.4, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.71 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2254\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (8.9, 0.4, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 2 of 7 objects are in their basket, still to put away: the left-hand watch (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand watch into the middle basket: orient the left gripper and travel above the object",
+   "images": [
+    "frame058_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2324",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the watch, then move at travel height until the fingertip cross in the head image is over (-40, -10).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x -9.9",
+    "left move y +10.9"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move x -9.9: ok; left move y +10.9: ok; left fingertips now at (-39.9, -9.8, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 2 of 7 objects are in their basket, still to put away: the left-hand watch (for the middle basket); the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand watch into the middle basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-39.9, -9.8, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2500",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.66: something is between them (probably grasped)); left fingertips now at (-39.9, -9.8, 78.4), opening 0.656",
+   "source_index": null
+  },
+  {
+   "turn": 66,
+   "label": "turn 66: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 3 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand watch into the middle basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.0, 0.2, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.66 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2680\nLEFT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-8.0, 0.2, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 68,
+   "label": "turn 68: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 3 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left action camera into the left basket: orient the left gripper and travel above the object",
+   "images": [
+    "frame068_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-8.3, -13.5, 94.2) cm, approach = (-0.01, 0.51, -0.86), finger axis = (-1.00, -0.02, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2750",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the action_camera, then move at travel height until the fingertip cross in the head image is over (-30, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x -20.0",
+    "left move x -1.8"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -75.0: ok; left move x -20.0: ok; left move x -1.8: ok; left fingertips now at (-30.2, -13.5, 94.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 72,
+   "label": "turn 72: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 3 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); all three action cameras (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left action camera into the left basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.2, -14.2, 78.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2929",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.40: something is between them (probably grasped)); left fingertips now at (-30.2, -14.2, 78.7), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 77,
+   "label": "turn 77: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 4 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the middle action camera, the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left action camera into the left basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, 0.8, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3059\nLEFT arm closed on an object with the fingertips at z = 78.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.7 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.3, 0.8, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 79,
+   "label": "turn 79: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 4 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the middle action camera, the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the middle action camera into the left basket: orient the left gripper and travel above the object",
+   "images": [
+    "frame079_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3129",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the action_camera, then move at travel height until the fingertip cross in the head image is over (-21, -16).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +90.0",
+    "left move x +9.1",
+    "left move y -1.7"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +90.0: ok; left move x +9.1: ok; left move y -1.7: ok; left fingertips now at (-21.2, -15.7, 94.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 82,
+   "label": "turn 82: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 4 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the middle action camera, the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the middle action camera into the left basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-21.2, -15.7, 78.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3290",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.40: something is between them (probably grasped)); left fingertips now at (-21.2, -15.7, 78.7), opening 0.397",
+   "source_index": null
+  },
+  {
+   "turn": 87,
+   "label": "turn 87: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the middle action camera into the left basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, 0.9, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3449\nLEFT arm closed on an object with the fingertips at z = 78.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.7 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.0, 0.9, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 89,
+   "label": "turn 89: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket (first set it down at the centre for the other arm): orient the right gripper and travel above the object",
+   "images": [
+    "frame089_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -14.4, 93.8) cm, approach = (-0.00, 0.49, -0.87), finger axis = (-1.00, -0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3521",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the action_camera, then move at travel height until the fingertip cross in the head image is over (19, -23).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -45.0",
+    "right move x +10.7",
+    "right move y -8.2"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -45.0: ok; right move x +10.7: ok; right move y -8.2: ok; right fingertips now at (19.3, -22.7, 93.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket (first set it down at the centre for the other arm): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (19.3, -22.7, 78.5) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3679",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); right fingertips now at (19.3, -22.7, 78.5), opening 0.521",
+   "source_index": null
+  },
+  {
+   "turn": 96,
+   "label": "turn 96: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket (first set it down at the centre for the other arm): release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -14.0, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 0.52 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3806\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.1, -14.0, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 97,
+   "label": "turn 97: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -14.0, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3822",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 98,
+   "label": "turn 98: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket: orient the left gripper and travel above the object",
+   "images": [
+    "frame098_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4056",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the action_camera, then move at travel height until the fingertip cross in the head image is over (-0, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -45.0",
+    "left move x +20.0",
+    "left move x +10.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -45.0: ok; left move x +20.0: ok; left move x +10.0: ok; left fingertips now at (-0.2, -14.2, 93.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 101,
+   "label": "turn 101: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 5 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket); the right action camera (for the left basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.3, -14.2, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4236",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); left fingertips now at (-0.3, -14.2, 78.5), opening 0.519",
+   "source_index": null
+  },
+  {
+   "turn": 106,
+   "label": "turn 106: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the right action camera into the left basket: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 0.4, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.52 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4413\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.1, 0.4, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 108,
+   "label": "turn 108: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in) (first set it down at the centre for the other arm): orient the left gripper and travel above the object",
+   "images": [
+    "frame108_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4482",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the pen, then move at travel height until the fingertip cross in the head image is over (-8, -30).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -45.0",
+    "left move x +20.0",
+    "left move x +2.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -45.0: ok; left move x +20.0: ok; left move x +2.0: ok; left fingertips now at (-8.2, -14.0, 94.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 112,
+   "label": "turn 112: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in) (first set it down at the centre for the other arm): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.2, -30.2, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4670",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.33: something is between them (probably grasped)); left fingertips now at (-8.2, -30.2, 78.5), opening 0.327",
+   "source_index": null
+  },
+  {
+   "turn": 116,
+   "label": "turn 116: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in) (first set it down at the centre for the other arm): release the object",
+   "images": [
+    "frame116_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -13.9, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.70, 0.00), opening = 0.33 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4796\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-0.1, -13.9, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 118,
+   "label": "turn 118: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in): orient the right gripper and travel above the object",
+   "images": [
+    "frame118_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5046",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the pen, then move at travel height until the fingertip cross in the head image is over (-0, -14).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -45.0",
+    "right move x -20.0",
+    "right move x -10.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -45.0: ok; right move x -20.0: ok; right move x -10.0: ok; right fingertips now at (0.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 122,
+   "label": "turn 122: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 6 of 7 objects are in their basket, still to put away: the left-hand pen (for the right basket). Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in): close the gripper",
+   "images": [
+    "frame122_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.0, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5252",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); right fingertips now at (-0.0, -14.0, 78.5), opening 0.325",
+   "source_index": null
+  },
+  {
+   "turn": 129,
+   "label": "turn 129: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 7 of 7 objects are in their basket, every object is in its basket and the table top is clear. Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. the left-hand pen into the right basket (it is still outside, put it in): release the object",
+   "images": [
+    "frame129_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.3, 0.2, 87.2) cm, approach = (-0.50, -0.00, -0.87), finger axis = (0.00, -1.00, 0.00), opening = 0.32 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5544\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (30.3, 0.2, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 133,
+   "label": "turn 133: Sort everything on the table by kind into the three baskets standing in a row along the far edge: each basket must end up holding one whole kind and nothing else. Here the watches go in the middle basket; the pens go in the right basket; the action cameras go in the left basket - any pairing of the kinds to the baskets counts, so each kind goes to the basket nearest the arm that can pick it up. 7 of 7 objects are in their basket, every object is in its basket and the table top is clear. Every object is let go from just above the rim, over the half of the basket nearest the working arm, rather than lowered down inside it, and an object lying on the far side of the table from its basket is first set down in the middle of the table and picked up with the other hand, because neither arm reaches the far basket. A pen is longer than a basket is deep, so it is turned to lie along the basket's long side before it is let go. open both hands and square the wrists to their start pose",
+   "images": [
+    "frame133_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 94.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.3, -14.0, 94.0) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5699",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (the target was not reached: the fingertips moved (+0.0, +2.7, -0.9) cm, i.e. only part of the way; remaining error 2.8 cm / 18 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 93.9), opening 1.0; right fingertips now at (30.3, -11.3, 93.1), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

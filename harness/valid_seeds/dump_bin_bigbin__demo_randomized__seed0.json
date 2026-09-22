@@ -1,0 +1,208 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100007,
+  100032,
+  100019,
+  100020,
+  100033,
+  100023,
+  100027,
+  100029,
+  100038,
+  100041,
+  100042,
+  100046,
+  100047,
+  100049,
+  100051,
+  100054,
+  100057,
+  100064,
+  100065,
+  100066,
+  100068,
+  100070,
+  100072,
+  100073,
+  100074,
+  100075,
+  100076,
+  100077,
+  100080,
+  100083,
+  100086,
+  100087,
+  100089,
+  100092,
+  100094,
+  100095,
+  100098,
+  100099,
+  100100,
+  100102,
+  100104,
+  100106,
+  100113,
+  100117,
+  100118,
+  100119,
+  100120,
+  100121,
+  100123,
+  100125
+ ],
+ "infos": [
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base8"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base8"
+  },
+  {
+   "{A}": "063_tabletrashbin/base7"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base3"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base7"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base7"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base8"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base3"
+  },
+  {
+   "{A}": "063_tabletrashbin/base10"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  },
+  {
+   "{A}": "063_tabletrashbin/base9"
+  }
+ ],
+ "next_seed": 100126
+}

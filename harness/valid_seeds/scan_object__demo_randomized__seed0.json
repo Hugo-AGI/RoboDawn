@@ -1,0 +1,358 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100007,
+  100009,
+  100013,
+  100015,
+  100024,
+  100029,
+  100031,
+  100033,
+  100043,
+  100047,
+  100048,
+  100057,
+  100060,
+  100062,
+  100063,
+  100068,
+  100074,
+  100076,
+  100077,
+  100078,
+  100085,
+  100087,
+  100090,
+  100091,
+  100092,
+  100093,
+  100096,
+  100097,
+  100098,
+  100101,
+  100102,
+  100103,
+  100105,
+  100110,
+  100121,
+  100122,
+  100128,
+  100130,
+  100132,
+  100137,
+  100141,
+  100142,
+  100143,
+  100150,
+  100153,
+  100155,
+  100160,
+  100161,
+  100174,
+  100175
+ ],
+ "infos": [
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "024_scanner/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base3",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base3",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base2",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "024_scanner/base3",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "024_scanner/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base5",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "024_scanner/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "024_scanner/base2",
+   "{a}": "right",
+   "{b}": "left"
+  }
+ ],
+ "next_seed": 100176
+}

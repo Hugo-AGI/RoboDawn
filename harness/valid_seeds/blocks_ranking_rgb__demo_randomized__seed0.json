@@ -1,0 +1,458 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100011,
+  100012,
+  100013,
+  100014,
+  100015,
+  100016,
+  100017,
+  100018,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100029,
+  100030,
+  100032,
+  100033,
+  100034,
+  100035,
+  100037,
+  100039,
+  100040,
+  100041,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100048,
+  100049,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100058
+ ],
+ "infos": [
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "left",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "right",
+   "{b}": "right",
+   "{c}": "left"
+  },
+  {
+   "{A}": "red block",
+   "{B}": "green block",
+   "{C}": "blue block",
+   "{a}": "left",
+   "{b}": "right",
+   "{c}": "right"
+  }
+ ],
+ "next_seed": 100059
+}

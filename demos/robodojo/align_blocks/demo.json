@@ -1,0 +1,240 @@
+{
+ "task": "align_blocks",
+ "instruction": "Use the set square to push the three blocks into a straight, aligned row.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 617,
+  "decisions": 14,
+  "frames": 14,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Nothing has been pushed yet - take hold of the bar at its middle, level with the three cubes, so that one pass sweeps all of them, and keep it down on the table: this grasp is for pushing, not for lifting. Right now the left cube is still short of the bar, with a strip of bare table between them; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is still short of the bar, with a strip of bare table between them. orient the gripper and travel over the set square",
+   "images": [
+    "frame001_cam_head.jpg",
+    "frame001_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the fingers straight down with the jaw across the bar and move at travel height until the fingertip cross sits over (-1, -20), the middle of the bar.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw -75.0: ok; left move x +20.0: ok; left fingertips now at (-10.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Nothing has been pushed yet - take hold of the bar at its middle, level with the three cubes, so that one pass sweeps all of them, and keep it down on the table: this grasp is for pushing, not for lifting. Right now the left cube is still short of the bar, with a strip of bare table between them; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is still short of the bar, with a strip of bare table between them. finish lining up over the bar",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 115",
+   "plan": "The cross is +9.4 cm in x and +1.1 cm in y from the grip point; correct that at travel height.",
+   "commands": [
+    "left move x +9.4",
+    "left move y +1.1"
+   ],
+   "failed": [],
+   "effect": "left move x +9.4: ok; left move y +1.1: ok; left fingertips now at (-0.6, -19.6, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Nothing has been pushed yet - take hold of the bar at its middle, level with the three cubes, so that one pass sweeps all of them, and keep it down on the table: this grasp is for pushing, not for lifting. Right now the left cube is still short of the bar, with a strip of bare table between them; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is still short of the bar, with a strip of bare table between them. lower onto the bar",
+   "images": [
+    "frame003_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.6, -19.6, 92.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 159",
+   "plan": "The bar lies flat on the table, so the fingers have to go all the way down beside it: descend until the fingertips are about 1.5 cm above the table top (the state line gives the table height). The bar must stay on the table - this is a grasp to push with, not to lift.",
+   "commands": [
+    "left move z -14.2"
+   ],
+   "failed": [],
+   "effect": "left move z -14.2: ok; left fingertips now at (-0.6, -19.6, 78.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Nothing has been pushed yet - take hold of the bar at its middle, level with the three cubes, so that one pass sweeps all of them, and keep it down on the table: this grasp is for pushing, not for lifting. Right now the left cube is still short of the bar, with a strip of bare table between them; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is still short of the bar, with a strip of bare table between them. close on the bar",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.6, -19.6, 78.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 187",
+   "plan": "Close the gripper on the bar. Do NOT lift it: it has to stay on the table to push the cubes.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.41: something is between them (probably grasped)); left fingertips now at (-0.6, -19.6, 78.0), opening 0.407",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Still pushing, with the bar held the whole time - 0 of the 3 cubes have a whole face on the edge so far. Right now the left cube is still short of the bar, with a strip of bare table between them; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is still short of the bar, with a strip of bare table between them. push the bar into the cubes (the left cube, the middle cube, the right cube not settled yet)",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.6, -19.6, 78.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 0.41 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 202\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Keep the bar on the table and push it square to the bar's long edge, away from you and slightly to the left - a short push, then look again. Whatever the bar reaches is driven ahead of it, and a cube that first meets the edge at a corner turns until its whole face lies flat on it. Push again because some cubes have not reached the bar yet.",
+   "commands": [
+    "left move x -1.0",
+    "left move y +3.9"
+   ],
+   "failed": [],
+   "effect": "left move x -1.0: ok; left move y +3.9: ok; left fingertips now at (-1.4, -15.6, 78.3), opening 0.337",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Still pushing, with the bar held the whole time - 2 of the 3 cubes have a whole face on the edge so far. Right now the left cube is flat against the bar, its whole face on the edge; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is flat against the bar, its whole face on the edge. push the bar into the cubes (the middle cube not settled yet)",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-1.4, -15.6, 78.3) cm, approach = (0.01, 0.01, -1.00), finger axis = (-0.26, 0.97, 0.01), opening = 0.34 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 240\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Keep the bar on the table and push it square to the bar's long edge, away from you and slightly to the left - a short push, then look again. Whatever the bar reaches is driven ahead of it, and a cube that first meets the edge at a corner turns until its whole face lies flat on it. Push again because some cubes have not reached the bar yet.",
+   "commands": [
+    "left move x -0.9",
+    "left move y +3.2"
+   ],
+   "failed": [],
+   "effect": "left move x -0.9: ok; left move y +3.2: ok; left fingertips now at (-2.2, -12.3, 78.7), opening 0.3",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Still pushing, with the bar held the whole time - 2 of the 3 cubes have a whole face on the edge so far. Right now the left cube is flat against the bar, its whole face on the edge; the middle cube is still short of the bar, with a strip of bare table between them; the right cube is flat against the bar, its whole face on the edge. push the bar into the cubes (the middle cube not settled yet)",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.2, -12.3, 78.7) cm, approach = (0.02, 0.01, -1.00), finger axis = (-0.26, 0.97, 0.01), opening = 0.30 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 276\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Keep the bar on the table and push it square to the bar's long edge, away from you and slightly to the left - a short push, then look again. Whatever the bar reaches is driven ahead of it, and a cube that first meets the edge at a corner turns until its whole face lies flat on it. Push again because some cubes have not reached the bar yet.",
+   "commands": [
+    "left move x -0.4",
+    "left move y +1.4"
+   ],
+   "failed": [],
+   "effect": "left move x -0.4: ok; left move y +1.4: ok; left fingertips now at (-2.5, -10.8, 79.0), opening 0.266",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. Still pushing, with the bar held the whole time - 2 of the 3 cubes have a whole face on the edge so far. Right now the left cube is flat against the bar, its whole face on the edge; the middle cube is touching the bar at one corner only, with a wedge of table showing along the rest of its face; the right cube is flat against the bar, its whole face on the edge. push the bar into the cubes (the middle cube not settled yet)",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.5, -10.8, 79.0) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 310\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Keep the bar on the table and push it square to the bar's long edge, away from you and slightly to the left - a short push, then look again. Whatever the bar reaches is driven ahead of it, and a cube that first meets the edge at a corner turns until its whole face lies flat on it. Push again because every cube is touching, but not all of them are flat on the edge yet.",
+   "commands": [
+    "left move y +1.0"
+   ],
+   "failed": [],
+   "effect": "left move y +1.0: ok; left fingertips now at (-2.5, -9.8, 79.1), opening 0.252",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. all three cubes are flat against the bar: lift it clear before taking it away",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.5, -9.8, 79.1) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 328\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Every cube now has a whole face on the bar's edge with no bare table in front of it and no wedge at a corner, so the three are in one line. Do not slide the bar back from here: the cubes are pressed against it, and dragging it along the table turns them out of the row again. Lift the bar straight up off the table first - it may be lifted, only the cubes may not - and take it away in the air.",
+   "commands": [
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left move z +5.0: ok; left fingertips now at (-2.5, -9.8, 84.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. carry the bar away from the row in the air",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.5, -9.8, 84.1) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 350\nLEFT arm closed on an object with the fingertips at z = 78.0 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "With the bar off the table nothing touches the cubes any more; carry it back the way it came in, clear of the row it just made.",
+   "commands": [
+    "left move x +1.9",
+    "left move y -7.8"
+   ],
+   "failed": [],
+   "effect": "left move x +1.9: ok; left move y -7.8: ok; left fingertips now at (-0.6, -17.6, 84.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. set the bar down and release it",
+   "images": [
+    "frame011_cam_head.jpg",
+    "frame011_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.6, -17.6, 84.1) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 396\nLEFT arm closed on an object with the fingertips at z = 78.0 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Well clear of the cubes now; put the bar back on the table and open the fingers.",
+   "commands": [
+    "left move z -4.5",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left move z -4.5: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-0.6, -17.6, 79.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. back the empty hand away from the cubes before lifting",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.6, -17.6, 79.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 434",
+   "plan": "The hand is down at table height and far out over the table; straight up from here is at the edge of the left arm's reach. Draw it back towards the left shoulder first, keeping clear of the row that was just made, and only then climb.",
+   "commands": [
+    "left move x -10.0",
+    "left move y -6.0",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left move x -10.0: ok; left move y -6.0: ok; left move z +4.0: ok; left fingertips now at (-10.6, -23.6, 83.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. lift the empty gripper to travel height",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.6, -23.6, 83.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 501",
+   "plan": "Clear of the cubes now; raise the empty gripper to travel height so the return home has a free path.",
+   "commands": [
+    "left move z +8.4"
+   ],
+   "failed": [],
+   "effect": "left move z +8.4: ok; left fingertips now at (-10.7, -23.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: ONE ROW ALONG THE SET SQUARE'S EDGE: the set square is the long bar lying in front of the three cubes, and its long straight edge is the ruler everything is lined up to - the bar is what the hand moves, the cubes are what come to it. A cube is never picked up and never touched by the fingers: it is driven ahead of that edge until a whole face of it lies flat on the edge, and three faces on that one edge is the row. A cube is finished when there is no strip of bare table left between it and the edge, and no wedge of table at the corner where it meets the edge; while either of those is still visible that cube is not in the row yet and the bar has to go forward again, square to its own long edge. All three cubes now have a whole face on the edge and lie in one row, so the pushing is over. The bar is not part of the row: lift it straight up off the table and carry it away through the air - never slide it back along the table, because it is pressed against the cubes and dragging it turns them out of line again - then set it down clear of them and put both arms back where they started. Do not let go and take another pushing pass: the row is already made, and pushing it a second time only knocks it out of line. return both arms to their initial pose",
+   "images": [
+    "frame014_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.7, -23.6, 92.0) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.26, 0.97, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 526",
+   "plan": "The row is made and the bar is back off it; the task also asks for both arms at their starting pose, so send both home.",
+   "commands": [
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left home: FAILED (the target was not reached: the fingertips moved (-16.0, +2.9, +0.7) cm, i.e. only part of the way; remaining error 3.4 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-26.6, -20.7, 92.7), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

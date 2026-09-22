@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100011,
+  100012,
+  100014,
+  100016,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100031,
+  100032,
+  100033,
+  100034,
+  100035,
+  100036,
+  100037,
+  100038,
+  100040,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100049,
+  100050,
+  100051,
+  100053,
+  100054,
+  100055,
+  100056,
+  100057
+ ],
+ "infos": [
+  {
+   "{A}": "048_stapler/base2",
+   "{B}": "074_displaystand/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "050_bell/base1",
+   "{B}": "074_displaystand/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "079_remotecontrol/base6",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "074_displaystand/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "048_stapler/base1",
+   "{B}": "074_displaystand/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "074_displaystand/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "074_displaystand/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base3",
+   "{B}": "074_displaystand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "074_displaystand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "048_stapler/base4",
+   "{B}": "074_displaystand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "074_displaystand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "079_remotecontrol/base2",
+   "{B}": "074_displaystand/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base0",
+   "{B}": "074_displaystand/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "074_displaystand/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base0",
+   "{B}": "074_displaystand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "074_displaystand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "074_displaystand/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base6",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "074_displaystand/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "074_displaystand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base6",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "074_displaystand/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "074_displaystand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "048_stapler/base4",
+   "{B}": "074_displaystand/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base2",
+   "{B}": "074_displaystand/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "079_remotecontrol/base0",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "079_remotecontrol/base5",
+   "{B}": "074_displaystand/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "074_displaystand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "079_remotecontrol/base5",
+   "{B}": "074_displaystand/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "074_displaystand/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base6",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "074_displaystand/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "074_displaystand/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "074_displaystand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "074_displaystand/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base1",
+   "{B}": "074_displaystand/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "079_remotecontrol/base1",
+   "{B}": "074_displaystand/base2",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100058
+}

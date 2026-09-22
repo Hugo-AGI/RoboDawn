@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100012,
+  100014,
+  100015,
+  100016,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100022,
+  100024,
+  100025,
+  100027,
+  100028,
+  100029,
+  100033,
+  100034,
+  100037,
+  100038,
+  100039,
+  100040,
+  100042,
+  100043,
+  100044,
+  100046,
+  100049,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100055,
+  100056,
+  100057,
+  100058,
+  100060,
+  100061,
+  100062,
+  100063
+ ],
+ "infos": [
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base3",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base3",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base3",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base0",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base1",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base2",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base0",
+   "{B}": "008_tray/base3",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base4",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base1"
+  },
+  {
+   "{A}": "006_hamburg/base3",
+   "{B}": "008_tray/base2",
+   "{C}": "005_french-fries/base0"
+  },
+  {
+   "{A}": "006_hamburg/base5",
+   "{B}": "008_tray/base1",
+   "{C}": "005_french-fries/base0"
+  }
+ ],
+ "next_seed": 100064
+}

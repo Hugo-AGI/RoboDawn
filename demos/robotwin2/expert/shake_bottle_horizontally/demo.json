@@ -1,0 +1,137 @@
+{
+ "task": "shake_bottle_horizontally",
+ "instruction": "Use the left arm to hold the brown cylindrical bottle with label and shake sideways.",
+ "kind": "task",
+ "source": {
+  "task": "shake_bottle_horizontally",
+  "task_config": "demo_clean",
+  "seed": 100035,
+  "instruction": "Use the left arm to hold the brown cylindrical bottle with label and shake sideways.",
+  "turns": 6,
+  "commands": 16,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bottle, which was at x = -11 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bottle",
+   "x": -11.4
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move the left gripper in x and y toward (-7, 4, 94) to align above the bottle.",
+   "commands": [
+    "left move x +11.8",
+    "left move x +11.8",
+    "left move y +11.5",
+    "left move y +11.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+23, +23, +0) cm, now 13 cm (horizontal) / +16 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, 3, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left gripper roll, pitch, and yaw to align the fingers with the bottle's orientation.",
+   "commands": [
+    "left rotate yaw -3.9",
+    "left rotate pitch +21.7",
+    "left rotate roll -25.9",
+    "left rotate roll -25.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, -0, -1) cm, now 13 cm (horizontal) / +15 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 3, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue rotating roll to align with the bottle, lower gripper to z=88 cm, and adjust y slightly.",
+   "commands": [
+    "left rotate roll -25.9",
+    "left move z -5.5",
+    "left move y +1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, -6) cm, now 14 cm (horizontal) / +10 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 4, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Make a fine adjustment along x by -0.5 cm to center between fingers.",
+   "commands": [
+    "left move x -0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 13 cm (horizontal) / +10 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 4, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower gripper to z=78.5 cm over the bottle and close the fingers to grasp it.",
+   "commands": [
+    "left move y +2.0",
+    "left move z -9.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +2, -10) cm, now 15 cm (horizontal) / +0 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 5, 78) opening 0.83; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift the bottle slightly to z=79.5 cm to initiate the shake interaction.",
+   "commands": [
+    "left move z +1.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

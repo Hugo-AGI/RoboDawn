@@ -1,0 +1,624 @@
+{
+ "task": "swap_T",
+ "instruction": "Pick up the two T-shaped blocks, swap their positions, and place them back with the correct orientations.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 3567,
+  "decisions": 91,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (orient). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: orient the right gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (4, -16).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +30.0",
+    "right move x -20.0",
+    "right move x -5.6"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +30.0: ok; right move x -20.0: ok; right move x -5.6: ok; right fingertips now at (4.4, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (travel). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -20.7, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 120",
+   "plan": "The head grid shows the cross +0.0 cm in x and +4.7 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "right move y +4.7"
+   ],
+   "failed": [],
+   "effect": "right move y +4.7: ok; right fingertips now at (4.4, -16.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (travel). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -16.1, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 142",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -10.5"
+   ],
+   "failed": [],
+   "effect": "right move z -10.5: ok; right fingertips now at (4.4, -16.1, 81.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (align). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -16.1, 81.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 168",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right fingertips now at (4.4, -16.1, 77.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (close). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -16.1, 77.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 188",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.55: something is between them (probably grasped)); right fingertips now at (4.4, -16.1, 77.8), opening 0.55",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (lift). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -16.1, 77.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 0.55 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 214\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 3 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +3.0"
+   ],
+   "failed": [],
+   "effect": "right move z +3.0: ok; right fingertips now at (4.4, -16.1, 80.7), opening 0.544",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (carry). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.4, -16.1, 80.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 0.54 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 234\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move y -9.2",
+    "right move x -4.1"
+   ],
+   "failed": [],
+   "effect": "right move y -9.2: ok; right move x -4.1: ok; right fingertips now at (0.3, -25.3, 80.7), opening 0.544",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: nothing yet. Now: lift t1 out of the way to the back of the table (place). Next: ['put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. | lift t1 out of the way to the back of the table: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -25.8, 77.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 331\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.5, -25.8, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (orient). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: orient the left gripper and travel above the object",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -25.8, 89.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 376",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (-8, -17).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x +20.0",
+    "left move x +2.5"
+   ],
+   "failed": [
+    "left move x +20.0",
+    "left move x +2.5"
+   ],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move x +20.0: FAILED (the target was not reached: the fingertips moved (+18.3, +0.9, +0.3) cm, i.e. only part of the way; remaining error 2.0 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move x +2.5: FAILED (the target was not reached: the fingertips moved (+0.9, +0.6, +0.2) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-10.7, -19.2, 92.6), opening 0.999",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet. | send the right hand back to its start pose now it is finished",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.7, -19.2, 92.6) cm, approach = (-0.01, 0.00, -1.00), finger axis = (-0.58, 0.81, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.5, -24.9, 90.2) cm, approach = (0.02, -0.00, -1.00), finger axis = (-0.89, -0.46, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 500",
+   "plan": "Everything left to do is on the left hand's side of the table. Open the right gripper and send that arm back to where it began now, while it is standing free, rather than leaving both arms to be put back at the very end.",
+   "commands": [
+    "right gripper 1.00",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (close). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.9, -17.0, 77.8) cm, approach = (-0.01, 0.00, -1.00), finger axis = (-0.58, 0.81, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 751",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.36: something is between them (probably grasped)); left fingertips now at (-6.9, -17.0, 77.8), opening 0.36",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (carry). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: it is not moving with the hand any more - take hold again",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.6, -14.8, 77.8) cm, approach = (-0.01, 0.00, -1.00), finger axis = (-0.59, 0.81, 0.01), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1009\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The hand has turned but the block has stayed where it was, so the jaws have lost their bite on its top edge and are just swivelling around it. Open, lift clear, and line the pads up on the stem again before doing anything else.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +4.0: ok; left fingertips now at (3.6, -14.8, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (orient). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: orient the left gripper and travel above the object",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (3.6, -14.8, 81.8) cm, approach = (-0.01, 0.00, -1.00), finger axis = (-0.59, 0.81, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1046",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (4, -15).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move z +10.2"
+   ],
+   "failed": [
+    "left move z +10.2"
+   ],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move z +10.2: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (3.5, -14.8, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: IK failure with 'down'; switching to 'down15'. | out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.8, 81.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1116",
+   "plan": "'left move z +10.2' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z +10.2",
+    "left point down15"
+   ],
+   "failed": [
+    "left move z +10.2"
+   ],
+   "effect": "left move z +10.2: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left point down15: ok; left fingertips now at (3.5, -14.8, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (travel). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: square the jaws across the block before closing",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.8, 81.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1152",
+   "plan": "In the wrist view the two finger pads are no longer lying either side of the T's narrow stem - they have swung round towards its wide cross-bar. Closing them like this would catch the cross-bar, which is wider than the jaws open, and flick the block away. Turn the wrist until the pads straddle the stem again, then close.",
+   "commands": [
+    "left rotate yaw -60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -60.0: ok; left fingertips now at (3.5, -14.8, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (travel). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: restore the finger axis after the preset change",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.8, 81.8) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1188",
+   "plan": "The preset reset the finger axis to x; turn it back across the narrow side.",
+   "commands": [
+    "left rotate yaw -60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -60.0: ok; left fingertips now at (3.5, -14.7, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (travel). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: square the jaws across the block before closing",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.7, 81.8) cm, approach = (0.22, -0.13, -0.97), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1224",
+   "plan": "In the wrist view the two finger pads are no longer lying either side of the T's narrow stem - they have swung round towards its wide cross-bar. Closing them like this would catch the cross-bar, which is wider than the jaws open, and flick the block away. Turn the wrist until the pads straddle the stem again, then close.",
+   "commands": [
+    "left rotate yaw +60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +60.0: ok; left fingertips now at (3.5, -14.7, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (close). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: close the gripper",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.7, 77.8) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1296",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.36: something is between them (probably grasped)); left fingertips now at (3.5, -14.7, 77.8), opening 0.358",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (carry). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: lift it just clear and turn it the way t1 was lying",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -14.7, 77.9) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.86, 0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1349\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Lift the block a couple of centimetres - just clear of the table, not up to carrying height, because down there the table catches it if it starts to roll in the fingers - and turn it about a quarter turn clockwise seen from above. It is right when its stem would lie parallel to the way t1's stem lay in the first picture. Then set it back down and look at it flat.",
+   "commands": [
+    "left move z +2.8",
+    "left rotate yaw -30.0",
+    "left rotate yaw -30.0",
+    "left rotate yaw -30.0"
+   ],
+   "failed": [],
+   "effect": "left move z +2.8: ok; left rotate yaw -30.0: ok; left rotate yaw -30.0: ok; left rotate yaw -30.0: ok; left fingertips now at (3.4, -14.7, 80.5), opening 0.359",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 is not on t1's old spot yet; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (carry). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: walk the wrist round to bring the stem into line",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (3.4, -14.7, 83.6) cm, approach = (0.13, -0.22, -0.97), finger axis = (0.86, 0.50, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1495\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The two stems are very nearly parallel but the tip is still off to one side, and a single rotate command cannot turn less than a fifteen-degree step, which would swing it well past. Walk the wrist round a small closed loop instead - tip one way, tip the other, and back: the hand ends in the pose it is in now but the block comes out a sliver further round.",
+   "commands": [
+    "left rotate roll +15.0",
+    "left rotate pitch -30.0",
+    "left rotate roll -15.0",
+    "left rotate pitch +30.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left rotate pitch -30.0: ok; left rotate roll -15.0: ok; left rotate pitch +30.0: ok; left fingertips now at (3.3, -14.7, 83.5), opening 0.359",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table']. Now: put t0 where t1 was, lying the same way round t1 was (place). Next: ['put t1 where t0 was, lying the same way round t0 was']. | put t0 where t1 was, lying the same way round t1 was: release the object",
+   "images": [
+    "frame043_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (4.3, -15.8, 77.9) cm, approach = (0.14, -0.17, -0.98), finger axis = (0.79, 0.61, 0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1680\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (4.3, -15.8, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (orient). Next: finish. | put t1 where t0 was, lying the same way round t0 was: orient the left gripper and travel above the object",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (4.3, -15.8, 89.9) cm, approach = (0.14, -0.17, -0.98), finger axis = (0.79, 0.61, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1729",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (-1, -25).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +30.0",
+    "left move x -5.3",
+    "left move y -9.2"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +30.0: ok; left move x -5.3: ok; left move y -9.2: ok; left fingertips now at (-1.1, -24.9, 89.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (close). Next: finish. | put t1 where t0 was, lying the same way round t0 was: close the gripper",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.5, -25.9, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1938",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.73: something is between them (probably grasped)); left fingertips now at (-0.5, -25.9, 77.8), opening 0.731",
+   "source_index": null
+  },
+  {
+   "turn": 55,
+   "label": "turn 55: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: lift it just clear and turn it the way t0 was lying",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.8, -17.7, 77.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2111\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Lift the block a couple of centimetres - just clear of the table, not up to carrying height, because down there the table catches it if it starts to roll in the fingers - and turn it about a quarter turn anticlockwise seen from above. It is right when its stem would lie parallel to the way t0's stem lay in the first picture. Then set it back down and look at it flat.",
+   "commands": [
+    "left move z +3.0",
+    "left rotate yaw +30.0",
+    "left rotate yaw +30.0",
+    "left rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "left move z +3.0: ok; left rotate yaw +30.0: ok; left rotate yaw +30.0: ok; left rotate yaw +30.0: ok; left fingertips now at (-7.8, -17.7, 80.7), opening 0.729",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 already sits where t0 started and lies the same way round.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: walk the wrist round to bring the stem into line",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.8, -17.7, 83.8) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.51, -0.86, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2257\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The two stems are very nearly parallel but the tip is still off to one side, and a single rotate command cannot turn less than a fifteen-degree step, which would swing it well past. Walk the wrist round a small closed loop instead - tip one way, tip the other, and back: the hand ends in the pose it is in now but the block comes out a sliver further round.",
+   "commands": [
+    "left rotate roll +15.0",
+    "left rotate pitch -15.0",
+    "left rotate roll -15.0",
+    "left rotate pitch +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left rotate pitch -15.0: ok; left rotate roll -15.0: ok; left rotate pitch +15.0: ok; left fingertips now at (-7.9, -17.7, 83.7), opening 0.73",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 already sits where t0 started and lies the same way round.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: set it back down and look at it flat",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.9, -17.7, 83.7) cm, approach = (-0.01, 0.00, -1.00), finger axis = (0.56, -0.83, -0.01), opening = 0.73 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2348\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Let the block down onto the table without opening the fingers. Whatever it picked up on the way across, the table lays it flat again - and flat is the only state in which its angle can be compared with the other block, and the state it has to end in.",
+   "commands": [
+    "left move z -5.9"
+   ],
+   "failed": [
+    "left move z -5.9"
+   ],
+   "effect": "left move z -5.9: FAILED (the target was not reached: the fingertips moved (+0.4, +0.6, -4.5) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-7.5, -17.1, 79.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: walk the wrist round to bring the stem into line",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.6, -17.1, 83.7) cm, approach = (0.02, 0.04, -1.00), finger axis = (0.57, -0.82, -0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2390\nLEFT arm closed on an object with the fingertips at z = 77.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The two stems are very nearly parallel but the tip is still off to one side, and a single rotate command cannot turn less than a fifteen-degree step, which would swing it well past. Walk the wrist round a small closed loop instead - tip one way, tip the other, and back: the hand ends in the pose it is in now but the block comes out a sliver further round.",
+   "commands": [
+    "left rotate pitch -30.0",
+    "left rotate roll +15.0",
+    "left rotate pitch +30.0",
+    "left rotate roll -15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch -30.0: ok; left rotate roll +15.0: ok; left rotate pitch +30.0: ok; left rotate roll -15.0: ok; left fingertips now at (-7.6, -17.0, 83.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: set it back down and look at it flat",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.6, -17.0, 83.7) cm, approach = (0.04, 0.00, -1.00), finger axis = (0.45, -0.89, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2496\nLEFT arm closed on an object with the fingertips at z = 77.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Let the block down onto the table without opening the fingers. Whatever it picked up on the way across, the table lays it flat again - and flat is the only state in which its angle can be compared with the other block, and the state it has to end in.",
+   "commands": [
+    "left move z -5.9"
+   ],
+   "failed": [
+    "left move z -5.9"
+   ],
+   "effect": "left move z -5.9: FAILED (the target was not reached: the fingertips moved (+0.3, +0.5, -4.5) cm, i.e. only part of the way; remaining error 1.6 cm / 2 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-7.2, -16.5, 79.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 64,
+   "label": "turn 64: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: walk the wrist round to bring the stem into line",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.3, -16.5, 83.7) cm, approach = (0.06, 0.03, -1.00), finger axis = (0.46, -0.89, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2538\nLEFT arm closed on an object with the fingertips at z = 77.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The two stems are very nearly parallel but the tip is still off to one side, and a single rotate command cannot turn less than a fifteen-degree step, which would swing it well past. Walk the wrist round a small closed loop instead - tip one way, tip the other, and back: the hand ends in the pose it is in now but the block comes out a sliver further round.",
+   "commands": [
+    "left rotate pitch -30.0",
+    "left rotate roll +15.0",
+    "left rotate pitch +30.0",
+    "left rotate roll -15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch -30.0: ok; left rotate roll +15.0: ok; left rotate pitch +30.0: ok; left rotate roll -15.0: ok; left fingertips now at (-7.3, -16.5, 83.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 65,
+   "label": "turn 65: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: set it back down and look at it flat",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.3, -16.5, 83.7) cm, approach = (0.08, -0.01, -1.00), finger axis = (0.34, -0.94, 0.04), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2644\nLEFT arm closed on an object with the fingertips at z = 77.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Let the block down onto the table without opening the fingers. Whatever it picked up on the way across, the table lays it flat again - and flat is the only state in which its angle can be compared with the other block, and the state it has to end in.",
+   "commands": [
+    "left move z -5.9"
+   ],
+   "failed": [
+    "left move z -5.9"
+   ],
+   "effect": "left move z -5.9: FAILED (the target was not reached: the fingertips moved (+0.3, +0.6, -4.5) cm, i.e. only part of the way; remaining error 1.6 cm / 2 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-6.9, -15.9, 79.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 66,
+   "label": "turn 66: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: it is not moving with the hand any more - take hold again",
+   "images": [
+    "frame066_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-6.9, -15.9, 79.3) cm, approach = (0.11, 0.02, -0.99), finger axis = (0.34, -0.94, 0.01), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2666\nLEFT arm closed on an object with the fingertips at z = 77.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The hand has turned but the block has stayed where it was, so the jaws have lost their bite on its top edge and are just swivelling around it. Open, lift clear, and line the pads up on the stem again before doing anything else.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +4.0: ok; left fingertips now at (-7.0, -15.9, 83.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 67,
+   "label": "turn 67: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (orient). Next: finish. | put t1 where t0 was, lying the same way round t0 was: orient the left gripper and travel above the object",
+   "images": [
+    "frame067_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.0, -15.9, 83.3) cm, approach = (0.11, 0.02, -0.99), finger axis = (0.34, -0.94, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2704",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (-6, -15).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -45.0",
+    "left move z +8.7",
+    "left move x +1.1"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -45.0: ok; left move z +8.7: ok; left move x +1.1: ok; left fingertips now at (-5.9, -15.9, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 71,
+   "label": "turn 71: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (close). Next: finish. | put t1 where t0 was, lying the same way round t0 was: close the gripper",
+   "images": [
+    "frame071_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.9, -15.2, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2886",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.36: something is between them (probably grasped)); left fingertips now at (-5.9, -15.2, 77.8), opening 0.36",
+   "source_index": null
+  },
+  {
+   "turn": 75,
+   "label": "turn 75: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: lift it just clear and turn it the way t0 was lying",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.4, -17.6, 77.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.71, 0.70, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2981\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Lift the block a couple of centimetres - just clear of the table, not up to carrying height, because down there the table catches it if it starts to roll in the fingers - and turn it a little way clockwise seen from above. It is right when its stem would lie parallel to the way t0's stem lay in the first picture. Then set it back down and look at it flat.",
+   "commands": [
+    "left move z +3.0",
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left move z +3.0: ok; left rotate yaw -15.0: ok; left fingertips now at (-7.4, -17.6, 80.8), opening 0.36",
+   "source_index": null
+  },
+  {
+   "turn": 77,
+   "label": "turn 77: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was']. Now: put t1 where t0 was, lying the same way round t0 was (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was: it is right - let go without disturbing it",
+   "images": [
+    "frame077_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.4, -17.6, 77.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3043\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The block is flat on its patch and its stem now lies parallel to the way t0's stem lay in the first picture, which is everything this half of the task asks for. Open the fingers and leave it exactly where it is: lifting it again to place it more neatly would only knock it back out of line.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-7.4, -17.6, 77.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 79,
+   "label": "turn 79: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. Now: put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off) (orient). Next: finish. | put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off): orient the left gripper and travel above the object",
+   "images": [
+    "frame079_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.4, -17.6, 89.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3088",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the t, then move at travel height until the fingertip cross in the head image is over (-8, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x -0.8",
+    "left move y -0.5"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move x -0.8: ok; left move y -0.5: ok; left fingertips now at (-8.2, -18.1, 89.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 83,
+   "label": "turn 83: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. Now: put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off) (close). Next: finish. | put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off): close the gripper",
+   "images": [
+    "frame083_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.4, -17.6, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.86, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3269",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.36: something is between them (probably grasped)); left fingertips now at (-7.4, -17.6, 77.8), opening 0.36",
+   "source_index": null
+  },
+  {
+   "turn": 87,
+   "label": "turn 87: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 is not on t0's old spot yet.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. Now: put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off) (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off): walk the wrist round to bring the stem into line",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.4, -17.5, 83.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3344\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The two stems are very nearly parallel but the tip is still off to one side, and a single rotate command cannot turn less than a fifteen-degree step, which would swing it well past. Walk the wrist round a small closed loop instead - tip one way, tip the other, and back: the hand ends in the pose it is in now but the block comes out a sliver further round.",
+   "commands": [
+    "left rotate roll +15.0",
+    "left rotate pitch -15.0",
+    "left rotate roll -15.0",
+    "left rotate pitch +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left rotate pitch -15.0: ok; left rotate roll -15.0: ok; left rotate pitch +15.0: ok; left fingertips now at (-7.5, -17.6, 83.7), opening 0.359",
+   "source_index": null
+  },
+  {
+   "turn": 89,
+   "label": "turn 89: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 already sits where t0 started and lies the same way round.  Done: ['lift t1 out of the way to the back of the table', 'put t0 where t1 was, lying the same way round t1 was', 'put t1 where t0 was, lying the same way round t0 was']. Now: put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off) (carry). Next: finish. | put t1 where t0 was, lying the same way round t0 was (fix: 0.9 cm off): it is right - let go without disturbing it",
+   "images": [
+    "frame089_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, -17.5, 77.9) cm, approach = (-0.01, 0.01, -1.00), finger axis = (-0.56, 0.83, 0.01), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3457\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The block is flat on its patch and its stem now lies parallel to the way t0's stem lay in the first picture, which is everything this half of the task asks for. Open the fingers and leave it exactly where it is: lifting it again to place it more neatly would only knock it back out of line.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-7.5, -17.5, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 91,
+   "label": "turn 91: The two T blocks have to change places: each one must end up on the bare patch of table the other one started on, AND lying the same way round as the other one was lying in the first picture - put the two side by side in your head and their stems should point the same way. Both arms go back to their starting pose at the end. t0 already sits where t1 started and lies the same way round; t1 already sits where t0 started and lies the same way round. | turn the hands to face the way they started and draw them back",
+   "images": [
+    "frame091_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, -17.5, 89.9) cm, approach = (-0.01, 0.01, -1.00), finger axis = (-0.56, 0.83, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3502",
+   "plan": "Both blocks are where they have to be, so all that is left is putting the arms back. In the first picture the hands are not pointing down at the table, they are facing forward - so turn them to face forward again and bring them back across towards the sides they started on, and only then send them home.",
+   "commands": [
+    "left point forward",
+    "left move x -8.0"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left move x -8.0: ok; left fingertips now at (-15.3, -17.5, 89.9), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

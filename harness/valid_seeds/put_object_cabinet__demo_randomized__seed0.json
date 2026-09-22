@@ -1,0 +1,358 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100010,
+  100026,
+  100049,
+  100055,
+  100056,
+  100079,
+  100091,
+  100121,
+  100151,
+  100156,
+  100230,
+  100234,
+  100238,
+  100262,
+  100269,
+  100283,
+  100395,
+  100416,
+  100419,
+  100435,
+  100452,
+  100461,
+  100464,
+  100486,
+  100495,
+  100499,
+  100513,
+  100515,
+  100614,
+  100658,
+  100673,
+  100720,
+  100725,
+  100731,
+  100733,
+  100786,
+  100799,
+  100802,
+  100809,
+  100810,
+  100860,
+  100867,
+  100891,
+  100913,
+  100926,
+  100960,
+  100997,
+  101008,
+  101038,
+  101046
+ ],
+ "infos": [
+  {
+   "{A}": "107_soap/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "048_stapler/base4",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "048_stapler/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "075_bread/base4",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "075_bread/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "107_soap/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "107_soap/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "107_soap/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "107_soap/base3",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "107_soap/base3",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "113_coffee-box/base5",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "107_soap/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "107_soap/base3",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base6",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "048_stapler/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base1",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "107_soap/base3",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "075_bread/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "075_bread/base2",
+   "{B}": "036_cabinet/base0",
+   "{a}": "left",
+   "{b}": "right"
+  }
+ ],
+ "next_seed": 101047
+}

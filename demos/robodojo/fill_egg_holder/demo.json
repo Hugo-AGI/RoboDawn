@@ -1,0 +1,690 @@
+{
+ "task": "fill_egg_holder",
+ "instruction": "Place the four eggs from the basket into the egg holder, then close the lid.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2147,
+  "decisions": 45,
+  "frames": 45,
+  "images_scaled": true,
+  "layout_seed": 1,
+  "layout_id": 8
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (orient). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. egg target0 into cup 1: orient the left gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the egg, then move at travel height until the fingertip cross in the head image is over (-24, -12).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -30.0",
+    "left move x +6.4",
+    "left move y +8.6"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -30.0: ok; left move x +6.4: ok; left move y +8.6: ok; left fingertips now at (-23.6, -12.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (travel). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. egg target0 into cup 1: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.6, -12.1, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 116",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -8.7"
+   ],
+   "failed": [],
+   "effect": "left move z -8.7: ok; left fingertips now at (-23.6, -12.1, 83.6), opening 0.808",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (align). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. egg target0 into cup 1: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.6, -12.1, 83.6) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.81 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 141",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.6"
+   ],
+   "failed": [],
+   "effect": "left move z -3.6: ok; left fingertips now at (-23.6, -12.1, 80.5), opening 0.437",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (close). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. egg target0 into cup 1: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.6, -12.1, 80.5) cm, approach = (0.00, 0.02, -1.00), finger axis = (-0.87, 0.50, 0.01), opening = 0.44 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 161",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align. Then lift; verify both the close result and actual egg height next turn.",
+   "commands": [
+    "left gripper 0.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.46: something is between them (probably grasped)); left move z +12.0: ok; left fingertips now at (-23.5, -12.1, 92.5), opening 0.538",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (carry). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. egg target0 into cup 1: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.5, -12.1, 92.5) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 202\nLEFT arm closed on an object with the fingertips at z = 80.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.6 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -6.8",
+    "left move x +20.0",
+    "left move x +8.3"
+   ],
+   "failed": [],
+   "effect": "left move y -6.8: ok; left move x +20.0: ok; left move x +8.3: ok; left fingertips now at (4.8, -18.9, 92.5), opening 0.534",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (carry). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. Turn the held egg upright while clear of the lid.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (4.8, -18.9, 92.5) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.53 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 285\nLEFT arm closed on an object with the fingertips at z = 80.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.6 + (h - 76.5) before opening.",
+   "plan": "Execute the three approach changes and inspect the measured result before descending.",
+   "commands": [
+    "left point down30",
+    "left point down60",
+    "left point down75"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left point down60: ok; left point down75: ok; left fingertips now at (4.7, -18.9, 92.4), opening 0.543",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (carry). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. take a firmer hold now the egg hangs point-down",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (4.7, -18.9, 92.4) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 373\nLEFT arm closed on an object with the fingertips at z = 80.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.6 + (h - 76.5) before opening.",
+   "plan": "The egg now hangs straight down under the fingers, so its whole weight is on the pads instead of resting in them. Close the fingers again before moving: an egg that starts to slip between them is thrown out on the way down.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.54: something is between them (probably grasped)); left fingertips now at (4.7, -18.9, 92.4), opening 0.543",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (place). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. line the egg's point up over the empty cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (4.7, -18.9, 92.4) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 379\nLEFT arm closed on an object with the fingertips at z = 92.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.4 + (h - 76.5) before opening.",
+   "plan": "Move so the hanging egg's point is directly over the dark hollow of the far right cup, not over the pale ridge between the cups; read the offset off the head grid and correct exactly that much before letting go.",
+   "commands": [
+    "left move x +0.4",
+    "left move y +1.4"
+   ],
+   "failed": [],
+   "effect": "left move x +0.4: ok; left move y +1.4: ok; left fingertips now at (5.1, -17.5, 92.3), opening 0.543",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (place). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.1, -17.5, 92.3) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 413\nLEFT arm closed on an object with the fingertips at z = 92.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.4 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -4.5"
+   ],
+   "failed": [],
+   "effect": "left move z -4.5: ok; left fingertips now at (5.1, -17.5, 87.8), opening 0.543",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (place). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.1, -17.5, 87.8) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 433\nLEFT arm closed on an object with the fingertips at z = 92.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.4 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -3.6"
+   ],
+   "failed": [],
+   "effect": "left move z -3.6: ok; left fingertips now at (5.1, -17.5, 84.2), opening 0.543",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 0 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: nothing yet. Now: egg target0 into cup 1 (place). Next: ['egg target3 into cup 2', 'egg target1 into cup 3', 'egg target2 into cup 4']. | 0/4 eggs meet the measured seating check. the point is in the cup; let the egg go",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (5.1, -17.5, 84.2) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 453\nLEFT arm closed on an object with the fingertips at z = 92.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.4 + (h - 76.5) before opening.",
+   "plan": "The egg's point is in the mouth of the cup and the fingers are still above the rim. Open them just enough to free it: it slides down the inside of the cup and settles upright, leaving only its top showing. Lift clear, then verify the actual egg position.",
+   "commands": [
+    "left gripper 0.72",
+    "left move z +7.8",
+    "left move y -8.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.72: ok (gripper opened); left move z +7.8: ok; left move y -8.0: ok; left fingertips now at (5.0, -25.3, 91.9), opening 0.72",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (orient). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: orient the left gripper and travel above the object",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (5.0, -25.3, 91.9) cm, approach = (-0.01, 0.97, -0.26), finger axis = (-1.00, -0.01, 0.01), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 522",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the egg, then move at travel height until the fingertip cross in the head image is over (-18, -14).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x -20.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw -75.0: ok; left move x -20.0: ok; left fingertips now at (-15.0, -25.3, 91.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (travel). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-15.0, -25.3, 91.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 647",
+   "plan": "The head grid shows the cross -2.6 cm in x and +10.9 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move x -2.6",
+    "left move y +10.9"
+   ],
+   "failed": [],
+   "effect": "left move x -2.6: ok; left move y +10.9: ok; left fingertips now at (-17.6, -14.4, 91.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (travel). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -14.4, 91.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 691",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -8.4"
+   ],
+   "failed": [],
+   "effect": "left move z -8.4: ok; left fingertips now at (-17.7, -14.4, 83.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (align). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.7, -14.4, 83.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 716",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.5"
+   ],
+   "failed": [],
+   "effect": "left move z -3.5: ok; left fingertips now at (-17.9, -14.1, 80.6), opening 0.695",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (close). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: close the gripper",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.9, -14.1, 80.6) cm, approach = (0.00, 0.02, -1.00), finger axis = (-0.27, 0.96, 0.01), opening = 0.69 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 736",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align. Then lift; verify both the close result and actual egg height next turn.",
+   "commands": [
+    "left gripper 0.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.54: something is between them (probably grasped)); left move z +12.0: ok; left fingertips now at (-17.9, -14.1, 92.6), opening 0.564",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 1 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1']. Now: egg target3 into cup 2 (carry). Next: ['egg target1 into cup 3', 'egg target2 into cup 4']. | 1/4 eggs meet the measured seating check. egg target3 into cup 2: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.9, -14.1, 92.6) cm, approach = (0.00, 0.02, -1.00), finger axis = (-0.27, 0.96, 0.01), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 777\nLEFT arm closed on an object with the fingertips at z = 80.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.6 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -4.3",
+    "left move x +17.4"
+   ],
+   "failed": [
+    "left move x +17.4"
+   ],
+   "effect": "left move y -4.3: ok; left move x +17.4: FAILED (the target was not reached: the fingertips moved (+14.6, +0.4, +0.4) cm, i.e. only part of the way; remaining error 2.8 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-3.3, -18.0, 93.0), opening 0.642",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. | 2/4 eggs meet the measured seating check. that egg is already in; move on to an empty cup",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.3, -18.0, 93.0) cm, approach = (-0.04, -0.02, -1.00), finger axis = (-0.32, 0.95, -0.00), opening = 0.64 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 827\nLEFT arm closed on an object with the fingertips at z = 80.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.6 + (h - 76.5) before opening.",
+   "plan": "Nothing to do with this one - it is already standing in a cup. Leave it alone and start on an egg that is still in the basket.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-3.3, -18.0, 93.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (orient). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: orient the left gripper and travel above the object",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.3, -18.0, 93.0) cm, approach = (-0.04, -0.02, -1.00), finger axis = (-0.32, 0.95, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 842",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the egg, then move at travel height until the fingertip cross in the head image is over (-26, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +60.0",
+    "left move x -20.0",
+    "left move x -3.0"
+   ],
+   "failed": [
+    "left rotate yaw +60.0"
+   ],
+   "effect": "left point down: ok; left rotate yaw +60.0: FAILED (the target was not reached: the gripper turned only 57 deg of the requested 60; remaining error 1.9 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move x -20.0: ok; left move x -3.0: ok; left fingertips now at (-24.9, -19.3, 93.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (travel). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.9, -19.3, 93.2) cm, approach = (0.01, -0.00, -1.00), finger axis = (-0.54, -0.84, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 967",
+   "plan": "The head grid shows the cross -1.4 cm in x and +1.3 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move x -1.4",
+    "left move y +1.3"
+   ],
+   "failed": [],
+   "effect": "left move x -1.4: ok; left move y +1.3: ok; left fingertips now at (-26.3, -18.0, 93.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (travel). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-26.3, -18.0, 93.2) cm, approach = (0.01, -0.00, -1.00), finger axis = (-0.54, -0.84, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1003",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -9.7"
+   ],
+   "failed": [],
+   "effect": "left move z -9.7: ok; left fingertips now at (-26.3, -17.9, 83.6), opening 0.817",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (align). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-26.3, -17.9, 83.6) cm, approach = (0.01, 0.00, -1.00), finger axis = (-0.54, -0.84, -0.01), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1029",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.6"
+   ],
+   "failed": [],
+   "effect": "left move z -3.6: ok; left fingertips now at (-26.1, -17.6, 80.7), opening 0.492",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (close). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: close the gripper",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-26.1, -17.6, 80.7) cm, approach = (0.02, 0.03, -1.00), finger axis = (-0.54, -0.84, -0.03), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1049",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align. Then lift; verify both the close result and actual egg height next turn.",
+   "commands": [
+    "left gripper 0.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); left move z +12.0: ok; left fingertips now at (-26.0, -17.5, 92.8), opening 0.557",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (carry). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. egg target1 into cup 3: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-26.0, -17.5, 92.8) cm, approach = (0.02, 0.03, -1.00), finger axis = (-0.54, -0.84, -0.03), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1091\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -6.5",
+    "left move x +20.0",
+    "left move x +11.5"
+   ],
+   "failed": [],
+   "effect": "left move y -6.5: ok; left move x +20.0: ok; left move x +11.5: ok; left fingertips now at (5.5, -24.0, 92.7), opening 0.545",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (carry). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. Turn the held egg upright while clear of the lid.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.5, -24.0, 92.7) cm, approach = (0.02, 0.03, -1.00), finger axis = (-0.54, -0.84, -0.03), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1173\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Execute the three approach changes and inspect the measured result before descending.",
+   "commands": [
+    "left point down30",
+    "left point down60",
+    "left point down75"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left point down60: ok; left point down75: ok; left fingertips now at (5.4, -24.0, 92.7), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (carry). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. take a firmer hold now the egg hangs point-down",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (5.4, -24.0, 92.7) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1260\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "The egg now hangs straight down under the fingers, so its whole weight is on the pads instead of resting in them. Close the fingers again before moving: an egg that starts to slip between them is thrown out on the way down.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.55: something is between them (probably grasped)); left fingertips now at (5.4, -24.0, 92.6), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (place). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.4, -24.0, 92.6) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1266\nLEFT arm closed on an object with the fingertips at z = 92.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.6 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -4.5"
+   ],
+   "failed": [],
+   "effect": "left move z -4.5: ok; left fingertips now at (5.4, -24.0, 88.1), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (place). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.4, -24.0, 88.1) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1286\nLEFT arm closed on an object with the fingertips at z = 92.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.6 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -3.9"
+   ],
+   "failed": [],
+   "effect": "left move z -3.9: ok; left fingertips now at (5.4, -24.0, 84.2), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 2 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2']. Now: egg target1 into cup 3 (place). Next: ['egg target2 into cup 4']. | 2/4 eggs meet the measured seating check. the point is in the cup; let the egg go",
+   "images": [
+    "frame029_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (5.4, -24.0, 84.2) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1306\nLEFT arm closed on an object with the fingertips at z = 92.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.6 + (h - 76.5) before opening.",
+   "plan": "The egg's point is in the mouth of the cup and the fingers are still above the rim. Open them just enough to free it: it slides down the inside of the cup and settles upright, leaving only its top showing. Lift clear, then verify the actual egg position.",
+   "commands": [
+    "left gripper 0.72",
+    "left move z +7.8",
+    "left move y -8.0"
+   ],
+   "failed": [
+    "left move y -8.0"
+   ],
+   "effect": "left gripper 0.72: ok (gripper opened); left move z +7.8: ok; left move y -8.0: FAILED (the target was not reached: the fingertips moved (-2.8, -2.1, +0.4) cm, i.e. only part of the way; remaining error 6.6 cm / 10 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (2.6, -26.1, 92.4), opening 0.72",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (orient). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: orient the left gripper and travel above the object",
+   "images": [
+    "frame030_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -26.1, 92.4) cm, approach = (-0.16, 0.95, -0.26), finger axis = (-0.98, -0.17, -0.01), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1379",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the egg, then move at travel height until the fingertip cross in the head image is over (-20, -20).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw +75.0",
+    "left move x -20.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw +75.0: ok; left move x -20.0: ok; left fingertips now at (-17.5, -26.0, 92.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (travel). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -26.0, 92.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1502",
+   "plan": "The head grid shows the cross -2.5 cm in x and +5.9 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move x -2.5",
+    "left move y +5.9"
+   ],
+   "failed": [],
+   "effect": "left move x -2.5: ok; left move y +5.9: ok; left fingertips now at (-20.0, -20.1, 92.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (travel). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-20.0, -20.1, 92.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1542",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -8.8"
+   ],
+   "failed": [],
+   "effect": "left move z -8.8: ok; left fingertips now at (-20.0, -20.1, 83.6), opening 0.97",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (align). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-20.0, -20.1, 83.6) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.97 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1567",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.5"
+   ],
+   "failed": [],
+   "effect": "left move z -3.5: ok; left fingertips now at (-20.0, -20.0, 80.2), opening 0.58",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (close). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: close the gripper",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-20.0, -20.0, 80.2) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.26, -0.97, -0.01), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1587",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align. Then lift; verify both the close result and actual egg height next turn.",
+   "commands": [
+    "left gripper 0.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.55: something is between them (probably grasped)); left move z +12.0: ok; left fingertips now at (-20.0, -20.0, 92.2), opening 0.547",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (carry). Next: finish. | 3/4 eggs meet the measured seating check. egg target2 into cup 4: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-20.0, -20.0, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1628\nLEFT arm closed on an object with the fingertips at z = 80.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.2 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -3.8",
+    "left move x +19.7"
+   ],
+   "failed": [],
+   "effect": "left move y -3.8: ok; left move x +19.7: ok; left fingertips now at (-0.3, -23.8, 92.2), opening 0.545",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (carry). Next: finish. | 3/4 eggs meet the measured seating check. Turn the held egg upright while clear of the lid.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.3, -23.8, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.25, -0.97, -0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1678\nLEFT arm closed on an object with the fingertips at z = 80.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.2 + (h - 76.5) before opening.",
+   "plan": "Execute the three approach changes and inspect the measured result before descending.",
+   "commands": [
+    "left point down30",
+    "left point down60",
+    "left point down75"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left point down60: ok; left point down75: ok; left fingertips now at (-0.3, -23.8, 92.1), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (carry). Next: finish. | 3/4 eggs meet the measured seating check. take a firmer hold now the egg hangs point-down",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.3, -23.8, 92.1) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1768\nLEFT arm closed on an object with the fingertips at z = 80.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.2 + (h - 76.5) before opening.",
+   "plan": "The egg now hangs straight down under the fingers, so its whole weight is on the pads instead of resting in them. Close the fingers again before moving: an egg that starts to slip between them is thrown out on the way down.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.55: something is between them (probably grasped)); left fingertips now at (-0.4, -23.8, 92.1), opening 0.546",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (place). Next: finish. | 3/4 eggs meet the measured seating check. line the egg's point up over the empty cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -23.8, 92.1) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1774\nLEFT arm closed on an object with the fingertips at z = 92.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.1 + (h - 76.5) before opening.",
+   "plan": "Move so the hanging egg's point is directly over the dark hollow of the near left cup, not over the pale ridge between the cups; read the offset off the head grid and correct exactly that much before letting go.",
+   "commands": [
+    "left move y +0.8"
+   ],
+   "failed": [],
+   "effect": "left move y +0.8: ok; left fingertips now at (-0.4, -23.0, 92.1), opening 0.545",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (place). Next: finish. | 3/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -23.0, 92.1) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1792\nLEFT arm closed on an object with the fingertips at z = 92.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.1 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -4.5"
+   ],
+   "failed": [],
+   "effect": "left move z -4.5: ok; left fingertips now at (-0.4, -22.9, 87.5), opening 0.545",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (place). Next: finish. | 3/4 eggs meet the measured seating check. lower the egg until its point is in the mouth of the cup",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -22.9, 87.5) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1814\nLEFT arm closed on an object with the fingertips at z = 92.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.1 + (h - 76.5) before opening.",
+   "plan": "Come down a few centimetres at a time - a long drop shakes the hanging egg out of the fingers. Stop when the point of the egg has just gone below the rim of the carton while the fingers are still clearly above it; do not follow it down, the open fingers are wider than a cup and would stand on the ridges.",
+   "commands": [
+    "left move z -3.3"
+   ],
+   "failed": [],
+   "effect": "left move z -3.3: ok; left fingertips now at (-0.4, -22.9, 84.2), opening 0.545",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 3 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. Done: ['egg target0 into cup 1', 'egg target3 into cup 2', 'egg target1 into cup 3']. Now: egg target2 into cup 4 (place). Next: finish. | 3/4 eggs meet the measured seating check. the point is in the cup; let the egg go",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -22.9, 84.2) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.55 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1834\nLEFT arm closed on an object with the fingertips at z = 92.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.1 + (h - 76.5) before opening.",
+   "plan": "The egg's point is in the mouth of the cup and the fingers are still above the rim. Open them just enough to free it: it slides down the inside of the cup and settles upright, leaving only its top showing. Lift clear, then verify the actual egg position.",
+   "commands": [
+    "left gripper 0.72",
+    "left move z +7.8",
+    "left move y -8.0"
+   ],
+   "failed": [
+    "left move y -8.0"
+   ],
+   "effect": "left gripper 0.72: ok (gripper opened); left move z +7.8: ok; left move y -8.0: FAILED (the target was not reached: the fingertips moved (-3.1, -3.0, +0.1) cm, i.e. only part of the way; remaining error 5.9 cm / 10 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-3.5, -25.9, 92.1), opening 0.72",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 4 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. | Lid ratio is -0.000; complete closure and arm return still require native acceptance.",
+   "images": [
+    "frame042_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -25.9, 92.1) cm, approach = (-0.17, 0.95, -0.26), finger axis = (-0.98, -0.18, -0.00), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1907",
+   "plan": "Clear the actual lid upper edge at about 93 cm before approaching its back.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down75",
+    "left move z +3.9"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down75: ok; left move z +3.9: ok; left fingertips now at (-3.5, -25.8, 96.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 4 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. | Lid ratio is -0.000; complete closure and arm return still require native acceptance.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -25.8, 96.0) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1970",
+   "plan": "Place the closed fingers behind the lid upper edge, above the panel.",
+   "commands": [
+    "left move x +5.9",
+    "left move y +17.7"
+   ],
+   "failed": [],
+   "effect": "left move x +5.9: ok; left move y +17.7: ok; left fingertips now at (2.0, -7.5, 96.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 4 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. | Lid ratio is -0.000; complete closure and arm return still require native acceptance.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.0, -7.5, 96.3) cm, approach = (-0.02, 0.97, -0.26), finger axis = (-1.00, -0.02, -0.01), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2026",
+   "plan": "Push the upper panel towards the cups until it passes the hinge and can fall closed.",
+   "commands": [
+    "left move z -4.3",
+    "left move y -10.0"
+   ],
+   "failed": [
+    "left move z -4.3"
+   ],
+   "effect": "left move z -4.3: FAILED (the target was not reached: the fingertips moved (-0.1, +0.1, -1.2) cm, i.e. only part of the way; remaining error 3.1 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); left move y -10.0: ok; left fingertips now at (1.9, -17.4, 95.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: Four eggs start lying in the woven basket on the left; the white carton in the middle of the table has four cups facing up and its lid folded open behind them. On its side an egg is far longer than a cup is wide and only bridges the ridges, so each egg is lifted out of the basket, tipped upright in the air until it hangs point-down under the fingers, carried over an empty cup and let go just above it. A cup counts as filled when the egg stands in it with only its top showing above the carton - an egg lying across the ridges or leaning on a rim does not. 4 of the four cups look filled so far. When all four are in, push the open lid forward with the closed left fingers until it lies flat over them, then open both grippers and send both arms home. All 4 placements done. | return both arms to their initial pose",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -17.4, 95.0) cm, approach = (-0.01, 0.98, -0.22), finger axis = (-1.00, -0.03, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2068",
+   "plan": "Every placement is done and both grippers are open; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: FAILED (the target was not reached: the fingertips moved (-17.4, +3.4, +2.8) cm, i.e. only part of the way; remaining error 16.9 cm / 18 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-15.5, -14.0, 97.8), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

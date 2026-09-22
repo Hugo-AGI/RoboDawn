@@ -1,0 +1,603 @@
+{
+ "task": "classify_objects_by_language",
+ "instruction": "Put pepper objects into the left basket, watch objects into the middle basket, and chocolate_bar objects into the right basket.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 4901,
+  "decisions": 107,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: orient the right gripper and travel above the object Right now 0 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the chocolate_bar, then move at travel height until the fingertip cross in the head image is over (17, -18).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -90.0",
+    "right move x -12.6",
+    "right move y +3.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -90.0: ok; right move x -12.6: ok; right move y +3.0: ok; right fingertips now at (17.4, -17.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: close the gripper Right now 0 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (17.4, -17.7, 77.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 176",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.39: something is between them (probably grasped)); right fingertips now at (17.4, -17.7, 77.8), opening 0.389",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: tilt the fingers for the forward reach of the target Right now 0 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (17.4, -17.7, 89.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 217\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The target at y=-1 is further forward than the pick-up spot; switch to 'point down30' first (this resets the finger axis), then re-check the object's yaw.",
+   "commands": [
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right fingertips now at (17.4, -17.7, 89.8), opening 0.388",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: release the object Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, 2.9, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 353\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (29.9, 2.9, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket (first set it down at the centre for the other arm): orient the left gripper and travel above the object Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 425",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the chocolate_bar, then move at travel height until the fingertip cross in the head image is over (-18, -21).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x +12.5"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -75.0: ok; left move x +12.5: ok; left fingertips now at (-17.5, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket (first set it down at the centre for the other arm): close the gripper Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -20.7, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 578",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); left fingertips now at (-17.5, -20.7, 77.8), opening 0.32",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket (first set it down at the centre for the other arm): release the object Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -18.0, 78.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 0.32 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 693\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-0.0, -18.0, 78.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket (first set it down at the centre for the other arm): retreat and clear the way for the other arm Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -18.0, 78.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 710",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "left move z +12.0",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: orient the right gripper and travel above the object Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 915",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the chocolate_bar, then move at travel height until the fingertip cross in the head image is over (-0, -18).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -75.0",
+    "right move x -20.0",
+    "right move x -10.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -75.0: ok; right move x -20.0: ok; right move x -10.0: ok; right fingertips now at (0.1, -14.3, 93.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: close the gripper Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.0, -17.8, 77.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1124",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); right fingertips now at (0.0, -17.8, 77.8), opening 0.319",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: tilt the fingers for the forward reach of the target Right now 1 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.0, -17.8, 89.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 0.32 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1165\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The target at y=-0 is further forward than the pick-up spot; switch to 'point down30' first (this resets the finger axis), then re-check the object's yaw.",
+   "commands": [
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right fingertips now at (0.0, -17.8, 89.7), opening 0.319",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the chocolate bar into the right basket: release the object Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, 1.6, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.32 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1312\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (30.0, 1.6, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): orient the right gripper and travel above the object Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1384",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the pepper, then move at travel height until the fingertip cross in the head image is over (34, -16).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move y -2.1",
+    "right move x +3.6"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +45.0: ok; right move y -2.1: ok; right move x +3.6: ok; right fingertips now at (33.5, -16.1, 94.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): close the gripper Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.5, -16.1, 79.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1530",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); right fingertips now at (33.5, -16.1, 79.1), opening 0.586",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): release the object Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -18.1, 79.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.70, -0.71, 0.00), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1675\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.0, -18.1, 79.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): retreat and clear the way for the other arm Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -18.1, 79.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.70, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1691",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: orient the left gripper and travel above the object Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame040_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1902",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the pepper, then move at travel height until the fingertip cross in the head image is over (0, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +45.0",
+    "left move x +20.0",
+    "left move x +10.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +45.0: ok; left move x +20.0: ok; left move x +10.0: ok; left fingertips now at (0.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: close the gripper Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -18.0, 79.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2096",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); left fingertips now at (-0.0, -18.0, 79.0), opening 0.585",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: tilt the fingers for the forward reach of the target Right now 2 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -18.0, 91.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.71, -0.71, 0.00), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2137\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "The target at y=1 is further forward than the pick-up spot; switch to 'point down30' first (this resets the finger axis), then re-check the object's yaw.",
+   "commands": [
+    "left point down30"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left fingertips now at (-0.0, -18.0, 91.0), opening 0.585",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: release the object Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 1.7, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2277\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.1, 1.7, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): orient the right gripper and travel above the object Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame051_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2348",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the pepper, then move at travel height until the fingertip cross in the head image is over (41, -10).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -75.0",
+    "right move x +11.4",
+    "right move y +10.3"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -75.0: ok; right move x +11.4: ok; right move y +10.3: ok; right fingertips now at (41.4, -10.4, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): close the gripper Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.4, -10.4, 79.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2527",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); right fingertips now at (41.4, -10.4, 79.0), opening 0.592",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): release the object Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.9, -18.0, 79.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2678\nRIGHT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (5.9, -18.0, 79.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket (first set it down at the centre for the other arm): retreat and clear the way for the other arm Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.9, -18.0, 79.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2694",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 60,
+   "label": "turn 60: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: orient the left gripper and travel above the object Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame060_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2892",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the pepper, then move at travel height until the fingertip cross in the head image is over (6, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x +20.0",
+    "left move x +16.0"
+   ],
+   "failed": [
+    "left move x +16.0"
+   ],
+   "effect": "left point down: ok; left rotate yaw -75.0: ok; left move x +20.0: ok; left move x +16.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-10.1, -14.0, 94.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: IK failure with 'down'; switching to 'down15'. | out of reach: tilt the fingers further forward at travel height Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.1, -14.0, 94.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, 0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2991",
+   "plan": "'left move x +16.0' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z -2.0",
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left move z -2.0: ok; left point down15: ok; left fingertips now at (-10.2, -14.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: restore the finger axis after the preset change Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.2, -14.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3051",
+   "plan": "The preset reset the finger axis to x; turn it back across the narrow side.",
+   "commands": [
+    "left rotate yaw -75.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -75.0: ok; left fingertips now at (-10.2, -14.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 66,
+   "label": "turn 66: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: close the gripper Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.9, -17.8, 79.1) cm, approach = (0.25, 0.07, -0.97), finger axis = (-0.26, 0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3185",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); left fingertips now at (5.9, -17.8, 79.1), opening 0.585",
+   "source_index": null
+  },
+  {
+   "turn": 68,
+   "label": "turn 68: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: tilt the fingers for the forward reach of the target Right now 3 of 7 items are in their baskets; still to move: the pepper (still on the table, for the left basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (5.9, -17.8, 91.1) cm, approach = (0.25, 0.07, -0.97), finger axis = (-0.26, 0.97, -0.00), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3226\nLEFT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "The target at y=0 is further forward than the pick-up spot; switch to 'point down30' first (this resets the finger axis), then re-check the object's yaw.",
+   "commands": [
+    "left point down30"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left fingertips now at (5.9, -17.8, 91.0), opening 0.585",
+   "source_index": null
+  },
+  {
+   "turn": 71,
+   "label": "turn 71: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the pepper into the left basket: release the object Right now 4 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame071_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 0.7, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3382\nLEFT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.1, 0.7, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 73,
+   "label": "turn 73: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: orient the right gripper and travel above the object Right now 4 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3451",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the watch, then move at travel height until the fingertip cross in the head image is over (1, -12).",
+   "commands": [
+    "right point down",
+    "right move x -20.0",
+    "right move x -8.6",
+    "right move y +9.1"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x -20.0: ok; right move x -8.6: ok; right move y +9.1: ok; right fingertips now at (1.4, -11.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 76,
+   "label": "turn 76: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: close the gripper Right now 4 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame076_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.4, -11.7, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3630",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.57: something is between them (probably grasped)); right fingertips now at (1.4, -11.7, 78.4), opening 0.569",
+   "source_index": null
+  },
+  {
+   "turn": 78,
+   "label": "turn 78: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: tilt the fingers for the forward reach of the target Right now 4 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.4, -11.7, 90.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.57 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3673\nRIGHT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The target at y=-0 is further forward than the pick-up spot; switch to 'point down30' first (this resets the finger axis), then re-check the object's yaw.",
+   "commands": [
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right fingertips now at (1.4, -11.7, 90.4), opening 0.569",
+   "source_index": null
+  },
+  {
+   "turn": 81,
+   "label": "turn 81: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: release the object Right now 5 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame081_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.0, -0.1, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.57 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3780\nRIGHT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (9.0, -0.1, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 83,
+   "label": "turn 83: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: orient the left gripper and travel above the object Right now 5 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame083_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3849",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the watch, then move at travel height until the fingertip cross in the head image is over (-6, -15).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -90.0",
+    "left move x +20.0",
+    "left move x +4.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -90.0: ok; left move x +20.0: ok; left move x +4.0: ok; left fingertips now at (-6.1, -14.0, 94.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 87,
+   "label": "turn 87: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: close the gripper Right now 5 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket), the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame087_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-6.1, -14.5, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.0, -14.0, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4035",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left fingertips now at (-6.1, -14.5, 78.5), opening 0.563",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: release the object Right now 6 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame092_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.1, -0.1, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.1, -14.0, 94.1) cm, approach = (-0.00, 0.50, -0.86), finger axis = (-1.00, 0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4184\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-9.1, -0.1, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 97,
+   "label": "turn 97: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: close the gripper Right now 6 of 7 items are in their baskets; still to move: the watch (still on the table, for the middle basket).",
+   "images": [
+    "frame097_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.6, -12.8, 78.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.1, -14.0, 94.1) cm, approach = (-0.00, 0.50, -0.86), finger axis = (-1.00, 0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4403",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.62: something is between them (probably grasped)); left fingertips now at (-41.6, -12.8, 78.3), opening 0.62",
+   "source_index": null
+  },
+  {
+   "turn": 102,
+   "label": "turn 102: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. | the watch into the middle basket: release the object Right now every item is in its basket and the table is clear.",
+   "images": [
+    "frame102_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.0, 0.3, 87.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.1, -14.0, 94.1) cm, approach = (-0.00, 0.50, -0.86), finger axis = (-1.00, 0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4580\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-9.0, 0.3, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 107,
+   "label": "turn 107: The instruction fixes which basket each kind of thing belongs in: the pepper go in the left basket; the watch go in the middle basket; the chocolate bar go in the right basket. Each item is dropped from just above the basket rim, over the near half of it, never lowered down inside. The left basket is only reachable by the left arm and the right basket only by the right arm, so anything sitting on the wrong side of the table is put down in the middle first and picked up by the other hand. All 10 placements done. | open both hands and square the wrists to their start pose Right now every item is in its basket and the table is clear.",
+   "images": [
+    "frame107_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 94.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -20.7, 94.1) cm, approach = (-0.00, 0.50, -0.86), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4837",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (the target was not reached: the fingertips moved (-0.0, +0.3, -0.1) cm, i.e. only part of the way; remaining error 0.3 cm / 19 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 94.0), opening 1.0; right fingertips now at (29.9, -20.4, 94.0), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

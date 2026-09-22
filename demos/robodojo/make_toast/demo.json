@@ -1,0 +1,643 @@
+{
+ "task": "make_toast",
+ "instruction": "Pick up two slices of bread, place them into the toaster, and press the lever down.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2747,
+  "decisions": 69,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. free bread_0: put the closed fingers into the gap next to bread_1",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The jaws are 6.8 cm wide and the slices only 2.5 cm apart, so bread_1 is 1.5 cm inside the space a finger needs. Close the fingers into a thin paddle and bring them over the 1.4 cm gap at x=-15.2, still at travel height.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down",
+    "left move z +4.3",
+    "left move x +14.8"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left move z +4.3: ok; left move x +14.8: ok; left fingertips now at (-15.2, -20.7, 96.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. free bread_0: finish centring on the gap",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-15.2, -20.7, 96.4) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 103",
+   "plan": "The paddle is +0.0 cm in x off the middle of the gap; a slice is only 1.2 cm thick, so correct that before going down between them.",
+   "commands": [
+    "left move y +11.6"
+   ],
+   "failed": [],
+   "effect": "left move y +11.6: ok; left fingertips now at (-15.2, -9.1, 96.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. free bread_0: lower the paddle between the slices",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-15.2, -9.1, 96.4) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 135",
+   "plan": "Lower the closed fingers to z=88.3, into the gap, without touching either slice yet.",
+   "commands": [
+    "left move z -8.1"
+   ],
+   "failed": [],
+   "effect": "left move z -8.1: ok; left fingertips now at (-15.3, -9.0, 88.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: open the jaws and travel over the slice",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-15.3, -9.0, 88.6) cm, approach = (0.00, 0.01, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 163",
+   "plan": "bread_0 is free now. Open the jaws, point the fingers down - the finger axis is already across the 1.2 cm thickness - and travel above (-13.1, -9.1).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left move z +7.9",
+    "left move x +2.2"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left move z +7.9: ok; left move x +2.2: ok; left fingertips now at (-13.3, -8.8, 97.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: drop the jaws over the top of the slice",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.3, -8.8, 97.6) cm, approach = (0.00, 0.01, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 285",
+   "plan": "Lower to z=88.6, about 1.3 cm below the top edge: the thin part of the fingers ends up on the faces of the slice while the wider part stays above the neighbours.",
+   "commands": [
+    "left move z -9.0"
+   ],
+   "failed": [
+    "left move z -9.0"
+   ],
+   "effect": "left move z -9.0: FAILED (the target was not reached: the fingertips moved (+0.0, +0.3, -6.8) cm, i.e. only part of the way; remaining error 2.2 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-13.3, -8.5, 90.8), opening 0.956",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: the descent stopped short, go down again",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.3, -8.5, 90.8) cm, approach = (0.03, 0.07, -1.00), finger axis = (-1.00, -0.00, -0.03), opening = 0.96 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 319",
+   "plan": "Still at z=90.8; lower again in a smaller step.",
+   "commands": [
+    "left move z -2.2"
+   ],
+   "failed": [],
+   "effect": "left move z -2.2: ok; left fingertips now at (-13.1, -8.5, 88.8), opening 0.758",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: drop the jaws over the top of the slice",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.1, -8.5, 88.8) cm, approach = (0.03, 0.08, -1.00), finger axis = (-1.00, 0.00, -0.03), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 339",
+   "plan": "Lower to z=88.6, about 1.3 cm below the top edge: the thin part of the fingers ends up on the faces of the slice while the wider part stays above the neighbours.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: close on the slice",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-13.0, -8.5, 88.9) cm, approach = (0.03, 0.08, -1.00), finger axis = (-1.00, 0.00, -0.03), opening = 0.79 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 342",
+   "plan": "Close the jaws. A slice is 1.2 cm thick, so the reading should end near 0.3; much wider means a finger stopped on a neighbour.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.38: something is between them (probably grasped)); left fingertips now at (-13.3, -8.5, 88.9), opening 0.383",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: lift the slice straight out of its slot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.3, -8.5, 88.9) cm, approach = (0.03, 0.08, -1.00), finger axis = (-1.00, -0.00, -0.03), opening = 0.38 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 355\nLEFT arm closed on an object with the fingertips at z = 88.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.9 + (h - 76.5) before opening.",
+   "plan": "Lift straight up so the slice leaves the slot before anything moves sideways.",
+   "commands": [
+    "left move z +7.6"
+   ],
+   "failed": [],
+   "effect": "left move z +7.6: ok; left fingertips now at (-13.3, -8.5, 96.5), opening 0.268",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: carry it clear of the rack first",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.3, -8.5, 96.5) cm, approach = (0.03, 0.08, -1.00), finger axis = (-1.00, -0.00, -0.03), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 383\nLEFT arm closed on an object with the fingertips at z = 88.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.9 + (h - 76.5) before opening.",
+   "plan": "Move the hanging slice out over the empty table before turning it, so it cannot sweep the slices that stay in the rack.",
+   "commands": [
+    "left move x +13.3",
+    "left move y -11.5"
+   ],
+   "failed": [
+    "left move x +13.3"
+   ],
+   "effect": "left move x +13.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -11.5: ok; left fingertips now at (-13.3, -20.0, 96.5), opening 0.268",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the one at the end of the row closest to the toaster, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: turn the slice a quarter turn and climb",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-13.3, -20.0, 96.5) cm, approach = (0.03, 0.08, -1.00), finger axis = (-1.00, -0.00, -0.03), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 413\nLEFT arm closed on an object with the fingertips at z = 88.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.9 + (h - 76.5) before opening.",
+   "plan": "Hanging from 'point down' the slice reaches 10 cm below the fingers and would hit the toaster. 'point forward' turns it a quarter turn in its own plane - a slice is square, so it is still standing on edge exactly as a slot wants it - and now it only reaches 5.9 cm down, and the wrist sits further back, which is what puts the slot in reach. Then climb to z=102.",
+   "commands": [
+    "left point forward",
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left move z +5.0: ok; left fingertips now at (-13.3, -20.0, 101.4), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the last slice left in the rack, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: lower it into the slot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (12.3, -11.2, 101.4) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 564\nLEFT arm closed on an object with the fingertips at z = 88.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.9 + (h - 76.5) before opening.",
+   "plan": "Lower to z=94.0: the fingers stop just above the toaster's rim while the bottom of the slice is already about 5 cm down inside the slot.",
+   "commands": [
+    "left move z -7.4"
+   ],
+   "failed": [
+    "left move z -7.4"
+   ],
+   "effect": "left move z -7.4: FAILED (the target was not reached: the fingertips moved (-0.0, -0.0, -5.6) cm, i.e. only part of the way; remaining error 1.8 cm / 2 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (12.3, -11.2, 95.8), opening 0.292",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: STEP 1 of 4, stand a slice of bread on edge in the toaster slot nearer the bread rack - this slice is the last slice left in the rack, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 0 of 2 slices are in the toaster so far, and the lever is still up. bread_0: open the jaws over toast_slot1",
+   "images": [
+    "frame015_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (12.2, -9.8, 95.8) cm, approach = (-0.00, 1.00, 0.02), finger axis = (-1.00, -0.00, -0.04), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 602\nLEFT arm closed on an object with the fingertips at z = 88.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.9 + (h - 76.5) before opening.",
+   "plan": "Open the gripper. The slice is already several centimetres inside the slot, so it just slides down the rest of the way between the slot walls.",
+   "commands": [
+    "left gripper 1.00",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); wait: ok; wait: ok; wait: ok; left fingertips now at (12.3, -9.8, 95.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. free bread_1: put the closed fingers into the gap next to bread_2",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -9.8, 101.5) cm, approach = (-0.00, 1.00, 0.02), finger axis = (-1.00, -0.00, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 680",
+   "plan": "The jaws are 6.8 cm wide and the slices only 2.5 cm apart, so bread_2 is 2.6 cm inside the space a finger needs. Close the fingers into a thin paddle and bring them over the 1.4 cm gap at x=-18.5, still at travel height.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down",
+    "left move x -18.4",
+    "left move y +1.0"
+   ],
+   "failed": [
+    "left point down"
+   ],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move x -18.4: ok; left move y +1.0: ok; left fingertips now at (-18.5, -8.8, 101.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. free bread_1: lower the paddle between the slices",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-18.5, -8.8, 101.5) cm, approach = (-0.00, 1.00, 0.02), finger axis = (-1.00, -0.00, -0.04), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 739",
+   "plan": "Lower the closed fingers to z=88.3, into the gap, without touching either slice yet.",
+   "commands": [
+    "left move z -13.2"
+   ],
+   "failed": [
+    "left move z -13.2"
+   ],
+   "effect": "left move z -13.2: FAILED (the target was not reached: the fingertips moved (-0.2, -0.1, -8.1) cm, i.e. only part of the way; remaining error 5.1 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-18.6, -9.0, 93.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. free bread_1: put the closed fingers into the gap next to bread_2",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.4, -9.0, 93.4) cm, approach = (-0.01, 0.99, 0.15), finger axis = (-0.99, 0.01, -0.12), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 795",
+   "plan": "The jaws are 6.8 cm wide and the slices only 2.5 cm apart, so bread_2 is 0.2 cm inside the space a finger needs. Close the fingers into a thin paddle and bring them over the 1.4 cm gap at x=-18.3, still at travel height.",
+   "commands": [
+    "left point down",
+    "left move z +3.1",
+    "left move x -5.9"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left move z +3.1: ok; left move x -5.9: ok; left fingertips now at (-18.4, -8.9, 96.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is still standing in the rack and has to be freed first. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. free bread_1: tip bread_1 aside",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-18.4, -8.9, 88.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 930",
+   "plan": "Sweep the paddle 4 cm along +x. The slices sit in slots so they lean rather than slide, and they keep most of the lean once the fingers come back out - that is what opens up room for the jaws.",
+   "commands": [
+    "left move x +4.2"
+   ],
+   "failed": [
+    "left move x +4.2"
+   ],
+   "effect": "left move x +4.2: FAILED (the target was not reached: the fingertips moved (+1.4, +1.0, +1.3) cm, i.e. only part of the way; remaining error 3.3 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-17.0, -7.9, 89.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: open the jaws and travel over the slice",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.0, -7.9, 89.6) cm, approach = (-0.00, 0.03, -1.00), finger axis = (-1.00, -0.07, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 950",
+   "plan": "bread_1 is free now. Open the jaws, point the fingers down - the finger axis is already across the 1.2 cm thickness - and travel above (-15.5, -8.9).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left move z +6.9",
+    "left move x +1.5"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left move z +6.9: ok; left move x +1.5: ok; left fingertips now at (-16.1, -7.7, 97.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and the open jaws are going down over it now. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: close on the slice",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-15.4, -8.8, 88.7) cm, approach = (0.00, 0.01, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.83 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1123",
+   "plan": "Close the jaws. A slice is 1.2 cm thick, so the reading should end near 0.3; much wider means a finger stopped on a neighbour.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.39: something is between them (probably grasped)); left fingertips now at (-15.6, -8.8, 88.7), opening 0.393",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: carry it clear of the rack first",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-15.7, -8.8, 96.5) cm, approach = (0.00, 0.01, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1164\nLEFT arm closed on an object with the fingertips at z = 88.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.7 + (h - 76.5) before opening.",
+   "plan": "Move the hanging slice out over the empty table before turning it, so it cannot sweep the slices that stay in the rack.",
+   "commands": [
+    "left move x +15.7",
+    "left move y -11.2"
+   ],
+   "failed": [
+    "left move x +15.7"
+   ],
+   "effect": "left move x +15.7: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -11.2: ok; left fingertips now at (-15.7, -20.0, 96.5), opening 0.27",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the one at the end of the row closest to the toaster, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: turn the slice a quarter turn and climb",
+   "images": [
+    "frame029_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-15.7, -20.0, 96.5) cm, approach = (0.00, 0.01, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1194\nLEFT arm closed on an object with the fingertips at z = 88.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.7 + (h - 76.5) before opening.",
+   "plan": "Hanging from 'point down' the slice reaches 10 cm below the fingers and would hit the toaster. 'point forward' turns it a quarter turn in its own plane - a slice is square, so it is still standing on edge exactly as a slot wants it - and now it only reaches 5.9 cm down, and the wrist sits further back, which is what puts the slot in reach. Then climb to z=102.",
+   "commands": [
+    "left point forward",
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left move z +5.0: ok; left fingertips now at (-15.7, -20.0, 101.5), opening 0.27",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the last slice left in the rack, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: lower it into the slot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (17.1, -10.7, 101.5) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1353\nLEFT arm closed on an object with the fingertips at z = 88.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.7 + (h - 76.5) before opening.",
+   "plan": "Lower to z=94.0: the fingers stop just above the toaster's rim while the bottom of the slice is already about 5 cm down inside the slot.",
+   "commands": [
+    "left move z -7.5"
+   ],
+   "failed": [
+    "left move z -7.5"
+   ],
+   "effect": "left move z -7.5: FAILED (the target was not reached: the fingertips moved (-0.1, +0.1, -5.7) cm, i.e. only part of the way; remaining error 1.8 cm / 2 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (16.9, -10.6, 95.8), opening 0.291",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: STEP 2 of 4, stand a slice of bread on edge in the toaster slot further from the bread rack - this slice is the last slice left in the rack, and it is in the hand on its way across to the toaster. Two slices go in, one per slot, each pushed down far enough that only its top edge shows above the rim and left standing upright rather than tipped over, and the other two slices are left standing in the rack. A slice cannot just be gripped where it stands: the four sit packed closer together than the open jaws are wide, so the closed fingers first go down into the gap beside it as a thin paddle and tip the neighbour aside, and only then do the open jaws come down over the freed slice. 1 of 2 slices are in the toaster so far, and the lever is still up. bread_1: open the jaws over toast_slot2",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (16.9, -10.6, 95.8) cm, approach = (-0.01, 1.00, 0.01), finger axis = (-1.00, -0.00, -0.04), opening = 0.29 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1375\nLEFT arm closed on an object with the fingertips at z = 88.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 88.7 + (h - 76.5) before opening.",
+   "plan": "Open the gripper. The slice is already several centimetres inside the slot, so it just slides down the rest of the way between the slot walls.",
+   "commands": [
+    "left gripper 1.00",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); wait: ok; wait: ok; wait: ok; left fingertips now at (17.0, -10.7, 96.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: stand the closed right fingers in front of the knob",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -10.6, 101.5) cm, approach = (-0.00, 1.00, 0.01), finger axis = (-1.00, -0.00, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1454",
+   "plan": "The lever knob sticks out of the toaster's front face around (12.2, -20.9) with its top at z=88.3. Close the right fingers into a pusher and bring them just in front of the face at travel height.",
+   "commands": [
+    "right gripper 0.00",
+    "right point down",
+    "right move z +2.8",
+    "right move x -17.8"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right point down: ok; right move z +2.8: ok; right move x -17.8: ok; right fingertips now at (12.5, -20.8, 95.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.4, -9.1, 101.6) cm, approach = (-0.07, 1.00, 0.02), finger axis = (-1.00, -0.07, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.3, -20.8, 91.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, 0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1593",
+   "plan": "Push straight down to z=82.3, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -9.6"
+   ],
+   "failed": [
+    "right move z -9.6"
+   ],
+   "effect": "right move z -9.6: FAILED (the target was not reached: the fingertips moved (-0.9, +0.3, -5.4) cm, i.e. only part of the way; remaining error 4.3 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (11.4, -20.5, 86.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 2",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.2, -9.1, 100.6) cm, approach = (-0.07, 1.00, 0.00), finger axis = (-1.00, -0.07, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -20.9, 91.4) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-1.00, -0.02, 0.09), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1673",
+   "plan": "Push straight down to z=81.9, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -9.5"
+   ],
+   "failed": [
+    "right move z -9.5"
+   ],
+   "effect": "right move z -9.5: FAILED (the target was not reached: the fingertips moved (-0.8, -0.2, -7.4) cm, i.e. only part of the way; remaining error 2.3 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (11.3, -21.2, 84.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 3",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.2, -9.1, 100.6) cm, approach = (-0.07, 1.00, 0.00), finger axis = (-1.00, -0.07, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -21.2, 89.8) cm, approach = (-0.14, 0.17, -0.98), finger axis = (-0.99, -0.05, 0.13), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1737",
+   "plan": "Push straight down to z=80.3, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -9.5"
+   ],
+   "failed": [
+    "right move z -9.5"
+   ],
+   "effect": "right move z -9.5: FAILED (the target was not reached: the fingertips moved (-1.2, +0.7, -5.6) cm, i.e. only part of the way; remaining error 4.1 cm / 8 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (11.0, -20.5, 84.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 4",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.2, -9.1, 100.6) cm, approach = (-0.07, 1.00, 0.00), finger axis = (-1.00, -0.07, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -20.9, 89.7) cm, approach = (-0.22, 0.27, -0.94), finger axis = (-0.98, -0.09, 0.20), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1817",
+   "plan": "Push straight down to z=80.2, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -9.5"
+   ],
+   "failed": [
+    "right move z -9.5"
+   ],
+   "effect": "right move z -9.5: FAILED (the target was not reached: the fingertips moved (-2.5, -1.1, -4.1) cm, i.e. only part of the way; remaining error 6.1 cm / 12 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (9.7, -22.0, 85.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: square the pusher up before the next stroke",
+   "images": [
+    "frame046_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.2, -9.1, 100.6) cm, approach = (-0.07, 1.00, 0.00), finger axis = (-1.00, -0.07, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.7, -22.0, 85.6) cm, approach = (-0.36, 0.37, -0.86), finger axis = (-0.93, -0.21, 0.30), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1843",
+   "plan": "The hand has been knocked off vertical by the strokes that stalled against the knob, and a tilted hand shoves the knob sideways instead of pressing it down. Point the fingers straight down again first.",
+   "commands": [
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right fingertips now at (9.6, -22.3, 86.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 5",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -21.2, 86.7) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1909",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -7.2"
+   ],
+   "failed": [
+    "right move z -7.2"
+   ],
+   "effect": "right move z -7.2: FAILED (the target was not reached: the fingertips moved (-1.3, +0.9, -0.4) cm, i.e. only part of the way; remaining error 7.0 cm / 14 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.9, -20.2, 86.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 6",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -21.0, 87.8) cm, approach = (-0.16, 0.20, -0.97), finger axis = (-0.99, -0.05, 0.16), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1984",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -8.3"
+   ],
+   "failed": [
+    "right move z -8.3"
+   ],
+   "effect": "right move z -8.3: FAILED (the target was not reached: the fingertips moved (-1.3, +1.3, -3.5) cm, i.e. only part of the way; remaining error 5.1 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.9, -19.6, 84.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: square the pusher up before the next stroke",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.9, -19.6, 84.3) cm, approach = (-0.26, 0.33, -0.91), finger axis = (-0.97, -0.08, 0.24), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2009",
+   "plan": "The hand has been knocked off vertical by the strokes that stalled against the knob, and a tilted hand shoves the knob sideways instead of pressing it down. Point the fingers straight down again first.",
+   "commands": [
+    "right point down"
+   ],
+   "failed": [
+    "right point down"
+   ],
+   "effect": "right point down: FAILED (the target was not reached: the fingertips moved (-0.6, -1.1, +2.4) cm, i.e. only part of the way; remaining error 2.7 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (10.2, -20.8, 86.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 7",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.0, -21.1, 86.7) cm, approach = (-0.05, 0.04, -1.00), finger axis = (-1.00, -0.04, 0.05), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2055",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -7.2"
+   ],
+   "failed": [
+    "right move z -7.2"
+   ],
+   "effect": "right move z -7.2: FAILED (the target was not reached: the fingertips moved (-1.2, +0.9, -0.3) cm, i.e. only part of the way; remaining error 7.0 cm / 14 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.9, -20.2, 86.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 8",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -20.9, 86.5) cm, approach = (-0.19, 0.22, -0.96), finger axis = (-0.98, -0.08, 0.18), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2150",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -7.0"
+   ],
+   "failed": [
+    "right move z -7.0"
+   ],
+   "effect": "right move z -7.0: FAILED (the target was not reached: the fingertips moved (-2.2, -1.6, -1.7) cm, i.e. only part of the way; remaining error 6.0 cm / 11 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.0, -22.5, 84.8), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: square the pusher up before the next stroke",
+   "images": [
+    "frame058_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.0, -22.5, 84.8) cm, approach = (-0.32, 0.33, -0.89), finger axis = (-0.94, -0.19, 0.27), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2175",
+   "plan": "The hand has been knocked off vertical by the strokes that stalled against the knob, and a tilted hand shoves the knob sideways instead of pressing it down. Point the fingers straight down again first.",
+   "commands": [
+    "right point down"
+   ],
+   "failed": [
+    "right point down"
+   ],
+   "effect": "right point down: FAILED (the target was not reached: the fingertips moved (+1.1, -2.4, +1.1) cm, i.e. only part of the way; remaining error 2.8 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (11.2, -24.9, 85.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: set the pusher 3.5 cm above the top of the knob",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.4, -7.6, 100.7) cm, approach = (-0.13, 0.99, 0.00), finger axis = (-0.99, -0.13, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.2, -24.9, 85.9) cm, approach = (0.03, -0.04, -1.00), finger axis = (-1.00, -0.02, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2203",
+   "plan": "Line the closed fingers up over the knob and hold them 3.5 cm above its top (z=86.5); a short stroke from just above pushes far more reliably than a long plunge from travel height.",
+   "commands": [
+    "right move x +1.0",
+    "right move y +4.0"
+   ],
+   "failed": [
+    "right move y +4.0"
+   ],
+   "effect": "right move x +1.0: ok; right move y +4.0: FAILED (the target was not reached: the fingertips moved (+1.0, -0.9, +0.9) cm, i.e. only part of the way; remaining error 5.0 cm / 10 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (13.1, -25.9, 86.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 9",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.6, -6.8, 100.1) cm, approach = (-0.16, 0.99, -0.00), finger axis = (-0.99, -0.16, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.8, -21.5, 87.8) cm, approach = (0.08, -0.12, -0.99), finger axis = (-0.99, -0.12, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2309",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -8.3"
+   ],
+   "failed": [
+    "right move z -8.3"
+   ],
+   "effect": "right move z -8.3: FAILED (the target was not reached: the fingertips moved (-1.2, +0.6, -1.3) cm, i.e. only part of the way; remaining error 7.1 cm / 14 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.6, -21.0, 86.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 65,
+   "label": "turn 65: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 10",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.6, -6.8, 100.1) cm, approach = (-0.16, 0.99, -0.00), finger axis = (-0.99, -0.16, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.1, -21.0, 86.9) cm, approach = (-0.08, 0.08, -0.99), finger axis = (-0.99, -0.14, 0.07), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2388",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -7.4"
+   ],
+   "failed": [
+    "right move z -7.4"
+   ],
+   "effect": "right move z -7.4: FAILED (the target was not reached: the fingertips moved (-1.4, +0.7, -0.8) cm, i.e. only part of the way; remaining error 6.8 cm / 13 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (10.7, -20.3, 86.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 68,
+   "label": "turn 68: STEP 3 of 4, both slices are standing in the toaster, so now push the lever on the front of the toaster down to the bottom of its travel, using the closed fingers of the other hand as a pusher. The lever is not a spring button - it keeps whatever travel it is given - so short strokes add up, but the fingers must come off it and push again from just above the knob rather than leaning on it. The lever is partway down - it has taken some travel already but is not at the bottom yet. lever: push the knob straight down, stroke 11",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.6, -6.8, 100.1) cm, approach = (-0.16, 0.99, -0.00), finger axis = (-0.99, -0.16, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -20.9, 86.5) cm, approach = (-0.22, 0.25, -0.94), finger axis = (-0.97, -0.18, 0.18), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2483",
+   "plan": "Push straight down to z=79.5, well below the top of the knob: the stroke has to be asked for far past the knob or the controller stops as soon as it feels the load and the lever does not move at all. It will report stopping early - that is the lever taking the load - and the lever is not a spring, so the strokes add up.",
+   "commands": [
+    "right move z -7.0"
+   ],
+   "failed": [
+    "right move z -7.0"
+   ],
+   "effect": "right move z -7.0: FAILED (the target was not reached: the fingertips moved (-1.2, +1.6, -2.2) cm, i.e. only part of the way; remaining error 5.1 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (11.0, -19.4, 84.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 69,
+   "label": "turn 69: STEP 4 of 4, both slices are standing in the toaster and the lever is down, so all that is left is the reset the checker also asks for: open both grippers and take both arms back to the pose they started the episode in, leaving the two spare slices upright in the rack. both slices are in the toaster and the lever is down: reset the arms",
+   "images": [
+    "frame069_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.6, -6.8, 100.1) cm, approach = (-0.16, 0.99, -0.00), finger axis = (-0.99, -0.16, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.0, -19.4, 84.3) cm, approach = (-0.30, 0.37, -0.88), finger axis = (-0.95, -0.21, 0.24), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2508",
+   "plan": "The checker wants both grippers open and both arms back at their starting pose.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+14.8, -0.5, +7.0) cm, i.e. only part of the way; remaining error 4.4 cm / 19 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (25.8, -19.9, 91.3), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

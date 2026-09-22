@@ -1,0 +1,754 @@
+{
+ "task": "store_laptop_and_headphones",
+ "instruction": "Hang the headphones on the headphone stand, close the laptop, then place it into the vertical laptop stand.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2873,
+  "decisions": 49,
+  "frames": 49,
+  "images_scaled": true,
+  "layout_seed": 1,
+  "layout_id": 0
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: None of the three goals is done: the headphones lie flat on the left, the laptop is open in the middle, and the narrow rack on the right is empty. The left hand will pick up an ear cup first. Next: Open the left fingers, point them down, and turn the jaw gap across one ear cup. Why: Place one finger outside the cup and the other in the gap between the cups. This gives a grip on a solid part while leaving the headband free to rest on the stand later.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Open the left fingers, point them down, and turn the jaw gap across one ear cup.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw -15.0: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones are still flat and ungrasped; the laptop remains open and the rack empty. The left fingers have the intended downward posture but are not yet over the chosen ear cup. Next: Move the open left hand over the ear cup, keeping the jaw gap across it. Why: Approach above the cup before descending. A finger aimed at the headband or the other cup could push the whole headset away instead of surrounding the part intended for the lift.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 68",
+   "plan": "Move the open left hand over the ear cup, keeping the jaw gap across it.",
+   "commands": [
+    "left move x -6.7",
+    "left move y -2.3"
+   ],
+   "failed": [],
+   "effect": "left move x -6.7: ok; left move y -2.3: ok; left fingertips now at (-36.7, -23.0, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand is above the chosen ear cup with its fingers open. No goal is complete: the headphones still lie on the table, and closing and storing the laptop remain for later. Next: Lower the open hand toward the ear cup while preserving its alignment. Why: The fingers need room to pass on opposite sides of the cup. Stopping the approach above it first makes it possible to check that a jaw will enter the gap between the cups rather than land on the headset.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 92.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 111",
+   "plan": "Lower the open hand toward the ear cup while preserving its alignment.",
+   "commands": [
+    "left move z -7.5"
+   ],
+   "failed": [],
+   "effect": "left move z -7.5: ok; left fingertips now at (-36.7, -23.0, 84.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left fingers have descended toward the ear cup but are still open; the headset has not been picked up. The stand is empty, and both laptop goals remain pending. Next: Lower farther until the fingers surround the middle of the ear cup. Why: Closing only on the top edge would leave a shallow grip that can slip as the rest of the headphones dangles. Surround the cup without driving the fingers into the tabletop.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 84.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 136",
+   "plan": "Lower farther until the fingers surround the middle of the ear cup.",
+   "commands": [
+    "left move z -4.1"
+   ],
+   "failed": [],
+   "effect": "left move z -4.1: ok; left fingertips now at (-36.7, -23.0, 80.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The open left fingers now straddle the ear cup. The headphones are still supported by the table; hanging them, closing the laptop and placing it in the rack are all unfinished. Next: Close the left fingers around the ear cup without lifting yet. Why: The ear cup provides a broad gripping surface, while the open space between cups gives the inner finger clearance. Secure this grip before the weight of the opposite cup and headband hangs from it.",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 80.6) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 156",
+   "plan": "Close the left fingers around the ear cup without lifting yet.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.64: something is between them (probably grasped)); left fingertips now at (-36.7, -23.0, 80.5), opening 0.638",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left fingers have closed on the ear cup, but the headphones are still low over the table. A grip has been established; the first goal is not complete until the headset hangs on the stand without the hand. Next: Lift the headphones away from the table while keeping the ear cup pinched. Why: The rest of the headset hangs below and beside the grasped cup. Raise it clear before turning so the free cup and headband do not drag against the table or lever the held cup out of the fingers.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 80.5) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 0.64 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 169\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Lift the headphones away from the table while keeping the ear cup pinched.",
+   "commands": [
+    "left move z +8.6"
+   ],
+   "failed": [],
+   "effect": "left move z +8.6: ok; left fingertips now at (-36.7, -23.0, 89.1), opening 0.628",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones have risen with the left hand, confirming the pickup. They are still angled with the other cup hanging low; the stand remains empty, and the laptop is open. Next: Raise the held headset a little farther before beginning its upright rotation. Why: Clearance must be judged at the lowest hanging part, not just at the fingertips. The ungrasped cup needs room to swing under the headband as the wrist turns.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 89.1) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 0.63 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 195\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Raise the held headset a little farther before beginning its upright rotation.",
+   "commands": [
+    "left move z +2.3"
+   ],
+   "failed": [],
+   "effect": "left move z +2.3: ok; left fingertips now at (-36.7, -23.0, 91.4), opening 0.626",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headset is off the table with more space underneath it. The left hand holds one cup, but the headband is not yet above both cups in a hanging posture; all three final goals remain unfinished. Next: Roll the left wrist to begin standing the headphones upright. Why: For hanging, the headband arch needs to face upward with the cups below it. Turning while the headset is clear of the table avoids using the table edge as a pivot or trapping the free cup.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.0, 91.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 0.63 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 213\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Roll the left wrist to begin standing the headphones upright.",
+   "commands": [
+    "left rotate roll +45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +45.0: ok; left fingertips now at (-36.7, -23.1, 91.4), opening 0.622",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The first wrist turn has lifted the headset out of its flat posture, but the headband and cups are still tilted. The headphones are held in free space; the laptop and rack are untouched. Next: Tip the left wrist to continue bringing the headband above the cups. Why: Watch the entire headset rather than the orientation of the gripper alone. The headband must be able to descend onto the stand while the cups hang on either side, so a sideways headset needs further reorientation.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.1, 91.4) cm, approach = (0.00, 0.71, -0.71), finger axis = (-0.97, 0.18, 0.18), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 243\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Tip the left wrist to continue bringing the headband above the cups.",
+   "commands": [
+    "left rotate pitch -30.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch -30.0: ok; left fingertips now at (-36.7, -23.1, 91.4), opening 0.626",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The lifted headphones are more upright after the wrist tip, but the headband still needs to face the stand. The left hand remains on the same ear cup; no object has yet been released onto its final support. Next: Turn the held headset in the horizontal direction while keeping it clear of the table. Why: The opening under the arch must face across the stand's broad top. A headband turned across the wrong direction can meet the side of that top instead of passing over it.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.1, 91.4) cm, approach = (0.35, 0.71, -0.61), finger axis = (-0.93, 0.18, -0.33), opening = 0.63 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 271\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Turn the held headset in the horizontal direction while keeping it clear of the table.",
+   "commands": [
+    "left rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +30.0: ok; left fingertips now at (-36.7, -23.1, 91.4), opening 0.624",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headset has been turned toward its hanging direction, with the headband above the lower cup. It is still tilted and held away from the stand; closing and storing the laptop are still pending. Next: Make a smaller roll adjustment to bring the cups beneath the arch. Why: The stand should carry the inside of the headband, not the side of an ear cup. Refining the upright posture in clear space gives the arch a clean downward approach to the support.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.1, 91.4) cm, approach = (-0.05, 0.79, -0.61), finger axis = (-0.89, -0.31, -0.33), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 305\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Make a smaller roll adjustment to bring the cups beneath the arch.",
+   "commands": [
+    "left rotate roll +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left fingertips now at (-36.7, -23.1, 91.4), opening 0.625",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The latest roll has brought the headphones closer to their hanging posture. The left hand still holds one cup and the band has not reached the stand; none of the three final goals is complete yet. Next: Roll the wrist a little farther to finish the upright approach posture. Why: Both cups should hang below the band so the stand can enter the arch. Keeping the cup grip while refining this posture prevents the headset from swinging freely during the carry to the stand.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.1, 91.4) cm, approach = (-0.05, 0.92, -0.39), finger axis = (-0.89, -0.21, -0.40), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 327\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Roll the wrist a little farther to finish the upright approach posture.",
+   "commands": [
+    "left rotate roll +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left fingertips now at (-36.7, -23.1, 91.4), opening 0.624",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones are upright enough for the hanging approach, but the arch is still in front of the stand. The left hand holds one cup; the open laptop and empty rack remain unchanged. Next: Lift the upright headset so the headband can pass over the stand's broad top. Why: The arch becomes narrower toward its crown, and the stand has a wide curved support. The whole inner arch needs clearance before moving across; aligning only the held ear cup could strike the stand with the band.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.7, -23.1, 91.4) cm, approach = (-0.05, 0.99, -0.14), finger axis = (-0.89, -0.10, -0.44), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 352\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Lift the upright headset so the headband can pass over the stand's broad top.",
+   "commands": [
+    "left move z +5.5"
+   ],
+   "failed": [],
+   "effect": "left move z +5.5: ok; left fingertips now at (-36.8, -23.1, 96.8), opening 0.624",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The upright headset has been raised for clearance and is still in front of the stand. Hanging is not complete, and the laptop must still be closed and stored after the headphones are released. Next: Carry the headphones back toward the stand and place the headband arch over its curved top. Why: Aim the inside of the headband at the support, not the grasped ear cup or fingertip marker. Keeping the band above the stand during the sideways carry lets it descend onto the top without catching the leading edge.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.8, -23.1, 96.8) cm, approach = (-0.05, 0.99, -0.14), finger axis = (-0.89, -0.10, -0.44), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 374\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Carry the headphones back toward the stand and place the headband arch over its curved top.",
+   "commands": [
+    "left move x +3.9",
+    "left move y +20.0",
+    "left move y +7.1"
+   ],
+   "failed": [],
+   "effect": "left move x +3.9: ok; left move y +20.0: ok; left move y +7.1: ok; left fingertips now at (-32.8, 4.0, 96.6), opening 0.627",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand has carried the raised headphones over the stand. The band is still held above its resting position; the stand has not yet taken the headset's weight, and both laptop goals remain pending. Next: Lower the headset toward the stand while keeping the arch centered over the top. Why: The support needs to enter the open space under the headband. Lowering an off-center arch can catch one side of the band and tilt the cups, so keep the band-to-support relationship in view.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-32.8, 4.0, 96.6) cm, approach = (-0.05, 0.99, -0.14), finger axis = (-0.89, -0.11, -0.44), opening = 0.63 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 466\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Lower the headset toward the stand while keeping the arch centered over the top.",
+   "commands": [
+    "left move z -2.9"
+   ],
+   "failed": [],
+   "effect": "left move z -2.9: ok; left fingertips now at (-32.9, 4.0, 93.9), opening 0.619",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones have moved down toward the stand, with the left hand still gripping the ear cup. The band is close to the curved top, but the hanging goal still needs a release and stability check. Next: Lower a little farther toward the headband's resting position. Why: A small descent near contact avoids driving the held cup downward after the band meets the support. Let the top support the inside of the arch while preserving clearance for both dangling cups.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-32.9, 4.0, 93.9) cm, approach = (-0.05, 0.99, -0.14), finger axis = (-0.89, -0.11, -0.44), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 486\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Lower a little farther toward the headband's resting position.",
+   "commands": [
+    "left move z -0.8"
+   ],
+   "failed": [],
+   "effect": "left move z -0.8: ok; left fingertips now at (-33.0, 4.0, 93.3), opening 0.619",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headset is low over the support, still held at one ear cup. Its band needs a small sideways centering adjustment before release; the laptop remains open and outside its rack. Next: Shift the held headset slightly across the stand to center the band on the curved top. Why: A band resting toward an edge can tip off as soon as the hand opens. Adjust the arch over the support itself, rather than centering the gripper, because the gripped cup is offset from the headband.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-33.0, 4.0, 93.3) cm, approach = (-0.05, 0.99, -0.14), finger axis = (-0.89, -0.11, -0.44), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 502\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Shift the held headset slightly across the stand to center the band on the curved top.",
+   "commands": [
+    "left move x +1.1",
+    "left move y +0.7"
+   ],
+   "failed": [],
+   "effect": "left move x +1.1: ok; left move y +0.7: ok; left fingertips now at (-32.1, 4.7, 93.4), opening 0.665",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headband has been shifted toward the middle of the support. The left fingers still hold the ear cup, so the headset's ability to hang independently has not yet been tested. Next: Lower the headphones a little farther to settle the band onto the stand. Why: The band should be supported from beneath and the cups should hang clear. Keep the descent short at contact so the hand does not force an ear cup down while the headband is already resting on the top.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-32.1, 4.7, 93.4) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 0.67 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 534\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Lower the headphones a little farther to settle the band onto the stand.",
+   "commands": [
+    "left move z -1.1"
+   ],
+   "failed": [],
+   "effect": "left move z -1.1: ok; left fingertips now at (-32.1, 4.7, 92.4), opening 0.658",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headband is at the stand's top, with the headset still held by the ear cup. The hanging placement needs its last lateral adjustment before opening; closing and storing the laptop remain untouched. Next: Make a small sideways correction to the headset's placement on the support. Why: The arch should sit across the curved top with the cups suspended below, rather than balance on one edge. A final centering correction while the hand still supports it reduces the chance of the band slipping during release.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-32.1, 4.7, 92.4) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 0.66 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 552\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Make a small sideways correction to the headset's placement on the support.",
+   "commands": [
+    "left move x +2.0",
+    "left move y +0.8"
+   ],
+   "failed": [],
+   "effect": "left move x +2.0: ok; left move y +0.8: ok; left fingertips now at (-30.3, 5.5, 92.3), opening 0.712",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headband is draped over the stand's curved top and the cups hang below it. The left fingers still hold an ear cup; the placement looks ready, but it must remain stable without that grip. Next: Open the left fingers to release the ear cup while leaving the headset on the stand. Why: The headband, rather than the gripper, should now carry the headset. Open before withdrawing so the hand does not pull the ear cup and drag the band off its support.",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, 5.5, 92.3) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 0.71 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 586\nLEFT arm closed on an object with the fingertips at z = 80.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.5 + (h - 76.5) before opening.",
+   "plan": "Open the left fingers to release the ear cup while leaving the headset on the stand.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.4, 5.5, 92.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left fingers have opened and the headband remains on the stand, with both cups hanging. The hand is still close to the cup; the release needs a clear withdrawal before moving to the laptop. Next: Move the empty left hand forward away from the headset, then lift it clear. Why: The fingers should leave through the same free space beside the cup instead of brushing the band or stand. The headset staying in place as the hand separates shows that it is supported independently.",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.4, 5.5, 92.3) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 599",
+   "plan": "Move the empty left hand forward away from the headset, then lift it clear.",
+   "commands": [
+    "left move y -14.0",
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left move y -14.0: ok; left move z +5.0: ok; left fingertips now at (-30.4, -8.5, 97.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The hand has withdrawn and the headphones remain hanging on the stand. The first of three goals is now visibly complete; the laptop is still open on its support and the narrow rack is empty. Next: Pause briefly to confirm that the headphones stay on the stand after the withdrawal. Why: A band can slip after the fingers stop supporting it. Check that it remains over the top with the cups hanging clear before spending the next motions on the laptop.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.4, -8.5, 97.3) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 652",
+   "plan": "Pause briefly to confirm that the headphones stay on the stand after the withdrawal.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones have stayed hanging through the pause, so the first goal is complete. The laptop lid is still raised, and the closed machine has not yet been placed in the rack. Next: Keep the left fingers open and return the empty hand to its parked position. Why: Clearing the left arm gives the right hand room to reach the laptop lid. Do not disturb the completed headphone placement while moving on to the two remaining goals.",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.4, -8.5, 97.3) cm, approach = (-0.06, 0.99, -0.13), finger axis = (-0.89, -0.11, -0.44), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 655",
+   "plan": "Keep the left fingers open and return the empty hand to its parked position.",
+   "commands": [
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: One of three goals is done: the headphones hang independently on the stand. The left hand is clear; the laptop is open in the middle and cannot yet fit into the narrow rack on the right. Next: Orient the right hand for a downward approach and bring it toward the raised laptop lid. Why: The lid must fold flat against the base before the laptop is lifted for storage. Approach the raised panel from above and behind so the hand can push it closed instead of catching under the screen.",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 755",
+   "plan": "Orient the right hand for a downward approach and bring it toward the raised laptop lid.",
+   "commands": [
+    "right point down60",
+    "right rotate yaw +30.0",
+    "right move x -16.0",
+    "right move y +20.0"
+   ],
+   "failed": [],
+   "effect": "right point down60: ok; right rotate yaw +30.0: ok; right move x -16.0: ok; right move y +20.0: ok; right fingertips now at (14.0, -0.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones are already hanging, while the laptop is still open and the rack is empty. The right hand is near the raised lid and is preparing a pushing posture; this is lid closing, not a pickup. Next: Move the right hand above and behind the lid and close the empty fingers to make a compact pushing surface. Why: The rack is only wide enough for the closed machine. The flat outside of the closed fingers can press the lid forward over the keyboard without trying to pinch the thin screen between the jaws.",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.0, -0.7, 92.2) cm, approach = (-0.43, 0.75, -0.50), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 890",
+   "plan": "Move the right hand above and behind the lid and close the empty fingers to make a compact pushing surface.",
+   "commands": [
+    "right move z +6.0",
+    "right move y +15.5",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right move z +6.0: ok; right move y +15.5: ok; right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right fingertips now at (14.0, 14.8, 98.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones remain on their stand. The right hand has closed its fingers behind the still-raised lid; closing the laptop and standing it in the rack are the two remaining goals. Next: Lower the closed hand toward the lid and push forward to begin folding it over the keyboard. Why: The lid rotates around the hinge at the back of the base. Pressure from behind the raised panel produces the closing motion, whereas a straight push into the base would only shove the whole laptop.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.0, 14.8, 98.2) cm, approach = (-0.43, 0.75, -0.50), finger axis = (-0.87, -0.50, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 957",
+   "plan": "Lower the closed hand toward the lid and push forward to begin folding it over the keyboard.",
+   "commands": [
+    "right move z -5.2",
+    "right move y -8.0"
+   ],
+   "failed": [
+    "right move z -5.2"
+   ],
+   "effect": "right move z -5.2: FAILED (the target was not reached: the fingertips moved (-0.3, -0.0, -0.9) cm, i.e. only part of the way; remaining error 4.3 cm / 5 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right move y -8.0: ok; right fingertips now at (13.7, 6.7, 97.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The lid has tipped forward but still leaves the keyboard exposed. The first downward approach was limited, and the right hand remains near the panel; only the headphones are fully put away. Next: Adjust the right wrist and hand position, then continue pushing the lid forward and down. Why: The contact point must follow the lid as it rotates toward horizontal. Repositioning the closed fingers keeps pressure on the panel instead of continuing to press at the height where the upright screen used to be.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (13.7, 6.7, 97.2) cm, approach = (-0.45, 0.79, -0.43), finger axis = (-0.86, -0.50, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1005",
+   "plan": "Adjust the right wrist and hand position, then continue pushing the lid forward and down.",
+   "commands": [
+    "right rotate yaw +15.0",
+    "right move x -3.0",
+    "right move y -5.0",
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +15.0: ok; right move x -3.0: ok; right move y -5.0: ok; right move z -4.0: ok; right fingertips now at (10.6, 1.7, 93.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The laptop lid is much lower, but a visible opening still separates it from the base. The headphones are done; lid closure is in progress, and the laptop has not been picked up for the rack. Next: Move the right hand forward and down again to fold the lid the rest of the way toward the base. Why: An almost-closed laptop is still too wide at the hinge opening for a clean rack insertion. Guide the panel onto the base rather than treating its lowered appearance as proof that it is flat.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.6, 1.7, 93.2) cm, approach = (-0.63, 0.64, -0.43), finger axis = (-0.70, -0.71, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1090",
+   "plan": "Move the right hand forward and down again to fold the lid the rest of the way toward the base.",
+   "commands": [
+    "right move y -3.0",
+    "right move z -5.0"
+   ],
+   "failed": [],
+   "effect": "right move y -3.0: ok; right move z -5.0: ok; right fingertips now at (10.6, -1.3, 88.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The lid now appears flat over the base and hides the keyboard. The right hand is still in contact above it; the headphones are complete, while the closed laptop remains on its original support. Next: Give the lid a final short downward press, lift and park the right hand, and turn the left hand for a side approach. Why: The lid and base need to move as one closed slab during pickup. Clear the pushing hand before approaching an edge so a later grasp does not trap one arm against the other or reopen the lid.",
+   "images": [
+    "frame029_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.6, -1.3, 88.2) cm, approach = (-0.64, 0.64, -0.43), finger axis = (-0.70, -0.71, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1132",
+   "plan": "Give the lid a final short downward press, lift and park the right hand, and turn the left hand for a side approach.",
+   "commands": [
+    "right move z -1.5",
+    "right move z +8.0",
+    "right home",
+    "left rotate pitch -90.0"
+   ],
+   "failed": [],
+   "effect": "right move z -1.5: ok; right move z +8.0: ok; right home: ok; left rotate pitch -90.0: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: Two of three goals are done: the headphones hang on their stand and the laptop is closed. Both hands are clear of the lid; the remaining job is to lift the closed laptop and place it upright in the rack. Next: Bring the right hand inward and turn its fingers into a side-on receiving posture. Why: The left hand will lift one edge and pass the opposite edge to the right. Preparing the receiving hand first avoids trying to arrange a handoff while a broad, heavy-looking slab is already suspended.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1356",
+   "plan": "Bring the right hand inward and turn its fingers into a side-on receiving posture.",
+   "commands": [
+    "right move x -20.0",
+    "right move z -1.5",
+    "right rotate yaw +90.0",
+    "right rotate roll -90.0"
+   ],
+   "failed": [],
+   "effect": "right move x -20.0: ok; right move z -1.5: ok; right rotate yaw +90.0: ok; right rotate roll -90.0: ok; right fingertips now at (10.0, -20.8, 90.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The headphones and lid closure remain complete. The closed laptop still rests flat on its support, while the right hand has begun taking a side-on receiving posture away from the laptop. Next: Refine the right wrist orientation and move the receiving hand toward the opposite side of the closed laptop. Why: The receiving jaws must approach an edge of the closed lid-and-base pair, not the broad top surface. A suitable side approach leaves room for the donor hand to grip the near edge and lift.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.0, -20.8, 90.7) cm, approach = (-1.00, -0.00, 0.00), finger axis = (0.00, -0.00, 1.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1510",
+   "plan": "Refine the right wrist orientation and move the receiving hand toward the opposite side of the closed laptop.",
+   "commands": [
+    "right rotate yaw -30.0",
+    "right rotate pitch -15.0",
+    "right move x +12.0",
+    "right move y +20.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -30.0: ok; right rotate pitch -15.0: ok; right move x +12.0: ok; right move y +20.0: ok; right fingertips now at (22.0, -0.8, 90.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The closed laptop is still on its support and the rack remains empty. The right hand is beside the future handoff area, with the left hand not yet at the pickup edge; the first two goals remain done. Next: Open the right fingers wider and raise the receiving hand slightly clear of the work area. Why: An open jaw gap can accept the thickness of the closed laptop later. Keeping that hand clear now prevents it from blocking the left-hand approach or bumping the lid before pickup.",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 90.7) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1640",
+   "plan": "Open the right fingers wider and raise the receiving hand slightly clear of the work area.",
+   "commands": [
+    "right gripper 0.70",
+    "right move z +4.0"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.70: ok (gripper opened); right move z +4.0: ok; right fingertips now at (22.0, -0.8, 94.6), opening 0.7",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The right hand is open and waiting for the transfer. The headphones are hung and the laptop is shut, but the closed laptop has not yet left its support; placing it in the rack is the remaining goal. Next: Orient the left hand, open its fingers, and move toward the laptop's near edge. Why: Grip the closed machine as a single slab, with the jaws across its thickness. A near-edge approach leaves the opposite edge accessible to the right hand after the laptop is lifted.",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1676",
+   "plan": "Orient the left hand, open its fingers, and move toward the laptop's near edge.",
+   "commands": [
+    "left rotate yaw -15.0",
+    "left gripper 0.50",
+    "left move x +20.0",
+    "left move y +10.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -15.0: ok; left gripper 0.50: ok (gripper opened); left move x +20.0: ok; left move y +10.0: ok; left fingertips now at (-10.0, -10.7, 92.2), opening 0.5",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand has moved toward the near edge of the closed laptop; the right hand remains ready to receive. The laptop is still supported flat, and the rack has not yet been approached. Next: Bring the left fingers closer to the edge and lower them to the height of the closed lid and base. Why: The gap must surround the edge instead of closing on top of the lid. Aligning the jaw height before moving in helps both the lid and base enter the grasp together.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -10.7, 92.2) cm, approach = (0.26, 0.97, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1792",
+   "plan": "Bring the left fingers closer to the edge and lower them to the height of the closed lid and base.",
+   "commands": [
+    "left move x +16.0",
+    "left move z -5.5",
+    "left move y +4.0"
+   ],
+   "failed": [],
+   "effect": "left move x +16.0: ok; left move z -5.5: ok; left move y +4.0: ok; left fingertips now at (6.0, -6.7, 86.7), opening 0.5",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The open left fingers are at the laptop's near edge. The headphones and lid closure are complete, but pickup is still unconfirmed and the rack remains empty. Next: Lower and advance the left fingers around the closed edge, close them, and make a short test lift. Why: The closed laptop must rise as one piece with the hand; a pinch on only the lid could open it. A short lift checks the grip before carrying the slab away from its support.",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (6.0, -6.7, 86.7) cm, approach = (0.26, 0.97, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1860",
+   "plan": "Lower and advance the left fingers around the closed edge, close them, and make a short test lift.",
+   "commands": [
+    "left move z -1.8",
+    "left move y +3.0",
+    "left gripper 0.00",
+    "left move z +1.0"
+   ],
+   "failed": [],
+   "effect": "left move z -1.8: ok; left move y +3.0: ok; left gripper 0.00: ok (fingers stopped at opening 0.25: something is between them (probably grasped)); left move z +1.0: ok; left fingertips now at (6.1, -5.0, 86.1), opening 0.247",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand has pinched the near edge and started lifting the closed laptop. The lid stays flat; the headphones remain on their stand, while the laptop still needs clearance, a handoff and upright storage. Next: Raise the laptop farther while maintaining the edge grip. Why: The far edge needs to clear the original support before any sideways carry. Judge clearance at the whole slab, not only the gripped edge, so the laptop does not catch and pivot against the support.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (6.1, -5.0, 86.1) cm, approach = (0.27, 0.96, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1925\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.",
+   "plan": "Raise the laptop farther while maintaining the edge grip.",
+   "commands": [
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left move z +5.0: ok; left fingertips now at (6.0, -5.0, 91.1), opening 0.247",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The closed laptop has risen in the left-hand grip and is still roughly horizontal. The first two goals remain complete; the right hand is waiting, and the rack placement is still pending. Next: Carry the laptop forward away from its support and lift it farther into open space. Why: A free-space handoff needs room around both edges. Moving away from the support avoids trapping the far edge while the laptop is turned and brought between the two hands.",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (6.0, -5.0, 91.1) cm, approach = (0.27, 0.96, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1945\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.",
+   "plan": "Carry the laptop forward away from its support and lift it farther into open space.",
+   "commands": [
+    "left move y -10.0",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left move y -10.0: ok; left move z +4.0: ok; left fingertips now at (6.0, -15.0, 95.0), opening 0.248",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand holds the closed laptop clear of its original support. It is still horizontal, with the right hand separated from its opposite edge; upright storage has not begun. Next: Turn the laptop in the left grip and reposition the right wrist and hand to face the opposite edge. Why: The receiving fingers need to surround a solid edge of the closed slab. Align the two hands before closing the receiving grip so they briefly share the load without pushing against each other.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (6.0, -15.0, 95.0) cm, approach = (0.27, 0.96, -0.01), finger axis = (-0.01, -0.00, -1.00), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -0.8, 94.6) cm, approach = (-0.84, 0.50, -0.22), finger axis = (-0.26, -0.00, 0.97), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1987\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.",
+   "plan": "Turn the laptop in the left grip and reposition the right wrist and hand to face the opposite edge.",
+   "commands": [
+    "left rotate yaw -60.0",
+    "right rotate pitch +15.0",
+    "right rotate yaw +15.0",
+    "right move y -12.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -60.0: ok; right rotate pitch +15.0: ok; right rotate yaw +15.0: ok; right move y -12.0: ok; left fingertips now at (6.0, -15.0, 94.9), opening 0.247; right fingertips now at (21.9, -12.8, 94.7), opening 0.7",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The closed laptop has been turned between the hands, and the right fingers face its opposite edge. The left hand still supplies the support; transfer and vertical rack placement remain unfinished. Next: Fine-tune the right hand's height and approach, move onto the opposite edge, and close its fingers. Why: Keep the donor hand closed until the receiving jaws surround both lid and base. Contact with the broad face alone does not secure the slab for the later upright rotation.",
+   "images": [
+    "frame039_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (6.0, -15.0, 94.9) cm, approach = (0.97, 0.25, -0.01), finger axis = (-0.01, -0.00, -1.00), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (21.9, -12.8, 94.7) cm, approach = (-0.97, 0.26, 0.00), finger axis = (0.00, -0.00, 1.00), opening = 0.70 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2116\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.",
+   "plan": "Fine-tune the right hand's height and approach, move onto the opposite edge, and close its fingers.",
+   "commands": [
+    "right move y -0.9",
+    "right move z -0.3",
+    "right move x -5.2",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right move y -0.9: ok; right move z -0.3: ok; right move x -5.2: ok; right gripper 0.00: ok (fingers stopped at opening 0.27: something is between them (probably grasped)); right fingertips now at (16.7, -13.7, 94.4), opening 0.265",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: Both hands are at opposite edges of the closed laptop after the right fingers closed. The headphones and lid closure are done, but a successful transfer to the right hand still needs to be checked. Next: Open and withdraw the left hand, then lift the laptop slightly with the right hand. Why: The laptop must follow the receiver after the donor releases; two hands touching it is not enough. A short lift shows whether the right edge grip holds the closed machine before attempting to stand it upright.",
+   "images": [
+    "frame040_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (6.0, -15.0, 94.6) cm, approach = (0.97, 0.25, -0.01), finger axis = (-0.01, -0.01, -1.00), opening = 0.25 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.7, -13.7, 94.4) cm, approach = (-0.97, 0.26, 0.00), finger axis = (0.00, -0.00, 1.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2181\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Open and withdraw the left hand, then lift the laptop slightly with the right hand.",
+   "commands": [
+    "left gripper 1.00",
+    "left move x -8.0",
+    "right move z +2.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move x -8.0: ok; right move z +2.0: ok; left fingertips now at (-2.0, -15.0, 94.6), opening 1.0; right fingertips now at (16.7, -13.7, 96.3), opening 0.251",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The left hand has released and the laptop has moved with the right hand, so the transfer is established. The closed slab is still nearly horizontal; the remaining goal is vertical placement in the rack. Next: Move the right-hand grip outward, try tipping the laptop toward upright, and park the empty left hand. Why: The broad slab needs a clear sweep during rotation. Keep the edge pinched and watch whether the laptop actually tilts with the wrist; a requested wrist turn alone does not establish the upright posture.",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.0, -15.0, 94.6) cm, approach = (0.97, 0.25, -0.01), finger axis = (-0.01, -0.01, -1.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.7, -13.7, 96.3) cm, approach = (-0.97, 0.26, 0.00), finger axis = (0.00, 0.00, 1.00), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2241\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Move the right-hand grip outward, try tipping the laptop toward upright, and park the empty left hand.",
+   "commands": [
+    "right move x +6.0",
+    "right rotate pitch -30.0",
+    "left home"
+   ],
+   "failed": [
+    "right rotate pitch -30.0"
+   ],
+   "effect": "right move x +6.0: ok; right rotate pitch -30.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (22.7, -13.7, 96.3), opening 0.251",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The right hand still holds the closed laptop nearly flat; the preceding attempt did not produce the intended tilt. The left hand is clear, and the headphones remain hung. Upright orientation and rack insertion are still pending. Next: Move the right hand farther outward and retry the tipping motion. Why: The laptop's visible broad top face shows that it is not yet vertical. Repositioning changes the space available to the arm, but the next image must show a real change in the slab's posture before proceeding to insertion.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.7, -13.7, 96.3) cm, approach = (-0.97, 0.25, 0.00), finger axis = (0.00, 0.00, 1.00), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2401\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Move the right hand farther outward and retry the tipping motion.",
+   "commands": [
+    "right move x +6.0",
+    "right rotate pitch -30.0"
+   ],
+   "failed": [
+    "right rotate pitch -30.0"
+   ],
+   "effect": "right move x +6.0: ok; right rotate pitch -30.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); right fingertips now at (28.7, -13.7, 96.3), opening 0.251",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The second tipping attempt has also left the closed laptop nearly horizontal in the right grip. Pickup and handoff are secure, but the upright posture has not been achieved and the rack remains empty. Next: Lower and bring the right hand slightly forward, then try a smaller tipping motion. Why: A smaller turn from a changed hand position may give the arm room to move while keeping the slab controlled. Keep judging the laptop itself: do not carry a flat machine to a slot intended for its thin upright edge.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (28.7, -13.7, 96.3) cm, approach = (-0.97, 0.25, 0.00), finger axis = (0.00, 0.00, 1.00), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2421\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Lower and bring the right hand slightly forward, then try a smaller tipping motion.",
+   "commands": [
+    "right move z -4.0",
+    "right move y -4.0",
+    "right rotate pitch -15.0"
+   ],
+   "failed": [
+    "right rotate pitch -15.0"
+   ],
+   "effect": "right move z -4.0: ok; right move y -4.0: ok; right rotate pitch -15.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); right fingertips now at (28.7, -17.7, 92.3), opening 0.251",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The smaller tipping attempt still has not stood the laptop up; its broad lid remains visible from above in the right-hand grip. The headphones and lid closure are complete, while rack placement awaits reorientation. Next: Bring the right hand inward toward the open center of the table and retry tipping the closed laptop. Why: Repeated turns from the outer hand position have not changed the posture. Moving the held slab into clearer central space changes the approach before another turn, while the empty left hand stays out of its sweep.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (28.7, -17.7, 92.3) cm, approach = (-0.97, 0.25, 0.00), finger axis = (0.00, 0.00, 1.00), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2463\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Bring the right hand inward toward the open center of the table and retry tipping the closed laptop.",
+   "commands": [
+    "right move x -12.0",
+    "right rotate pitch -30.0"
+   ],
+   "failed": [],
+   "effect": "right move x -12.0: ok; right rotate pitch -30.0: ok; right fingertips now at (16.6, -17.7, 92.3), opening 0.252",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: After moving inward, the closed laptop has finally begun to tilt with the right hand. It is partway between flat and upright; the headphones remain hung, and the laptop is not yet aligned with the rack. Next: Continue tipping the laptop toward vertical while preserving the edge grip. Why: The narrow rack needs the thin bottom edge to enter first, not a broad horizontal face. Turn in manageable increments so the lower corner stays clear of the table and the lid remains closed against the base.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.6, -17.7, 92.3) cm, approach = (-0.84, 0.25, -0.48), finger axis = (-0.50, 0.00, 0.87), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2535\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Continue tipping the laptop toward vertical while preserving the edge grip.",
+   "commands": [
+    "right rotate pitch -30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -30.0: ok; right fingertips now at (16.6, -17.7, 92.2), opening 0.255",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The laptop is more steeply tilted after the latest wrist turn, but its upright approach posture is still being completed. The first two goals remain done, and the rack is still empty. Next: Tip the closed laptop farther until it stands upright in the right-hand grip. Why: Finish the major rotation in open space before moving over the rack. Turning a wide slab beside the rack could strike its side plates, whereas an upright slab can be aligned by its thin lower edge.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.6, -17.7, 92.2) cm, approach = (-0.48, 0.25, -0.84), finger axis = (-0.87, 0.00, 0.50), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2565\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Tip the closed laptop farther until it stands upright in the right-hand grip.",
+   "commands": [
+    "right rotate pitch -30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -30.0: ok; right fingertips now at (16.6, -17.7, 92.2), opening 0.26",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The right hand now holds the closed laptop upright, clear of the rack. The headphones are hung and the lid is shut; the final goal still needs alignment, lowering between the rack sides and release. Next: Lift for clearance, carry the upright laptop over the rack, and turn it to match the direction of the slot. Why: Aim the laptop's bottom edge at the gap between the rack plates, not the gripper at the middle of the stand. Keeping the slab upright and above the plates prevents a lower corner from catching during the carry.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.6, -17.7, 92.2) cm, approach = (-0.00, 0.25, -0.97), finger axis = (-1.00, 0.00, 0.00), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2593\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Lift for clearance, carry the upright laptop over the rack, and turn it to match the direction of the slot.",
+   "commands": [
+    "right move z +3.0",
+    "right move x +17.1",
+    "right move y +8.4",
+    "right rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "right move z +3.0: ok; right move x +17.1: ok; right move y +8.4: ok; right rotate yaw -15.0: ok; right fingertips now at (33.7, -9.3, 95.2), opening 0.26",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The upright laptop has been brought over the rack and turned toward the slot. The right hand still carries its weight; the bottom edge has not yet been released into the support, so the third goal is unfinished. Next: Make a small sideways alignment correction and lower the laptop toward the gap between the rack sides. Why: The closed machine must enter between the plates rather than rest across their tops. Align the lower edge before descending, and keep the lid pressed against the base so the slab stays thin enough for the slot.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.7, -9.3, 95.2) cm, approach = (0.06, 0.24, -0.97), finger axis = (-0.97, 0.26, 0.00), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2693\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Make a small sideways alignment correction and lower the laptop toward the gap between the rack sides.",
+   "commands": [
+    "right move y -1.1",
+    "right move z -4.1"
+   ],
+   "failed": [],
+   "effect": "right move y -1.1: ok; right move z -4.1: ok; right fingertips now at (33.7, -10.5, 91.0), opening 0.255",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "Goal: hang the headphones on their stand, close the laptop, then store it upright in the narrow laptop rack. The headband must rest on the stand with the ear cups hanging clear and remain there after release. The lid must lie flat against the base. The closed laptop must stand with its bottom edge inside the rack, between its sides, and stay supported when the hand lets go. Progress: The laptop's lower edge is at the rack after the descent, with the right hand still holding it upright. The headphones and lid closure are complete; final seating, release and an independent support check remain. Next: Lower a little farther into the rack, open the right fingers, lift clear and move the empty hand away. Why: Release only after the bottom edge is between the rack sides. The laptop should stay upright on its own as the fingers separate; a slab held above the slot or leaning across a plate is not a completed storage placement.",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (33.7, -10.5, 91.0) cm, approach = (0.06, 0.24, -0.97), finger axis = (-0.97, 0.26, 0.00), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2733\nRIGHT arm closed on an object with the fingertips at z = 94.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.4 + (h - 76.5) before opening.",
+   "plan": "Lower a little farther into the rack, open the right fingers, lift clear and move the empty hand away.",
+   "commands": [
+    "right move z -1.0",
+    "right gripper 1.00",
+    "right move z +4.0",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "right move z -1.0: ok; right gripper 1.00: ok (gripper opened); right move z +4.0: ok; right home: FAILED (the target was not reached: the fingertips moved (-2.9, -9.3, +0.6) cm, i.e. only part of the way; remaining error 2.9 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (30.8, -19.7, 94.7), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

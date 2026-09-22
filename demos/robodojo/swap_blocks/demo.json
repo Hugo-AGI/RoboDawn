@@ -1,0 +1,459 @@
+{
+ "task": "swap_blocks",
+ "instruction": "Swap the two blocks using the empty mat, pressing the button after each move.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2654,
+  "decisions": 59,
+  "frames": 26,
+  "images_scaled": true,
+  "layout_seed": 1,
+  "layout_id": 6
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: No move or button press is complete. The left and middle mats each hold a red cube, and the right mat is empty. The first cube to move is the one on the middle mat. Next: Point the right fingers down and travel above the middle cube with the jaws open. Why: The empty right mat provides temporary storage while the two occupied positions are exchanged. Start by freeing the middle mat; moving the left cube first would leave its destination occupied.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down and travel above the middle cube with the jaws open.",
+   "commands": [
+    "right point down",
+    "right move x -20.0",
+    "right move x -10.0",
+    "right move y +0.7"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x -20.0: ok; right move x -10.0: ok; right move y +0.7: ok; right fingertips now at (0.0, -20.1, 92.2), opening 1.0",
+   "source_index": 0
+  },
+  {
+   "turn": 2,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: Both cubes are still on their starting mats and no button press has been made. The right hand is above the middle cube, preparing the first pickup. Next: Lower around the cube, try closing the fingers, then reopen for a better grip before lifting. Why: The finger pads should surround opposite faces rather than catch a corner. A close command does not prove a usable grasp; reopening leaves the cube supported on its mat while the hand prepares to recenter.",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.0, -20.1, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 112",
+   "plan": "Lower around the cube, try closing the fingers, then reopen for a better grip before lifting.",
+   "commands": [
+    "right move z -9.5",
+    "right move z -4.0",
+    "right gripper 0.00",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right move z -9.5: ok; right move z -4.0: ok; right gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); right gripper 1.00: ok (gripper opened); right fingertips now at (-0.2, -20.1, 78.7), opening 1.0",
+   "source_index": 1
+  },
+  {
+   "turn": 3,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first grip has been released without moving the cube off the middle mat. No placement or press is complete, and the right hand is still low beside the cube with open fingers. Next: Lift slightly, shift the right hand across the cube, lower again and close around its sides. Why: Recenter with the jaws clear of the cube before descending. The body needs to sit between the pads so it will rise with the hand rather than pivot against one finger when lifted.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.2, -20.1, 78.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 200",
+   "plan": "Lift slightly, shift the right hand across the cube, lower again and close around its sides.",
+   "commands": [
+    "right move z +3.0",
+    "right move x -0.5",
+    "right move z -3.6",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right move z +3.0: ok; right move x -0.5: ok; right move z -3.6: ok; right gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); right fingertips now at (-1.1, -20.1, 78.5), opening 0.594",
+   "source_index": 4
+  },
+  {
+   "turn": 4,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The middle cube is still on its starting mat after the second grip attempt; the right fingers remain around it. The left cube and empty right mat are unchanged, with no presses yet. Next: Open the right hand, lift, make another small sideways correction and lower around the cube again. Why: Keep the cube supported while improving the pinch. The intended carry is useful only after the fingers contact opposite sides securely, so do not treat touching the cube as a completed pickup.",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-1.1, -20.1, 78.5) cm, approach = (-0.02, 0.01, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 269",
+   "plan": "Open the right hand, lift, make another small sideways correction and lower around the cube again.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z +3.0",
+    "right move x -0.4",
+    "right move z -3.6"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z +3.0: ok; right move x -0.4: ok; right move z -3.6: ok; right fingertips now at (-1.5, -20.2, 78.4), opening 1.0",
+   "source_index": 7
+  },
+  {
+   "turn": 5,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The right fingers have been repositioned around the middle cube. No placement is complete yet; its destination is the empty mat on the right, and the other cube remains on the left mat. Next: Close the right fingers, lift the cube clear, carry it above the right mat and lower it onto that mat. Why: Lift before moving sideways so the cube does not drag across its original mat. Aim the held cube itself at the center of the spare mat, since the fingers can be offset from the object they carry.",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-1.5, -20.2, 78.4) cm, approach = (-0.02, 0.01, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 341",
+   "plan": "Close the right fingers, lift the cube clear, carry it above the right mat and lower it onto that mat.",
+   "commands": [
+    "right gripper 0.00",
+    "right move z +12.0",
+    "right move x +13.0",
+    "right move z -11.2"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); right move z +12.0: ok; right move x +13.0: ok; right move z -11.2: ok; right fingertips now at (11.5, -20.2, 79.1), opening 0.498",
+   "source_index": 9
+  },
+  {
+   "turn": 6,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first cube has been lowered onto the right mat but is still between the right fingers. The middle mat is now free and the other cube remains on the left; the first release and button press are next. Next: Open the right fingers and lift away, then close the empty left fingers and point them down for pressing. Why: The cube must stay on the spare mat after release before the move is acknowledged. Closed empty fingers form a compact pusher for the button, while withdrawing the right hand avoids disturbing the placed cube.",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.5, -20.2, 79.1) cm, approach = (-0.02, 0.01, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 0.50 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 436",
+   "plan": "Open the right fingers and lift away, then close the empty left fingers and point them down for pressing.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z +12.0",
+    "left gripper 0.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z +12.0: ok; left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 0.185; right fingertips now at (11.4, -20.2, 91.1), opening 1.0",
+   "source_index": 13
+  },
+  {
+   "turn": 7,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first cube is resting on the right spare mat after release. The middle mat is empty and the left cube has not moved. The left hand has formed a downward pusher, but the first button press is still pending. Next: Move the closed left hand toward the orange button at the front of the mats. Why: Travel above the table before descending onto the button. The first placement needs its own press-and-release cycle before picking up the next cube; an extra press would break the required sequence.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.4, -20.2, 91.1) cm, approach = (-0.02, 0.01, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 533",
+   "plan": "Move the closed left hand toward the orange button at the front of the mats.",
+   "commands": [
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "left move x +20.0: ok; left fingertips now at (-10.0, -20.7, 92.2), opening 0.185",
+   "source_index": 15
+  },
+  {
+   "turn": 8,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first placement remains complete, with one cube on the right mat and the other on the left. The closed left hand is approaching the button but still needs centering; no press cycle is complete. Next: Adjust the left hand sideways and forward until its closed fingertips are above the button cap. Why: Center the pusher on the visible cap rather than the surrounding base. A sideways contact can slide off the cap, whereas a centered downward approach can depress it without moving either cube.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.5, -18.6, 92.4) cm, approach = (-0.01, 0.00, -1.00), finger axis = (-1.00, -0.08, 0.01), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.5, -18.7, 91.0) cm, approach = (-0.01, 0.01, -1.00), finger axis = (-1.00, 0.09, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 589",
+   "plan": "Adjust the left hand sideways and forward until its closed fingertips are above the button cap.",
+   "commands": [
+    "left move x +2.5",
+    "left move y -11.4",
+    "left move x +1.2",
+    "left move y -0.6"
+   ],
+   "failed": [],
+   "effect": "left move x +2.5: ok; left move y -11.4: ok; left move x +1.2: ok; left move y -0.6: ok; left fingertips now at (-0.1, -30.0, 92.6), opening 0.185",
+   "source_index": 16
+  },
+  {
+   "turn": 9,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first cube is on the spare mat and the left hand is centered over the raised button. No press cycle is complete yet; moving the left cube to the empty middle mat comes afterward. Next: Lower the closed fingers, push the button down, then lift clear and pause. Why: Watch the cap move down and return after the fingers lift. Touching the cap is not enough, and holding it down does not complete a release; the visible press-and-return cycle is what marks this placement.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -30.0, 92.6) cm, approach = (-0.02, -0.00, -1.00), finger axis = (-0.99, -0.11, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -18.3, 91.0) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.99, 0.14, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 669",
+   "plan": "Lower the closed fingers, push the button down, then lift clear and pause.",
+   "commands": [
+    "left move z -9.0",
+    "left move z -4.7",
+    "left move z +2.3",
+    "wait"
+   ],
+   "failed": [
+    "left move z -4.7"
+   ],
+   "effect": "left move z -9.0: ok; left move z -4.7: FAILED (the target was not reached: the fingertips moved (+0.7, +0.3, -3.3) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move z +2.3: ok; wait: ok; left fingertips now at (0.6, -29.7, 82.6), opening 0.185",
+   "source_index": 18
+  },
+  {
+   "turn": 10,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first button has been pushed and the left hand has lifted clear. One cube remains on the spare mat and the other on the left mat; let the cap finish returning before starting the second move. Next: Wait briefly, open the empty left fingers and return that hand to its starting area. Why: The spring needs the pusher off the cap to reset. Do not press again during the pause: the next press belongs after the left cube has reached the now-empty middle mat.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.6, -29.7, 82.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.99, -0.11, -0.02), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -18.3, 91.0) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.99, 0.14, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 736",
+   "plan": "Wait briefly, open the empty left fingers and return that hand to its starting area.",
+   "commands": [
+    "wait",
+    "wait",
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; left gripper 1.00: ok (gripper opened); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": 20
+  },
+  {
+   "turn": 11,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The first placement and its press-and-release cycle are complete. The first cube waits on the right spare mat, the middle mat is empty, and the second cube is still on the left mat. Next: Point the left fingers down, align the jaws with the left cube and travel above it. Why: The second cube belongs on the middle mat that the first move cleared. Align across its sides at travel height so the fingers can descend without pushing it off its current support.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -18.3, 91.0) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.99, 0.14, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 915",
+   "plan": "Point the left fingers down, align the jaws with the left cube and travel above it.",
+   "commands": [
+    "left point down",
+    "left rotate yaw -15.0",
+    "left move x +18.8",
+    "left move y +0.4"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -15.0: ok; left move x +18.8: ok; left move y +0.4: ok; left fingertips now at (-11.2, -20.3, 92.1), opening 1.0",
+   "source_index": 22
+  },
+  {
+   "turn": 12,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: One placement and one button cycle are complete. The left hand is above the cube on the left mat; the other cube remains on the right spare mat, leaving the middle mat available. Next: Lower the left fingers around the left cube, close them and lift it above its mat. Why: The cube needs to follow the hand when lifted. A grip across opposite faces keeps it controlled during the short carry, while lifting first prevents the bottom from catching on the mat.",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-11.2, -20.3, 92.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -18.3, 91.0) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.99, 0.14, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1023",
+   "plan": "Lower the left fingers around the left cube, close them and lift it above its mat.",
+   "commands": [
+    "left move z -9.4",
+    "left move z -4.1",
+    "left gripper 0.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z -9.4: ok; left move z -4.1: ok; left gripper 0.00: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); left move z +12.0: ok; left fingertips now at (-11.2, -20.3, 90.6), opening 0.498",
+   "source_index": 23
+  },
+  {
+   "turn": 13,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The left cube has risen with the left hand and is now held above its starting mat. The first cube remains on the right mat, and one press cycle is complete; the second placement still needs carrying and release. Next: Carry the held cube over the middle mat, lower it, open the fingers and lift the empty hand away. Why: Place the cube near the mat center and let its underside meet the surface before opening. Its remaining in place as the hand withdraws distinguishes a supported placement from a cube merely held over the target.",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-11.2, -20.3, 90.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.9, -18.3, 91.0) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.99, 0.14, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1110",
+   "plan": "Carry the held cube over the middle mat, lower it, open the fingers and lift the empty hand away.",
+   "commands": [
+    "left move x +11.2",
+    "left move z -11.5",
+    "left gripper 1.00",
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move x +11.2: ok; left move z -11.5: ok; left gripper 1.00: ok (gripper opened); left move z +12.0: ok; left fingertips now at (-0.4, -19.6, 91.4), opening 1.0",
+   "source_index": 27
+  },
+  {
+   "turn": 14,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The cube from the left mat now rests on the middle mat after release. The first cube is still on the spare mat and the left mat is empty. Two placements are done, but only the first button cycle is complete. Next: Close the empty left fingers, point them down and move above the orange button for the second press. Why: Acknowledge this second placement before moving the spare-mat cube. The button belongs to the move sequence, so centering the pusher and pressing once is preferable to repeating taps while the cap is still returning.",
+   "images": [
+    "frame014_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -19.6, 91.4) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.24, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.1, -18.6, 90.8) cm, approach = (0.01, -0.01, -1.00), finger axis = (-0.99, 0.14, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1206",
+   "plan": "Close the empty left fingers, point them down and move above the orange button for the second press.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down",
+    "left move x +0.4",
+    "left move y -10.4"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left move x +0.4: ok; left move y -10.4: ok; left fingertips now at (0.1, -30.3, 91.4), opening 0.185",
+   "source_index": 31
+  },
+  {
+   "turn": 15,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The second placement is complete and the closed left fingers are centered over the raised button. One press cycle is done; the first cube still waits on the right mat for the final transfer to the left. Next: Lower onto the cap, press down, lift clear and pause for its return. Why: A downward cap movement followed by its return makes a complete press. The fingers should lift away instead of continuing to push when the cap stops, keeping the two cubes undisturbed on their mats.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.1, -30.3, 91.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, 0.01, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.3, -18.4, 90.8) cm, approach = (0.01, -0.01, -1.00), finger axis = (-0.99, 0.14, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1283",
+   "plan": "Lower onto the cap, press down, lift clear and pause for its return.",
+   "commands": [
+    "left move z -7.8",
+    "left move z -4.7",
+    "left move z +2.3",
+    "wait"
+   ],
+   "failed": [
+    "left move z -4.7"
+   ],
+   "effect": "left move z -7.8: ok; left move z -4.7: FAILED (the target was not reached: the fingertips moved (+0.8, +0.3, -3.3) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move z +2.3: ok; wait: ok; left fingertips now at (0.9, -30.0, 82.6), opening 0.185",
+   "source_index": 32
+  },
+  {
+   "turn": 16,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The second button has been pushed and the pusher has lifted. The middle and right mats hold the two cubes, while the left mat is empty; the second release cycle is finishing before the last transfer. Next: Allow the button to return, then open the left hand and move it back toward its starting position. Why: Leave the cap clear so it can rise before any further task action. The last cube still needs to reach the left mat, and its acknowledgment must wait until that final placement is complete.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.9, -30.0, 82.6) cm, approach = (0.04, 0.02, -1.00), finger axis = (-1.00, 0.01, -0.04), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.3, -18.4, 90.8) cm, approach = (0.01, -0.01, -1.00), finger axis = (-0.99, 0.14, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1349",
+   "plan": "Allow the button to return, then open the left hand and move it back toward its starting position.",
+   "commands": [
+    "wait",
+    "wait",
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; left gripper 1.00: ok (gripper opened); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": 34
+  },
+  {
+   "turn": 17,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: Two placements and two press-and-release cycles are complete. The cube that started on the left is on the middle mat; the original middle cube waits on the right spare mat and must now go to the empty left mat. Next: Orient the right hand above the spare-mat cube and lower toward its body. Why: This last transfer crosses the workspace. The right hand can pick up from the spare mat and set the cube in clear central space for the left hand, which can then reach the final mat without an awkward cross-body carry.",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.3, -18.4, 90.8) cm, approach = (0.01, -0.01, -1.00), finger axis = (-0.99, 0.14, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1527",
+   "plan": "Orient the right hand above the spare-mat cube and lower toward its body.",
+   "commands": [
+    "right point down",
+    "right move x -4.8",
+    "right move y -1.8",
+    "right move z -8.1"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x -4.8: ok; right move y -1.8: ok; right move z -8.1: ok; right fingertips now at (11.4, -20.2, 82.7), opening 1.0",
+   "source_index": 36
+  },
+  {
+   "turn": 18,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: Two press cycles are complete. The right hand is above the cube on the spare mat, while the other cube stays on the middle mat and the left mat remains empty. Next: Lower around the spare-mat cube, close the fingers, lift and carry it inward. Why: Keep the held cube high enough to clear the mat and neighboring cube. This carry begins the final transfer; lifting it from the spare mat does not yet complete the move to the left mat.",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.4, -20.2, 82.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1610",
+   "plan": "Lower around the spare-mat cube, close the fingers, lift and carry it inward.",
+   "commands": [
+    "right move z -4.0",
+    "right gripper 0.00",
+    "right move z +12.0",
+    "right move x -11.5"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right gripper 0.00: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); right move z +12.0: ok; right move x -11.5: ok; right fingertips now at (-0.1, -20.2, 90.6), opening 0.498",
+   "source_index": 38
+  },
+  {
+   "turn": 19,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The original middle cube is held by the right hand after being lifted from the spare mat. The other cube remains on the middle mat and two presses are complete; the last cube has not yet reached the left mat. Next: Carry the cube toward clear central table space, lower it, release and lift the empty right hand. Why: A supported set-down lets the other hand take over without two grippers crowding the cube. This temporary table placement is part of the same final transfer, so it must not trigger an extra button press.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -20.2, 90.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.50 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1699",
+   "plan": "Carry the cube toward clear central table space, lower it, release and lift the empty right hand.",
+   "commands": [
+    "right move y +8.1",
+    "right move z -12.0",
+    "right gripper 1.00",
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move y +8.1: ok; right move z -12.0: ok; right gripper 1.00: ok (gripper opened); right move z +12.0: ok; right fingertips now at (-0.1, -12.1, 90.6), opening 1.0",
+   "source_index": 41
+  },
+  {
+   "turn": 20,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The final cube has been released onto clear table space between the arms. The right spare mat is empty, the middle mat holds the already moved cube, and the left mat is still waiting; two button cycles are complete. Next: Park the empty right hand and bring the open left hand across toward the cube on the table. Why: Move the donor arm away before the receiving arm descends. The cube is supported during this hand change, but the swap is unfinished until it rests on the left mat and receives the third press.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -12.1, 90.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1809",
+   "plan": "Park the empty right hand and bring the open left hand across toward the cube on the table.",
+   "commands": [
+    "right home",
+    "left point down",
+    "left move x +20.0",
+    "left move x +10.1"
+   ],
+   "failed": [],
+   "effect": "right home: ok; left point down: ok; left move x +20.0: ok; left move x +10.1: ok; left fingertips now at (0.1, -20.7, 92.2), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": 44
+  },
+  {
+   "turn": 21,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The right hand is clear, and the left hand is approaching the temporarily set-down cube. The other cube remains on the middle mat; the spare and left mats are empty, with two press cycles complete. Next: Finish aligning above the tabled cube, lower the left fingers around its sides and close them. Why: Take the cube across opposite faces while it is supported on the table. This pickup continues the final transfer; treat the mat as the destination rather than mistaking the central set-down for an additional completed move.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.1, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2125",
+   "plan": "Finish aligning above the tabled cube, lower the left fingers around its sides and close them.",
+   "commands": [
+    "left move y +8.5",
+    "left move z -9.6",
+    "left move z -4.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left move y +8.5: ok; left move z -9.6: ok; left move z -4.0: ok; left gripper 0.00: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); left fingertips now at (-0.1, -12.4, 78.3), opening 0.499",
+   "source_index": 45
+  },
+  {
+   "turn": 22,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The left fingers have closed around the cube in central table space. The other cube is already on the middle mat, two press cycles are complete, and the empty left mat is the last destination. Next: Lift the cube, carry it over the left mat and lower it onto the center of that mat. Why: Check that the cube follows the receiving hand before carrying. Align its body with the mat and lower before opening, leaving the neighboring cube in place and the spare mat empty.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -12.4, 78.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2224",
+   "plan": "Lift the cube, carry it over the left mat and lower it onto the center of that mat.",
+   "commands": [
+    "left move z +12.0",
+    "left move y -7.9",
+    "left move x -11.4",
+    "left move z -11.2"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left move y -7.9: ok; left move x -11.4: ok; left move z -11.2: ok; left fingertips now at (-11.6, -20.3, 79.1), opening 0.498",
+   "source_index": 49
+  },
+  {
+   "turn": 23,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The last cube has been lowered onto the left mat but is still between the left fingers. The other cube is on the middle mat and the right mat is empty; two press cycles are done and the third release-and-press step remains. Next: Open the left fingers, lift clear, then close the empty hand and point it down for the final button press. Why: Release and clear the cube before forming the pusher. The physical swap is established only when both cubes stay on their exchanged mats without a hand holding them; then one final press acknowledges it.",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-11.6, -20.3, 79.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2334",
+   "plan": "Open the left fingers, lift clear, then close the empty hand and point it down for the final button press.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +12.0",
+    "left gripper 0.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +12.0: ok; left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left fingertips now at (-11.6, -20.3, 91.1), opening 0.185",
+   "source_index": 52
+  },
+  {
+   "turn": 24,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: Both cubes are now supported on their exchanged mats, with the right spare mat empty. Two press cycles are complete; the closed left hand is ready to approach the button for the third and final press. Next: Move the left pusher above the cap, lower toward it and press straight down. Why: Center over the cap before contact and watch it descend. This is the only remaining press: after it, lifting the pusher and allowing the cap to rise finishes the sequence without an unnecessary fourth tap.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.6, -20.3, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2407",
+   "plan": "Move the left pusher above the cap, lower toward it and press straight down.",
+   "commands": [
+    "left move x +11.6",
+    "left move y -9.7",
+    "left move z -7.5",
+    "left move z -4.7"
+   ],
+   "failed": [
+    "left move z -4.7"
+   ],
+   "effect": "left move x +11.6: ok; left move y -9.7: ok; left move z -7.5: ok; left move z -4.7: FAILED (the target was not reached: the fingertips moved (+0.8, +0.3, -3.3) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (0.8, -29.6, 80.3), opening 0.185",
+   "source_index": 54
+  },
+  {
+   "turn": 25,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The cubes remain on their exchanged mats and the third button depression has occurred. The left fingers are still at the cap; two full cycles are complete and the third still needs its release. Next: Lift the left pusher clear and wait for the button to spring back up. Why: A cap held down cannot reset. Keep the fingers off it through the pause and check the raised cap before moving home, while the right hand stays parked and the empty spare mat remains clear.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.8, -29.6, 80.3) cm, approach = (0.04, 0.02, -1.00), finger axis = (-1.00, 0.00, -0.04), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2503",
+   "plan": "Lift the left pusher clear and wait for the button to spring back up.",
+   "commands": [
+    "left move z +2.3",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.3: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (0.8, -29.6, 82.6), opening 0.185",
+   "source_index": 57
+  },
+  {
+   "turn": 26,
+   "label": "Goal: swap the two cubes through the spare mat on the right. Move the cube that starts on the middle mat to the spare mat, move the left cube to the middle mat, then move the spare-mat cube to the left mat. After each of these three placements, press the orange button once and lift clear so it springs back up. A placed cube must rest near the center of its mat after release. Finish with the spare mat empty and both hands open and returned clear of the work. Progress: The third button has returned after the pusher lifted, completing three press-and-release cycles. Both cubes are on their exchanged mats, the spare mat is empty and the right hand is parked; the left hand still needs to withdraw. Next: Open the left fingers and return the empty hand toward its starting position. Why: Keep the completed arrangement and raised button undisturbed during withdrawal. Check the actual arm motion rather than assuming the requested home pose has been reached simply because the return command was issued.",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.8, -29.6, 82.6) cm, approach = (0.04, 0.02, -1.00), finger axis = (-1.00, -0.00, -0.04), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2530",
+   "plan": "Open the left fingers and return the empty hand toward its starting position.",
+   "commands": [
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); left home: FAILED (the target was not reached: the fingertips moved (-26.2, +9.2, +9.6) cm, i.e. only part of the way; remaining error 4.5 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-25.5, -20.4, 92.2), opening 1.0",
+   "source_index": 58
+  }
+ ]
+}

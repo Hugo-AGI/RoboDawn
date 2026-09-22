@@ -1,0 +1,121 @@
+{
+ "task": "adjust_bottle",
+ "instruction": "Pick up the green bottle using the correct arm",
+ "kind": "task",
+ "source": {
+  "task": "adjust_bottle",
+  "task_config": "demo_clean",
+  "seed": 100030,
+  "instruction": "Pick up the green bottle using the correct arm",
+  "turns": 5,
+  "commands": 14,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bottle, which was at x = -10 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bottle",
+   "x": -9.98
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm toward x=2, y=-14 and rotate to begin aligning with the bottle orientation.",
+   "commands": [
+    "left move x +16.0",
+    "left move x +16.0",
+    "left move y +5.0",
+    "left rotate roll -45.1"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+32, +5, -0) cm, now 13 cm (horizontal) / +16 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (2, -15, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left gripper roll and yaw to match bottle orientation, and descend to z=87.5.",
+   "commands": [
+    "left rotate roll -45.1",
+    "left rotate yaw +68.0",
+    "left move z -6.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -7) cm, now 13 cm (horizontal) / +10 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (2, -15, 87) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to table level (z=77.5) and close gripper to grasp the bottle.",
+   "commands": [
+    "left move x -0.5",
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, -10) cm, now 13 cm (horizontal) / +0 cm (vertical) from the bottle; closed the gripper (opening 0.69: holding the bottle)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (2, -15, 78) opening 0.69; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift bottle slightly to z=88 to clear table surface.",
+   "commands": [
+    "left move z +10.0",
+    "left move y +0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +10) cm, now 13 cm (horizontal) / +0 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (2, -15, 88) opening 0.70; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift higher to z=95.5 and retract leftward to complete pick up.",
+   "commands": [
+    "left move z +7.5",
+    "left move x -17.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

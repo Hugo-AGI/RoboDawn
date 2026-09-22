@@ -1,0 +1,152 @@
+{
+ "task": "beat_block_hammer",
+ "instruction": "Use the left arm to grab the hammer with claw and smooth head, beat the block.",
+ "kind": "task",
+ "source": {
+  "task": "beat_block_hammer",
+  "task_config": "demo_clean",
+  "seed": 100021,
+  "instruction": "Use the left arm to grab the hammer with claw and smooth head, beat the block.",
+  "turns": 7,
+  "commands": 17,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the hammer, which was at x = -0 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "hammer",
+   "x": -0.05
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Rotate left gripper roll and move horizontally to align above the hammer handle at (0, -8, 94).",
+   "commands": [
+    "left rotate roll -78.1",
+    "left move x +15.0",
+    "left move x +15.0",
+    "left move y +11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+30, +11, +0) cm, now 3 cm (horizontal) / +16 cm (vertical) from the hammer",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -9, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper slightly towards the hammer handle to z = 90 cm.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -4) cm, now 3 cm (horizontal) / +12 cm (vertical) from the hammer",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -9, 90) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move forward along y to (0, -6.5), lower to grasp height z = 79 cm, and close gripper to grasp hammer.",
+   "commands": [
+    "left move y +2.5",
+    "left move z -11.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +2, -11) cm, now 1 cm (horizontal) / -1 cm (vertical) from the hammer; closed the gripper (opening 0.18: holding the hammer)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -6, 79) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift hammer up to z = 86 cm and adjust slightly backward to y = -7 cm.",
+   "commands": [
+    "left move z +7.0",
+    "left move y -1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -1, +7) cm, now 1 cm (horizontal) / -1 cm (vertical) from the hammer",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -7, 86) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Raise hammer to z = 89 cm and move left toward the red block to (-23, -2).",
+   "commands": [
+    "left move z +3.0",
+    "left move x -11.5",
+    "left move x -11.5",
+    "left move y +5.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-23, +5, +3) cm, now 1 cm (horizontal) / -1 cm (vertical) from the hammer",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-23, -3, 89) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Re-orient left gripper pointing down to prepare for hitting the block.",
+   "commands": [
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 1 cm (horizontal) / -1 cm (vertical) from the hammer",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-23, -3, 89) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move slightly left to x = -23.5 and lower the hammer to z = 86 cm to beat the block.",
+   "commands": [
+    "left move x -0.5",
+    "left move z -3.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100001,
+  100003,
+  100008,
+  100013,
+  100017,
+  100022,
+  100024,
+  100029,
+  100034,
+  100035,
+  100045,
+  100049,
+  100052,
+  100055,
+  100056,
+  100059,
+  100060,
+  100068,
+  100070,
+  100073,
+  100078,
+  100080,
+  100081,
+  100089,
+  100091,
+  100093,
+  100096,
+  100100,
+  100102,
+  100104,
+  100106,
+  100110,
+  100112,
+  100114,
+  100116,
+  100121,
+  100122,
+  100123,
+  100126,
+  100128,
+  100130,
+  100133,
+  100136,
+  100137,
+  100141,
+  100143,
+  100145,
+  100147,
+  100149,
+  100156
+ ],
+ "infos": [
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base3",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base2",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "106_skillet/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "106_skillet/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "left"
+  }
+ ],
+ "next_seed": 100157
+}

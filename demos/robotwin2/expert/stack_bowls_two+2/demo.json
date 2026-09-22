@@ -1,0 +1,271 @@
+{
+ "task": "stack_bowls_two",
+ "instruction": "Grab the smooth bowl with glossy finish and stack the smooth bowl with glossy finish on it.",
+ "kind": "task",
+ "source": {
+  "task": "stack_bowls_two",
+  "task_config": "demo_clean",
+  "seed": 100022,
+  "instruction": "Grab the smooth bowl with glossy finish and stack the smooth bowl with glossy finish on it.",
+  "turns": 14,
+  "commands": 38,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bowl1, which was at x = -30 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bowl1",
+   "x": -30.14
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper above rim of first bowl at (-36, -7, 89) and orient downwards.",
+   "commands": [
+    "left move y +12.0",
+    "left move x -6.0",
+    "left point down",
+    "left move z -5.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-6, +12, -5) cm, now 7 cm (horizontal) / +15 cm (vertical) from the bowl1",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-36, -8, 89) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to z=79 cm and close fingers to grasp bowl rim.",
+   "commands": [
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -10) cm, now 6 cm (horizontal) / +5 cm (vertical) from the bowl1; closed the gripper (opening 0.14: holding the bowl1)",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-36, -8, 79) opening 0.14; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift bowl to z=88.5 cm.",
+   "commands": [
+    "left move z +9.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, +9) cm, now 5 cm (horizontal) / +7 cm (vertical) from the bowl1",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-36, -8, 89) opening 0.10; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Translate bowl toward center table at x=-11 cm, y=-10 cm.",
+   "commands": [
+    "left move x +12.8",
+    "left move x +12.8",
+    "left move y -2.0",
+    "left rotate roll -4.6"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+25, -2, +0) cm, now 5 cm (horizontal) / +7 cm (vertical) from the bowl1",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-11, -9, 89) opening 0.10; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Adjust pitch of left gripper to level the bowl.",
+   "commands": [
+    "left rotate pitch -13.4"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 6 cm (horizontal) / +5 cm (vertical) from the bowl1",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-11, -9, 89) opening 0.10; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower bowl to table at z=81 cm, then open gripper to release.",
+   "commands": [
+    "left move x +4.5",
+    "left move y -0.5",
+    "left move z -8.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+4, -0, -8) cm, now 6 cm (horizontal) / +7 cm (vertical) from the bowl1; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -10, 81) opening 0.92; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift left gripper to z=90 cm to clear bowl.",
+   "commands": [
+    "left move z +9.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, +9) cm, now 6 cm (horizontal) / +16 cm (vertical) from the bowl1",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -10, 90) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Re-orient gripper down and translate toward second bowl rim around (-34, 7).",
+   "commands": [
+    "left point down",
+    "left move x -14.0",
+    "left move x -14.0",
+    "left move y +16.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-28, +16, -0) cm, now 7 cm (horizontal) / +15 cm (vertical) from the bowl2",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, 7, 89) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine-tune position to (-34, 5, 88.5) directly above bowl edge.",
+   "commands": [
+    "left move z -0.5",
+    "left move y -2.0",
+    "left move x +1.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -0) cm, now 6 cm (horizontal) / +15 cm (vertical) from the bowl2",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-34, 7, 89) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower gripper to z=79 cm and close fingers to grasp.",
+   "commands": [
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -10) cm, now 6 cm (horizontal) / +5 cm (vertical) from the bowl2; closed the gripper (opening 0.14: holding the bowl2)",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-34, 7, 79) opening 0.14; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift second bowl to z=89.5 cm.",
+   "commands": [
+    "left move z +10.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, +11) cm, now 5 cm (horizontal) / +6 cm (vertical) from the bowl2",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-34, 7, 89) opening 0.11; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move second bowl above base bowl near (-10, -10, 89).",
+   "commands": [
+    "left move y -16.5",
+    "left move x +12.0",
+    "left move x +12.0",
+    "left rotate roll -3.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+24, -17, +0) cm, now 5 cm (horizontal) / +6 cm (vertical) from the bowl2",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, -10, 90) opening 0.10; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Level gripper pitch and yaw, and raise slightly to ensure clearance.",
+   "commands": [
+    "left rotate pitch -12.1",
+    "left rotate yaw +3.5",
+    "left move z +2.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +2) cm, now 6 cm (horizontal) / +5 cm (vertical) from the bowl2",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, -10, 91) opening 0.10; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower bowl onto base bowl at z=83.5 cm and release gripper to stack.",
+   "commands": [
+    "left move x +4.5",
+    "left move z -7.5",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

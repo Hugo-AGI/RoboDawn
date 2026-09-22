@@ -1,0 +1,1078 @@
+[
+ {
+  "turn": 1,
+  "state": {
+   "steps_used": 0,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.6999996538534092,
+     -6.764685961248122e-07,
+     -9.307265112279417e-06,
+     0.7141431820846746
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.941
+   },
+   "right": {
+    "position_cm": [
+     30.52,
+     -19.28,
+     94.1
+    ],
+    "wrist_cm": [
+     30.64,
+     -31.28,
+     94.1
+    ],
+    "approach": [
+     -0.01,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.01,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     90.6
+    ],
+    "quat_wxyz": [
+     0.7035615642897328,
+     -6.493556354431052e-07,
+     -9.27735723277312e-06,
+     0.7106343118423804
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.941
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "Orientation presets: 'point down' makes the fingers point straight down (approach -z); the fingertip position stays where it is, only the wrist swings.",
+  "commands": [
+   "right point down"
+  ],
+  "results": [
+   {
+    "command": "right point down",
+    "kind": "point",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 0,
+    "position_error_cm": 0.05,
+    "orientation_error_deg": 0.2,
+    "steps_used_after": 1,
+    "success": false,
+    "seconds": 0.28
+   }
+  ]
+ },
+ {
+  "turn": 2,
+  "state": {
+   "steps_used": 1,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.7000001657799403,
+     2.496547595801313e-06,
+     -1.2883543771713413e-05,
+     0.7141426802368266
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.943
+   },
+   "right": {
+    "position_cm": [
+     30.48,
+     -19.31,
+     94.09
+    ],
+    "wrist_cm": [
+     30.48,
+     -19.34,
+     106.09
+    ],
+    "approach": [
+     -0.0,
+     0.0,
+     -1.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.0,
+     0.0
+    ],
+    "rpy_deg": [
+     0.8,
+     89.8,
+     90.9
+    ],
+    "quat_wxyz": [
+     0.5002582340891668,
+     -0.49971611764410234,
+     0.49873745129867064,
+     0.5012848049410634
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.943
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "'rotate yaw' spins the gripper about the vertical axis through the fingertips: use it to make the fingers straddle the narrow side of an object.",
+  "commands": [
+   "right rotate yaw +45.0"
+  ],
+  "results": [
+   {
+    "command": "right rotate yaw +45.0",
+    "kind": "rotate",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 1,
+    "position_error_cm": 0.05,
+    "orientation_error_deg": 0.1,
+    "steps_used_after": 2,
+    "success": false,
+    "seconds": 0.23
+   }
+  ]
+ },
+ {
+  "turn": 3,
+  "state": {
+   "steps_used": 2,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.7000003165229515,
+     5.838132503114581e-06,
+     -1.631080956887576e-05,
+     0.7141425323894672
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.944
+   },
+   "right": {
+    "position_cm": [
+     30.47,
+     -19.26,
+     94.1
+    ],
+    "wrist_cm": [
+     30.5,
+     -19.27,
+     106.1
+    ],
+    "approach": [
+     -0.0,
+     0.0,
+     -1.0
+    ],
+    "finger_axis": [
+     -0.71,
+     -0.71,
+     0.0
+    ],
+    "rpy_deg": [
+     26.5,
+     89.9,
+     161.5
+    ],
+    "quat_wxyz": [
+     0.270372139431835,
+     -0.6525443861403236,
+     0.27048574589188046,
+     0.6541576198479336
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.948
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "'move x/y/z' translates the fingertips along ONE world axis, keeping the orientation (here: 10 cm forward = +y, then 10 cm to the left = -x, then 10 cm down = -z; the fingertip marker follows).",
+  "commands": [
+   "right move y +10.0",
+   "right move x -10.0",
+   "right move z -10.0"
+  ],
+  "results": [
+   {
+    "command": "right move y +10.0",
+    "kind": "move",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 2,
+    "position_error_cm": 0.12,
+    "orientation_error_deg": 0.1,
+    "steps_used_after": 3,
+    "success": false,
+    "seconds": 0.2
+   },
+   {
+    "command": "right move x -10.0",
+    "kind": "move",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 3,
+    "position_error_cm": 0.18,
+    "orientation_error_deg": 0.2,
+    "steps_used_after": 4,
+    "success": false,
+    "seconds": 0.19
+   },
+   {
+    "command": "right move z -10.0",
+    "kind": "move",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 4,
+    "position_error_cm": 0.19,
+    "orientation_error_deg": 0.2,
+    "steps_used_after": 5,
+    "success": false,
+    "seconds": 0.19
+   }
+  ]
+ },
+ {
+  "turn": 4,
+  "state": {
+   "steps_used": 5,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.7000004968711554,
+     1.6093389939313603e-05,
+     -2.674162291660398e-05,
+     0.7141423551407834
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.944
+   },
+   "right": {
+    "position_cm": [
+     20.67,
+     -9.37,
+     84.35
+    ],
+    "wrist_cm": [
+     20.71,
+     -9.43,
+     96.35
+    ],
+    "approach": [
+     -0.0,
+     0.0,
+     -1.0
+    ],
+    "finger_axis": [
+     -0.71,
+     -0.7,
+     -0.0
+    ],
+    "rpy_deg": [
+     -6.1,
+     89.7,
+     128.7
+    ],
+    "quat_wxyz": [
+     0.2726082744854259,
+     -0.651017357425355,
+     0.27058922656976625,
+     0.6547080261287178
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.945
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "'gripper 0.00' closes the fingers, 'gripper 1.00' opens them; the reported opening tells whether something was caught (here nothing: it closes fully to 0.00).",
+  "commands": [
+   "right gripper 0.00",
+   "right gripper 1.00"
+  ],
+  "results": [
+   {
+    "command": "right gripper 0.00",
+    "kind": "gripper",
+    "arm": "right",
+    "ok": true,
+    "note": "fingers closed fully: nothing between them",
+    "steps_used_before": 5,
+    "settle_steps": 92,
+    "steps_used_after": 6,
+    "success": false,
+    "seconds": 0.15
+   },
+   {
+    "command": "right gripper 1.00",
+    "kind": "gripper",
+    "arm": "right",
+    "ok": true,
+    "note": "gripper opened",
+    "steps_used_before": 6,
+    "settle_steps": 186,
+    "steps_used_after": 7,
+    "success": false,
+    "seconds": 0.18
+   }
+  ]
+ },
+ {
+  "turn": 5,
+  "state": {
+   "steps_used": 7,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.7000004966251344,
+     2.311416568670292e-05,
+     -3.380477363246204e-05,
+     0.714142354889792
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.944
+   },
+   "right": {
+    "position_cm": [
+     20.67,
+     -9.37,
+     84.35
+    ],
+    "wrist_cm": [
+     20.71,
+     -9.43,
+     96.35
+    ],
+    "approach": [
+     -0.0,
+     0.0,
+     -1.0
+    ],
+    "finger_axis": [
+     -0.71,
+     -0.7,
+     -0.0
+    ],
+    "rpy_deg": [
+     -6.1,
+     89.7,
+     128.7
+    ],
+    "quat_wxyz": [
+     0.2726030902779787,
+     -0.6510221133320648,
+     0.2705874696193665,
+     0.6547061817399743
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.917
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "'point down45' tilts the fingers 45 degrees between forward and down - it reaches further forward (+y) than 'point down'; 'point forward' points them horizontally (+y).",
+  "commands": [
+   "right point down45"
+  ],
+  "results": [
+   {
+    "command": "right point down45",
+    "kind": "point",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 7,
+    "position_error_cm": 0.16,
+    "orientation_error_deg": 0.3,
+    "steps_used_after": 8,
+    "success": false,
+    "seconds": 0.25
+   }
+  ]
+ },
+ {
+  "turn": 6,
+  "state": {
+   "steps_used": 8,
+   "step_limit": 500,
+   "success": false,
+   "table_z_cm": 74.0,
+   "left": {
+    "position_cm": [
+     -30.03,
+     -19.38,
+     94.2
+    ],
+    "wrist_cm": [
+     -29.79,
+     -31.38,
+     94.2
+    ],
+    "approach": [
+     -0.02,
+     1.0,
+     0.0
+    ],
+    "finger_axis": [
+     -1.0,
+     -0.02,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.0,
+     -0.0,
+     91.1
+    ],
+    "quat_wxyz": [
+     0.7000004356572697,
+     2.7031310647977752e-05,
+     -3.7887695137239774e-05,
+     0.7141424143078628
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.944
+   },
+   "right": {
+    "position_cm": [
+     20.79,
+     -9.31,
+     84.26
+    ],
+    "wrist_cm": [
+     20.76,
+     -17.76,
+     92.78
+    ],
+    "approach": [
+     0.0,
+     0.7,
+     -0.71
+    ],
+    "finger_axis": [
+     -1.0,
+     0.0,
+     -0.0
+    ],
+    "rpy_deg": [
+     -0.1,
+     45.3,
+     89.8
+    ],
+    "quat_wxyz": [
+     0.6537418079368782,
+     -0.2722525647733361,
+     0.27189488507900983,
+     0.6515929411815587
+    ],
+    "gripper": 1.0,
+    "gripper_real": 0.942
+   },
+   "objects": {
+    "wall": {
+     "position_cm": [
+      0.0,
+      100.0,
+      150.0
+     ],
+     "quat_wxyz": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "model": "wall",
+     "functional_points_cm": [
+      [
+       0.0,
+       100.0,
+       0.0
+      ],
+      [
+       0.0,
+       100.0,
+       300.0
+      ]
+     ]
+    },
+    "cup": {
+     "position_cm": [
+      -16.18,
+      -10.83,
+      74.0
+     ],
+     "quat_wxyz": [
+      0.5000427961349487,
+      0.49995678663253784,
+      0.49994808435440063,
+      0.5000523328781128
+     ],
+     "model": "021_cup",
+     "functional_points_cm": [
+      [
+       -16.18,
+       -10.83,
+       74.0
+      ]
+     ]
+    },
+    "coaster": {
+     "position_cm": [
+      -8.14,
+      -17.07,
+      74.1
+     ],
+     "quat_wxyz": [
+      0.5,
+      0.5,
+      0.5,
+      0.5
+     ],
+     "model": "019_coaster",
+     "functional_points_cm": [
+      [
+       -7.82,
+       -17.07,
+       74.1
+      ]
+     ]
+    }
+   }
+  },
+  "plan": "'rotate pitch' tilts the fingers up/down about the world x axis (small corrections only); 'home' returns the arm to its start pose. The left arm works the same way mirrored (use it for x < 0).",
+  "commands": [
+   "right rotate pitch -20.0",
+   "right home",
+   "left point down"
+  ],
+  "results": [
+   {
+    "command": "right rotate pitch -20.0",
+    "kind": "rotate",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 8,
+    "position_error_cm": 0.16,
+    "orientation_error_deg": 0.4,
+    "steps_used_after": 9,
+    "success": false,
+    "seconds": 0.19
+   },
+   {
+    "command": "right home",
+    "kind": "home",
+    "arm": "right",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 9,
+    "position_error_cm": 0.08,
+    "orientation_error_deg": 0.1,
+    "steps_used_after": 10,
+    "success": false,
+    "seconds": 0.29
+   },
+   {
+    "command": "left point down",
+    "kind": "point",
+    "arm": "left",
+    "ok": true,
+    "note": "",
+    "steps_used_before": 10,
+    "position_error_cm": 0.05,
+    "orientation_error_deg": 0.2,
+    "steps_used_after": 11,
+    "success": false,
+    "seconds": 0.27
+   }
+  ]
+ }
+]

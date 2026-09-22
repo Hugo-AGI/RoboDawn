@@ -1,0 +1,135 @@
+{
+ "task": "place_a2b_left",
+ "instruction": "Set the decorative golden tea box on the left side of the medium-sized bell",
+ "kind": "task",
+ "source": {
+  "task": "place_a2b_left",
+  "task_config": "demo_clean",
+  "seed": 100021,
+  "instruction": "Set the decorative golden tea box on the left side of the medium-sized bell",
+  "turns": 6,
+  "commands": 14,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the object, which was at x = -8 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "object",
+   "x": -8.15
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper above tea box at (-8, -14, 94) and point downward.",
+   "commands": [
+    "left move x +11.0",
+    "left move x +11.0",
+    "left move y +5.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+22, +5, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -15, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left gripper yaw by -50 degrees to match tea box orientation and descend to z=88 cm.",
+   "commands": [
+    "left rotate yaw -50.0",
+    "left move z -6.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, -6) cm, now 0 cm (horizontal) / +14 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -14, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to grasp height z=78 cm and close gripper.",
+   "commands": [
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, -10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -14, 78) opening 0.82; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift left gripper to z=88 cm carrying the tea box.",
+   "commands": [
+    "left move z +10.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, +10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -14, 88) opening 0.84; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move tea box to the left of the bell at (-4, -1, 88).",
+   "commands": [
+    "left move y +13.5",
+    "left move x +4.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+4, +14, +0) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-4, -1, 88) opening 0.84; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower tea box to table level z=80 cm and open gripper to release.",
+   "commands": [
+    "left move z -8.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

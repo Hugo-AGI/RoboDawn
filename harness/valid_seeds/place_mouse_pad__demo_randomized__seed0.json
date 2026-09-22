@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100011,
+  100012,
+  100014,
+  100015,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100029,
+  100030,
+  100031,
+  100032,
+  100033,
+  100035,
+  100036,
+  100037,
+  100038,
+  100040,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100048,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100055
+ ],
+ "infos": [
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Blue",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Green",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Red",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Blue",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Red",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Red",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Black",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Cyan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Cyan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Cyan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Cyan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Blue",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Yellow",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Black",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Red",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Green",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Black",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "Black",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Blue",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "Black",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100056
+}

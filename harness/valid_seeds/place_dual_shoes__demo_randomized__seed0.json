@@ -1,0 +1,258 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100008,
+  100011,
+  100012,
+  100013,
+  100014,
+  100015,
+  100016,
+  100017,
+  100019,
+  100022,
+  100024,
+  100025,
+  100026,
+  100028,
+  100030,
+  100031,
+  100032,
+  100033,
+  100034,
+  100036,
+  100038,
+  100039,
+  100041,
+  100042,
+  100044,
+  100050,
+  100051,
+  100055,
+  100057,
+  100058,
+  100059,
+  100060,
+  100061,
+  100063,
+  100064,
+  100067,
+  100068,
+  100069,
+  100070,
+  100072,
+  100076,
+  100077,
+  100078,
+  100079
+ ],
+ "infos": [
+  {
+   "{A}": "041_shoe/base6",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base5",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base6",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base6",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base5",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base4",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base0",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base7",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base7",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base4",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base4",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base4",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base2",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base5",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base7",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base5",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base4",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base7",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base6",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base3",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base2",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base0",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base2",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base0",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base8",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base9",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base3",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base1",
+   "{B}": "007_shoe-box/base0"
+  },
+  {
+   "{A}": "041_shoe/base7",
+   "{B}": "007_shoe-box/base0"
+  }
+ ],
+ "next_seed": 100080
+}

@@ -1,0 +1,157 @@
+{
+ "task": "place_container_plate",
+ "instruction": "Use the right arm to set the small round drinkable cup on the smooth round plate for serving.",
+ "kind": "task",
+ "source": {
+  "task": "place_container_plate",
+  "task_config": "demo_clean",
+  "seed": 100023,
+  "instruction": "Use the right arm to set the small round drinkable cup on the smooth round plate for serving.",
+  "turns": 7,
+  "commands": 22,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the container, which was at x = +28 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "container",
+   "x": 27.79
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper to (34, -8, 94.5) pointing down to align over the cup.",
+   "commands": [
+    "right move z +0.5",
+    "right move y +11.0",
+    "right move x +3.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+3, +11, +0) cm, now 6 cm (horizontal) / +20 cm (vertical) from the container",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (34, -8, 94) opening 0.94; table z = 74",
+   "plan": "Lower right gripper down to z=85 around the cup rim.",
+   "commands": [
+    "right move y -1.5",
+    "right move x -0.5",
+    "right move z -9.5",
+    "right rotate roll +3.1"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -1, -9) cm, now 5 cm (horizontal) / +11 cm (vertical) from the container",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (33, -10, 85) opening 0.94; table z = 74",
+   "plan": "Close right gripper completely to grasp the cup.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 5 cm (horizontal) / +11 cm (vertical) from the container; closed the gripper (opening 0.08: holding the container)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (33, -10, 85) opening 0.08; table z = 74",
+   "plan": "Lift right arm to z=95 and align pitch downwards.",
+   "commands": [
+    "right move z +10.0",
+    "right move y +1.5",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +1, +10) cm, now 5 cm (horizontal) / +11 cm (vertical) from the container",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (33, -8, 95) opening 0.08; table z = 74",
+   "plan": "Move right arm left and slightly back toward (11, -12, 97) over the plate.",
+   "commands": [
+    "right move z +2.0",
+    "right move x -11.0",
+    "right move x -11.0",
+    "right move y -4.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-22, -4, +2) cm, now 5 cm (horizontal) / +11 cm (vertical) from the container",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (12, -12, 97) opening 0.08; table z = 74",
+   "plan": "Adjust roll and pitch orientation to level the cup.",
+   "commands": [
+    "right rotate roll +10.3",
+    "right rotate pitch +3.8"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 6 cm (horizontal) / +11 cm (vertical) from the container",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (11, -12, 97) opening 0.08; table z = 74",
+   "plan": "Lower cup onto the plate to z=88, then open gripper to release.",
+   "commands": [
+    "right move x -2.5",
+    "right move y +1.0",
+    "right move z -9.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

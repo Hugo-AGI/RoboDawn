@@ -1,0 +1,258 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100010,
+  100012,
+  100013,
+  100015,
+  100016,
+  100017,
+  100018,
+  100020,
+  100022,
+  100023,
+  100024,
+  100025,
+  100028,
+  100029,
+  100030,
+  100031,
+  100032,
+  100034,
+  100036,
+  100040,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100048,
+  100049,
+  100050,
+  100051,
+  100052,
+  100054,
+  100055,
+  100056,
+  100057,
+  100058,
+  100059,
+  100061,
+  100062,
+  100063,
+  100064,
+  100065
+ ],
+ "infos": [
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "left"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  },
+  {
+   "{A}": "001_bottle/base16",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100066
+}

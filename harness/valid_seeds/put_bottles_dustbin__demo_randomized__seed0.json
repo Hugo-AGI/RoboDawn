@@ -1,0 +1,358 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100017,
+  100010,
+  100011,
+  100013,
+  100016,
+  100021,
+  100022,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100029,
+  100030,
+  100031,
+  100032,
+  100033,
+  100034,
+  100035,
+  100037,
+  100038,
+  100040,
+  100042,
+  100044,
+  100045,
+  100046,
+  100048,
+  100049,
+  100050,
+  100052,
+  100053,
+  100055,
+  100060,
+  100061,
+  100062,
+  100064,
+  100066,
+  100067,
+  100068,
+  100069,
+  100070,
+  100071,
+  100074,
+  100075,
+  100076,
+  100079,
+  100080
+ ],
+ "infos": [
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  },
+  {
+   "{A}": "114_bottle/base1",
+   "{B}": "114_bottle/base2",
+   "{C}": "114_bottle/base3",
+   "{D}": "011_dustbin/base0"
+  }
+ ],
+ "next_seed": 100081
+}

@@ -1,0 +1,174 @@
+{
+ "task": "solve_equation",
+ "instruction": "Complete the equation by selecting the correct missing number or operator and placing it on the pad.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 366,
+  "decisions": 10,
+  "frames": 10,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: put the number 0 card on the empty mat (mat0): orient the left gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down30) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (-30, -10).",
+   "commands": [
+    "left point down30",
+    "left move y +10.8"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left move y +10.8: ok; left fingertips now at (-30.0, -9.9, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: put the number 0 card on the empty mat (mat0): lower to just above the grasp height",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -9.9, 92.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 62",
+   "plan": "Aligned in the head view; descend to z=82.3, 4 cm above the grasp height, and check the wrist cross.",
+   "commands": [
+    "left move z -9.9"
+   ],
+   "failed": [],
+   "effect": "left move z -9.9: ok; left fingertips now at (-30.0, -9.9, 82.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: put the number 0 card on the empty mat (mat0): descend to the grasp height",
+   "images": [
+    "frame003_cam_head.jpg",
+    "frame003_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -9.9, 82.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 88",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; descend to z=78.3.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "left move z -4.0: ok; left fingertips now at (-30.0, -9.9, 78.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: put the number 0 card on the empty mat (mat0): close the gripper",
+   "images": [
+    "frame004_cam_head.jpg",
+    "frame004_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -9.9, 78.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 108",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); left fingertips now at (-30.0, -9.9, 78.3), opening 0.593",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: put the number 0 card on the empty mat (mat0): lift the object",
+   "images": [
+    "frame005_cam_head.jpg",
+    "frame005_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -9.9, 78.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.59 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 121\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (-30.0, -9.9, 90.2), opening 0.592",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: put the number 0 card on the empty mat (mat0): carry the object over the target",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -9.9, 90.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.59 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 149\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object (not the fingertips) is over (-17, 0); the object centre is +13.0 cm in x and +9.9 cm in y from the target.",
+   "commands": [
+    "left move x +13.0",
+    "left move y +9.9"
+   ],
+   "failed": [],
+   "effect": "left move x +13.0: ok; left move y +9.9: ok; left fingertips now at (-17.0, -0.0, 90.2), opening 0.592",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: put the number 0 card on the empty mat (mat0): lower the object onto the target",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.0, -0.0, 90.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.59 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 203\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower the fingertips to z=79.1 (grasp height 78.3 plus the surface height 77.0 minus the table 76.5) so the object's bottom touches the surface before opening.",
+   "commands": [
+    "left move z -11.1"
+   ],
+   "failed": [],
+   "effect": "left move z -11.1: ok; left fingertips now at (-17.1, -0.0, 79.1), opening 0.592",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: put the number 0 card on the empty mat (mat0): release the object",
+   "images": [
+    "frame008_cam_head.jpg",
+    "frame008_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.1, -0.0, 79.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.59 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 229\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-17.1, -0.0, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: put the number 0 card on the empty mat (mat0): retreat upward",
+   "images": [
+    "frame009_cam_head.jpg",
+    "frame009_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.1, -0.0, 79.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 245",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (-17.1, -0.0, 91.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: return both arms to their initial pose",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.1, -0.0, 91.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 273",
+   "plan": "Every placement is done and both grippers are open; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left home: FAILED (the target was not reached: the fingertips moved (-10.9, -17.4, +6.2) cm, i.e); left fingertips now at (-27.9, -17.4, 97.3), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100012,
+  100015,
+  100017,
+  100018,
+  100019,
+  100021,
+  100022,
+  100023,
+  100025,
+  100026,
+  100027,
+  100030,
+  100031,
+  100033,
+  100034,
+  100035,
+  100036,
+  100037,
+  100039,
+  100040,
+  100041,
+  100042,
+  100043,
+  100045,
+  100046,
+  100047,
+  100048,
+  100049,
+  100050,
+  100051,
+  100053,
+  100056,
+  100057,
+  100058,
+  100059,
+  100060,
+  100061,
+  100062,
+  100064
+ ],
+ "infos": [
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base6",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base3",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base2",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base4",
+   "{B}": "105_sauce-can/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base1",
+   "{B}": "105_sauce-can/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "060_kitchenpot/base0",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "060_kitchenpot/base5",
+   "{B}": "105_sauce-can/base6",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100065
+}

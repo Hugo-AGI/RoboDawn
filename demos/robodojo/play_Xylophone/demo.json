@@ -1,0 +1,603 @@
+{
+ "task": "play_Xylophone",
+ "instruction": "Pick up the mallet and strike all xylophone keys from left to right.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2037,
+  "decisions": 41,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: take hold of the mallet at the end away from the head",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers straight down and turn the jaw across the stick, +105 degrees from the direction the preset leaves it in, so the head will hang on the useful side of the hand once the wrist is re-oriented. Then go over the far end at (-25, -20).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left rotate yaw +90.0",
+    "left rotate yaw +15.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left rotate yaw +90.0: ok; left rotate yaw +15.0: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: finish lining up on the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 110",
+   "plan": "The fingertips are +4.8 cm in x and +0.9 cm in y from the handle.",
+   "commands": [
+    "left move x +4.8",
+    "left move y +0.9"
+   ],
+   "failed": [],
+   "effect": "left move x +4.8: ok; left move y +0.9: ok; left fingertips now at (-25.2, -19.8, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 92.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 148",
+   "plan": "Descend to z=77.9 so the fingers straddle the stick.",
+   "commands": [
+    "left move z -14.2"
+   ],
+   "failed": [],
+   "effect": "left move z -14.2: ok; left fingertips now at (-25.2, -19.8, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: close on the handle",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 77.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 178",
+   "plan": "Close the gripper on the stick.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.24: something is between them (probably grasped)); left fingertips now at (-25.2, -19.8, 77.9), opening 0.241",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: lift the mallet off its stand",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 77.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.26, -0.97, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 191\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The mallet is held; lift it clear of the stand.",
+   "commands": [
+    "left move z +8.0"
+   ],
+   "failed": [],
+   "effect": "left move z +8.0: ok; left fingertips now at (-25.2, -19.8, 85.9), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: climb a little and tip the wrist to 'down45'",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 85.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.26, -0.97, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 216\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=88 first and only then go to 'point down45'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "left move z +2.6",
+    "left point down45"
+   ],
+   "failed": [],
+   "effect": "left move z +2.6: ok; left point down45: ok; left fingertips now at (-25.2, -19.8, 88.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: climb a little and tip the wrist to 'down75'",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 88.5) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 280\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=94 first and only then go to 'point down75'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "left move z +5.5",
+    "left point down75"
+   ],
+   "failed": [],
+   "effect": "left move z +5.5: ok; left point down75: ok; left fingertips now at (-25.2, -19.8, 94.0), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: climb a little and tip the wrist to 'forward'",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-25.2, -19.8, 94.0) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 332\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=98 first and only then go to 'point forward'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "left move z +4.0",
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left move z +4.0: ok; left point forward: ok; left fingertips now at (-25.3, -19.8, 98.0), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: bring the mallet head over the red bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-25.3, -19.8, 98.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 378\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Move so the mallet HEAD -- not the fingertips, which hang above and behind it -- comes over the middle of the red bar, still riding clear above the bars: +9.3 cm in x, +22.0 cm in y.",
+   "commands": [
+    "left move z +4.1",
+    "left move x +9.3",
+    "left move y +20.0",
+    "left move y +2.0"
+   ],
+   "failed": [],
+   "effect": "left move z +4.1: ok; left move x +9.3: ok; left move y +20.0: ok; left move y +2.0: ok; left fingertips now at (-16.0, 2.2, 102.1), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: none yet (0 of 8); next is the red bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tap the red bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-16.0, 2.2, 102.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 476\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the red bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "left move z -4.7"
+   ],
+   "failed": [],
+   "effect": "left move z -4.7: ok; left fingertips now at (-16.0, 2.2, 97.4), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red (1 of 8); next is the orange bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: the red bar tapped, on to the orange bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-16.0, 2.2, 97.4) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 498\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The red bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the orange bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "left move z +6.2",
+    "left move x +4.2",
+    "left move y -2.1"
+   ],
+   "failed": [],
+   "effect": "left move z +6.2: ok; left move x +4.2: ok; left move y -2.1: ok; left fingertips now at (-11.9, 0.1, 103.6), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red (1 of 8); next is the orange bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tap the orange bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.9, 0.1, 103.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 561\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the orange bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "left move z -6.1"
+   ],
+   "failed": [],
+   "effect": "left move z -6.1: ok; left fingertips now at (-11.9, 0.1, 97.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange (2 of 8); next is the yellow bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: the orange bar tapped, on to the yellow bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.9, 0.1, 97.5) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 583\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The orange bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the yellow bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "left move z +6.2",
+    "left move x +4.2",
+    "left move y -1.0"
+   ],
+   "failed": [],
+   "effect": "left move z +6.2: ok; left move x +4.2: ok; left move y -1.0: ok; left fingertips now at (-7.7, -0.9, 103.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange (2 of 8); next is the yellow bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tap the yellow bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -0.9, 103.7) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 644\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the yellow bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "left move z -6.2"
+   ],
+   "failed": [],
+   "effect": "left move z -6.2: ok; left fingertips now at (-7.7, -0.9, 97.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow (3 of 8); next is the green bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: the yellow bar tapped, on to the green bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -0.9, 97.5) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 666\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The yellow bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the green bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "left move z +6.2",
+    "left move x +4.2",
+    "left move y -1.0"
+   ],
+   "failed": [],
+   "effect": "left move z +6.2: ok; left move x +4.2: ok; left move y -1.0: ok; left fingertips now at (-3.6, -1.8, 103.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow (3 of 8); next is the green bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tap the green bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -1.8, 103.7) cm, approach = (-0.01, 1.00, -0.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 724\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the green bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "left move z -6.2"
+   ],
+   "failed": [],
+   "effect": "left move z -6.2: ok; left fingertips now at (-3.6, -1.8, 97.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: the green bar tapped, on to the light blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -1.8, 97.5) cm, approach = (-0.01, 1.00, -0.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 746\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The green bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the light blue bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "left move z +6.2",
+    "left move x +4.1",
+    "left move y -0.9"
+   ],
+   "failed": [],
+   "effect": "left move z +6.2: ok; left move x +4.1: ok; left move y -0.9: ok; left fingertips now at (0.5, -2.7, 103.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: the light blue bar and the ones past it belong to the other hand",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.5, -2.7, 103.7) cm, approach = (-0.01, 1.00, -0.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 804\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The light blue bar lies on the far side of the row, past the middle of the table and past anything this arm can hold the head over; lay the mallet down for the other hand before trying it.",
+   "commands": [
+    "left move y -6.0"
+   ],
+   "failed": [],
+   "effect": "left move y -6.0: ok; left fingertips now at (0.5, -8.7, 103.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: turn the jaw so the stick can later be tipped sideways",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.5, -8.7, 103.7) cm, approach = (-0.01, 1.00, -0.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 824\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Yaw -90 degrees now, while the stick is hanging straight down and the turn cannot move it. It puts the jaw axis along y, so that a pitch about y will later swing the stick out sideways over the table instead of backwards into the robot.",
+   "commands": [
+    "left rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left fingertips now at (0.5, -8.7, 103.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: carry the mallet back in front of the robot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.5, -8.7, 103.7) cm, approach = (1.00, 0.01, -0.00), finger axis = (-0.01, 1.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 872\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Bring the hand off the keyboard to (-2, -18) -- in front of the xylophone and clear of the mallet stand -- and down to z=96, as low as the hanging head allows: -9.8 cm in y, -2.5 cm in x, -7.2 cm in z.",
+   "commands": [
+    "left move y -9.8",
+    "left move x -2.5",
+    "left move z -7.2"
+   ],
+   "failed": [],
+   "effect": "left move y -9.8: ok; left move x -2.5: ok; left move z -7.2: ok; left fingertips now at (-2.1, -18.4, 96.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tip the stick over sideways and come down",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.1, -18.4, 96.5) cm, approach = (1.00, 0.01, -0.00), finger axis = (-0.01, 1.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 941\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Pitch +45 degrees about y: the head swings from under the hand towards -x, rising as it goes, so follow it straight away with a drop to z=92. Two half turns keep the wrist inside the arm's reach.",
+   "commands": [
+    "left rotate pitch +45.0",
+    "left move z -5.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +45.0: ok; left move z -5.0: ok; left fingertips now at (-2.1, -18.4, 91.5), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: tip the stick over sideways and come down",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.1, -18.4, 91.5) cm, approach = (0.71, 0.01, -0.71), finger axis = (-0.01, 1.00, 0.01), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1007\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Pitch +45 degrees about y: the head swings from under the hand towards -x, rising as it goes, so follow it straight away with a drop to z=78. Two half turns keep the wrist inside the arm's reach.",
+   "commands": [
+    "left rotate pitch +45.0",
+    "left move z -13.2"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +45.0: ok; left move z -13.2: ok; left fingertips now at (-2.1, -18.4, 78.3), opening 0.24",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. Neither arm reaches the whole row: the left hand taps its own side, then lays the mallet flat on the bare table in front of the robot for the right hand to take by its free end. Now: let go of the mallet",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.1, -18.4, 78.3) cm, approach = (-0.00, 0.01, -1.00), finger axis = (0.00, 1.00, 0.01), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1067\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Open the fingers and lift straight up so the other arm has room to come in.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +9.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +9.0: ok; left fingertips now at (-2.1, -18.4, 87.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: the right hand takes over",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.1, -18.4, 87.3) cm, approach = (-0.00, 0.01, -1.00), finger axis = (0.00, 1.00, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1110",
+   "plan": "The mallet is lying in front of the robot with its free end on the right side; send this arm home and let the right arm pick the stick up by that end.",
+   "commands": [
+    "left home",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left home: ok; right gripper 1.00: ok (gripper opened); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: take hold of the mallet at the end away from the head",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1285",
+   "plan": "Point the right fingers straight down and turn the jaw across the stick, -90 degrees from the direction the preset leaves it in, so the head will hang on the useful side of the hand once the wrist is re-oriented. Then go over the far end at (-2, -18).",
+   "commands": [
+    "right gripper 1.00",
+    "right point down",
+    "right rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: ok; right rotate yaw -90.0: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: finish lining up on the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1373",
+   "plan": "The fingertips are -32.0 cm in x and +2.3 cm in y from the handle.",
+   "commands": [
+    "right move x -20.0",
+    "right move x -12.0",
+    "right move y +2.3"
+   ],
+   "failed": [],
+   "effect": "right move x -20.0: ok; right move x -12.0: ok; right move y +2.3: ok; right fingertips now at (-2.0, -18.5, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: lower onto the handle",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1451",
+   "plan": "Descend to z=77.9 so the fingers straddle the stick.",
+   "commands": [
+    "right move z -14.3"
+   ],
+   "failed": [],
+   "effect": "right move z -14.3: ok; right fingertips now at (-2.0, -18.5, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: close on the handle",
+   "images": [
+    "frame028_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 77.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1481",
+   "plan": "Close the gripper on the stick.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.24: something is between them (probably grasped)); right fingertips now at (-2.0, -18.5, 77.9), opening 0.24",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: lift the mallet off its stand",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 77.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1494\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The mallet is held; lift it clear of the stand.",
+   "commands": [
+    "right move z +8.0"
+   ],
+   "failed": [],
+   "effect": "right move z +8.0: ok; right fingertips now at (-2.0, -18.5, 85.9), opening 0.24",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: climb a little and tip the wrist to 'down45'",
+   "images": [
+    "frame030_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 85.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.00, 1.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1519\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=88 first and only then go to 'point down45'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "right move z +2.6",
+    "right point down45"
+   ],
+   "failed": [],
+   "effect": "right move z +2.6: ok; right point down45: ok; right fingertips now at (-2.0, -18.5, 88.4), opening 0.241",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: climb a little and tip the wrist to 'down75'",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 88.4) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1579\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=94 first and only then go to 'point down75'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "right move z +5.6",
+    "right point down75"
+   ],
+   "failed": [],
+   "effect": "right move z +5.6: ok; right point down75: ok; right fingertips now at (-2.0, -18.5, 94.1), opening 0.237",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: climb a little and tip the wrist to 'forward'",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.0, -18.5, 94.1) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, 0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1635\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Each step of the turn drops the head further below the hand, so raise the fingertips to z=98 first and only then go to 'point forward'; the head stays above the table and the wrist stays low enough to have a joint solution.",
+   "commands": [
+    "right move z +3.9",
+    "right point forward"
+   ],
+   "failed": [],
+   "effect": "right move z +3.9: ok; right point forward: ok; right fingertips now at (-2.1, -18.5, 98.0), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: bring the mallet head over the light blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-2.1, -18.5, 98.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1691\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Move so the mallet HEAD -- not the fingertips, which hang above and behind it -- comes over the middle of the light blue bar, still riding clear above the bars: +2.8 cm in x, +15.6 cm in y.",
+   "commands": [
+    "right move z +4.3",
+    "right move x +2.8",
+    "right move y +15.6"
+   ],
+   "failed": [],
+   "effect": "right move z +4.3: ok; right move x +2.8: ok; right move y +15.6: ok; right fingertips now at (0.7, -3.0, 102.3), opening 0.24",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: bring the mallet head over the light blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.7, -3.0, 102.3) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1757\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Move so the mallet HEAD -- not the fingertips, which hang above and behind it -- comes over the middle of the light blue bar, still riding clear above the bars: +0.2 cm in x, -2.2 cm in y.",
+   "commands": [
+    "right move y -2.2"
+   ],
+   "failed": [],
+   "effect": "right move y -2.2: ok; right fingertips now at (0.7, -5.2, 102.3), opening 0.241",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green (4 of 8); next is the light blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: tap the light blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.7, -5.2, 102.3) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1775\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the light blue bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "right move z -4.7"
+   ],
+   "failed": [],
+   "effect": "right move z -4.7: ok; right fingertips now at (0.7, -5.2, 97.6), opening 0.24",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green, light blue (5 of 8); next is the dark blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: the light blue bar tapped, on to the dark blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.7, -5.2, 97.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1797\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The light blue bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the dark blue bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "right move z +6.2",
+    "right move x +4.4",
+    "right move y -0.6"
+   ],
+   "failed": [],
+   "effect": "right move z +6.2: ok; right move x +4.4: ok; right move y -0.6: ok; right fingertips now at (5.1, -5.8, 103.8), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green, light blue (5 of 8); next is the dark blue bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: tap the dark blue bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.1, -5.8, 103.8) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1855\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the dark blue bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "right move z -6.1"
+   ],
+   "failed": [],
+   "effect": "right move z -6.1: ok; right fingertips now at (5.0, -5.8, 97.7), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green, light blue, dark blue (6 of 8); next is the purple bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: the dark blue bar tapped, on to the purple bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.0, -5.8, 97.7) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1877\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The dark blue bar has sounded. Lift the head a few cm clear of the bars first -- a tap only counts once the mallet has come back up off the bar -- and then set off towards the purple bar, which is both further along the row and a little nearer.",
+   "commands": [
+    "right move z +6.2",
+    "right move x +4.1",
+    "right move y -1.1"
+   ],
+   "failed": [],
+   "effect": "right move z +6.2: ok; right move x +4.1: ok; right move y -1.1: ok; right fingertips now at (9.1, -6.9, 103.8), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green, light blue, dark blue (6 of 8); next is the purple bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: tap the purple bar",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.1, -6.9, 103.8) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1938\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the purple bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "right move z -6.2"
+   ],
+   "failed": [],
+   "effect": "right move z -6.2: ok; right fingertips now at (9.1, -6.9, 97.6), opening 0.239",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: Tap each of the 8 xylophone bars once, along the row from left to right - red, orange, yellow, green, light blue, dark blue, purple, pink - i.e. longest bar first, shortest last; a bar counts only after every bar to its left has been tapped. One tap = the round mallet head (not the fingertips) over the middle of that bar, a dip to a finger's width above it, then a lift clear of the bars; one dip per bar. The row lies at a slight angle, so each next bar is a little nearer the robot as well as further right - aim at the bar in the picture, not a fixed sideways step. Tapped so far: red, orange, yellow, green, light blue, dark blue, purple (7 of 8); next is the pink bar. The mallet has already changed hands; the right hand finishes the bars on this side. Now: tap the pink bar",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (13.3, -8.2, 103.8) cm, approach = (-0.01, 1.00, -0.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2026\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The head is sitting over the pink bar; dip it straight down to a finger's width above that bar -- close enough to sound it, not far enough to press on it.",
+   "commands": [
+    "right move z -6.2"
+   ],
+   "failed": [],
+   "effect": "right move z -6.2: ok; right fingertips now at (13.2, -8.2, 98.5), opening 0.239",
+   "source_index": null
+  }
+ ]
+}

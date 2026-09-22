@@ -1,0 +1,136 @@
+{
+ "task": "place_empty_cup",
+ "instruction": "Pick the handheld round blue cup and position it on the light gray coaster",
+ "kind": "task",
+ "source": {
+  "task": "place_empty_cup",
+  "task_config": "demo_clean",
+  "seed": 100019,
+  "instruction": "Pick the handheld round blue cup and position it on the light gray coaster",
+  "turns": 6,
+  "commands": 15,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the cup, which was at x = +26 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "cup",
+   "x": 26.42
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Partially close right gripper to prepare for grasping the rim of the cup.",
+   "commands": [
+    "right gripper 0.60"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 5 cm (horizontal) / +20 cm (vertical) from the cup; closed the gripper (opening 0.51: holding the cup)",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.51; table z = 74",
+   "plan": "Orient right gripper downward and align directly above the rim of the cup at (30.5, -17, 92.5).",
+   "commands": [
+    "right move y +2.0",
+    "right move x -0.5",
+    "right point down",
+    "right move z -1.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-1, +2, -1) cm, now 4 cm (horizontal) / +19 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (30, -17, 93) opening 0.48; table z = 74",
+   "plan": "Descend right gripper to z=82.5 around the rim and grasp it firmly.",
+   "commands": [
+    "right move z -10.5",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -10) cm, now 4 cm (horizontal) / +8 cm (vertical) from the cup; closed the gripper (opening 0.07: holding the cup)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (30, -17, 82) opening 0.07; table z = 74",
+   "plan": "Lift the cup up to z=90 to clear the table.",
+   "commands": [
+    "right move z +8.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, +8) cm, now 3 cm (horizontal) / +8 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (30, -17, 90) opening 0.07; table z = 74",
+   "plan": "Move the cup over the coaster to roughly (13, -12, 87).",
+   "commands": [
+    "right move x -17.0",
+    "right move y +5.0",
+    "right rotate pitch +5.1",
+    "right move z -3.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-17, +5, -3) cm, now 4 cm (horizontal) / +8 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (13, -13, 87) opening 0.07; table z = 74",
+   "plan": "Lower cup onto the coaster to z=84 and release gripper.",
+   "commands": [
+    "right move x -0.5",
+    "right move z -3.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

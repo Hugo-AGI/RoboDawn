@@ -1,0 +1,481 @@
+{
+ "task": "insert_key",
+ "instruction": "Pick up the key, hand it over to the other hand, insert it into the keyhole, then turn it.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1455,
+  "decisions": 31,
+  "frames": 31,
+  "images_scaled": true,
+  "layout_seed": 1,
+  "layout_id": 0
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key is still on the table; pickup, handoff, insertion and turning are all pending. The left hand is empty and can prepare to receive the round handle. Next: Move the left hand into the open space between the arms and turn it to approach the handle from the side. Why: Leaving the round handle accessible lets the right hand lift by the narrow shaft and the left hand take the handle without the two grippers competing for the same part.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Move the left hand into the open space between the arms and turn it to approach the handle from the side.",
+   "commands": [
+    "left move x +20.0",
+    "left move z -1.5",
+    "left move y +2.0",
+    "left rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "left move x +20.0: ok; left move z -1.5: ok; left move y +2.0: ok; left rotate yaw -90.0: ok; left fingertips now at (-10.0, -18.7, 90.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Nothing has been picked up yet. The left hand has moved inward, but its fingers still need to face the handle in a useful receiving posture; the right hand has not approached the key. Next: Bring the left hand slightly farther inward, turn its fingers to lie above and below the handle, and leave a gap between them. Why: An open receiving gap lets the round handle enter from the side. Closing this hand before the key arrives would leave no path for the handle.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -18.7, 90.7) cm, approach = (1.00, 0.00, 0.00), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 130",
+   "plan": "Bring the left hand slightly farther inward, turn its fingers to lie above and below the handle, and leave a gap between them.",
+   "commands": [
+    "left move x +4.5",
+    "left rotate roll -90.0",
+    "left gripper 0.50"
+   ],
+   "failed": [],
+   "effect": "left move x +4.5: ok; left rotate roll -90.0: ok; left gripper 0.50: ok (gripper opened); left fingertips now at (-5.5, -18.7, 90.7), opening 0.5",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Pickup is next. The empty left hand is ready to receive later, while the key remains on the table and the right hand is still clear of it. Next: Point the right hand down and move above the narrow shaft, lining the jaw gap up with the shaft. Why: The right fingers need to straddle the shaft rather than land on top of it. Grasping this narrow part leaves the larger round handle exposed for the other hand.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -18.7, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 208",
+   "plan": "Point the right hand down and move above the narrow shaft, lining the jaw gap up with the shaft.",
+   "commands": [
+    "right point down",
+    "right rotate yaw +30.0",
+    "right move x -15.1",
+    "right move y +8.7"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +30.0: ok; right move x -15.1: ok; right move y +8.7: ok; right fingertips now at (14.9, -12.0, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The right hand is above the key shaft; the key has not yet been lifted or passed. The left hand is waiting with its fingers open. Next: Lower the right fingers around the shaft, close them, then lift the hand away from the tabletop. Why: A thin shaft leaves the fingers nearly closed even when held. Judge this pickup by whether the key rises with the hand, rather than by a large visible gap between the fingers; do not begin a handoff while the key stays on the table.",
+   "images": [
+    "frame004_cam_right_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -18.7, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.9, -12.0, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 330",
+   "plan": "Lower the right fingers around the shaft, close them, then lift the hand away from the tabletop.",
+   "commands": [
+    "right move z -14.4",
+    "right gripper 0.00",
+    "right move z +5.0"
+   ],
+   "failed": [],
+   "effect": "right move z -14.4: ok; right gripper 0.00: ok (fingers closed fully (opening 0.22): nothing between them); right move z +5.0: ok; right fingertips now at (14.9, -12.0, 82.7), opening 0.221",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key has risen off the table with the right hand, so pickup is visible. It is still held by the shaft, and the round handle remains available; handoff, insertion and turning are pending. Next: Lift farther into clear space, bring the key toward the waiting left hand, and turn it to present the round handle. Why: The hanging key needs clearance from the table while it swings and turns. Presenting the handle, rather than the blade tip, gives the receiving fingers a broad part to pinch.",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -18.7, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.9, -12.0, 82.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 0.22 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 391",
+   "plan": "Lift farther into clear space, bring the key toward the waiting left hand, and turn it to present the round handle.",
+   "commands": [
+    "right move z +10.0",
+    "right move y -7.0",
+    "right move x -3.9",
+    "right rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "right move z +10.0: ok; right move y -7.0: ok; right move x -3.9: ok; right rotate yaw -90.0: ok; right fingertips now at (11.0, -19.1, 92.7), opening 0.22",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Pickup is complete and the right hand has carried the key toward the left hand. The round handle is not yet squarely presented to the receiving gap, so the right hand must keep holding it. Next: Turn the right wrist to bring the round handle into the left hand's approach direction. Why: The handle must enter between the receiving fingers instead of meeting the outside of a jaw. Rotating while the key is in free space avoids dragging its blade across the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -18.7, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.0, -19.1, 92.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 0.22 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 504",
+   "plan": "Turn the right wrist to bring the round handle into the left hand's approach direction.",
+   "commands": [
+    "right rotate yaw -30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -30.0: ok; right fingertips now at (11.0, -19.1, 92.7), opening 0.22",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key is still supported by the right hand and its round handle is facing the open left fingers. The receiving hand needs a small sideways correction before moving onto the handle. Next: Shift the left hand slightly to line its open gap up with the round handle. Why: The visual target is the handle itself, not the donor wrist. Aligning the gap first prevents a finger from pushing the key away as the hands come together.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -18.7, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.0, -19.1, 92.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.22 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 532",
+   "plan": "Shift the left hand slightly to line its open gap up with the round handle.",
+   "commands": [
+    "left move y -0.4"
+   ],
+   "failed": [],
+   "effect": "left move y -0.4: ok; left fingertips now at (-5.5, -19.1, 90.7), opening 0.5",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Pickup is done, but the handoff is not. The right hand holds the shaft and the left fingers are lined up to approach the exposed round handle from the side. Next: Advance the left hand toward the handle in short moves, then close its fingers around the handle. Why: Keep the donor grip until the receiving fingers surround the handle. Approaching from the side keeps the fingers away from the shaft held by the right hand and allows both hands to support the key briefly.",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -19.1, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.0, -19.1, 92.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.22 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 548",
+   "plan": "Advance the left hand toward the handle in short moves, then close its fingers around the handle.",
+   "commands": [
+    "left move x +6.0",
+    "left move x +6.0",
+    "left move x +2.4",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left move x +6.0: ok; left move x +6.0: ok; left move x +2.4: ok; left gripper 0.00: ok (fingers stopped at opening 0.28: something is between them (probably grasped)); left fingertips now at (8.8, -19.0, 90.7), opening 0.275",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left fingers have closed around the round handle while the right hand still holds the shaft. Both hands are at the key, so the transfer still needs a release-and-lift check. Next: Open the right hand, lift it away and park it; then raise the left hand with the key. Why: Two closed grippers alone do not prove a handoff. The key must remain with the left fingers after the right hand withdraws, and lifting it makes any slipping or unsupported handle easier to see.",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (8.8, -19.0, 90.7) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, 0.00, -1.00), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.0, -19.1, 92.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 622\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Open the right hand, lift it away and park it; then raise the left hand with the key.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z +5.0",
+    "right home",
+    "left move z +2.0"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z +5.0: ok; right home: ok; left move z +2.0: ok; left fingertips now at (8.8, -19.0, 92.6), opening 0.274; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The right hand has released and withdrawn, and the key has risen with the left hand. Pickup and the initial transfer are complete; the blade is not yet aimed at the keyhole. Next: Carry the key leftward in several short moves while keeping the round handle pinched. Why: Moving the receiving hand away from the donor makes the transfer visible and opens space for reorienting the long blade without sweeping it through the other gripper.",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (8.8, -19.0, 92.6) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 866\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Carry the key leftward in several short moves while keeping the round handle pinched.",
+   "commands": [
+    "left move x -4.0",
+    "left move x -4.0",
+    "left move x -4.0",
+    "left move x -0.3"
+   ],
+   "failed": [],
+   "effect": "left move x -4.0: ok; left move x -4.0: ok; left move x -4.0: ok; left move x -0.3: ok; left fingertips now at (-3.5, -19.0, 92.5), opening 0.275",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key has followed the left hand across the workspace after the right hand let go. Pickup and handoff are established; insertion and turning remain, and the blade still needs to point down. Next: Pause with the key held clear of nearby objects and check that the round handle stays between the left fingers. Why: The long blade can swing after a carry. Letting it settle makes its orientation easier to judge and avoids combining an uncertain grip with a large wrist rotation.",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -19.0, 92.5) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 942\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Pause with the key held clear of nearby objects and check that the round handle stays between the left fingers.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left hand alone holds the key after the carry and pause. The transfer is done, but the blade is not yet in the downward insertion posture; the keyhole has not been entered. Next: Tip the left wrist so the blade points down below the round handle. Why: The blade must approach the slot end-first. Turning it while there is clear air underneath avoids hitting the lock body or table with the tip during the swing.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -19.0, 92.5) cm, approach = (1.00, 0.00, -0.00), finger axis = (-0.00, -0.00, -1.00), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 945\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Tip the left wrist so the blade points down below the round handle.",
+   "commands": [
+    "left rotate pitch +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +90.0: ok; left fingertips now at (-3.5, -19.0, 92.5), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The blade now hangs downward from the left-hand grip. Pickup and handoff are complete; the flat blade still needs to face along the narrow keyhole before the hand approaches it. Next: Rotate the left wrist around the downward blade direction to align the flat blade with the slot. Why: Pointing down is only part of insertion: a flat blade presented across a narrow slot catches the rim. Align its broad face with the opening before lowering, while there is still room to turn freely.",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -19.0, 92.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 997\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Rotate the left wrist around the downward blade direction to align the flat blade with the slot.",
+   "commands": [
+    "left rotate yaw +45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +45.0: ok; left fingertips now at (-3.5, -19.0, 92.5), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key remains held by its handle with the blade pointing down. The first alignment turn is complete, but the blade orientation is still being refined; insertion and turning in the lock are pending. Next: Make a smaller wrist turn in the same direction to refine the flat blade's alignment with the keyhole. Why: A small orientation correction is easier to judge than another large swing. Keep the blade above the opening while turning so the rim does not become a pivot that tips the key out of the fingers.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -19.0, 92.5) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.70, -0.71, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1029\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Make a smaller wrist turn in the same direction to refine the flat blade's alignment with the keyhole.",
+   "commands": [
+    "left rotate yaw +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +15.0: ok; left fingertips now at (-3.6, -19.0, 92.5), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Pickup and handoff are done. The downward blade has been turned into its approach orientation and is still held clear of the keyhole; no insertion or lock turn has happened yet. Next: Pause to let the key settle in the handle grip before carrying it over the opening. Why: The tip is far from the fingers, so a small wobble at the handle moves the tip noticeably. Check that the blade hangs steadily rather than treating a momentary overlap with the slot as alignment.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -19.0, 92.5) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1051\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Pause to let the key settle in the handle grip before carrying it over the opening.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key is steady in the left hand with its blade down. Pickup, handoff and the free-space orientation are complete; the tip is still away from the keyhole and needs lateral placement. Next: Carry the upright key toward the opening, using the visible blade tip and slot as the alignment pair. Why: The fingertip marker is not the blade tip: the handle grip offsets them. Center the tip over the opening before descending, and preserve the blade orientation while translating.",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -19.0, 92.5) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1054\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Carry the upright key toward the opening, using the visible blade tip and slot as the alignment pair.",
+   "commands": [
+    "left move x -5.0",
+    "left move x -5.0",
+    "left move x -4.2",
+    "left move y +2.8"
+   ],
+   "failed": [],
+   "effect": "left move x -5.0: ok; left move x -5.0: ok; left move x -4.2: ok; left move y +2.8: ok; left fingertips now at (-17.8, -16.1, 92.4), opening 0.265",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left hand has brought the downward blade toward the keyhole. The key is still held above it; pickup and handoff are complete, but seating and turning are not. Next: Make a small lateral correction, then lower toward the slot while keeping the blade upright. Why: The tip must meet the opening, not the surrounding lock surface. Separate the alignment correction from the descent so sideways motion does not scrape the tip along the rim.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.8, -16.1, 92.4) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1136\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Make a small lateral correction, then lower toward the slot while keeping the blade upright.",
+   "commands": [
+    "left move x +0.3",
+    "left move z -4.6"
+   ],
+   "failed": [],
+   "effect": "left move x +0.3: ok; left move z -4.6: ok; left fingertips now at (-17.5, -16.1, 87.8), opening 0.265",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The blade tip overlaps the keyhole area after the approach. Pickup and handoff are done, but the head view alone does not establish how far the blade has entered; turning is still pending. Next: Pause and inspect the close wrist view before continuing the downward approach. Why: At this scale the hand can hide the tip in the head view. Use the wrist view to compare the blade with the slot edges; visual overlap from above is not enough to call the key fully inserted.",
+   "images": [
+    "frame018_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 87.8) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1174\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Pause and inspect the close wrist view before continuing the downward approach.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left hand is holding the downward blade at the keyhole after the inspection pause. Pickup and transfer are finished; insertion is underway and the handle has not been turned. Next: Lower the key a little while preserving its sideways position and blade orientation. Why: The narrow opening leaves little room for a tilted blade. Small downward moves let the tip enter along the slot instead of using a large push that could catch the rim or lever the handle out of the fingers.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 87.8) cm, approach = (-0.01, -0.01, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1177\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Lower the key a little while preserving its sideways position and blade orientation.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.5, -16.1, 87.3), opening 0.268",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: One short descent has followed the pause at the keyhole. The left fingers still hold the round handle over the opening; seating remains in progress and the final turn has not begun. Next: Continue with another short downward move, keeping the blade on the same approach line. Why: Watch the blade where it meets the opening and the handle between the fingers. A handle moving down with the blade aligned is useful evidence of entry; motion of the hand alone is not proof that the blade is seated.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 87.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1193\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Continue with another short downward move, keeping the blade on the same approach line.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.5, -16.1, 86.9), opening 0.272",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key has been lowered again without a deliberate sideways change. Pickup and transfer are complete, and the left hand is still guiding insertion; turning must wait until the blade is supported in the slot. Next: Advance downward in another small increment without twisting the handle yet. Why: Twisting during an uncertain entry can put the blade across the rim. Keeping its orientation fixed isolates the insertion motion and makes a new lean or slip easier to notice.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 86.9) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.50, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1209\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Advance downward in another small increment without twisting the handle yet.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.5, -16.1, 86.3), opening 0.266",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The round handle is lower over the keyhole after the latest descent, and the blade remains beneath the left-hand grip. Pickup and handoff are done; insertion is still being finished and no lock turn has begun. Next: Lower a little farther while keeping the handle centered over the blade's entry line. Why: The hand partly hides the contact area from above. Check the visible blade and rim instead of aiming the wrist marker at the hole, and avoid sliding the handle sideways while the blade is constrained by the slot.",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 86.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1225\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Lower a little farther while keeping the handle centered over the blade's entry line.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.5, -16.1, 85.8), opening 0.266",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left hand has continued down the same insertion line and still holds the key by its round handle. The key has reached the opening, but stable seating and the subsequent turn remain to be completed. Next: Continue a short vertical descent without changing the blade's orientation. Why: As less blade remains exposed, the fingertips get closer to the lock body. Keep the jaw clearance in view so the fingers do not press the housing while the blade is still entering.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 85.8) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1241\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Continue a short vertical descent without changing the blade's orientation.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.5, -16.1, 85.3), opening 0.266",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The handle has moved closer to the lock during the latest short descent. Pickup and handoff are finished; the left hand is still guiding the blade inward, with the turning step still pending. Next: Lower the held key by another small amount along the existing entry direction. Why: The useful motion is the blade moving into the opening while staying upright. If the handle leans or the blade rides onto an edge, further force would not improve insertion; keep the incremental approach easy to inspect.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.5, -16.1, 85.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1257\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Lower the held key by another small amount along the existing entry direction.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.6, -16.1, 84.8), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: Insertion has progressed through another short descent, with the handle still pinched above the opening. The key has not yet been regrasped for turning, so the remaining work is to settle it and then turn it in place. Next: Continue the controlled downward approach without adding a lateral sweep. Why: The slot should guide the blade while the hand supports the handle. A sideways sweep near this contact would pull the blade against the rim instead of helping it enter.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -16.1, 84.8) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1273\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Continue the controlled downward approach without adding a lateral sweep.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.6, -16.1, 84.3), opening 0.267",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left fingers and round handle are now close to the lock after the continuing descent. Pickup and transfer are complete; seating is being finished before changing the handle grip or attempting the turn. Next: Make another small downward move, keeping the key upright over its entry point. Why: Near the lock the hand has less clearance than it did in free space. Short moves help distinguish the key settling farther into the opening from the gripper merely approaching the surrounding surface.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -16.1, 84.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1289\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Make another small downward move, keeping the key upright over its entry point.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.6, -16.1, 83.8), opening 0.268",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key remains at the opening after the latest insertion increment, and the left fingers are still in the original handle grip. The insertion approach is nearly finished; a support check and the handle turn remain. Next: Finish this downward approach with one more short descent, without rotating the handle. Why: Keeping the blade orientation fixed avoids loading it against the sides of the narrow opening. The next pause should establish whether the key remains upright before opening the fingers for a new grip.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -16.1, 83.8) cm, approach = (-0.01, -0.01, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1305\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Finish this downward approach with one more short descent, without rotating the handle.",
+   "commands": [
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move z -0.5: ok; left fingertips now at (-17.6, -16.1, 83.3), opening 0.264",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The descent sequence has stopped with the key at the slot and the handle still between the left fingers. Pickup and handoff are complete; the key needs a steady support check before regrasping and turning. Next: Pause at the insertion position and inspect the blade-to-slot contact and the handle posture. Why: A key balanced on a rim can resemble an inserted key from above. Look for the blade entering the opening and staying upright; do not use the downward travel alone as the completion test.",
+   "images": [
+    "frame028_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -16.1, 83.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.26 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1321\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Pause at the insertion position and inspect the blade-to-slot contact and the handle posture.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The key remains upright at the slot after the pause. Pickup and transfer are done; the next step is to adjust the handle grip while the blade stays in the opening, then turn it without lifting it out. Next: Open the left fingers slightly, raise and shift them to pinch the round handle higher, then close again. Why: The blade needs to stay supported by the slot during this brief release. A higher pinch keeps the fingers clear of the lock body during rotation; watch the wrist view for a leaning handle or a blade that rises out.",
+   "images": [
+    "frame029_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.6, -16.1, 83.3) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1324\nLEFT arm closed on an object with the fingertips at z = 90.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 90.7 + (h - 76.5) before opening.",
+   "plan": "Open the left fingers slightly, raise and shift them to pinch the round handle higher, then close again.",
+   "commands": [
+    "left gripper 0.50",
+    "left move z +1.2",
+    "left move x +0.3",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.50: ok (gripper opened); left move z +1.2: ok; left move x +0.3: ok; left gripper 0.00: ok (fingers stopped at opening 0.28: something is between them (probably grasped)); left fingertips now at (-17.3, -16.1, 84.5), opening 0.284",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The left fingers have reclosed higher on the round handle, with the blade still at the keyhole. Pickup, transfer and the insertion approach are complete; the handle turn is beginning now. Next: Make a small lateral grip correction, then start turning the handle clockwise while keeping it down in the slot. Why: The wrist view makes the blade-to-opening contact easier to inspect than the head view. Rotate through a small arc so the key can turn within the lock rather than being pulled sideways or lifted into an empty-air turn.",
+   "images": [
+    "frame030_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.3, -16.1, 84.5) cm, approach = (-0.01, -0.01, -1.00), finger axis = (-0.49, -0.87, 0.01), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1393\nLEFT arm closed on an object with the fingertips at z = 84.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.5 + (h - 76.5) before opening.",
+   "plan": "Make a small lateral grip correction, then start turning the handle clockwise while keeping it down in the slot.",
+   "commands": [
+    "left move x -0.4",
+    "left move y +0.2",
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left move x -0.4: ok; left move y +0.2: ok; left rotate yaw -15.0: ok; left fingertips now at (-17.7, -15.9, 84.5), opening 0.265",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "Goal: pick up the key, pass it to the other hand, put its blade into the keyhole, then turn it while it stays inserted. A handoff counts only when the key follows the receiving hand after the first hand lets go. For insertion, the blade must enter the opening rather than rest on the rim; turning the handle in the air does not finish the task. Progress: The first small clockwise turn has been made from the higher handle grip. The key remains at the opening; pickup, handoff and insertion have been performed, and the turning motion is being continued. Next: Continue the clockwise handle turn in another small increment while preserving the seated blade position. Why: Check the close view for the blade staying inside the opening as the handle changes orientation. Finishing the task means turning the inserted key, not merely rotating the gripper after the key has slipped or risen out.",
+   "images": [
+    "frame031_cam_head.jpg",
+    "frame031_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.7, -15.9, 84.5) cm, approach = (-0.01, -0.00, -1.00), finger axis = (-0.70, -0.71, 0.01), opening = 0.27 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1447\nLEFT arm closed on an object with the fingertips at z = 84.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.5 + (h - 76.5) before opening.",
+   "plan": "Continue the clockwise handle turn in another small increment while preserving the seated blade position.",
+   "commands": [
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -15.0: ok; left fingertips now at (-17.8, -15.9, 84.5), opening 0.263",
+   "source_index": null
+  }
+ ]
+}

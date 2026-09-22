@@ -1,0 +1,643 @@
+{
+ "task": "press_by_number",
+ "instruction": "Press the two red buttons the required number of times according to the number cards, then press the blue button to confirm.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1574,
+  "decisions": 45,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 0 of 9 done: go to the left red button and make a pusher out of the fingers",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 0 of 9 done. Close the left fingers into one pusher, point them down (down) and move at travel height over (-15, -17), where the left red button stands.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down",
+    "left move x +15.0",
+    "left move y +3.7"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left move x +15.0: ok; left move y +3.7: ok; left fingertips now at (-15.0, -17.0, 92.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 0 of 9 done: drop to just above the plunger of the left red button",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-15.0, -17.0, 92.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 101",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 0 of 9 done. Lower the closed fingertips to z=83.6, 4 cm above the plunger top of the left red button, ready to press.",
+   "commands": [
+    "left move z -8.5"
+   ],
+   "failed": [],
+   "effect": "left move z -8.5: ok; left fingertips now at (-15.0, -17.0, 83.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 0 of 9 done: push the plunger of the left red button down",
+   "images": [
+    "frame003_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-15.0, -17.0, 83.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 126",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 0 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -4.8"
+   ],
+   "failed": [
+    "left move z -4.8"
+   ],
+   "effect": "left move z -4.8: FAILED (the target was not reached: the fingertips moved (+0.5, +0.7, -3.3) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-14.5, -16.3, 80.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 0 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-14.5, -16.3, 80.3) cm, approach = (0.03, 0.05, -1.00), finger axis = (-1.00, 0.00, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 146",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 0 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.3",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.3: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-14.5, -16.3, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 1 of 9 done: push the plunger of the left red button down",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.5, -16.3, 82.6) cm, approach = (0.03, 0.05, -1.00), finger axis = (-1.00, 0.00, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 173",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 1 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [
+    "left move z -3.7"
+   ],
+   "effect": "left move z -3.7: FAILED (the target was not reached: the fingertips moved (+0.3, +0.7, -2.3) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-14.2, -15.6, 80.4), opening 0.276",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 1 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-14.2, -15.6, 80.4) cm, approach = (0.05, 0.09, -0.99), finger axis = (-1.00, 0.00, -0.05), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 193",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 1 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-14.2, -15.6, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 2 of 9 done: push the plunger of the left red button down",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.2, -15.6, 82.6) cm, approach = (0.05, 0.09, -0.99), finger axis = (-1.00, 0.00, -0.05), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 220",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 2 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [
+    "left move z -3.7"
+   ],
+   "effect": "left move z -3.7: FAILED (the target was not reached: the fingertips moved (+0.5, +0.7, -2.2) cm, i.e. only part of the way; remaining error 1.8 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-13.7, -14.8, 80.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 2 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.7, -14.8, 80.4) cm, approach = (0.07, 0.13, -0.99), finger axis = (-1.00, 0.01, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 240",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 2 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-13.7, -14.8, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 3 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.7, -14.8, 82.6) cm, approach = (0.07, 0.13, -0.99), finger axis = (-1.00, 0.01, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 267",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 3 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-13.2, -14.0, 79.8), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 3 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.2, -14.0, 79.8) cm, approach = (0.09, 0.17, -0.98), finger axis = (-1.00, 0.01, -0.09), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 287",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 3 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.8",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.8: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-13.2, -14.0, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 4 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-13.2, -14.0, 82.6) cm, approach = (0.09, 0.17, -0.98), finger axis = (-1.00, 0.01, -0.09), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 316",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 4 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-12.9, -13.7, 79.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 4 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.7, 79.4) cm, approach = (0.10, 0.18, -0.98), finger axis = (-0.99, 0.01, -0.10), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 336",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 4 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +3.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +3.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-12.9, -13.7, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 5 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.7, 82.6) cm, approach = (0.10, 0.18, -0.98), finger axis = (-0.99, 0.01, -0.10), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 365",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 5 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-12.9, -13.5, 79.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 5 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.5, 79.1) cm, approach = (0.11, 0.19, -0.98), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 385",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 5 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +3.5",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +3.5: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-12.9, -13.5, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 6 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.5, 82.6) cm, approach = (0.11, 0.19, -0.98), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 414",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 6 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-12.8, -13.4, 79.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 6 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.8, -13.4, 79.0) cm, approach = (0.11, 0.19, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 434",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 6 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +3.6",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +3.6: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-12.8, -13.4, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 7 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.8, -13.4, 82.6) cm, approach = (0.11, 0.19, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 463",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 7 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-12.8, -13.3, 78.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 7 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.8, -13.3, 78.9) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 483",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 7 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +3.7",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +3.7: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-12.9, -13.3, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 8 of 9 done: push the plunger of the left red button down",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 512",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 8 of 9 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (-12.9, -13.3, 78.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 1/4: the left red button, 8 of 9 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 78.9) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 532",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 1/4: the left red button, 8 of 9 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +3.7",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +3.7: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (-12.9, -13.3, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 2/4: the blue confirm button on the right, 0 of 1 done: go to the blue confirm button on the right and make a pusher out of the fingers",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 561",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 2/4: the blue confirm button on the right, 0 of 1 done. Close the right fingers into one pusher, point them down (down) and move at travel height over (15, -17), where the blue confirm button on the right stands.",
+   "commands": [
+    "right gripper 0.00",
+    "right point down",
+    "right move x -15.0",
+    "right move y +3.7"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right point down: ok; right move x -15.0: ok; right move y +3.7: ok; right fingertips now at (15.0, -17.0, 92.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 2/4: the blue confirm button on the right, 0 of 1 done: drop to just above the plunger of the blue confirm button on the right",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.0, -17.0, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 662",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 2/4: the blue confirm button on the right, 0 of 1 done. Lower the closed fingertips to z=83.6, 4 cm above the plunger top of the blue confirm button on the right, ready to press.",
+   "commands": [
+    "right move z -8.5"
+   ],
+   "failed": [],
+   "effect": "right move z -8.5: ok; right fingertips now at (15.0, -17.0, 83.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 2/4: the blue confirm button on the right, 0 of 1 done: push the plunger of the blue confirm button on the right down",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.0, -17.0, 83.6) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 687",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 2/4: the blue confirm button on the right, 0 of 1 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels.",
+   "commands": [
+    "right move z -4.7"
+   ],
+   "failed": [
+    "right move z -4.7"
+   ],
+   "effect": "right move z -4.7: FAILED (the target was not reached: the fingertips moved (-0.5, +0.8, -3.4) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (14.5, -16.3, 80.3), opening 0.19",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 2/4: the blue confirm button on the right, 0 of 1 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.5, -16.3, 80.3) cm, approach = (-0.02, 0.04, -1.00), finger axis = (-1.00, -0.00, 0.02), opening = 0.19 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 707",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 2/4: the blue confirm button on the right, 0 of 1 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "right move z +2.3",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "right move z +2.3: ok; wait: ok; wait: ok; wait: ok; right fingertips now at (14.5, -16.3, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: go to the middle red button and make a pusher out of the fingers",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -13.3, 82.6) cm, approach = (0.11, 0.20, -0.97), finger axis = (-0.99, 0.01, -0.11), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.5, -16.3, 82.6) cm, approach = (-0.02, 0.04, -1.00), finger axis = (-1.00, -0.00, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 734",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. Close the left fingers into one pusher, point them down (down) and move at travel height over (-0, -17), where the middle red button stands.",
+   "commands": [
+    "left gripper 0.00",
+    "left point down",
+    "left move x +12.9",
+    "left move y -3.7"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left point down: ok; left move x +12.9: ok; left move y -3.7: ok; left fingertips now at (-0.8, -15.8, 82.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: finish centring over the middle red button",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.8, -15.8, 82.4) cm, approach = (-0.00, 0.01, -1.00), finger axis = (-1.00, -0.04, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.0, 82.5) cm, approach = (-0.02, 0.03, -1.00), finger axis = (-1.00, -0.02, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 815",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. The pusher is +0.8 cm in x and -1.2 cm in y off the centre of the middle red button.",
+   "commands": [
+    "left move x +0.8",
+    "left move y -1.2"
+   ],
+   "failed": [],
+   "effect": "left move x +0.8: ok; left move y -1.2: ok; left fingertips now at (-0.5, -16.3, 82.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: finish centring over the middle red button",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.5, -16.3, 82.3) cm, approach = (-0.00, 0.01, -1.00), finger axis = (-1.00, -0.06, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.4, 82.5) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 849",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. The pusher is +0.5 cm in x and -0.7 cm in y off the centre of the middle red button.",
+   "commands": [
+    "left move x +0.5",
+    "left move y -0.7"
+   ],
+   "failed": [],
+   "effect": "left move x +0.5: ok; left move y -0.7: ok; left fingertips now at (-0.4, -16.5, 82.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: drop to just above the plunger of the middle red button",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -16.5, 82.3) cm, approach = (-0.00, 0.01, -1.00), finger axis = (-1.00, -0.08, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 881",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. Lower the closed fingertips to z=83.6, 4 cm above the plunger top of the middle red button, ready to press.",
+   "commands": [
+    "left move z +1.3"
+   ],
+   "failed": [],
+   "effect": "left move z +1.3: ok; left fingertips now at (-0.4, -16.5, 83.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: push the plunger of the middle red button down",
+   "images": [
+    "frame029_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -16.5, 83.6) cm, approach = (-0.00, 0.01, -1.00), finger axis = (-1.00, -0.08, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 899",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -4.7"
+   ],
+   "failed": [
+    "left move z -4.7"
+   ],
+   "effect": "left move z -4.7: FAILED (the target was not reached: the fingertips moved (+0.6, +0.4, -3.2) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (0.2, -16.1, 80.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 0 of 6 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.2, -16.1, 80.4) cm, approach = (0.03, 0.04, -1.00), finger axis = (-1.00, -0.07, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 919",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 0 of 6 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (0.2, -16.1, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 1 of 6 done: push the plunger of the middle red button down",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.2, -16.1, 82.6) cm, approach = (0.03, 0.04, -1.00), finger axis = (-1.00, -0.07, -0.03), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 946",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 1 of 6 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [
+    "left move z -3.7"
+   ],
+   "effect": "left move z -3.7: FAILED (the target was not reached: the fingertips moved (+0.6, +0.4, -2.2) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (0.7, -15.7, 80.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 1 of 6 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.7, -15.7, 80.4) cm, approach = (0.06, 0.07, -1.00), finger axis = (-1.00, -0.07, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 966",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 1 of 6 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (0.7, -15.7, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 2 of 6 done: push the plunger of the middle red button down",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.7, -15.7, 82.6) cm, approach = (0.06, 0.07, -1.00), finger axis = (-1.00, -0.07, -0.07), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 993",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 2 of 6 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [
+    "left move z -3.7"
+   ],
+   "effect": "left move z -3.7: FAILED (the target was not reached: the fingertips moved (+0.6, +0.4, -2.2) cm, i.e. only part of the way; remaining error 1.7 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (1.3, -15.3, 80.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 2 of 6 done: let the plunger spring back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (1.3, -15.3, 80.4) cm, approach = (0.09, 0.10, -0.99), finger axis = (-0.99, -0.07, -0.10), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1013",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 2 of 6 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.2",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.2: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (1.3, -15.3, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 3 of 6 done: push the plunger of the middle red button down",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.3, -15.3, 82.6) cm, approach = (0.09, 0.10, -0.99), finger axis = (-0.99, -0.07, -0.10), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1040",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 3 of 6 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [
+    "left move z -3.7"
+   ],
+   "effect": "left move z -3.7: FAILED (the target was not reached: the fingertips moved (+0.6, +0.5, -2.3) cm, i.e. only part of the way; remaining error 1.6 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (1.9, -14.8, 80.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 3 of 6 done: let the plunger spring back",
+   "images": [
+    "frame036_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -14.8, 80.3) cm, approach = (0.13, 0.13, -0.98), finger axis = (-0.99, -0.06, -0.14), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1060",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 3 of 6 done. Lift the pusher back to z=82.6: a press only counts once the plunger has gone down and sprung back above 90 %, so this is what makes the press just made count.",
+   "commands": [
+    "left move z +2.3",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left move z +2.3: ok; wait: ok; wait: ok; wait: ok; left fingertips now at (1.9, -14.8, 82.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 3/4: the middle red button, 4 of 6 done: push the plunger of the middle red button down",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -14.8, 82.6) cm, approach = (0.13, 0.13, -0.98), finger axis = (-0.99, -0.06, -0.14), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1087",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 3/4: the middle red button, 4 of 6 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels like.",
+   "commands": [
+    "left move z -3.7"
+   ],
+   "failed": [],
+   "effect": "left move z -3.7: ok; left fingertips now at (2.4, -14.4, 79.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 4/4: the blue confirm button on the right, 0 of 1 done: go to the blue confirm button on the right and make a pusher out of the fingers",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -14.1, 82.6) cm, approach = (0.16, 0.16, -0.97), finger axis = (-0.98, -0.06, -0.17), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.3, -17.6, 82.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-1.00, -0.03, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1185",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 4/4: the blue confirm button on the right, 0 of 1 done. Close the right fingers into one pusher, point them down (down) and move at travel height over (15, -17), where the blue confirm button on the right stands.",
+   "commands": [
+    "right gripper 0.00",
+    "right point down",
+    "right move x +0.7",
+    "right move y +0.6"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right point down: ok; right move x +0.7: ok; right move y +0.6: ok; right fingertips now at (15.0, -17.1, 82.4), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | step 4/4: the blue confirm button on the right, 0 of 1 done: push the plunger of the blue confirm button on the right down",
+   "images": [
+    "frame043_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (2.5, -14.0, 82.6) cm, approach = (0.16, 0.16, -0.97), finger axis = (-0.98, -0.06, -0.17), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.0, -17.1, 83.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1257",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now step 4/4: the blue confirm button on the right, 0 of 1 done. Push straight down to z=78.9, 1.2 cm below the plunger top so it passes half its travel; the move may report stopping early on the button, which is what pressing feels.",
+   "commands": [
+    "right move z -4.7"
+   ],
+   "failed": [
+    "right move z -4.7"
+   ],
+   "effect": "right move z -4.7: FAILED (the target was not reached: the fingertips moved (-0.4, +0.6, -3.4) cm, i.e. only part of the way; remaining error 1.5 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (14.6, -16.5, 80.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice | read off the head view: three buttons in a row along the far edge, left red and middle red and blue; the card standing behind the left red button shows 9, the card standing behind the middle red button shows 6, and each red button goes down as many times as the card behind it | all four steps of the order done: the whole order is done, reset both arms",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (2.5, -13.9, 82.8) cm, approach = (0.16, 0.16, -0.97), finger axis = (-0.98, -0.06, -0.17), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.6, -16.6, 82.5) cm, approach = (-0.02, 0.03, -1.00), finger axis = (-1.00, -0.01, 0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1304",
+   "plan": "order: left red x9 -> blue x1 -> middle red x6 -> blue x1 -> both arms home; blue confirms each count as soon as that count is finished, so blue goes down twice. Now all four steps of the order done. Both red counts and both blue confirmations are done, so the last thing the order asks for is to put the arms back where they started; send both arms home.",
+   "commands": [
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+12.8, -3.3, +9.1) cm, i.e. only part of the way; remaining error 2.8 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 0.185; right fingertips now at (27.4, -19.9, 91.7), opening 0.185",
+   "source_index": null
+  }
+ ]
+}

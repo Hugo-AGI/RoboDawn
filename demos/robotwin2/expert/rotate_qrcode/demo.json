@@ -1,0 +1,140 @@
+{
+ "task": "rotate_qrcode",
+ "instruction": "Pick the black triangular stand up from the table and rotate it.",
+ "kind": "task",
+ "source": {
+  "task": "rotate_qrcode",
+  "task_config": "demo_clean",
+  "seed": 100018,
+  "instruction": "Pick the black triangular stand up from the table and rotate it.",
+  "turns": 6,
+  "commands": 19,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the qrcode, which was at x = -22 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "qrcode",
+   "x": -21.76
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left arm forward and right toward stand, rolling -90 degrees to align gripper orientation.",
+   "commands": [
+    "left move y +17.0",
+    "left move x +8.0",
+    "left rotate roll -45.0",
+    "left rotate roll -45.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+8, +17, -0) cm, now 2 cm (horizontal) / +20 cm (vertical) from the qrcode",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -3, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Adjust left arm pitch and yaw to align jaws with the stand's slanted face.",
+   "commands": [
+    "left rotate pitch -22.5",
+    "left rotate yaw +87.4",
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -1) cm, now 2 cm (horizontal) / +19 cm (vertical) from the qrcode",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -3, 93) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm slightly forward and down to z=89, then grasp the stand.",
+   "commands": [
+    "left move y +1.5",
+    "left move z -4.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, -4) cm, now 1 cm (horizontal) / +15 cm (vertical) from the qrcode; closed the gripper (opening 0.12: holding the qrcode)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -1, 89) opening 0.12; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift stand up to z=96 and adjust y slightly.",
+   "commands": [
+    "left move z +7.0",
+    "left move y +0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +7) cm, now 1 cm (horizontal) / +15 cm (vertical) from the qrcode",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -1, 96) opening 0.14; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left arm yaw -88 degrees to rotate the stand and pull back toward y=-15.",
+   "commands": [
+    "left move y -13.0",
+    "left move x +1.5",
+    "left rotate yaw -88.0",
+    "left move y -2.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+2, -13, -0) cm, now 0 cm (horizontal) / +15 cm (vertical) from the qrcode",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-20, -13, 96) opening 0.14; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left arm to table level (z=90) and open gripper to release.",
+   "commands": [
+    "left move y -1.5",
+    "left move z -6.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

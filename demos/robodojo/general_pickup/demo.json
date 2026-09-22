@@ -1,0 +1,110 @@
+{
+ "task": "general_pickup",
+ "instruction": "Pick up the white coffee cup by 10 cm.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 203,
+  "decisions": 6,
+  "frames": 6,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: orient the gripper and travel above the target at a safe height",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down30) and turn the finger axis across the narrow side of the cup, then move at travel height (z stays at 92) until the fingertip cross in the head image sits over (32, 1). Descend only when aligned.",
+   "commands": [
+    "right point down30",
+    "right rotate yaw +15.0",
+    "right move x +2.5",
+    "right move y +20.0"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right rotate yaw +15.0: ok; right move x +2.5: ok; right move y +20.0: ok; right fingertips now at (32.5, -0.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: finish the sideways travel above the target",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.5, -0.7, 92.1) cm, approach = (-0.13, 0.48, -0.87), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 113",
+   "plan": "The head grid shows the cross still -0.0 cm in x and +1.3 cm in y from the target; correct that while staying at travel height.",
+   "commands": [
+    "right move y +1.3"
+   ],
+   "failed": [],
+   "effect": "right move y +1.3: ok; right fingertips now at (32.5, 0.6, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: lower the fingertips to just above the grasp height",
+   "images": [
+    "frame003_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.5, 0.6, 92.1) cm, approach = (-0.13, 0.48, -0.87), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 131",
+   "plan": "Aligned over the target in the head view; descend to z=83.3, 4 cm above the grasp height, and check the wrist camera cross before the final approach.",
+   "commands": [
+    "right move z -8.8"
+   ],
+   "failed": [],
+   "effect": "right move z -8.8: ok; right fingertips now at (32.5, 0.6, 83.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: descend to the grasp height",
+   "images": [
+    "frame004_cam_head.jpg",
+    "frame004_cam_right_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.5, 0.6, 83.4) cm, approach = (-0.13, 0.48, -0.87), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 156",
+   "plan": "The cross is on the object and the jaw axis crosses its narrow side; descend to the grasp height z=79.3 (fingertips 2.8 cm above the table).",
+   "commands": [
+    "right move z -4.1"
+   ],
+   "failed": [],
+   "effect": "right move z -4.1: ok; right fingertips now at (32.5, 0.6, 79.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: close the gripper on the object",
+   "images": [
+    "frame005_cam_head.jpg",
+    "frame005_cam_right_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.5, 0.6, 79.3) cm, approach = (-0.13, 0.48, -0.87), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 176",
+   "plan": "Close the gripper. The result line must say something is between the fingers (opening clearly above the empty reading 0.19); otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.76: something is between them (probably grasped)); right fingertips now at (32.5, 0.6, 79.3), opening 0.763",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: lift the object straight up",
+   "images": [
+    "frame006_cam_head.jpg",
+    "frame006_cam_right_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.5, 0.6, 79.3) cm, approach = (-0.13, 0.48, -0.87), finger axis = (-0.97, -0.26, -0.00), opening = 0.76 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 189\nRIGHT arm closed on an object with the fingertips at z = 79.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.3 + (h - 76.5) before opening.",
+   "plan": "The object is held; lift straight up by 12 cm so its whole body clears the table by more than the required 10 cm, and check in the next images that it moved with the fingers.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (32.5, 0.8, 90.0), opening 0.768",
+   "source_index": null
+  }
+ ]
+}

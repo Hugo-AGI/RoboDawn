@@ -1,0 +1,103 @@
+{
+ "task": "turn_switch",
+ "instruction": "Activate the switch at the lightweight plastic switch angled edges",
+ "kind": "task",
+ "source": {
+  "task": "turn_switch",
+  "task_config": "demo_clean",
+  "seed": 100024,
+  "instruction": "Activate the switch at the lightweight plastic switch angled edges",
+  "turns": 4,
+  "commands": 10,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the switch, which was at x = -2 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "switch",
+   "x": -1.8
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Close right gripper to form a pushing tip.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 43 cm (horizontal) / +12 cm (vertical) from the switch; closed the gripper (opening 0.00: nothing held)",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.00; table z = 74",
+   "plan": "Move right gripper towards switch to (1, 4, 94).",
+   "commands": [
+    "right move x -15.0",
+    "right move x -15.0",
+    "right move y +11.8",
+    "right move y +11.8"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-30, +23, +0) cm, now 5 cm (horizontal) / +13 cm (vertical) from the switch",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, 4, 94) opening 0.00; table z = 74",
+   "plan": "Rotate right gripper to align with switch angled edge and lower to z=80.",
+   "commands": [
+    "right rotate roll -16.7",
+    "right rotate yaw +28.4",
+    "right move z -14.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-1, -0, -14) cm, now 5 cm (horizontal) / -2 cm (vertical) from the switch",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, 4, 80) opening 0.00; table z = 74",
+   "plan": "Push forward and left against the switch edge to activate it.",
+   "commands": [
+    "right move x -0.6",
+    "right move y +1.8"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

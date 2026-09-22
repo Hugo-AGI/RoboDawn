@@ -1,0 +1,172 @@
+{
+ "task": "place_shoe",
+ "instruction": "Pick up the brown shoe with green red stripes from the table and set it on the mat",
+ "kind": "task",
+ "source": {
+  "task": "place_shoe",
+  "task_config": "demo_clean",
+  "seed": 100016,
+  "instruction": "Pick up the brown shoe with green red stripes from the table and set it on the mat",
+  "turns": 8,
+  "commands": 23,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the shoe, which was at x = -19 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "shoe",
+   "x": -18.76
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Rotate left gripper to match shoe orientation (-50 deg yaw) and move forward along y towards y=3.",
+   "commands": [
+    "left point down",
+    "left rotate yaw -50.0",
+    "left move y +11.0",
+    "left move y +11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +22, +0) cm, now 12 cm (horizontal) / +20 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, 3, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left gripper rightward (+x) to align above the shoe opening and lower slightly to z=88.",
+   "commands": [
+    "left move x +12.0",
+    "left move z -6.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+12, +0, -6) cm, now 0 cm (horizontal) / +14 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-19, 3, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper into the shoe collar to grasp height z=78.",
+   "commands": [
+    "left move x +0.5",
+    "left move z -10.0",
+    "left point down",
+    "left rotate yaw -50.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -10) cm, now 1 cm (horizontal) / +4 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, 3, 78) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Close left gripper to grasp the shoe.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +4 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, 3, 78) opening 0.79; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift shoe up to z=85 to clear table surface.",
+   "commands": [
+    "left move z +7.0",
+    "left move y -0.5",
+    "left point down",
+    "left rotate yaw -50.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, +6) cm, now 0 cm (horizontal) / +4 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-19, 2, 85) opening 0.81; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm to x=0, y=-8, and lift slightly to z=89 above the mat.",
+   "commands": [
+    "left move z +4.5",
+    "left move y -10.5",
+    "left move x +19.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+19, -10, +4) cm, now 0 cm (horizontal) / +4 cm (vertical) from the shoe",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -8, 89) opening 0.80; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate shoe yaw by -90 degrees to align horizontally with the mat.",
+   "commands": [
+    "left rotate yaw -90.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +15 cm (vertical) from the target_block",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -8, 89) opening 0.80; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower shoe down to z=79 onto the mat and open gripper to release.",
+   "commands": [
+    "left move y -0.5",
+    "left move z -10.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

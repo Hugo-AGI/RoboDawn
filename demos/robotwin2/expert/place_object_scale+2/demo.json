@@ -1,0 +1,137 @@
+{
+ "task": "place_object_scale",
+ "instruction": "Use the right arm to put the lightweight bell with smooth surface on the handheld electronicscale with smooth finish.",
+ "kind": "task",
+ "source": {
+  "task": "place_object_scale",
+  "task_config": "demo_clean",
+  "seed": 100023,
+  "instruction": "Use the right arm to put the lightweight bell with smooth surface on the handheld electronicscale with smooth finish.",
+  "turns": 6,
+  "commands": 16,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the object, which was at x = +15 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "object",
+   "x": 15.48
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper to (16, -18, 94) and align orientation to grasp bell.",
+   "commands": [
+    "right move x -15.0",
+    "right move y +1.5",
+    "right point down",
+    "right rotate yaw -10.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-15, +1, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -18, 94) opening 0.94; table z = 74",
+   "plan": "Lower right gripper halfway down to z = 88 cm.",
+   "commands": [
+    "right move z -6.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -6) cm, now 0 cm (horizontal) / +14 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -18, 88) opening 0.94; table z = 74",
+   "plan": "Descend to grasp height z = 78 cm and close gripper to grasp the bell.",
+   "commands": [
+    "right move z -10.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, -10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -18, 78) opening 0.91; table z = 74",
+   "plan": "Lift bell up to z = 93 cm to clear surrounding objects.",
+   "commands": [
+    "right move z +15.0",
+    "right move x -0.5",
+    "right move y +0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-1, +0, +15) cm, now 1 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (15, -18, 93) opening 0.93; table z = 74",
+   "plan": "Move right gripper forward to (16, -1, 89) directly over the scale platform.",
+   "commands": [
+    "right move y +16.5",
+    "right move x +1.0",
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+1, +16, -4) cm, now 1 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -1, 89) opening 0.93; table z = 74",
+   "plan": "Lower bell onto scale platform at z = 85 cm and open gripper to release.",
+   "commands": [
+    "right move x +0.5",
+    "right move z -4.5",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

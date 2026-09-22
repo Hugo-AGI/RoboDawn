@@ -1,0 +1,208 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100001,
+  100002,
+  100007,
+  100009,
+  100017,
+  100021,
+  100022,
+  100023,
+  100027,
+  100029,
+  100030,
+  100031,
+  100038,
+  100041,
+  100047,
+  100048,
+  100052,
+  100054,
+  100055,
+  100063,
+  100066,
+  100071,
+  100074,
+  100079,
+  100082,
+  100085,
+  100089,
+  100091,
+  100093,
+  100094,
+  100096,
+  100104,
+  100106,
+  100109,
+  100115,
+  100116,
+  100119,
+  100124,
+  100126,
+  100128,
+  100131,
+  100138,
+  100142,
+  100146,
+  100150,
+  100151,
+  100158,
+  100159,
+  100160,
+  100161
+ ],
+ "infos": [
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  },
+  {
+   "{A}": "060_kitchenpot/base0"
+  }
+ ],
+ "next_seed": 100162
+}

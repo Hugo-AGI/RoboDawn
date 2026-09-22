@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100009,
+  100010,
+  100012,
+  100013,
+  100014,
+  100015,
+  100017,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100029,
+  100030,
+  100031,
+  100032,
+  100035,
+  100036,
+  100037,
+  100038,
+  100041,
+  100042,
+  100044,
+  100046,
+  100047,
+  100048,
+  100049,
+  100050,
+  100052,
+  100056,
+  100057,
+  100059,
+  100060,
+  100063,
+  100064,
+  100065,
+  100067,
+  100068,
+  100070,
+  100071,
+  100073,
+  100074,
+  100075,
+  100076,
+  100077,
+  100078
+ ],
+ "infos": [
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base4",
+   "{B}": "078_phonestand/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "078_phonestand/base2",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100079
+}

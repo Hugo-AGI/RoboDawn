@@ -1,0 +1,663 @@
+{
+ "task": "put_bottles_dustbin",
+ "instruction": "Fill the curved rectangular trash can with the bottles the yellow plastic bottle, the bottle with blue highlights, and the bottle with red screw cap.",
+ "kind": "task",
+ "source": {
+  "task": "put_bottles_dustbin",
+  "task_config": "demo_clean",
+  "seed": 100024,
+  "instruction": "Fill the curved rectangular trash can with the bottles the yellow plastic bottle, the bottle with blue highlights, and the bottle with red screw cap.",
+  "turns": 37,
+  "commands": 104,
+  "sides": "LL",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the dustbin, which was at x = -45 (left half of the table); the RIGHT arm grasped the dustbin, which was at x = -45 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "dustbin",
+   "x": -45.0
+  },
+  "right": {
+   "object": "dustbin",
+   "x": -45.0
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm toward red cap bottle and orient gripper forward-angled.",
+   "commands": [
+    "left move y +16.0",
+    "left move x +13.0",
+    "left point forward",
+    "left rotate yaw -45.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+13, +16, -0) cm, now 28 cm (horizontal) / +94 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-17, -4, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to z=86 cm to align with grasp height.",
+   "commands": [
+    "left move z -8.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, -8) cm, now 28 cm (horizontal) / +86 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-17, -4, 86) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Advance diagonally toward red cap bottle along (+x, +y).",
+   "commands": [
+    "left move x +1.8",
+    "left move y +1.7",
+    "left move x +1.8",
+    "left move y +1.7"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+4, +3, +0) cm, now 32 cm (horizontal) / +86 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, -0, 86) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue advancing diagonally toward red cap bottle.",
+   "commands": [
+    "left move x +1.8",
+    "left move y +1.7",
+    "left move x +1.8",
+    "left move y +1.7"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+4, +3, +0) cm, now 35 cm (horizontal) / +87 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, 3, 87) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine-adjust position and close left gripper to grasp.",
+   "commands": [
+    "left move y +0.9",
+    "left move z -0.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, -0) cm, now 36 cm (horizontal) / +86 cm (vertical) from the dustbin; closed the gripper (opening 0.67: holding the dustbin)",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, 3, 86) opening 0.67; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift bottle up to z=96 cm.",
+   "commands": [
+    "left move z +9.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, +9) cm, now 35 cm (horizontal) / +96 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, 3, 96) opening 0.68; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm over the trash can at x=-35 and point down45.",
+   "commands": [
+    "left move x -12.8",
+    "left move x -12.8",
+    "left move y -4.5",
+    "left point down45"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-25, -4, -0) cm, now 10 cm (horizontal) / +96 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 96) opening 0.68; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower bottle into trash can to z=85 cm.",
+   "commands": [
+    "left move x +0.5",
+    "left move z -11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -11) cm, now 10 cm (horizontal) / +85 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 85) opening 0.68; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Open left gripper to release red cap bottle.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 10 cm (horizontal) / +85 cm (vertical) from the dustbin; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 85) opening 0.92; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm toward yellow bottle, orient forward-angled.",
+   "commands": [
+    "left move y +14.5",
+    "left move x +13.5",
+    "left point forward",
+    "left rotate yaw -45.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+13, +14, +0) cm, now 27 cm (horizontal) / +85 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, 13, 85) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper slightly to z=82 cm.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, -2) cm, now 27 cm (horizontal) / +82 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, 13, 82) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Advance diagonally (+x, +y) toward yellow bottle.",
+   "commands": [
+    "left move x +1.9",
+    "left move y +1.9",
+    "left move x +1.9",
+    "left move y +1.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+3, +4, +0) cm, now 32 cm (horizontal) / +83 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, 17, 83) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue moving forward diagonally to envelop yellow bottle.",
+   "commands": [
+    "left move x +1.9",
+    "left move y +1.9",
+    "left move x +1.9",
+    "left move y +1.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+3, +4, +0) cm, now 37 cm (horizontal) / +83 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-15, 21, 83) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine tune alignment and close left gripper.",
+   "commands": [
+    "left move x +1.1",
+    "left move z -1.2",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +0, -1) cm, now 37 cm (horizontal) / +82 cm (vertical) from the dustbin; closed the gripper (opening 0.66: holding the dustbin)",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-14, 21, 82) opening 0.66; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift yellow bottle up to z=92 cm.",
+   "commands": [
+    "left move z +10.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, +10) cm, now 37 cm (horizontal) / +92 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "turn 16",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-14, 21, 92) opening 0.66; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm over the trash can (-35, -1).",
+   "commands": [
+    "left move y -11.0",
+    "left move y -11.0",
+    "left move x -10.2",
+    "left move x -10.2"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-21, -22, -0) cm, now 10 cm (horizontal) / +92 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 17,
+   "label": "turn 17",
+   "images": [
+    "frame017_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 92) opening 0.66; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Angle gripper down45 and lower to z=84 cm.",
+   "commands": [
+    "left point down45",
+    "left move x -0.5",
+    "left move z -7.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -0, -7) cm, now 10 cm (horizontal) / +84 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 18,
+   "label": "turn 18",
+   "images": [
+    "frame018_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 84) opening 0.64; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Open left gripper to release yellow bottle.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 10 cm (horizontal) / +84 cm (vertical) from the dustbin; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 19,
+   "label": "turn 19",
+   "images": [
+    "frame019_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 84) opening 0.92; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Home left arm; move right arm toward blue bottle.",
+   "commands": [
+    "left home",
+    "right move y +13.5",
+    "right move y +13.5",
+    "right move x -13.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+5, -19, +10) cm, now 24 cm (horizontal) / +94 cm (vertical) from the dustbin; RIGHT fingertips moved by (-13, +27, +0) cm, now 63 cm (horizontal) / +94 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 20,
+   "label": "turn 20",
+   "images": [
+    "frame020_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (17, 7, 94) opening 0.95; table z = 74",
+   "plan": "Orient right gripper and lower to z=90 cm.",
+   "commands": [
+    "right rotate roll -11.5",
+    "right rotate yaw +44.4",
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, -4) cm, now 62 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 21,
+   "label": "turn 21",
+   "images": [
+    "frame021_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (17, 7, 90) opening 0.94; table z = 74",
+   "plan": "Move right gripper diagonally (-x, +y) toward blue bottle.",
+   "commands": [
+    "right move x -1.7",
+    "right move y +1.8",
+    "right move z -0.5",
+    "right move x -1.7"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-3, +2, +0) cm, now 59 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 22,
+   "label": "turn 22",
+   "images": [
+    "frame022_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (14, 9, 90) opening 0.94; table z = 74",
+   "plan": "Continue moving right gripper toward blue bottle.",
+   "commands": [
+    "right move y +1.8",
+    "right move z -0.5",
+    "right move x -1.7",
+    "right move y +1.8"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-2, +3, +0) cm, now 58 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 23,
+   "label": "turn 23",
+   "images": [
+    "frame023_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (12, 12, 90) opening 0.94; table z = 74",
+   "plan": "Move right gripper to envelop blue bottle at (10, 14).",
+   "commands": [
+    "right move z -0.5",
+    "right move x -1.7",
+    "right move y +1.8",
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-2, +2, -0) cm, now 57 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 24,
+   "label": "turn 24",
+   "images": [
+    "frame024_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (10, 14, 90) opening 0.94; table z = 74",
+   "plan": "Close right gripper to grasp bottle.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 57 cm (horizontal) / +90 cm (vertical) from the dustbin; closed the gripper (opening 0.59: holding the dustbin)",
+   "scene": ""
+  },
+  {
+   "turn": 25,
+   "label": "turn 25",
+   "images": [
+    "frame025_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (10, 14, 90) opening 0.59; table z = 74",
+   "plan": "Lift blue bottle up to z=98 cm.",
+   "commands": [
+    "right move z +8.0",
+    "right move y +0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, +8) cm, now 57 cm (horizontal) / +98 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 26,
+   "label": "turn 26",
+   "images": [
+    "frame026_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (10, 14, 98) opening 0.61; table z = 74",
+   "plan": "Lift further and move bottle towards table center (0, 0, 101) for handover.",
+   "commands": [
+    "right move z +2.0",
+    "right move y -14.5",
+    "right move x -10.0",
+    "right move z +2.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-10, -14, +3) cm, now 45 cm (horizontal) / +101 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 27,
+   "label": "turn 27",
+   "images": [
+    "frame027_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, 0, 101) opening 0.61; table z = 74",
+   "plan": "Raise right arm slightly to z=102 cm.",
+   "commands": [
+    "right move z +1.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, +1) cm, now 45 cm (horizontal) / +102 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 28,
+   "label": "turn 28",
+   "images": [
+    "frame028_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, 0, 102) opening 0.61; table z = 74",
+   "plan": "Move left arm toward handover point (x=-7, y=-7) and point forward.",
+   "commands": [
+    "left move x +11.5",
+    "left move x +11.5",
+    "left move y +12.5",
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+23, +12, -0) cm, now 39 cm (horizontal) / +94 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 29,
+   "label": "turn 29",
+   "images": [
+    "frame029_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, -7, 94) opening 0.94; RIGHT fingertips (0, 0, 102) opening 0.61; table z = 74",
+   "plan": "Rotate left gripper yaw -45 deg and lower to z=90 cm.",
+   "commands": [
+    "left rotate yaw -45.0",
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -4) cm, now 39 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 30,
+   "label": "turn 30",
+   "images": [
+    "frame030_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, -7, 90) opening 0.95; RIGHT fingertips (0, 0, 102) opening 0.61; table z = 74",
+   "plan": "Move left gripper diagonally toward bottle.",
+   "commands": [
+    "left move x +1.7",
+    "left move y +1.8",
+    "left move x +1.7",
+    "left move y +1.8"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+3, +3, +0) cm, now 42 cm (horizontal) / +91 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 31,
+   "label": "turn 31",
+   "images": [
+    "frame031_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-4, -4, 91) opening 0.94; RIGHT fingertips (0, 0, 102) opening 0.61; table z = 74",
+   "plan": "Continue moving left gripper diagonally toward bottle.",
+   "commands": [
+    "left move x +1.7",
+    "left move y +1.8",
+    "left move x +1.7",
+    "left move y +1.8"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+3, +3, +1) cm, now 45 cm (horizontal) / +91 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 32,
+   "label": "turn 32",
+   "images": [
+    "frame032_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, -0, 91) opening 0.95; RIGHT fingertips (0, -0, 102) opening 0.61; table z = 74",
+   "plan": "Adjust left arm position and point forward for grip.",
+   "commands": [
+    "left move x +0.4",
+    "left move y +0.6",
+    "left move z -1.2",
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, -1) cm, now 45 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 33,
+   "label": "turn 33",
+   "images": [
+    "frame033_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, 0, 90) opening 0.94; RIGHT fingertips (0, 0, 102) opening 0.59; table z = 74",
+   "plan": "Rotate left yaw -45 deg and close left gripper.",
+   "commands": [
+    "left rotate yaw -45.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 45 cm (horizontal) / +90 cm (vertical) from the dustbin; closed the gripper (opening 0.60: holding the dustbin)",
+   "scene": ""
+  },
+  {
+   "turn": 34,
+   "label": "turn 34",
+   "images": [
+    "frame034_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, 0, 90) opening 0.60; RIGHT fingertips (0, 0, 102) opening 0.61; table z = 74",
+   "plan": "Open right gripper to complete handover.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 45 cm (horizontal) / +102 cm (vertical) from the dustbin; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 35,
+   "label": "turn 35",
+   "images": [
+    "frame035_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-0, 0, 90) opening 0.62; RIGHT fingertips (0, 0, 102) opening 0.92; table z = 74",
+   "plan": "Move left arm with bottle toward trash can (-35, -1) and point down45.",
+   "commands": [
+    "left move x -17.5",
+    "left move x -17.5",
+    "left move y -1.0",
+    "left point down45"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-35, -1, -0) cm, now 10 cm (horizontal) / +90 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 36,
+   "label": "turn 36",
+   "images": [
+    "frame036_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 90) opening 0.59; RIGHT fingertips (0, 0, 102) opening 0.94; table z = 74",
+   "plan": "Lower left arm into trash can to z=85 cm and home right arm.",
+   "commands": [
+    "left move z -5.5",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -5) cm, now 10 cm (horizontal) / +85 cm (vertical) from the dustbin; RIGHT fingertips moved by (+30, -19, -8) cm, now 78 cm (horizontal) / +94 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 37,
+   "label": "turn 37",
+   "images": [
+    "frame037_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-35, -1, 85) opening 0.59; RIGHT fingertips (30, -19, 94) opening 0.94; table z = 74",
+   "plan": "Open left gripper to release blue bottle into trash can.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 38,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame038_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

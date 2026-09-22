@@ -1,0 +1,183 @@
+{
+ "task": "match_and_pick_from_conveyor",
+ "instruction": "Remember the first object on the conveyor, then pick the matching object when it appears again.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 364,
+  "decisions": 10,
+  "frames": 10,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: stage the left gripper open over the belt at x=-22",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The four followers are still off the left edge of the grid, so there is nothing yet to compare with the object from turn 1. Point the left fingers down (down) and turn the finger axis so that the bottle will enter straight into the gap between the fingers, which stand across the belt at z=86 - that is well up the bottle, where it is narrower than the 8 cm it measures at its base and comfortably in",
+   "commands": [
+    "left point down",
+    "left rotate yaw +90.0",
+    "left move x +8.0",
+    "left move y +14.7"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +90.0: ok; left move x +8.0: ok; left move y +14.7: ok; left fingertips now at (-22.0, -6.0, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: set the left waiting height to z=87",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -6.0, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 139",
+   "plan": "Over the belt on that x. A phone 2 cm tall still has to come through ahead of it, but the open fingers at z=85.8 clear its top, so it rides underneath and the hand does not move for it. A headset 12 cm tall stands higher than the grasp height, so the fingers wait at z=87.4 until it is past the cross and only then step down. Dropping onto the object in front of the match costs the match its single ",
+   "commands": [
+    "left move z -4.8"
+   ],
+   "failed": [],
+   "effect": "left move z -4.8: ok; left fingertips now at (-22.0, -6.0, 87.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: stage the right gripper open over the belt at x=22",
+   "images": [
+    "frame003_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -6.0, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 161",
+   "plan": "The four followers are still off the left edge of the grid, so there is nothing yet to compare with the object from turn 1. Point the right fingers down (down) and turn the finger axis so that the bottle will enter straight into the gap between the fingers, which stand across the belt at z=86 - that is well up the bottle, where it is narrower than the 8 cm it measures at its base and comfortably i",
+   "commands": [
+    "right point down",
+    "right rotate yaw +90.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +90.0: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: hold at x=-22 and let the belt bring the bottle in (29 cm still to run)",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -6.0, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 243",
+   "plan": "On the grid now, coming from the left in single file about 17 cm apart: a headset at x=-25, y=-11, a phone at x=-46, y=-9. None of them has the bottle outline from turn 1, so every one of them is a distractor and gets let through; the match is still off the left edge. A phone 2 cm tall still has to come through ahead of it, but the open fingers at z=85.8 clear its top, so it rides underneath and t",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: put the left fingers on the match's lane y=-12",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -6.0, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 255",
+   "plan": "On the grid now, coming from the left in single file about 17 cm apart: a headset at x=-20, y=-11, a phone at x=-41, y=-9, a bottle at x=-55, y=-12. The third of the four is a bottle, the same kind of object as the one that rode past alone in turn 1 and the only bottle in the line - so that one is the match and the other three get let through untouched. Its lane reads y=-11.6 off the grid lines; a",
+   "commands": [
+    "left move y -5.6"
+   ],
+   "failed": [],
+   "effect": "left move y -5.6: ok; left fingertips now at (-22.0, -11.6, 87.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: hold at x=-22 and let the belt bring the bottle in (14 cm still to run)",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -11.6, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 280",
+   "plan": "Still tracking the third object in the line, the bottle that repeats turn 1. A phone 2 cm tall still has to come through ahead of it, but the open fingers at z=85.8 clear its top, so it rides underneath and the hand does not move for it. A headset 12 cm tall stands higher than the grasp height, so the fingers wait at z=87.4 until it is past the cross and only then step down. Dropping onto the obje",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: hold at x=-22 and let the belt bring the bottle in (10 cm still to run)",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -11.6, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 292",
+   "plan": "Still tracking the third object in the line, the bottle that repeats turn 1. The bottle is 18 cm upstream of the fingertip cross, which on the 10 cm grid drawn on the table is 1.8 squares. Descending the 1.6 cm to the grasp height costs about 17 simulation steps and the close about 4 more before the fingers touch, and the belt runs 0.40 cm per step, so the object slides about 8 cm closer while the",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: hold at x=-22 and let the belt bring the bottle in (5 cm still to run)",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -11.6, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 304",
+   "plan": "Still tracking the third object in the line, the bottle that repeats turn 1. The bottle is 13 cm upstream of the fingertip cross, which on the 10 cm grid drawn on the table is 1.3 squares. Descending the 1.6 cm to the grasp height costs about 17 simulation steps and the close about 4 more before the fingers touch, and the belt runs 0.40 cm per step, so the object slides about 8 cm closer while the",
+   "commands": [
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: intercept: close on the bottle as it reaches the fingertip cross",
+   "images": [
+    "frame009_cam_head.jpg",
+    "frame009_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -11.6, 87.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 313",
+   "plan": "A phone 2 cm tall still has to come through ahead of it, but the open fingers at z=85.8 clear its top, so it rides underneath and the hand does not move for it. The bottle is 10 cm upstream of the fingertip cross, which on the 10 cm grid drawn on the table is 1.0 squares. Descending the 1.6 cm to the grasp height costs about 17 simulation steps and the close about 4 more before the fingers touch, ",
+   "commands": [
+    "wait",
+    "left move z -1.6",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "wait: ok; left move z -1.6: ok; left gripper 0.00: ok (fingers stopped at opening 0.70: something is between them (probably grasped)); left fingertips now at (-22.0, -11.6, 85.8), opening 0.698",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: grasped the matching bottle: lift it straight off the belt",
+   "images": [
+    "frame010_cam_head.jpg",
+    "frame010_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.0, -11.6, 85.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.70 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 350\nLEFT arm closed on an object with the fingertips at z = 85.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.8 + (h - 76.5) before opening.",
+   "plan": "The result line for the close reads 'something is between them' rather than 'nothing between them', so the fingers stopped on the bottle and not on the belt. Lift it in this very turn - the belt is still dragging it sideways under the fingers and every turn spent checking costs another 10 cm of that drag. Take 11 cm straight up in one command. Ask for a little more than the 10 cm the task needs bu",
+   "commands": [
+    "left move z +11.0"
+   ],
+   "failed": [],
+   "effect": "left move z +11.0: ok; left fingertips now at (-21.9, -11.4, 95.8), opening 0.698",
+   "source_index": null
+  }
+ ]
+}

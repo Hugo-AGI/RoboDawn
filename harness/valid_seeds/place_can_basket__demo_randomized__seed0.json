@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100010,
+  100011,
+  100012,
+  100014,
+  100016,
+  100017,
+  100018,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100029,
+  100030,
+  100031,
+  100034,
+  100035,
+  100038,
+  100039,
+  100040,
+  100042,
+  100043,
+  100044,
+  100046,
+  100048,
+  100049,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100055,
+  100059,
+  100063,
+  100064,
+  100065,
+  100067,
+  100069,
+  100070,
+  100072,
+  100073,
+  100075,
+  100077
+ ],
+ "infos": [
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base6",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "071_can/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "071_can/base3",
+   "{B}": "110_basket/base0",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100078
+}

@@ -1,0 +1,582 @@
+{
+ "task": "organize_table",
+ "instruction": "Place the mouse on the mouse pad, push the keyboard into the frame, put the figurine on the stand, place the alarm clock on the drawer, then open the drawer and put all remaining miscellaneous items inside.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2656,
+  "decisions": 67,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: orient the right gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the mouse, then move at travel height until the fingertip cross in the head image is over (23, -11).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -30.0",
+    "right move x -7.1",
+    "right move y +9.3"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -30.0: ok; right move x -7.1: ok; right move y +9.3: ok; right fingertips now at (22.9, -11.4, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.9, -11.4, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 119",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -9.7"
+   ],
+   "failed": [],
+   "effect": "right move z -9.7: ok; right fingertips now at (22.9, -11.4, 82.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.9, -11.4, 82.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 145",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right fingertips now at (22.9, -11.4, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.9, -11.4, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 165",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.73: something is between them (probably grasped)); right fingertips now at (22.9, -11.4, 78.5), opening 0.731",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.9, -11.4, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 178\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (22.9, -11.4, 90.5), opening 0.727",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.9, -11.4, 90.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 206\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right rotate yaw +30.0",
+    "right move x +19.1",
+    "right move y +4.9"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +30.0: ok; right move x +19.1: ok; right move y +4.9: ok; right fingertips now at (41.9, -6.5, 90.4), opening 0.726",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: lower the object onto the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 90.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 287\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -10.8"
+   ],
+   "failed": [],
+   "effect": "right move z -10.8: ok; right fingertips now at (41.9, -6.5, 79.6), opening 0.726",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: release the object",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 79.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 313\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (41.9, -6.5, 79.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: nothing yet; 4 of the 4 still out of place: the mouse, the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. mouse onto the mouse pad: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 79.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 328",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (41.9, -6.5, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: hold the left hand out flat, fingers forward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 356",
+   "plan": "This object has to end up standing upright and it sits where fingers pointing down cannot reach, so it is taken from the SIDE: with 'point forward' the two jaws are vertical plates, the object cannot tip however far the arm stretches, and the fingertips reach much further forward and higher. Open the hand at travel height first.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: bring the open jaws in front of the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 372",
+   "plan": "Travel behind everything on the desk (y=-21), come across to the object's x, then forward to 9 cm short of it and down to the gripping height z=82.0, so the last move is a straight slide in.",
+   "commands": [
+    "left move z +4.9"
+   ],
+   "failed": [],
+   "effect": "left move z +4.9: ok; left fingertips now at (-30.0, -20.7, 97.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: bring the open jaws in front of the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 97.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 394",
+   "plan": "Travel behind everything on the desk (y=-21), come across to the object's x, then forward to 9 cm short of it and down to the gripping height z=82.0, so the last move is a straight slide in.",
+   "commands": [
+    "left move x +20.0",
+    "left move x +2.9"
+   ],
+   "failed": [],
+   "effect": "left move x +20.0: ok; left move x +2.9: ok; left fingertips now at (-7.1, -20.7, 97.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: bring the open jaws in front of the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, -20.7, 97.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 453",
+   "plan": "Travel behind everything on the desk (y=-21), come across to the object's x, then forward to 9 cm short of it and down to the gripping height z=82.0, so the last move is a straight slide in.",
+   "commands": [
+    "left move y +14.1"
+   ],
+   "failed": [],
+   "effect": "left move y +14.1: ok; left fingertips now at (-7.1, -6.6, 97.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: bring the open jaws in front of the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, -6.6, 97.1) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 479",
+   "plan": "Travel behind everything on the desk (y=-21), come across to the object's x, then forward to 9 cm short of it and down to the gripping height z=82.0, so the last move is a straight slide in.",
+   "commands": [
+    "left move z -15.1"
+   ],
+   "failed": [],
+   "effect": "left move z -15.1: ok; left fingertips now at (-7.1, -6.6, 82.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: slide the open jaws around it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, -6.6, 82.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 509",
+   "plan": "Move straight forward until the fingertip centre sits on the object's centre at y=2.4; the jaws then stand on either side of it.",
+   "commands": [
+    "left move y +9.0"
+   ],
+   "failed": [],
+   "effect": "left move y +9.0: ok; left fingertips now at (-7.1, 2.4, 82.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: close the jaws on its sides",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, 2.4, 82.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 534",
+   "plan": "Close the gripper; the result has to say something is between the fingers.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.91: something is between them (probably grasped)); left fingertips now at (-7.1, 2.4, 82.0), opening 0.909",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: carry it along the safe route",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, 2.4, 82.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 547\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Carry the object to its target in that order: it keeps the hand clear of the shelf and of anything still standing on the desk, and it never tilts the wrist, so the object stays upright the whole way.",
+   "commands": [
+    "left move z +6.0"
+   ],
+   "failed": [],
+   "effect": "left move z +6.0: ok; left fingertips now at (-7.1, 2.4, 87.9), opening 0.91",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: carry it along the safe route",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.1, 2.4, 87.9) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 569\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Carry the object to its target in that order: it keeps the hand clear of the shelf and of anything still standing on the desk, and it never tilts the wrist, so the object stays upright the whole way.",
+   "commands": [
+    "left move y -8.4"
+   ],
+   "failed": [],
+   "effect": "left move y -8.4: ok; left fingertips now at (-7.2, -6.0, 87.9), opening 0.91",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: carry it along the safe route",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -6.0, 87.9) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 594\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Carry the object to its target in that order: it keeps the hand clear of the shelf and of anything still standing on the desk, and it never tilts the wrist, so the object stays upright the whole way.",
+   "commands": [
+    "left move z +17.6"
+   ],
+   "failed": [],
+   "effect": "left move z +17.6: ok; left fingertips now at (-7.2, -6.0, 105.4), opening 0.91",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: carry it along the safe route",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -6.0, 105.4) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 626\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Carry the object to its target in that order: it keeps the hand clear of the shelf and of anything still standing on the desk, and it never tilts the wrist, so the object stays upright the whole way.",
+   "commands": [
+    "left move x -20.0",
+    "left move x -2.8"
+   ],
+   "failed": [],
+   "effect": "left move x -20.0: ok; left move x -2.8: ok; left fingertips now at (-30.0, -6.0, 105.3), opening 0.91",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: carry it along the safe route",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -6.0, 105.3) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 676\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Carry the object to its target in that order: it keeps the hand clear of the shelf and of anything still standing on the desk, and it never tilts the wrist, so the object stays upright the whole way.",
+   "commands": [
+    "left move y +15.0"
+   ],
+   "failed": [],
+   "effect": "left move y +15.0: ok; left fingertips now at (-30.0, 9.0, 105.3), opening 0.91",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: lower it onto the surface",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, 9.0, 105.3) cm, approach = (-0.00, 1.00, -0.01), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 706\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Lower the fingertips to z=102.3 so the object's foot is just above the surface at z=96.4 before the jaws open.",
+   "commands": [
+    "left move z -3.0"
+   ],
+   "failed": [],
+   "effect": "left move z -3.0: ok; left fingertips now at (-30.0, 9.0, 102.6), opening 0.915",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: lower it onto the surface",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, 9.0, 102.6) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.92 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 726\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Lower the fingertips to z=102.3 so the object's foot is just above the surface at z=96.4 before the jaws open.",
+   "commands": [
+    "left move z -0.3"
+   ],
+   "failed": [],
+   "effect": "left move z -0.3: ok; left fingertips now at (-30.1, 9.0, 102.5), opening 0.911",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: lower it onto the surface",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 9.0, 102.5) cm, approach = (-0.00, 1.00, 0.01), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 742\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Lower the fingertips to z=102.3 so the object's foot is just above the surface at z=96.4 before the jaws open.",
+   "commands": [
+    "left move z -0.2"
+   ],
+   "failed": [],
+   "effect": "left move z -0.2: ok; left fingertips now at (-30.1, 9.0, 102.5), opening 0.908",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: lower it onto the surface",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 9.0, 102.5) cm, approach = (-0.01, 1.00, 0.01), finger axis = (-1.00, -0.01, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 758\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "Lower the fingertips to z=102.3 so the object's foot is just above the surface at z=96.4 before the jaws open.",
+   "commands": [
+    "left move z -0.2"
+   ],
+   "failed": [],
+   "effect": "left move z -0.2: ok; left fingertips now at (-30.1, 9.0, 102.5), opening 0.907",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: open the jaws",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 9.0, 102.5) cm, approach = (-0.01, 1.00, 0.02), finger axis = (-1.00, -0.01, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 774\nLEFT arm closed on an object with the fingertips at z = 82.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 82.0 + (h - 76.5) before opening.",
+   "plan": "The object is standing on its surface; open the jaws and let go.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-30.1, 9.0, 102.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse; 3 of the 4 still out of place: the alarm clock, the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: withdraw the empty jaws",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, 9.0, 102.5) cm, approach = (-0.01, 1.00, 0.02), finger axis = (-1.00, -0.01, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 787",
+   "plan": "The jaws are still standing on either side of the object, so back them straight out along -y rather than lifting through it.",
+   "commands": [
+    "left move z +4.0",
+    "left move y -12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +4.0: ok; left move y -12.0: ok; left fingertips now at (-30.1, -3.0, 106.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. alarm clock onto the shelf top: done",
+   "images": [
+    "frame028_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -3.0, 106.5) cm, approach = (-0.01, 1.00, 0.02), finger axis = (-1.00, -0.01, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 835",
+   "plan": "It is standing on its target; back off to travel height and go on to the next goal.",
+   "commands": [
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: hold the left hand out flat, fingers forward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 948",
+   "plan": "This object has to end up standing upright and it sits where fingers pointing down cannot reach, so it is taken from the SIDE: with 'point forward' the two jaws are vertical plates, the object cannot tip however far the arm stretches, and the fingertips reach much further forward and higher. Open the hand at travel height first.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: close the jaws on its sides",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-34.2, -15.1, 89.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1052",
+   "plan": "Close the gripper; the result has to say something is between the fingers.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.38: something is between them (probably grasped)); left fingertips now at (-34.2, -15.1, 89.0), opening 0.378",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: open the jaws",
+   "images": [
+    "frame039_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.6, 9.2, 89.2) cm, approach = (-0.01, 1.00, -0.01), finger axis = (-1.00, -0.01, 0.00), opening = 0.38 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1240\nLEFT arm closed on an object with the fingertips at z = 89.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 89.0 + (h - 76.5) before opening.",
+   "plan": "The object is standing on its surface; open the jaws and let go.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-14.3, 9.1, 89.2), opening 0.451",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: it did not end up where it belongs, put it right",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.3, -4.9, 89.2) cm, approach = (0.00, 1.00, -0.01), finger axis = (-1.00, 0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1282",
+   "plan": "It is 1.8 cm from (-14.3, 10.2) and its root sits at z=85.6, which is not where the checker wants it; pick it up again and set it down properly.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus; 1 of the 4 still out of place: the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: hold the left hand out flat, fingers forward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1439",
+   "plan": "This object has to end up standing upright and it sits where fingers pointing down cannot reach, so it is taken from the SIDE: with 'point forward' the two jaws are vertical plates, the object cannot tip however far the arm stretches, and the fingertips reach much further forward and higher. Open the hand at travel height first.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: close the jaws on its sides",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-13.0, 10.3, 89.1) cm, approach = (-0.04, 1.00, -0.03), finger axis = (-1.00, -0.04, 0.03), opening = 0.73 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1623",
+   "plan": "Close the gripper; the result has to say something is between the fingers.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.38: something is between them (probably grasped)); left fingertips now at (-13.0, 10.3, 89.1), opening 0.38",
+   "source_index": null
+  },
+  {
+   "turn": 55,
+   "label": "turn 55: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock; 2 of the 4 still out of place: the potted cactus, the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: open the jaws",
+   "images": [
+    "frame055_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-15.0, 7.7, 89.2) cm, approach = (-0.04, 1.00, -0.03), finger axis = (-1.00, -0.04, 0.03), opening = 0.38 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1742\nLEFT arm closed on an object with the fingertips at z = 89.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 89.1 + (h - 76.5) before opening.",
+   "plan": "The object is standing on its surface; open the jaws and let go.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-14.6, 7.6, 89.2), opening 0.566",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus; 1 of the 4 still out of place: the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. cactus onto the stand: done",
+   "images": [
+    "frame057_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.7, -6.3, 89.2) cm, approach = (-0.03, 1.00, -0.03), finger axis = (-1.00, -0.03, 0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1784",
+   "plan": "It is standing on its target; back off to travel height and go on to the next goal.",
+   "commands": [
+    "left gripper 1.00",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus; 1 of the 4 still out of place: the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. keyboard: make a pusher out of the left fingers",
+   "images": [
+    "frame058_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1942",
+   "plan": "The keyboard is 15 cm across, far wider than the jaws open, so it is pushed rather than carried: point the fingers straight down and close them so they form one narrow blade, all at travel height.",
+   "commands": [
+    "left point down",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-30.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus; 1 of the 4 still out of place: the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. keyboard: get the left arm out of the keyboard's way",
+   "images": [
+    "frame062_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-8.2, -7.4, 78.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2103",
+   "plan": "The left arm pushed the last stretch and is still down at desk level where the keyboard is about to travel; lift it clear and send it home before the right arm pushes.",
+   "commands": [
+    "left move z +13.9",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move z +13.9: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 63,
+   "label": "turn 63: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus; 1 of the 4 still out of place: the keyboard. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. keyboard: make a pusher out of the right fingers",
+   "images": [
+    "frame063_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (41.9, -6.5, 91.6) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2350",
+   "plan": "The keyboard is 15 cm across, far wider than the jaws open, so it is pushed rather than carried: point the fingers straight down and close them so they form one narrow blade, all at travel height.",
+   "commands": [
+    "right point down",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right fingertips now at (41.9, -6.5, 91.6), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 67,
+   "label": "turn 67: TIDYING THE DESK - four things have to be true AT THE SAME MOMENT: the mouse sitting on the mouse pad on the right of the desk; the alarm clock standing upright on the flat top of the drawer unit at the far left; the potted cactus standing upright on the small square cushion in front of the drawer unit; the keyboard lying flat inside the frame outline in the middle of the desk. Done so far: the mouse, the alarm clock, the potted cactus, the keyboard; all 4 are in place. Three out of four is a failure, so do not stop until the last one is down, and once something is in place leave it alone - it also has to be standing still at the end. And the job is not over when the fourth item lands: it counts only with BOTH hands empty and open and BOTH arms back in the pose they started in, so the closing move of every episode is to open both grippers, point both hands forward and send both arms home. keyboard: in the frame",
+   "images": [
+    "frame067_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.5, -9.3, 78.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2519",
+   "plan": "The keyboard body now covers the frame rectangle; back off to travel height.",
+   "commands": [
+    "right gripper 1.00",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "right gripper 1.00: ok (gripper opened); right home: FAILED (the target was not reached: the fingertips moved (+17.0, -9.8, +15.2) cm, i.e. only part of the way; remaining error 3.2 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (27.4, -19.2, 93.3), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

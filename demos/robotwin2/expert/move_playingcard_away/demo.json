@@ -1,0 +1,120 @@
+{
+ "task": "move_playingcard_away",
+ "instruction": "Use the right arm to grab the small box for playingcards and move it outward.",
+ "kind": "task",
+ "source": {
+  "task": "move_playingcard_away",
+  "task_config": "demo_clean",
+  "seed": 100019,
+  "instruction": "Use the right arm to grab the small box for playingcards and move it outward.",
+  "turns": 5,
+  "commands": 13,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the playingcards, which was at x = +8 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "playingcards",
+   "x": 7.66
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper above card box at (8, -12, 94) and orient downwards.",
+   "commands": [
+    "right move x -11.5",
+    "right move x -11.5",
+    "right move y +7.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-23, +7, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -12, 94) opening 0.94; table z = 74",
+   "plan": "Adjust yaw slightly to align with the box and lower toward grasp height to z=85.",
+   "commands": [
+    "right rotate yaw -10.0",
+    "right move z -9.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -9) cm, now 0 cm (horizontal) / +11 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -12, 85) opening 0.94; table z = 74",
+   "plan": "Lower right gripper to grasp height (z=77.5) and close gripper to grasp the box.",
+   "commands": [
+    "right move z -7.5",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -7) cm, now 0 cm (horizontal) / +3 cm (vertical) from the playingcards; closed the gripper (opening 0.72: holding the playingcards)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -12, 78) opening 0.72; table z = 74",
+   "plan": "Lift box to z=88.5, transport outward along +x to x=38, and lower back to table height.",
+   "commands": [
+    "right move z +10.5",
+    "right move x +15.2",
+    "right move x +15.2",
+    "right move z -10.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+30, +0, -0) cm, now 0 cm (horizontal) / +3 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (38, -12, 78) opening 0.72; table z = 74",
+   "plan": "Open right gripper to release the card box on the table.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

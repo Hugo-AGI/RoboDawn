@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100012,
+  100013,
+  100014,
+  100015,
+  100018,
+  100019,
+  100020,
+  100022,
+  100024,
+  100025,
+  100026,
+  100028,
+  100029,
+  100032,
+  100033,
+  100034,
+  100036,
+  100037,
+  100038,
+  100039,
+  100041,
+  100044,
+  100045,
+  100048,
+  100049,
+  100050,
+  100052,
+  100053,
+  100054,
+  100055,
+  100057,
+  100058,
+  100059,
+  100061,
+  100062,
+  100063,
+  100064,
+  100065,
+  100066,
+  100067,
+  100068
+ ],
+ "infos": [
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base5",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "018_microphone/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "018_microphone/base4",
+   "{a}": "left",
+   "{b}": "right"
+  }
+ ],
+ "next_seed": 100069
+}

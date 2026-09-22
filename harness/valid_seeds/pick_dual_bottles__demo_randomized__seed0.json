@@ -1,0 +1,258 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100011,
+  100012,
+  100015,
+  100016,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100028,
+  100029,
+  100030,
+  100032,
+  100035,
+  100036,
+  100037,
+  100038,
+  100040,
+  100042,
+  100044,
+  100045,
+  100046,
+  100047,
+  100048,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100055,
+  100056,
+  100057,
+  100058,
+  100059
+ ],
+ "infos": [
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  },
+  {
+   "{A}": "001_bottle/base13",
+   "{B}": "001_bottle/base16"
+  }
+ ],
+ "next_seed": 100060
+}

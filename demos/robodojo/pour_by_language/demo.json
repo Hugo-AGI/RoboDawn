@@ -1,0 +1,629 @@
+{
+ "task": "pour_by_language",
+ "instruction": "Pour the liquid from the first violet bottle into the first white bowl, from the second red bottle into the second brown bowl, and from the third turquoise bottle into the third black bowl.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2796,
+  "decisions": 55,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. move both hands off their origin before starting",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The task is scored when an arm RETURNS to its origin, so start by moving both hands 18 cm sideways, out of the origin tolerance box. Nothing on the table is out there, and both arms have to leave it anyway.",
+   "commands": [
+    "left move x -18.0",
+    "right move x +18.0"
+   ],
+   "failed": [],
+   "effect": "left move x -18.0: ok; right move x +18.0: ok; left fingertips now at (-48.0, -20.7, 92.1), opening 1.0; right fingertips now at (48.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. start bottle_0: line the hand up with its body",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 80",
+   "plan": "bottle_0 has to go into bowl_0 (that is the pairing the instruction gives). Use the left arm, keep the hand pointing forward so the fingers close along world x across the bottle's body, open the gripper and come up to travel height.",
+   "commands": [
+    "left point forward",
+    "left gripper 1.00",
+    "left move z -0.6"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left gripper 1.00: ok (gripper opened); left move z -0.6: ok; left fingertips now at (-48.0, -20.7, 91.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. move in front of bottle_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 91.5) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 120",
+   "plan": "Take the open hand to (-0, -11) at z=92, i.e. 11 cm short of the bottle in y, high enough that the hand passes over the bowls. Height first, then x, then y, so nothing is crossed at low level.",
+   "commands": [
+    "left move x +20.0",
+    "left move x +20.0",
+    "left move x +8.0",
+    "left move y +9.7"
+   ],
+   "failed": [
+    "left move x +20.0",
+    "left move x +20.0"
+   ],
+   "effect": "left move x +20.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left move x +20.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left move x +8.0: ok; left move y +9.7: ok; left fingertips now at (-40.0, -11.1, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. move in front of bottle_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -11.1, 91.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 176",
+   "plan": "Take the open hand to (-0, -11) at z=92, i.e. 11 cm short of the bottle in y, high enough that the hand passes over the bowls. Height first, then x, then y, so nothing is crossed at low level.",
+   "commands": [
+    "left move x +20.0",
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "left move x +20.0: ok; left move x +20.0: ok; left fingertips now at (-0.0, -11.0, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. close in on the body of bottle_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -11.0, 91.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 242",
+   "plan": "Drop to z=85.0 - that is 8 cm above the table, level with the widest part of the bottle and with its centre of mass, and still high enough that the hand clears the bowl rim behind it - then slide forward in y until the 8 cm body sits on the fingertip cross, between the open jaws.",
+   "commands": [
+    "left move z -6.6",
+    "left move y +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z -6.6: ok; left move y +12.0: ok; left fingertips now at (-0.0, 1.0, 85.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. grip bottle_0 across its body",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, 1.0, 85.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 292",
+   "plan": "Close the fingers on the bottle's body. The result has to say something is between the fingers; the body is 8 cm across and the jaws open to 10, so it is a firm cylinder grip.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.91: something is between them (probably grasped)); left fingertips now at (-0.0, 1.0, 85.0), opening 0.905",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. lift bottle_0 clear of the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, 1.0, 85.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 305\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Lift straight up to z=92. Held by the body the bottle hangs only 8 cm below the fingertips, so from there it can be carried straight over the bowls.",
+   "commands": [
+    "left move z +6.5"
+   ],
+   "failed": [],
+   "effect": "left move z +6.5: ok; left fingertips now at (-0.1, 1.0, 91.4), opening 0.905",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the middle one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one, and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. carry bottle_0 to the pour station over bowl_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, 1.0, 91.4) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.91 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 327\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Carry the upright bottle to (-29, -14) - the spot where tipping it 90 deg lays its mouth straight over bowl_0 at (-15, -15). Go across in y first and then in x, at z=92 so the hanging bottle passes over the bowls.",
+   "commands": [
+    "left move y -15.0",
+    "left move x -20.0",
+    "left move x -8.4"
+   ],
+   "failed": [],
+   "effect": "left move y -15.0: ok; left move x -20.0: ok; left move x -8.4: ok; left fingertips now at (-28.5, -14.0, 91.3), opening 0.903",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. lay bottle_0 over to 90 degrees",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -14.0, 91.3) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 411\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "'rotate pitch' turns the hand about world y, which is the direction it is already pointing, so the wrist and the fingertips stay exactly where they are and the bottle just swings about the grip in the x-z plane. Take it to 90 deg in one command: horizontal, the mouth is still above the wine, so nothing spills on the way.",
+   "commands": [
+    "left rotate pitch +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +90.0: ok; left fingertips now at (-28.5, -14.0, 91.3), opening 0.893",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. tip bottle_0 another 15 degrees over bowl_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-28.5, -14.0, 91.3) cm, approach = (-0.00, 1.00, 0.00), finger axis = (0.00, -0.00, 1.00), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 453\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 105 deg, and in the same turn slide the hand by (+1.0, +0.2, -2.7) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_0. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z -2.7",
+    "left move x +1.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z -2.7: ok; left move x +1.0: ok; left fingertips now at (-27.5, -14.0, 88.6), opening 0.893",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. tip bottle_0 another 15 degrees over bowl_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-27.5, -14.0, 88.6) cm, approach = (-0.00, 1.00, 0.00), finger axis = (0.26, -0.00, 0.97), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 521\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 120 deg, and in the same turn slide the hand by (+1.8, +0.2, +3.1) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_0. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z +3.1",
+    "left move x +1.8"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z +3.1: ok; left move x +1.8: ok; left fingertips now at (-25.8, -14.0, 91.6), opening 0.895",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. tip bottle_0 another 15 degrees over bowl_0",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-25.8, -14.0, 91.6) cm, approach = (-0.00, 1.00, 0.00), finger axis = (0.50, 0.00, 0.86), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 591\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 135 deg, and in the same turn slide the hand by (+2.5, +0.2, +2.6) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_0. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z +2.6",
+    "left move x +2.5"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z +2.6: ok; left move x +2.5: ok; left fingertips now at (-23.3, -14.0, 94.1), opening 0.898",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. hold bottle_0 tipped until it has emptied",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.3, -14.0, 94.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (0.71, 0.00, 0.70), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 658\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 135 deg with its lip over bowl_0; hold it there and let the last of the wine run out - the checker allows at most a tenth of it to stay in the bottle. Keep the lip on the bowl while it drains.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. hold bottle_0 tipped until it has emptied",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.3, -14.0, 94.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (0.71, 0.00, 0.70), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 661\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 135 deg with its lip over bowl_0; hold it there and let the last of the wine run out - the checker allows at most a tenth of it to stay in the bottle. Keep the lip on the bowl while it drains.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. hold bottle_0 tipped until it has emptied",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.3, -14.0, 94.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (0.71, 0.00, 0.70), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 664\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 135 deg with its lip over bowl_0; hold it there and let the last of the wine run out - the checker allows at most a tenth of it to stay in the bottle. Keep the lip on the bowl while it drains.",
+   "commands": [
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: nothing yet): the violet bottle (the left-hand one of the three standing in the back row) has to be emptied into the white bowl (the left-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the white bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the white bowl and it is standing upright again. stand bottle_0 back up",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.3, -14.1, 94.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (0.71, 0.00, 0.70), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 667\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "The bottle is empty, so pitch it back the 135 deg to vertical. The checker tests this wine the moment the bottle comes back within 30 deg of upright, and by now the wine is in bowl_0 and the bowl is well outside the bottle's own box.",
+   "commands": [
+    "left rotate pitch -90.0",
+    "left rotate pitch -45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch -90.0: ok; left rotate pitch -45.0: ok; left fingertips now at (-23.3, -14.1, 94.0), opening 0.903",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: the violet wine is in the white bowl): the violet bottle (the left-hand one of the three standing in the back row) has just been emptied into the white bowl (the left-hand one of the three bowls in the front row), the bowl the instruction named for it. It is now stood upright again, carried back to the gap it left in the bottle row and set down, and then the arm goes home - the bowl is only counted when an arm arrives back at its origin pose. carry bottle_0 back to its place",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-23.3, -14.1, 94.0) cm, approach = (0.00, 1.00, -0.00), finger axis = (-1.00, 0.00, 0.01), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 741\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Carry the empty bottle back to (-0, 0) at z=92: across in x along the bowl row first, then out in y, so the upright bottle never passes a standing one.",
+   "commands": [
+    "left move z -2.5",
+    "left move x +20.0",
+    "left move x +3.3",
+    "left move y +14.1"
+   ],
+   "failed": [],
+   "effect": "left move z -2.5: ok; left move x +20.0: ok; left move x +3.3: ok; left move y +14.1: ok; left fingertips now at (-0.1, 0.1, 91.5), opening 0.904",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: the violet wine is in the white bowl): the violet bottle (the middle one of the three standing in the back row) has just been emptied into the white bowl (the left-hand one of the three bowls in the front row), the bowl the instruction named for it. It is now stood upright again, carried back to the gap it left in the bottle row and set down, and then the arm goes home - the bowl is only counted when an arm arrives back at its origin pose. set bottle_0 down",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, 0.1, 91.5) cm, approach = (0.00, 1.00, -0.00), finger axis = (-1.00, 0.00, 0.01), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 839\nLEFT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "Lower until the bottle's base is back on the table (its base is at z=82.9, the table at z=76.5) and open the fingers - the jaws are wider than the neck, so the hand can come straight back up afterwards.",
+   "commands": [
+    "left move z -6.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left move z -6.0: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-0.1, 0.1, 85.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 1 of 3 (poured so far: the violet wine is in the white bowl): the violet bottle (the middle one of the three standing in the back row) has just been emptied into the white bowl (the left-hand one of the three bowls in the front row), the bowl the instruction named for it. It is now stood upright again, carried back to the gap it left in the bottle row and set down, and then the arm goes home - the bowl is only counted when an arm arrives back at its origin pose. let go of bottle_0 and back off",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, 0.1, 85.4) cm, approach = (0.00, 1.00, -0.00), finger axis = (-1.00, 0.00, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 874",
+   "plan": "Lift the empty hand straight up off the bottle and pull back in y, clear of the row.",
+   "commands": [
+    "left move z +8.0",
+    "left move y -11.0"
+   ],
+   "failed": [],
+   "effect": "left move z +8.0: ok; left move y -11.0: ok; left fingertips now at (-0.1, -10.9, 93.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. send the left arm home so bowl_0 is counted",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -10.9, 93.4) cm, approach = (0.00, 1.00, -0.00), finger axis = (-1.00, 0.00, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 924",
+   "plan": "bowl_0 is full and its bottle is back on the table. Send the left arm home: the checker only adds up the bowls when an arm ARRIVES at its origin, so this trip is what banks this bowl before the next one is poured.",
+   "commands": [
+    "left home",
+    "left move x -18.0"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left move x -18.0: ok; left fingertips now at (-48.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. start bottle_1: line the hand up with its body",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1122",
+   "plan": "bottle_1 has to go into bowl_1 (that is the pairing the instruction gives). Use the right arm, keep the hand pointing forward so the fingers close along world x across the bottle's body, open the gripper and come up to travel height.",
+   "commands": [
+    "right point forward",
+    "right gripper 1.00",
+    "right move z -0.6"
+   ],
+   "failed": [],
+   "effect": "right point forward: ok; right gripper 1.00: ok (gripper opened); right move z -0.6: ok; right fingertips now at (48.0, -20.7, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. move in front of bottle_1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 91.6) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1162",
+   "plan": "Take the open hand to (20, -11) at z=92, i.e. 11 cm short of the bottle in y, high enough that the hand passes over the bowls. Height first, then x, then y, so nothing is crossed at low level.",
+   "commands": [
+    "right move x -20.0",
+    "right move x -8.0",
+    "right move y +9.7"
+   ],
+   "failed": [
+    "right move x -20.0"
+   ],
+   "effect": "right move x -20.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); right move x -8.0: ok; right move y +9.7: ok; right fingertips now at (40.0, -11.0, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. close in on the body of bottle_1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.0, -11.0, 91.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1254",
+   "plan": "Drop to z=85.0 - that is 8 cm above the table, level with the widest part of the bottle and with its centre of mass, and still high enough that the hand clears the bowl rim behind it - then slide forward in y until the 8 cm body sits on the fingertip cross, between the open jaws.",
+   "commands": [
+    "right move z -6.6",
+    "right move y +12.0"
+   ],
+   "failed": [
+    "right move z -6.6"
+   ],
+   "effect": "right move z -6.6: FAILED (the target was not reached: the fingertips moved (+0.0, -0.1, -8.2) cm, i.e. only part of the way; remaining error 1.6 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right move y +12.0: ok; right fingertips now at (20.0, 0.9, 83.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. grip bottle_1 across its body",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.0, 0.9, 83.3) cm, approach = (-0.00, 1.00, -0.06), finger axis = (-1.00, -0.00, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1310",
+   "plan": "Close the fingers on the bottle's body. The result has to say something is between the fingers; the body is 8 cm across and the jaws open to 10, so it is a firm cylinder grip.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.89: something is between them (probably grasped)); right fingertips now at (20.0, 0.9, 83.3), opening 0.894",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. lay bottle_1 over to 90 degrees",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.1, -12.5, 91.4) cm, approach = (-0.00, 1.00, -0.06), finger axis = (-1.00, -0.01, -0.04), opening = 0.89 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1415\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "'rotate pitch' turns the hand about world y, which is the direction it is already pointing, so the wrist and the fingertips stay exactly where they are and the bottle just swings about the grip in the x-z plane. Take it to 90 deg in one command: horizontal, the mouth is still above the wine, so nothing spills on the way.",
+   "commands": [
+    "right rotate pitch -90.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -90.0: ok; right fingertips now at (14.1, -12.5, 91.4), opening 0.904",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. tip bottle_1 another 15 degrees over bowl_1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.1, -12.5, 91.4) cm, approach = (0.06, 1.00, -0.00), finger axis = (0.04, -0.01, -1.00), opening = 0.90 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1457\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 14 deg further, to about 105 deg, and in the same turn slide the hand by (-0.2, -0.0, -2.5) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_1. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "right rotate pitch -15.0",
+    "right move z -2.5"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -15.0: ok; right move z -2.5: ok; right fingertips now at (14.0, -12.5, 88.9), opening 0.904",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. tip bottle_1 another 15 degrees over bowl_1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (14.0, -12.5, 88.9) cm, approach = (0.06, 1.00, 0.01), finger axis = (0.30, -0.01, -0.95), opening = 0.90 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1502\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 14 deg further, to about 120 deg, and in the same turn slide the hand by (-2.0, -0.0, +3.4) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_1. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "right rotate pitch -15.0",
+    "right move z +3.4",
+    "right move x -2.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -15.0: ok; right move z +3.4: ok; right move x -2.0: ok; right fingertips now at (12.0, -12.6, 92.2), opening 0.901",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); the bowl standing closest to this bottle is the black one, and the instruction gives that bowl to the turquoise bottle (the left-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. tip bottle_1 another 15 degrees over bowl_1",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (12.0, -12.6, 92.2) cm, approach = (0.06, 1.00, 0.03), finger axis = (0.54, -0.01, -0.84), opening = 0.90 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1567\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 14 deg further, to about 135 deg, and in the same turn slide the hand by (-2.7, -0.1, +2.9) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_1. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "right rotate pitch -15.0",
+    "right move z +2.9",
+    "right move x -2.7"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -15.0: ok; right move z +2.9: ok; right move x -2.7: ok; right fingertips now at (9.3, -12.6, 95.1), opening 0.899",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl): the red bottle (the right-hand one of the three standing in the back row) has to be emptied into the brown bowl (the middle one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the brown bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the brown bowl and it is standing upright again. stand bottle_1 back up",
+   "images": [
+    "frame036_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.3, -12.6, 95.1) cm, approach = (0.05, 1.00, 0.04), finger axis = (0.74, -0.01, -0.68), opening = 0.90 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1641\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "The bottle is empty, so pitch it back the 136 deg to vertical. The checker tests this wine the moment the bottle comes back within 30 deg of upright, and by now the wine is in bowl_1 and the bowl is well outside the bottle's own box.",
+   "commands": [
+    "right rotate pitch +90.0",
+    "right rotate pitch +45.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch +90.0: ok; right rotate pitch +45.0: ok; right fingertips now at (9.3, -12.6, 95.0), opening 0.894",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 2 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the red bottle (the right-hand one of the three standing in the back row) has just been emptied into the brown bowl (the middle one of the three bowls in the front row), the bowl the instruction named for it. It is now stood upright again, carried back to the gap it left in the bottle row and set down, and then the arm goes home - the bowl is only counted when an arm arrives back at its origin pose. set bottle_1 down",
+   "images": [
+    "frame038_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.0, -0.0, 91.5) cm, approach = (-0.01, 1.00, -0.06), finger axis = (-1.00, -0.01, -0.04), opening = 0.89 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1791\nRIGHT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Lower until the bottle's base is back on the table (its base is at z=84.1, the table at z=76.5) and open the fingers - the jaws are wider than the neck, so the hand can come straight back up afterwards.",
+   "commands": [
+    "right move z -7.2",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right move z -7.2: ok; right gripper 1.00: ok (gripper opened); right fingertips now at (20.0, -0.0, 84.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the left-hand one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the white one (which already has its own wine in it), and the instruction gives that bowl to the violet bottle (the middle one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. send the right arm home so bowl_1 is counted",
+   "images": [
+    "frame040_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (19.9, -11.0, 92.3) cm, approach = (-0.01, 1.00, -0.06), finger axis = (-1.00, -0.01, -0.05), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1882",
+   "plan": "bowl_1 is full and its bottle is back on the table. Send the right arm home: the checker only adds up the bowls when an arm ARRIVES at its origin, so this trip is what banks this bowl before the next one is poured.",
+   "commands": [
+    "right home",
+    "right move x +18.0"
+   ],
+   "failed": [],
+   "effect": "right home: ok; right move x +18.0: ok; right fingertips now at (48.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the left-hand one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the white one (which already has its own wine in it), and the instruction gives that bowl to the violet bottle (the middle one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. start bottle_2: line the hand up with its body",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2036",
+   "plan": "bottle_2 has to go into bowl_2 (that is the pairing the instruction gives). Use the left arm, keep the hand pointing forward so the fingers close along world x across the bottle's body, open the gripper and come up to travel height.",
+   "commands": [
+    "left point forward",
+    "left gripper 1.00",
+    "left move z -0.6"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left gripper 1.00: ok (gripper opened); left move z -0.6: ok; left fingertips now at (-48.0, -20.7, 91.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the left-hand one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the white one (which already has its own wine in it), and the instruction gives that bowl to the violet bottle (the middle one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. move in front of bottle_2",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-48.0, -20.7, 91.5) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2076",
+   "plan": "Take the open hand to (-20, -11) at z=92, i.e. 11 cm short of the bottle in y, high enough that the hand passes over the bowls. Height first, then x, then y, so nothing is crossed at low level.",
+   "commands": [
+    "left move x +20.0",
+    "left move x +8.0",
+    "left move y +9.7"
+   ],
+   "failed": [
+    "left move x +20.0"
+   ],
+   "effect": "left move x +20.0: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); left move x +8.0: ok; left move y +9.7: ok; left fingertips now at (-40.0, -11.1, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the left-hand one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the white one (which already has its own wine in it), and the instruction gives that bowl to the violet bottle (the middle one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. close in on the body of bottle_2",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-20.0, -11.0, 91.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2168",
+   "plan": "Drop to z=85.0 - that is 8 cm above the table, level with the widest part of the bottle and with its centre of mass, and still high enough that the hand clears the bowl rim behind it - then slide forward in y until the 8 cm body sits on the fingertip cross, between the open jaws.",
+   "commands": [
+    "left move z -6.6",
+    "left move y +12.0"
+   ],
+   "failed": [
+    "left move z -6.6"
+   ],
+   "effect": "left move z -6.6: FAILED (the target was not reached: the fingertips moved (-0.0, -0.1, -8.2) cm, i.e. only part of the way; remaining error 1.6 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move y +12.0: ok; left fingertips now at (-20.1, 0.9, 83.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the left-hand one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the white one (which already has its own wine in it), and the instruction gives that bowl to the violet bottle (the middle one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. grip bottle_2 across its body",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-20.1, 0.9, 83.3) cm, approach = (-0.00, 1.00, -0.06), finger axis = (-1.00, -0.00, 0.04), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2224",
+   "plan": "Close the fingers on the bottle's body. The result has to say something is between the fingers; the body is 8 cm across and the jaws open to 10, so it is a firm cylinder grip.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.90: something is between them (probably grasped)); left fingertips now at (-20.1, 0.9, 83.3), opening 0.897",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the middle one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one (which already has its own wine in it), and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. lay bottle_2 over to 90 degrees",
+   "images": [
+    "frame048_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.5, -10.3, 91.4) cm, approach = (-0.00, 1.00, -0.07), finger axis = (-1.00, -0.00, 0.04), opening = 0.90 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2335\nLEFT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "'rotate pitch' turns the hand about world y, which is the direction it is already pointing, so the wrist and the fingertips stay exactly where they are and the bottle just swings about the grip in the x-z plane. Take it to 90 deg in one command: horizontal, the mouth is still above the wine, so nothing spills on the way.",
+   "commands": [
+    "left rotate pitch +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +90.0: ok; left fingertips now at (0.5, -10.3, 91.4), opening 0.886",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the middle one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one (which already has its own wine in it), and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. tip bottle_2 another 15 degrees over bowl_2",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.5, -10.3, 91.4) cm, approach = (-0.07, 1.00, 0.00), finger axis = (0.04, -0.00, 1.00), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2377\nLEFT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 105 deg, and in the same turn slide the hand by (+0.2, +0.8, -2.7) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_2. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z -2.7",
+    "left move y +0.8"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z -2.7: ok; left move y +0.8: ok; left fingertips now at (0.4, -9.5, 88.6), opening 0.887",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the middle one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one (which already has its own wine in it), and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. tip bottle_2 another 15 degrees over bowl_2",
+   "images": [
+    "frame050_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -9.5, 88.6) cm, approach = (-0.06, 1.00, 0.02), finger axis = (0.30, 0.00, 0.95), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2438\nLEFT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 120 deg, and in the same turn slide the hand by (+2.0, -0.1, +3.6) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_2. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z +3.6",
+    "left move x +2.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z +3.6: ok; left move x +2.0: ok; left fingertips now at (2.4, -9.4, 92.1), opening 0.889",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the middle one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); the bowl standing closest to this bottle is the brown one (which already has its own wine in it), and the instruction gives that bowl to the red bottle (the right-hand one of the three standing in the back row), so pouring into it would be wrong. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. tip bottle_2 another 15 degrees over bowl_2",
+   "images": [
+    "frame051_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (2.4, -9.4, 92.1) cm, approach = (-0.06, 1.00, 0.03), finger axis = (0.54, 0.00, 0.84), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2501\nLEFT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further, to about 135 deg, and in the same turn slide the hand by (+2.7, -0.5, +2.9) cm so that the POURING LIP - not the fingertips - ends the turn 3 cm above the rim of bowl_2. Past about 98 deg the neck is the lowest part of the bottle's inside and the wine runs out over that lip.",
+   "commands": [
+    "left rotate pitch +15.0",
+    "left move z +2.9",
+    "left move x +2.7",
+    "left move y -0.5"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left move z +2.9: ok; left move x +2.7: ok; left move y -0.5: ok; left fingertips now at (5.0, -9.9, 94.9), opening 0.89",
+   "source_index": null
+  },
+  {
+   "turn": 55,
+   "label": "turn 55: RULE - the instruction is the only thing that says where each wine goes: it pairs the bottles and the bowls BY COLOUR (violet bottle -> white bowl, red bottle -> brown bowl, turquoise bottle -> black bowl), and the bowl it names is usually NOT the bowl standing nearest that bottle, so every bowl has to be chosen by matching the colour the instruction gives it, never by taking the closest one. Bottle 3 of 3 (poured so far: the violet wine is in the white bowl; the red wine is in the brown bowl): the turquoise bottle (the middle one of the three standing in the back row) has to be emptied into the black bowl (the right-hand one of the three bowls in the front row); for this one the bowl the instruction names also happens to be the nearest bowl, which is a coincidence and not the rule. Take the bottle across its body from the side with the hand pointing forward, carry it upright over the bowls, tilt it only once its mouth hangs over the black bowl, let it drain, stand it upright again, put it back where it stood and send that arm home - this bottle only counts once its wine is in the black bowl and it is standing upright again. stand bottle_2 back up",
+   "images": [
+    "frame055_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (5.0, -10.2, 95.2) cm, approach = (-0.05, 1.00, 0.05), finger axis = (0.74, 0.00, 0.67), opening = 0.89 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (48.0, -20.7, 92.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2620\nLEFT arm closed on an object with the fingertips at z = 83.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.3 + (h - 76.5) before opening.",
+   "plan": "The bottle is empty, so pitch it back the 135 deg to vertical. The checker tests this wine the moment the bottle comes back within 30 deg of upright, and by now the wine is in bowl_2 and the bowl is well outside the bottle's own box. All three bowls are full now, so send the idle right arm home first, in this same turn: the checker adds the bowls up when an arm reaches its origin, and righting thi",
+   "commands": [
+    "right home",
+    "left rotate pitch -90.0",
+    "left rotate pitch -45.0"
+   ],
+   "failed": [
+    "left rotate pitch -45.0"
+   ],
+   "effect": "right home: ok; left rotate pitch -90.0: ok; left rotate pitch -45.0: FAILED (the target was not reached: the gripper turned only 18 deg of the requested 45; remaining error 0.0 cm / 27 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (5.0, -10.2, 95.2), opening 0.891; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

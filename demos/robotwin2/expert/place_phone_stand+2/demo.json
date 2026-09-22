@@ -1,0 +1,175 @@
+{
+ "task": "place_phone_stand",
+ "instruction": "Set the palm-sized phone with glossy finish on the dark green phonestand.",
+ "kind": "task",
+ "source": {
+  "task": "place_phone_stand",
+  "task_config": "demo_clean",
+  "seed": 100025,
+  "instruction": "Set the palm-sized phone with glossy finish on the dark green phonestand.",
+  "turns": 8,
+  "commands": 26,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the phone, which was at x = +22 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "phone",
+   "x": 22.5
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "orient right gripper downward, rotate yaw to match phone angle, and move above the phone to (23, -1, 94)",
+   "commands": [
+    "right point down",
+    "right rotate yaw +20.0",
+    "right move y +18.5",
+    "right move x -8.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-8, +18, +0) cm, now 0 cm (horizontal) / +19 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (23, -1, 94) opening 0.95; table z = 74",
+   "plan": "lower right arm closer to phone at z = 84 cm",
+   "commands": [
+    "right move z -10.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -11) cm, now 0 cm (horizontal) / +8 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (23, -1, 84) opening 0.95; table z = 74",
+   "plan": "fine-adjust x position, rotate yaw, and lower right fingertips to grasp height z = 78 cm",
+   "commands": [
+    "right move x -0.5",
+    "right move z -6.0",
+    "right point down",
+    "right rotate yaw +20.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, -6) cm, now 0 cm (horizontal) / +2 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (23, -1, 78) opening 0.94; table z = 74",
+   "plan": "close right gripper to grasp the phone",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +2 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (23, -1, 78) opening 0.82; table z = 74",
+   "plan": "lift phone up to z = 100 cm and tilt to orient vertically for placement on stand",
+   "commands": [
+    "right move z +10.8",
+    "right move z +10.8",
+    "right rotate roll +63.3",
+    "right rotate pitch +16.9"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-2, +6, +23) cm, now 2 cm (horizontal) / +0 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (21, 5, 100) opening 0.83; table z = 74",
+   "plan": "move phone towards the stand to (1, 9, 100 cm)",
+   "commands": [
+    "right rotate yaw -9.6",
+    "right move x -20.0",
+    "right move y +4.5",
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-20, +4, +0) cm, now 2 cm (horizontal) / +0 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, 9, 100) opening 0.83; table z = 74",
+   "plan": "adjust phone orientation and position slightly before sliding onto stand",
+   "commands": [
+    "right move y -5.5",
+    "right move x +1.5",
+    "right rotate roll -15.3",
+    "right move z -1.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+1, -5, -1) cm, now 2 cm (horizontal) / +1 cm (vertical) from the phone",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (2, 4, 99) opening 0.83; table z = 74",
+   "plan": "move phone forward into stand slot to y = 13 cm, lower to z = 94 cm, and release gripper",
+   "commands": [
+    "right move y +9.0",
+    "right move x +0.5",
+    "right move z -5.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "task": "click_bell",
+ "instruction": "Use the left arm to press the medium-sized bell's top center.",
+ "kind": "task",
+ "source": {
+  "task": "click_bell",
+  "task_config": "demo_clean",
+  "seed": 100019,
+  "instruction": "Use the left arm to press the medium-sized bell's top center.",
+  "turns": 3,
+  "commands": 7,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bell, which was at x = -24 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bell",
+   "x": -23.81
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper above the bell around (-24, -1.5, 87.5) and point down.",
+   "commands": [
+    "left move y +17.5",
+    "left move x +6.0",
+    "left point down",
+    "left move z -6.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+6, +17, -7) cm, now 0 cm (horizontal) / +14 cm (vertical) from the bell",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-24, -2, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Close the left gripper completely to create a narrow contact point for pressing.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +14 cm (vertical) from the bell; closed the gripper (opening 0.00: nothing held)",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-24, -2, 88) opening 0.00; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm slightly forward and down to press the bell top center at z \u2248 86.5.",
+   "commands": [
+    "left move y +0.5",
+    "left move z -1.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

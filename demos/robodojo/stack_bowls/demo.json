@@ -1,0 +1,334 @@
+{
+ "task": "stack_bowls",
+ "instruction": "Stack the three bowls together.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1051,
+  "decisions": 21,
+  "frames": 21,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: nest bowl2 into bowl1: orient the left gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the bowl, then move at travel height until the fingertip cross in the head image is over (-13, -16).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +60.0",
+    "left move x +17.5",
+    "left move y +4.9"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +60.0: ok; left move x +17.5: ok; left move y +4.9: ok; left fingertips now at (-12.5, -15.8, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: nest bowl2 into bowl1: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -15.8, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 128",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -8.4"
+   ],
+   "failed": [],
+   "effect": "left move z -8.4: ok; left fingertips now at (-12.5, -15.8, 83.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: nest bowl2 into bowl1: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -15.8, 83.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 153",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.5"
+   ],
+   "failed": [],
+   "effect": "left move z -3.5: ok; left fingertips now at (-12.5, -15.8, 80.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: nest bowl2 into bowl1: close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -15.8, 80.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 173",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.30: something is between them (probably grasped)); left fingertips now at (-12.5, -15.8, 80.3), opening 0.297",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: nest bowl2 into bowl1: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -15.8, 80.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 0.30 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 186\nLEFT arm closed on an object with the fingertips at z = 80.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +10.0"
+   ],
+   "failed": [],
+   "effect": "left move z +10.0: ok; left fingertips now at (-12.5, -15.8, 90.3), opening 0.232",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: nest bowl2 into bowl1: carry the object over the target",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -15.8, 90.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 0.23 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 212\nLEFT arm closed on an object with the fingertips at z = 80.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -11.5",
+    "left move x +14.4"
+   ],
+   "failed": [],
+   "effect": "left move y -11.5: ok; left move x +14.4: ok; left fingertips now at (1.9, -27.3, 90.3), opening 0.228",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: nest bowl2 into bowl1: lower the object onto the target",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -27.3, 90.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 0.23 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 266\nLEFT arm closed on an object with the fingertips at z = 80.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "left move z -7.5"
+   ],
+   "failed": [],
+   "effect": "left move z -7.5: ok; left fingertips now at (1.9, -27.2, 82.8), opening 0.286",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: nest bowl2 into bowl1: release the object",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -27.2, 82.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 0.29 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 291\nLEFT arm closed on an object with the fingertips at z = 80.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (1.9, -27.2, 82.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: nest bowl2 into bowl1: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -27.2, 82.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 309",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (1.9, -27.2, 94.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: park the left arm before the right arm takes over",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (1.9, -27.2, 94.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 337",
+   "plan": "That bowl is nested. The left gripper is still hanging over the stack, which is exactly where the right arm has to come down next; lift it clear and send it home before starting the next bowl.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: nest bowl0 into bowl2: orient the right gripper and travel above the object",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 513",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the bowl, then move at travel height until the fingertip cross in the head image is over (34, -23).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +75.0",
+    "right move x +4.3",
+    "right move y -2.2"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +75.0: ok; right move x +4.3: ok; right move y -2.2: ok; right fingertips now at (34.3, -22.9, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: nest bowl0 into bowl2: lower to just above the grasp height",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.3, -22.9, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 630",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -8.4"
+   ],
+   "failed": [],
+   "effect": "right move z -8.4: ok; right fingertips now at (34.3, -22.9, 83.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: nest bowl0 into bowl2: descend to the grasp height",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.3, -22.9, 83.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 655",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -3.5"
+   ],
+   "failed": [],
+   "effect": "right move z -3.5: ok; right fingertips now at (34.3, -22.9, 80.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: nest bowl0 into bowl2: close the gripper",
+   "images": [
+    "frame014_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.3, -22.9, 80.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 675",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.29: something is between them (probably grasped)); right fingertips now at (34.3, -22.9, 80.3), opening 0.287",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: nest bowl0 into bowl2: lift the object",
+   "images": [
+    "frame015_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.3, -22.9, 80.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.29 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 688\nRIGHT arm closed on an object with the fingertips at z = 80.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +10.0"
+   ],
+   "failed": [],
+   "effect": "right move z +10.0: ok; right fingertips now at (34.3, -22.9, 90.3), opening 0.225",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: nest bowl0 into bowl2: carry the object over the target",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.3, -22.9, 90.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.23 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 714\nRIGHT arm closed on an object with the fingertips at z = 80.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move y -4.6",
+    "right move x -20.0",
+    "right move x -10.4"
+   ],
+   "failed": [],
+   "effect": "right move y -4.6: ok; right move x -20.0: ok; right move x -10.4: ok; right fingertips now at (3.9, -27.5, 90.3), opening 0.229",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: nest bowl0 into bowl2: carry the object over the target",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (3.9, -27.5, 90.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.23 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 793\nRIGHT arm closed on an object with the fingertips at z = 80.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move y -0.9",
+    "right move x -4.2"
+   ],
+   "failed": [],
+   "effect": "right move y -0.9: ok; right move x -4.2: ok; right fingertips now at (-0.3, -28.4, 90.3), opening 0.228",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: nest bowl0 into bowl2: lower the object onto the target",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.3, -28.4, 90.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.23 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 829\nRIGHT arm closed on an object with the fingertips at z = 80.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -4.6"
+   ],
+   "failed": [],
+   "effect": "right move z -4.6: ok; right fingertips now at (-0.3, -28.4, 85.7), opening 0.255",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: nest bowl0 into bowl2: release the object",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.3, -28.4, 85.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 849\nRIGHT arm closed on an object with the fingertips at z = 80.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.3, -28.4, 85.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: nest bowl0 into bowl2: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.3, -28.4, 85.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.26, -0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 867",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (-0.3, -28.4, 97.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: return both arms to their initial pose",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.3, -28.4, 97.7) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.25, -0.97, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 897",
+   "plan": "Every placement is done and both grippers are open; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: ok; right home: FAILED (the target was not reached: the fingertips moved (+25.8, +7.7, -2.3) cm, i.e. only part of the way; remaining error 5.7 cm / 19 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (25.4, -20.8, 95.4), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

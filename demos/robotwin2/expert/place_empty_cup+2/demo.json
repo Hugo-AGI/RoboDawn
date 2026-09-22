@@ -1,0 +1,151 @@
+{
+ "task": "place_empty_cup",
+ "instruction": "Set the handheld round blue cup on top of the small drink-protecting wooden coaster.",
+ "kind": "task",
+ "source": {
+  "task": "place_empty_cup",
+  "task_config": "demo_clean",
+  "seed": 100018,
+  "instruction": "Set the handheld round blue cup on top of the small drink-protecting wooden coaster.",
+  "turns": 7,
+  "commands": 16,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the cup, which was at x = -18 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "cup",
+   "x": -17.52
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pre-adjust the left gripper width to prepare for grasping the cup.",
+   "commands": [
+    "left gripper 0.60"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 25 cm (horizontal) / +20 cm (vertical) from the cup; closed the gripper (opening 0.51: holding the cup)",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.51; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left gripper over the cup at (-21, 3, 94) and point downward.",
+   "commands": [
+    "left move y +11.0",
+    "left move y +11.0",
+    "left move x +9.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+9, +22, -0) cm, now 4 cm (horizontal) / +20 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-21, 2, 94) opening 0.48; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper slightly by 2 cm along z to prepare for descent.",
+   "commands": [
+    "left move z -2.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -2) cm, now 4 cm (horizontal) / +18 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-21, 2, 92) opening 0.48; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper into grasping position around the cup rim at z=82.5 and close gripper.",
+   "commands": [
+    "left move z -9.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -10) cm, now 3 cm (horizontal) / +8 cm (vertical) from the cup; closed the gripper (opening 0.07: holding the cup)",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-21, 2, 83) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift the cup by raising left arm 8 cm along z.",
+   "commands": [
+    "left move z +8.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, +8) cm, now 3 cm (horizontal) / +9 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-21, 2, 91) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move the cup above the coaster to roughly (-4, -7, 87) and adjust orientation.",
+   "commands": [
+    "left move y -9.0",
+    "left move x +16.5",
+    "left rotate pitch -5.0",
+    "left move z -3.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+16, -9, -4) cm, now 4 cm (horizontal) / +8 cm (vertical) from the cup",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-5, -7, 87) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Align slightly, lower the cup onto the coaster to z=85, and release gripper.",
+   "commands": [
+    "left move x +1.0",
+    "left move z -2.5",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

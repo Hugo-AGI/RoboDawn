@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100005,
+  100006,
+  100009,
+  100010,
+  100011,
+  100012,
+  100013,
+  100014,
+  100019,
+  100020,
+  100022,
+  100023,
+  100025,
+  100026,
+  100027,
+  100028,
+  100029,
+  100030,
+  100032,
+  100033,
+  100035,
+  100037,
+  100038,
+  100039,
+  100042,
+  100043,
+  100044,
+  100045,
+  100047,
+  100048,
+  100049,
+  100050,
+  100052,
+  100053,
+  100055,
+  100056,
+  100057,
+  100058,
+  100059,
+  100060,
+  100061,
+  100063,
+  100064,
+  100065,
+  100066,
+  100068,
+  100070
+ ],
+ "infos": [
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Lime",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Maroon",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Pink",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Lime",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Purple",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Olive",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Navy",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Red",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Coral",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Gray",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Indigo",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Olive",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Lime",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Indigo",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Purple",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Tan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Teal",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Teal",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Purple",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Pink",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Orange",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Purple",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Pink",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Tan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Olive",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Navy",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Olive",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Green",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Turquoise",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Coral",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Teal",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Olive",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Teal",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Orange",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Red",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Olive",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Turquoise",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Coral",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Black",
+   "{a}": "left"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Orange",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Green",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base5",
+   "{B}": "Beige",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Indigo",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Pink",
+   "{a}": "right"
+  },
+  {
+   "{A}": "099_fan/base4",
+   "{B}": "Coral",
+   "{a}": "left"
+  }
+ ],
+ "next_seed": 100071
+}

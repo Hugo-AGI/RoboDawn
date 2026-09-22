@@ -1,0 +1,23 @@
+# Profile template for a REAL robot deployment. Fill every key; the text is inserted verbatim into the
+# system prompt (see harness/agent/prompts.py). Follow the adaptation procedure in harness/README.md:
+# measure, do not guess.
+robot: >-
+  <e.g. one 6-DoF arm (UR5) with a Robotiq 2F-85 gripper that opens to 8.5 cm, mounted at the far edge of
+  the table from the camera's point of view>
+frame: >-
+  <World frame in centimetres as the VLM sees it: which image direction is +x, +y, +z; table-top height;
+  typical object base height. Must match the coordinates reported in the state text.>
+workspace: >-
+  <Reachable fingertip region measured with the real planner/IK (x/y/z ranges per orientation preset);
+  which arm handles which side; minimum distance between grippers.>
+cameras: >-
+  <One sentence per image the model receives: viewpoint, what the markers/grid mean, which is the wrist cam.>
+gripper: >-
+  The 'gripper position' reported below is the tool centre point between the fingertips. 'approach' is the unit
+  vector the fingers point along; 'finger axis' is the direction along which the fingers open and close.
+  <How the opening value maps to your gripper; the threshold that means "something is held".>
+tips:
+  - "<grasp heights that worked on this robot, e.g. fingertips 3-5 cm above the table for small objects>"
+  - "<travel height to keep while moving sideways>"
+  - "<what a planner failure typically means on this robot and how to recover>"
+  - "<any hard constraints: forbidden regions, cable, camera pole>"

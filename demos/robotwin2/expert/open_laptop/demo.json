@@ -1,0 +1,139 @@
+{
+ "task": "open_laptop",
+ "instruction": "Lift the foldable laptop's lid gently.",
+ "kind": "task",
+ "source": {
+  "task": "open_laptop",
+  "task_config": "demo_clean",
+  "seed": 100015,
+  "instruction": "Lift the foldable laptop's lid gently.",
+  "turns": 6,
+  "commands": 18,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the laptop, which was at x = -4 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "laptop",
+   "x": -3.89
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper rightward and forward toward (-6, -13, 94) and roll -90 degrees to orient for grasping the lid edge.",
+   "commands": [
+    "left move x +11.8",
+    "left move x +11.8",
+    "left move y +6.0",
+    "left rotate roll -89.2"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+23, +6, -0) cm, now 13 cm (horizontal) / +20 cm (vertical) from the laptop",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, -14, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pitch and yaw left gripper to face the front lid edge and descend to z=83.",
+   "commands": [
+    "left rotate pitch -64.9",
+    "left rotate yaw +83.5",
+    "left move z -11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -11) cm, now 13 cm (horizontal) / +8 cm (vertical) from the laptop",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -14, 83) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move forward to y=-6.5, lower to z=79.5 to grasp the lid edge, and close gripper.",
+   "commands": [
+    "left move y +7.5",
+    "left move x +0.5",
+    "left move z -3.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +8, -3) cm, now 6 cm (horizontal) / +5 cm (vertical) from the laptop; closed the gripper (opening 0.07: holding the laptop)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -6, 80) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Begin lifting laptop lid gently by moving upward to z=83.5 and slightly forward.",
+   "commands": [
+    "left move z +2.5",
+    "left move y +1.5",
+    "left move x +0.5",
+    "left move z +1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, +2) cm, now 5 cm (horizontal) / +7 cm (vertical) from the laptop",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -5, 82) opening 0.14; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move slightly forward and ensure tight grasp on the lid.",
+   "commands": [
+    "left move y +0.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 5 cm (horizontal) / +7 cm (vertical) from the laptop",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -5, 82) opening 0.12; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift lid further up by 3 cm to z=85 to complete opening.",
+   "commands": [
+    "left move z +3.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

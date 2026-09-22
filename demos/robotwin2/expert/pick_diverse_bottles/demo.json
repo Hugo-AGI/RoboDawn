@@ -1,0 +1,252 @@
+{
+ "task": "pick_diverse_bottles",
+ "instruction": "Lift the liquid container dark brown plastic as the other arm lifts the brown bottle.",
+ "kind": "task",
+ "source": {
+  "task": "pick_diverse_bottles",
+  "task_config": "demo_clean",
+  "seed": 100050,
+  "instruction": "Lift the liquid container dark brown plastic as the other arm lifts the brown bottle.",
+  "turns": 12,
+  "commands": 43,
+  "sides": "LR",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bottle1, which was at x = -13 (left half of the table); the RIGHT arm grasped the bottle2, which was at x = +15 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bottle1",
+   "x": -12.53
+  },
+  "right": {
+   "object": "bottle2",
+   "x": 15.24
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate and translate left arm toward the dark brown container around (-18, 0, 94).",
+   "commands": [
+    "left rotate roll -5.7",
+    "left rotate yaw -39.3",
+    "left move y +18.5",
+    "left move x +12.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+12, +18, -0) cm, now 8 cm (horizontal) / +20 cm (vertical) from the bottle1",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, -1, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left arm to z=87. Rotate and move right arm forward toward the brown bottle.",
+   "commands": [
+    "left move z -7.0",
+    "right point forward",
+    "right rotate yaw +35.0",
+    "right move y +11.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, -7) cm, now 8 cm (horizontal) / +13 cm (vertical) from the bottle1; RIGHT fingertips moved by (+0, +11, -0) cm, now 23 cm (horizontal) / +20 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, -1, 87) opening 0.94; RIGHT fingertips (31, -8, 94) opening 0.94; table z = 74",
+   "plan": "Move right arm closer to the brown bottle at (20, 4, 89).",
+   "commands": [
+    "right move y +11.5",
+    "right move x -10.5",
+    "right move z -5.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-10, +12, -5) cm, now 8 cm (horizontal) / +15 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-18, -1, 87) opening 0.94; RIGHT fingertips (20, 4, 89) opening 0.95; table z = 74",
+   "plan": "Fine-adjust left arm forward and rightward to enclose the dark brown container.",
+   "commands": [
+    "left move x +1.7",
+    "left move y +2.0",
+    "left move z -0.2",
+    "left move x +1.7"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+3, +2, +0) cm, now 5 cm (horizontal) / +13 cm (vertical) from the bottle1",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-15, 1, 87) opening 0.94; RIGHT fingertips (20, 4, 89) opening 0.94; table z = 74",
+   "plan": "Move left arm further forward to center fingertips on the container.",
+   "commands": [
+    "left move y +2.0",
+    "left move z -0.2",
+    "left move x +1.7",
+    "left move y +2.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+2, +4, +0) cm, now 1 cm (horizontal) / +13 cm (vertical) from the bottle1",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 87) opening 0.94; RIGHT fingertips (20, 4, 89) opening 0.94; table z = 74",
+   "plan": "Adjust left arm height slightly to settle grip.",
+   "commands": [
+    "left move z -0.2"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 1 cm (horizontal) / +13 cm (vertical) from the bottle1",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 87) opening 0.94; RIGHT fingertips (20, 4, 89) opening 0.94; table z = 74",
+   "plan": "Shift right arm towards (18, 7, 89) to enclose the bottle.",
+   "commands": [
+    "right move x -1.2",
+    "right move y +1.6",
+    "right move x -1.2",
+    "right move y +1.6"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-2, +3, +0) cm, now 4 cm (horizontal) / +15 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 87) opening 0.94; RIGHT fingertips (18, 7, 89) opening 0.94; table z = 74",
+   "plan": "Advance right arm further to center around the brown bottle at (16, 9, 89).",
+   "commands": [
+    "right move x -1.2",
+    "right move y +1.6",
+    "right move x -1.2",
+    "right move y +1.6"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-2, +3, +0) cm, now 1 cm (horizontal) / +16 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 87) opening 0.94; RIGHT fingertips (16, 9, 90) opening 0.94; table z = 74",
+   "plan": "Close both grippers firmly on the container and bottle.",
+   "commands": [
+    "right point forward",
+    "right rotate yaw +35.0",
+    "left gripper 0.00",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 1 cm (horizontal) / +13 cm (vertical) from the bottle1; RIGHT fingertips stayed in place, now 1 cm (horizontal) / +16 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 87) opening 0.81; RIGHT fingertips (16, 10, 90) opening 0.84; table z = 74",
+   "plan": "Lift both arms simultaneously by ~9 cm.",
+   "commands": [
+    "left move z +9.0",
+    "left move y +0.5",
+    "right move z +9.5",
+    "right move y +0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, +9) cm, now 1 cm (horizontal) / +13 cm (vertical) from the bottle1; RIGHT fingertips moved by (-0, +0, +9) cm, now 1 cm (horizontal) / +16 cm (vertical) from the bottle2",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, 5, 96) opening 0.81; RIGHT fingertips (16, 10, 99) opening 0.86; table z = 74",
+   "plan": "Raise left arm slightly more and retract backward to stable position.",
+   "commands": [
+    "left move z +3.5",
+    "left move y -16.0",
+    "left move x +6.5",
+    "left rotate yaw -7.3"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+6, -16, +3) cm, now 1 cm (horizontal) / +13 cm (vertical) from the bottle1",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -11, 100) opening 0.81; RIGHT fingertips (16, 10, 99) opening 0.86; table z = 74",
+   "plan": "Retract right arm backward to match and complete the dual lift.",
+   "commands": [
+    "left move z +0.5",
+    "right move z +1.0",
+    "right move y -11.2"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

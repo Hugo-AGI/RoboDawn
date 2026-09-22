@@ -1,0 +1,103 @@
+{
+ "task": "press_stapler",
+ "instruction": "Press down on the blue stapler with smooth finish with the right arm.",
+ "kind": "task",
+ "source": {
+  "task": "press_stapler",
+  "task_config": "demo_clean",
+  "seed": 100019,
+  "instruction": "Press down on the blue stapler with smooth finish with the right arm.",
+  "turns": 4,
+  "commands": 10,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the stapler, which was at x = +1 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "stapler",
+   "x": 0.87
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Rotate right arm roll and yaw to match the stapler orientation, move left to x = 15.5 cm and lower to z = 89 cm.",
+   "commands": [
+    "right rotate roll -84.3",
+    "right rotate yaw +59.2",
+    "right move z -5.0",
+    "right move x -15.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-15, -0, -5) cm, now 22 cm (horizontal) / +15 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (15, -19, 89) opening 0.94; table z = 74",
+   "plan": "Move right gripper over the stapler to (0, -2, 88) and close fingers to press with a closed tip.",
+   "commands": [
+    "right move x -15.5",
+    "right move y +17.5",
+    "right move z -1.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-16, +17, -1) cm, now 1 cm (horizontal) / +14 cm (vertical) from the stapler; closed the gripper (opening 0.00: nothing held)",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (-0, -2, 88) opening 0.00; table z = 74",
+   "plan": "Maintain closed gripper state before pressing downward.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 1 cm (horizontal) / +14 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (-0, -2, 88) opening 0.00; table z = 74",
+   "plan": "Move right arm down by 5 cm to z = 83 cm to press down on the stapler.",
+   "commands": [
+    "right move z -5.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

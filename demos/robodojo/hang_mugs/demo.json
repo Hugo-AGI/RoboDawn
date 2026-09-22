@@ -1,0 +1,607 @@
+{
+ "task": "hang_mugs",
+ "instruction": "Hang all the mugs on the mug rack.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2467,
+  "decisions": 50,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being reached for, and 2 others still standing on the table. hang mug0 on the lower peg on the left: orient the left gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the mug, then move at travel height until the fingertip cross in the head image is over (-7, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +30.0",
+    "left move x +20.0",
+    "left move x +3.3"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +30.0: ok; left move x +20.0: ok; left move x +3.3: ok; left fingertips now at (-6.7, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being reached for, and 2 others still standing on the table. hang mug0 on the lower peg on the left: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.7, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 118",
+   "plan": "The head grid shows the cross +1.6 cm in x and +1.5 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move x +1.6",
+    "left move y +1.5"
+   ],
+   "failed": [],
+   "effect": "left move x +1.6: ok; left move y +1.5: ok; left fingertips now at (-5.1, -19.2, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being lined up with the fingers, and 2 others still standing on the table. hang mug0 on the lower peg on the left: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 154",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -7.9"
+   ],
+   "failed": [],
+   "effect": "left move z -7.9: ok; left fingertips now at (-5.1, -19.2, 84.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being gripped across its rim, and 2 others still standing on the table. hang mug0 on the lower peg on the left: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 84.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 179",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -3.5"
+   ],
+   "failed": [],
+   "effect": "left move z -3.5: ok; left fingertips now at (-5.1, -19.2, 80.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) has just been lifted off the table, and 2 others still standing on the table. hang mug0 on the lower peg on the left: close the gripper",
+   "images": [
+    "frame005_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 80.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 199",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.84: something is between them (probably grasped)); left fingertips now at (-5.1, -19.2, 80.8), opening 0.836",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being turned in the air so its handle faces the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 80.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.86, -0.50, -0.00), opening = 0.84 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 212\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +10.0"
+   ],
+   "failed": [],
+   "effect": "left move z +10.0: ok; left fingertips now at (-5.1, -19.2, 90.7), opening 0.836",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being turned in the air so its handle faces the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: turn the handle to point away from the robot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 90.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.84 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 238\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "The mug goes onto the peg hole first, so the hole through its handle has to face along the peg. Hold the mug clear of the table and turn the gripper -61 deg about the vertical until its handle points straight away from the robot; the hole through the handle then lies across the table, the way the peg points.",
+   "commands": [
+    "left rotate yaw -60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -60.0: ok; left fingertips now at (-5.1, -19.2, 90.7), opening 0.836",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being tipped in the air towards the pose it will hang in, and 2 others still standing on the table. hang mug0 on the lower peg on the left: tip the mug towards the pose it will hang in",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 90.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.84 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 274\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "A mug hanging on a peg lies on its side with its handle uppermost, so tip it into that pose here, in the air, where it can turn without touching anything. Turn the wrist +45 deg about the line running away from the robot (the fingertips stay where they are): the handle swings up over the mug while the hole through it goes on facing along the peg.",
+   "commands": [
+    "left rotate roll +45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +45.0: ok; left fingertips now at (-5.1, -19.2, 90.7), opening 0.83",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being tilted so the hole through its handle points along the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: aim the handle hole along the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.1, -19.2, 90.7) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-0.87, 0.35, 0.35), opening = 0.83 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 306\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "The pegs are not horizontal - each one slopes upwards as it goes out from the post. Turn the wrist +15 deg so the hole through the handle tilts the same way as the peg, otherwise the ring meets the end of the peg edge-on and jams instead of sliding over it.",
+   "commands": [
+    "left rotate pitch +15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +15.0: ok; left fingertips now at (-5.2, -19.2, 90.7), opening 0.828",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being carried out past the tip of the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: carry the tipped mug out beyond the peg tip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.2, -19.2, 90.7) cm, approach = (-0.18, 0.71, -0.68), finger axis = (-0.75, 0.35, 0.57), opening = 0.83 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 328\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Carry the tipped mug over to the rack and out past the end of the peg, high enough that the mug hanging under the gripper travels over the rack instead of into it, and stop with the handle just beyond the tip of the peg.",
+   "commands": [
+    "left move z +4.8",
+    "left move x -5.0",
+    "left move y +19.0"
+   ],
+   "failed": [],
+   "effect": "left move z +4.8: ok; left move x -5.0: ok; left move y +19.0: ok; left fingertips now at (-10.2, -0.2, 95.4), opening 0.823",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being lined up with the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: line the handle ring up with the peg's axis",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.2, -0.2, 95.4) cm, approach = (-0.19, 0.71, -0.68), finger axis = (-0.75, 0.35, 0.57), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 400\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Put the ring of the handle exactly on the line the peg points along, just off its tip: from there a straight slide inwards threads the peg through the handle.",
+   "commands": [
+    "left move z -1.3",
+    "left move y -0.6"
+   ],
+   "failed": [],
+   "effect": "left move z -1.3: ok; left move y -0.6: ok; left fingertips now at (-10.2, -0.8, 94.1), opening 0.823",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being slid onto the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.2, -0.8, 94.1) cm, approach = (-0.19, 0.70, -0.69), finger axis = (-0.75, 0.35, 0.57), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 434\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "left move x +1.8",
+    "left move y -0.2",
+    "left move z -0.5"
+   ],
+   "failed": [],
+   "effect": "left move x +1.8: ok; left move y -0.2: ok; left move z -0.5: ok; left fingertips now at (-8.5, -0.9, 93.5), opening 0.823",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being slid onto the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.5, -0.9, 93.5) cm, approach = (-0.19, 0.70, -0.69), finger axis = (-0.74, 0.35, 0.57), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 484\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "left move x +1.8",
+    "left move y -0.2",
+    "left move z -0.6"
+   ],
+   "failed": [],
+   "effect": "left move x +1.8: ok; left move y -0.2: ok; left move z -0.6: ok; left fingertips now at (-6.7, -1.1, 92.7), opening 0.822",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being slid onto the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.7, -1.1, 92.7) cm, approach = (-0.19, 0.70, -0.69), finger axis = (-0.74, 0.35, 0.57), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 534\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "left move x +1.8",
+    "left move y -0.2",
+    "left move z -0.6"
+   ],
+   "failed": [],
+   "effect": "left move x +1.8: ok; left move y -0.2: ok; left move z -0.6: ok; left fingertips now at (-5.0, -1.3, 92.2), opening 0.822",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being slid onto the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.0, -1.3, 92.2) cm, approach = (-0.19, 0.70, -0.69), finger axis = (-0.75, 0.35, 0.57), opening = 0.82 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 584\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "left move x +1.8",
+    "left move y -0.3",
+    "left move z -1.6"
+   ],
+   "failed": [],
+   "effect": "left move x +1.8: ok; left move y -0.3: ok; left move z -1.6: ok; left fingertips now at (-3.3, -1.6, 90.5), opening 0.567",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) is being slid onto the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.3, -1.6, 90.5) cm, approach = (-0.19, 0.70, -0.69), finger axis = (-0.74, 0.35, 0.57), opening = 0.57 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 636\nLEFT arm closed on an object with the fingertips at z = 80.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 0.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "left move x +0.6",
+    "left move y -2.0",
+    "left move z +0.3"
+   ],
+   "failed": [],
+   "effect": "left move x +0.6: ok; left move y -2.0: ok; left move z +0.3: ok; left fingertips now at (-2.7, -3.8, 90.3), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 0 of 3 hang from a peg so far; this one (mug0) has just been let go on the peg, and 2 others still standing on the table. hang mug0 on the lower peg on the left: let the mug go",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.7, -3.8, 90.3) cm, approach = (-0.20, 0.69, -0.69), finger axis = (-0.74, 0.36, 0.57), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 686\nLEFT arm closed on an object with the fingertips at z = 80.8 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.8 + (h - 76.5) before opening.",
+   "plan": "The peg is through the handle and the mug is already close to its hanging pose; open the gripper and let it settle onto the peg.",
+   "commands": [
+    "left gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); wait: ok; left fingertips now at (-2.7, -3.8, 90.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being lined up with the fingers, and 1 other still standing on the table. hang mug0 on the lower peg on the left: withdraw the fingers straight back",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.7, -3.8, 90.3) cm, approach = (-0.20, 0.69, -0.69), finger axis = (-0.74, 0.36, 0.57), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 707",
+   "plan": "The mug is on the peg now, hanging by its handle with nothing under it. Pull the gripper straight back along the fingers, which slides the inner finger out of the cup without dragging the mug sideways off the peg, and send the arm home so it is not left standing next to the rack while the other arm works. Leave a hanging mug alone: going back to it knocks it off more often than it helps.",
+   "commands": [
+    "left move y -6.2",
+    "left move x +1.8",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move y -6.2: ok; left move x +1.8: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being reached for, and 1 other still standing on the table. hang mug1 on the lower peg on the right: orient the right gripper and travel above the object",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 911",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the mug, then move at travel height until the fingertip cross in the head image is over (24, -11).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +30.0",
+    "right move x -6.0",
+    "right move y +10.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +30.0: ok; right move x -6.0: ok; right move y +10.0: ok; right fingertips now at (24.0, -10.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being lined up with the fingers, and 1 other still standing on the table. hang mug1 on the lower peg on the right: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1027",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -7.3"
+   ],
+   "failed": [],
+   "effect": "right move z -7.3: ok; right fingertips now at (24.0, -10.7, 84.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being gripped across its rim, and 1 other still standing on the table. hang mug1 on the lower peg on the right: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 84.9) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1052",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -3.5"
+   ],
+   "failed": [],
+   "effect": "right move z -3.5: ok; right fingertips now at (24.0, -10.7, 81.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) has just been lifted off the table, and 1 other still standing on the table. hang mug1 on the lower peg on the right: close the gripper",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 81.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1072",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.25: something is between them (probably grasped)); right fingertips now at (24.0, -10.7, 81.4), opening 0.246",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being turned in the air so its handle faces the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 81.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 0.25 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1085\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 10 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +10.0"
+   ],
+   "failed": [],
+   "effect": "right move z +10.0: ok; right fingertips now at (24.0, -10.7, 91.4), opening 0.242",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being turned in the air so its handle faces the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: turn the handle to point away from the robot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 91.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1111\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "The mug goes onto the peg hole first, so the hole through its handle has to face along the peg. Hold the mug clear of the table and turn the gripper +60 deg about the vertical until its handle points straight away from the robot; the hole through the handle then lies across the table, the way the peg points.",
+   "commands": [
+    "right rotate yaw +60.0"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw +60.0: ok; right fingertips now at (24.0, -10.7, 91.4), opening 0.241",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being tipped in the air towards the pose it will hang in, and 1 other still standing on the table. hang mug1 on the lower peg on the right: tip the mug towards the pose it will hang in",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 91.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1147\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "A mug hanging on a peg lies on its side with its handle uppermost, so tip it into that pose here, in the air, where it can turn without touching anything. Turn the wrist +30 deg about the line running away from the robot (the fingertips stay where they are): the handle swings up over the mug while the hole through it goes on facing along the peg.",
+   "commands": [
+    "right rotate roll +30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate roll +30.0: ok; right fingertips now at (24.0, -10.7, 91.4), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being tilted so the hole through its handle points along the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: aim the handle hole along the peg",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 91.4) cm, approach = (-0.00, 0.50, -0.87), finger axis = (0.00, -0.87, -0.50), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1177\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "The pegs are not horizontal - each one slopes upwards as it goes out from the post. Turn the wrist -30 deg so the hole through the handle tilts the same way as the peg, otherwise the ring meets the end of the peg edge-on and jams instead of sliding over it.",
+   "commands": [
+    "right rotate pitch -30.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -30.0: ok; right fingertips now at (24.0, -10.7, 91.3), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being carried out past the tip of the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: carry the tipped mug out beyond the peg tip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -10.7, 91.3) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.25, -0.87, -0.43), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1205\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Carry the tipped mug over to the rack and out past the end of the peg, high enough that the mug hanging under the gripper travels over the rack instead of into it, and stop with the handle just beyond the tip of the peg.",
+   "commands": [
+    "right move z +4.3",
+    "right move x +0.3",
+    "right move y +2.8"
+   ],
+   "failed": [],
+   "effect": "right move z +4.3: ok; right move x +0.3: ok; right move y +2.8: ok; right fingertips now at (24.2, -7.9, 95.6), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being lined up with the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: line the handle ring up with the peg's axis",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.2, -7.9, 95.6) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.25, -0.87, -0.43), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1259\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Put the ring of the handle exactly on the line the peg points along, just off its tip: from there a straight slide inwards threads the peg through the handle.",
+   "commands": [
+    "right move z -3.8"
+   ],
+   "failed": [],
+   "effect": "right move z -3.8: ok; right fingertips now at (24.2, -8.0, 91.8), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being slid onto the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.2, -8.0, 91.8) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.25, -0.87, -0.43), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1279\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "right move x -2.2",
+    "right move z -1.0"
+   ],
+   "failed": [],
+   "effect": "right move x -2.2: ok; right move z -1.0: ok; right fingertips now at (22.0, -8.0, 90.8), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being slid onto the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (22.0, -8.0, 90.8) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.25, -0.87, -0.43), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1313\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "right move x -2.2",
+    "right move y +0.2",
+    "right move z -0.7"
+   ],
+   "failed": [],
+   "effect": "right move x -2.2: ok; right move y +0.2: ok; right move z -0.7: ok; right fingertips now at (19.8, -7.8, 90.0), opening 0.244",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) is being slid onto the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: slide the handle onto the peg",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (19.8, -7.8, 90.0) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.26, -0.87, -0.43), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1363\nRIGHT arm closed on an object with the fingertips at z = 81.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "Slide the mug 1.8 cm straight in along the peg - the peg slopes upwards going out, so going in the gripper also comes down a little. Keep taking short bites like this until the body of the mug is nearly touching the post, watching that the mug really travels with the gripper.",
+   "commands": [
+    "right move x -2.2",
+    "right move y +0.2",
+    "right move z -0.8"
+   ],
+   "failed": [],
+   "effect": "right move x -2.2: ok; right move y +0.2: ok; right move z -0.8: ok; right fingertips now at (17.5, -7.6, 89.2), opening 0.236",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 1 of 3 hang from a peg so far; this one (mug1) has just been let go on the peg, and 1 other still standing on the table. hang mug1 on the lower peg on the right: let the mug go",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -7.6, 88.4) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.26, -0.87, -0.43), opening = 0.23 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1447\nRIGHT arm closed on an object with the fingertips at z = 81.4 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 81.4 + (h - 76.5) before opening.",
+   "plan": "The peg is through the handle and the mug is already close to its hanging pose; open the gripper and let it settle onto the peg.",
+   "commands": [
+    "right gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); wait: ok; right fingertips now at (15.4, -7.6, 88.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) is being lined up with the fingers, and no others still standing on the table. hang mug1 on the lower peg on the right: withdraw the fingers straight back",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -7.6, 88.4) cm, approach = (0.43, 0.50, -0.75), finger axis = (0.26, -0.87, -0.43), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1468",
+   "plan": "The mug is on the peg now, hanging by its handle with nothing under it. Pull the gripper straight back along the fingers, which slides the inner finger out of the cup without dragging the mug sideways off the peg, and send the arm home so it is not left standing next to the rack while the other arm works. Leave a hanging mug alone: going back to it knocks it off more often than it helps.",
+   "commands": [
+    "right move y -4.5",
+    "right move x -3.9",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move y -4.5: ok; right move x -3.9: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) is being reached for, and no others still standing on the table. hang mug2 on the upper peg on the left: orient the left gripper and travel above the object",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1667",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the mug, then move at travel height until the fingertip cross in the head image is over (-41, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -45.0",
+    "left move x -11.0",
+    "left move y +6.6"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -45.0: ok; left move x -11.0: ok; left move y +6.6: ok; left fingertips now at (-41.0, -14.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) has just been lifted off the table, and no others still standing on the table. hang mug2 on the upper peg on the left: close the gripper",
+   "images": [
+    "frame038_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.0, -14.1, 80.8) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, 0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1835",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.24: something is between them (probably grasped)); left fingertips now at (-41.0, -14.1, 80.7), opening 0.237",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) is being turned in the air so its handle faces the peg, and no others still standing on the table. hang mug2 on the upper peg on the left: turn the handle to point away from the robot",
+   "images": [
+    "frame040_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.0, -14.2, 90.7) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, 0.71, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1874\nLEFT arm closed on an object with the fingertips at z = 80.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.7 + (h - 76.5) before opening.",
+   "plan": "The mug goes onto the peg hole first, so the hole through its handle has to face along the peg. Hold the mug clear of the table and turn the gripper -52 deg about the vertical until its handle points straight away from the robot; the hole through the handle then lies across the table, the way the peg points.",
+   "commands": [
+    "left rotate yaw -45.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -45.0: ok; left fingertips now at (-41.0, -14.2, 90.7), opening 0.237",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) is being tipped in the air towards the pose it will hang in, and no others still standing on the table. hang mug2 on the upper peg on the left: tip the mug towards the pose it will hang in",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.0, -14.2, 90.7) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.24 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1906\nLEFT arm closed on an object with the fingertips at z = 80.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.7 + (h - 76.5) before opening.",
+   "plan": "A mug hanging on a peg lies on its side with its handle uppermost, so tip it into that pose here, in the air, where it can turn without touching anything. Turn the wrist +60 deg about the line running away from the robot (the fingertips stay where they are): the handle swings up over the mug while the hole through it goes on facing along the peg.",
+   "commands": [
+    "left rotate roll +60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate roll +60.0: ok; left fingertips now at (-41.0, -14.2, 90.7), opening 0.229",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) is being tilted so the hole through its handle points along the peg, and no others still standing on the table. hang mug2 on the upper peg on the left: aim the handle hole along the peg",
+   "images": [
+    "frame042_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-41.0, -14.2, 90.7) cm, approach = (-0.00, 0.87, -0.50), finger axis = (-0.00, 0.50, 0.87), opening = 0.23 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1945\nLEFT arm closed on an object with the fingertips at z = 80.7 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 80.7 + (h - 76.5) before opening.",
+   "plan": "The pegs are not horizontal - each one slopes upwards as it goes out from the post. Turn the wrist +30 deg so the hole through the handle tilts the same way as the peg, otherwise the ring meets the end of the peg edge-on and jams instead of sliding over it.",
+   "commands": [
+    "left rotate pitch +30.0"
+   ],
+   "failed": [],
+   "effect": "left rotate pitch +30.0: ok; left fingertips now at (-41.0, -14.2, 90.7), opening 0.229",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. 2 of 3 hang from a peg so far; this one (mug2) has just been let go on the peg, and no others still standing on the table. hang mug2 on the upper peg on the left: let the mug go",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.3, 0.0, 101.3) cm, approach = (-0.26, 0.86, -0.44), finger axis = (0.43, 0.51, 0.74), opening = 0.26 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2303\nLEFT arm closed on an object with the fingertips at z = 80.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 80.7 + (h - 76.5) before opening.",
+   "plan": "The peg is through the handle and the mug is already close to its hanging pose; open the gripper and let it settle onto the peg.",
+   "commands": [
+    "left gripper 1.00",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); wait: ok; left fingertips now at (-7.3, 0.0, 101.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: Every mug must end up HANGING from one of the mug tree's pegs: the peg through the hole of the mug's handle, and when the fingers open the mug stays up in the air, lying on its side with its handle uppermost and nothing under it. A mug left standing on the table, or set down beside the rack, is worth nothing however close to a peg it is. One mug per peg, and only the pegs sticking out to the left and to the right of the post are used. For each mug: grip it across one side of its rim, on the side away from the handle; in the air turn it until the handle swings up and the hole through the handle faces along the peg; carry it out past the tip of that peg, slide it straight in along the peg, open the fingers, and pull them straight back out of the cup. All 3 mugs are hanging from pegs, each one dangling by its handle; nothing is left on the table, so put both arms back where they started. hang mug2 on the upper peg on the left: withdraw the fingers straight back",
+   "images": [
+    "frame050_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.3, 0.0, 101.3) cm, approach = (-0.26, 0.86, -0.44), finger axis = (0.43, 0.51, 0.74), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2324",
+   "plan": "The mug is on the peg now, hanging by its handle with nothing under it. Pull the gripper straight back along the fingers, which slides the inner finger out of the cup without dragging the mug sideways off the peg, and send the arm home so it is not left standing next to the rack while the other arm works. Leave a hanging mug alone: going back to it knocks it off more often than it helps.",
+   "commands": [
+    "left move y -7.7",
+    "left move x +2.3",
+    "left home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left move y -7.7: ok; left move x +2.3: ok; left home: FAILED (the target was not reached: the fingertips moved (-23.7, -11.9, -5.2) cm, i.e. only part of the way; remaining error 4.3 cm / 19 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-28.8, -19.6, 96.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

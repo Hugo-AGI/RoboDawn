@@ -1,0 +1,597 @@
+{
+ "task": "sort_nesting_dolls_by_size",
+ "instruction": "Arrange the five nesting dolls in a row from left to right, from smallest to largest.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2632,
+  "decisions": 74,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: orient the left gripper and travel above the object Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down30) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (-1, -5).",
+   "commands": [
+    "left point down30",
+    "left move x +20.0",
+    "left move x +9.1",
+    "left move y +15.6"
+   ],
+   "failed": [],
+   "effect": "left point down30: ok; left move x +20.0: ok; left move x +9.1: ok; left move y +15.6: ok; left fingertips now at (-0.9, -5.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: lower to just above the grasp height Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.9, -5.1, 92.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 123",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -9.9"
+   ],
+   "failed": [],
+   "effect": "left move z -9.9: ok; left fingertips now at (-0.9, -5.1, 82.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: descend to the grasp height Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.9, -5.1, 82.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 149",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "left move z -4.0: ok; left fingertips now at (-0.9, -5.1, 78.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: close the gripper Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.9, -5.1, 78.3) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 169",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); left fingertips now at (-0.9, -5.1, 78.2), opening 0.432",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: lift the object Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.9, -5.1, 78.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 182\nLEFT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 8 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +8.0"
+   ],
+   "failed": [],
+   "effect": "left move z +8.0: ok; left fingertips now at (-0.9, -5.1, 86.2), opening 0.432",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: carry the object over the target Right now the dolls are still scattered where they started; none of the row is built yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.9, -5.1, 86.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 207\nLEFT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y -6.9",
+    "left move x -20.0",
+    "left move x -3.1"
+   ],
+   "failed": [],
+   "effect": "left move y -6.9: ok; left move x -20.0: ok; left move x -3.1: ok; left fingertips now at (-24.1, -12.0, 86.2), opening 0.432",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: lower the object onto the target Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 86.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 277\nLEFT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "left move z -7.4"
+   ],
+   "failed": [],
+   "effect": "left move z -7.4: ok; left fingertips now at (-24.1, -12.0, 78.8), opening 0.432",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: release the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 78.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 302\nLEFT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-24.1, -12.0, 78.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the smallest doll into place 1 of 5 in the row, counting from the left: retreat upward Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 78.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 319",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +15.0"
+   ],
+   "failed": [],
+   "effect": "left move z +15.0: ok; left fingertips now at (-24.1, -12.0, 93.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): orient the right gripper and travel above the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 349",
+   "plan": "Point the right fingers down (down30) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (20, -5).",
+   "commands": [
+    "right point down30",
+    "right move x -9.9",
+    "right move y +15.3"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right move x -9.9: ok; right move y +15.3: ok; right fingertips now at (20.1, -5.4, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): lower to just above the grasp height Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.1, -5.4, 92.2) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 441",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -9.6"
+   ],
+   "failed": [],
+   "effect": "right move z -9.6: ok; right fingertips now at (20.1, -5.4, 82.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): descend to the grasp height Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.1, -5.4, 82.6) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 467",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.0"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right fingertips now at (20.1, -5.4, 78.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): close the gripper Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.1, -5.4, 78.6) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 487",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.53: something is between them (probably grasped)); right fingertips now at (20.1, -5.4, 78.6), opening 0.531",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): lift the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.1, -5.4, 78.6) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.53 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 500\nRIGHT arm closed on an object with the fingertips at z = 78.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.6 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 8 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +8.0"
+   ],
+   "failed": [],
+   "effect": "right move z +8.0: ok; right fingertips now at (20.1, -5.4, 86.5), opening 0.528",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): carry the object over the target Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.1, -5.4, 86.5) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.53 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 525\nRIGHT arm closed on an object with the fingertips at z = 78.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.6 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move y -8.7",
+    "right move x -20.0"
+   ],
+   "failed": [],
+   "effect": "right move y -8.7: ok; right move x -20.0: ok; right fingertips now at (0.1, -14.2, 86.5), opening 0.528",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): lower the object onto the target Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.1, -14.2, 86.5) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.53 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 580\nRIGHT arm closed on an object with the fingertips at z = 78.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.6 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -7.4"
+   ],
+   "failed": [],
+   "effect": "right move z -7.4: ok; right fingertips now at (0.1, -14.2, 79.1), opening 0.528",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): release the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.1, -14.2, 79.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.53 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 605\nRIGHT arm closed on an object with the fingertips at z = 78.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.6 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (0.1, -14.2, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left (first set it down at the centre for the other arm): retreat and clear the way for the other arm Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.1, -14.2, 79.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 621",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +15.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +15.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left: orient the left gripper and travel above the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.1, -12.0, 93.8) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 810",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (0, -14).",
+   "commands": [
+    "left point down",
+    "left move x +20.0",
+    "left move x +4.1",
+    "left move y -2.3"
+   ],
+   "failed": [
+    "left move x +4.1"
+   ],
+   "effect": "left point down: ok; left move x +20.0: ok; left move x +4.1: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -2.3: ok; left fingertips now at (-4.1, -14.3, 93.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: IK failure with 'down'; switching to 'down15'. | out of reach: tilt the fingers further forward at travel height Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.1, -14.3, 93.8) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 894",
+   "plan": "'left move x +4.1' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z -1.8",
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left move z -1.8: ok; left point down15: ok; left fingertips now at (-4.1, -14.2, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left: finish travelling above the object Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.1, -14.2, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 940",
+   "plan": "The head grid shows the cross +4.1 cm in x and -0.1 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move x +4.1"
+   ],
+   "failed": [],
+   "effect": "left move x +4.1: ok; left fingertips now at (-0.0, -14.2, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left: lower to just above the grasp height Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -14.2, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 962",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -9.4"
+   ],
+   "failed": [],
+   "effect": "left move z -9.4: ok; left fingertips now at (-0.0, -14.2, 82.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left: close the gripper Right now the 1 smallest dolls already stand in the row at the front, in order from the left, and the 4 bigger ones are still where they started.",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -14.2, 78.6) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1008",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.53: something is between them (probably grasped)); left fingertips now at (-0.1, -14.2, 78.6), opening 0.529",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second doll into place 2 of 5 in the row, counting from the left: release the object Right now the 2 smallest dolls already stand in the row at the front, in order from the left, and the 3 bigger ones are still where they started.",
+   "images": [
+    "frame028_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.0, -12.0, 79.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 0.53 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1115\nLEFT arm closed on an object with the fingertips at z = 78.6 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.6 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-12.0, -12.0, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the middle doll into place 3 of 5 in the row, counting from the left: orient the left gripper and travel above the object Right now the 2 smallest dolls already stand in the row at the front, in order from the left, and the 3 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.0, -12.0, 94.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1161",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (-36, -11).",
+   "commands": [
+    "left point down",
+    "left move x -20.0",
+    "left move x -3.9",
+    "left move y +0.7"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left move x -20.0: ok; left move x -3.9: ok; left move y +0.7: ok; left fingertips now at (-36.0, -11.3, 94.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the middle doll into place 3 of 5 in the row, counting from the left: close the gripper Right now the 2 smallest dolls already stand in the row at the front, in order from the left, and the 3 bigger ones are still where they started.",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-36.0, -11.3, 79.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1297",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.63: something is between them (probably grasped)); left fingertips now at (-36.0, -11.3, 79.9), opening 0.63",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the middle doll into place 3 of 5 in the row, counting from the left: release the object Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -12.0, 80.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.63 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1437\nLEFT arm closed on an object with the fingertips at z = 79.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.9 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-0.0, -12.0, 80.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the middle doll into place 3 of 5 in the row, counting from the left: retreat upward Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -12.0, 80.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1452",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +15.0"
+   ],
+   "failed": [
+    "left move z +15.0"
+   ],
+   "effect": "left move z +15.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-0.0, -12.0, 80.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: IK failure with 'down'; switching to 'down15'. | out of reach: tilt the fingers further forward at travel height Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -12.0, 80.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1452",
+   "plan": "'left move z +15.0' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z +11.6",
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left move z +11.6: ok; left point down15: ok; left fingertips now at (0.4, -11.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | one doll out of the way onto a clear patch of table - a taller doll blocks the straight way to its spot: orient the right gripper and travel above the object Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -11.6, 92.0) cm, approach = (0.03, 0.28, -0.96), finger axis = (-1.00, 0.00, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1518",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (44, -13).",
+   "commands": [
+    "right point down",
+    "right move x +14.1",
+    "right move y +7.8"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x +14.1: ok; right move y +7.8: ok; right fingertips now at (44.1, -12.9, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | one doll out of the way onto a clear patch of table - a taller doll blocks the straight way to its spot: close the gripper Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [
+    "frame043_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -11.6, 92.0) cm, approach = (0.03, 0.28, -0.96), finger axis = (-1.00, 0.00, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (44.1, -12.9, 81.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1656",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.73: something is between them (probably grasped)); right fingertips now at (44.1, -12.9, 81.9), opening 0.729",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | one doll out of the way onto a clear patch of table - a taller doll blocks the straight way to its spot: release the object Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [
+    "frame047_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -11.6, 92.0) cm, approach = (0.03, 0.28, -0.96), finger axis = (-1.00, 0.00, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (44.1, -21.0, 82.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1744\nRIGHT arm closed on an object with the fingertips at z = 81.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.9 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (44.1, -21.0, 82.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second biggest doll into place 4 of 5 in the row, counting from the left: orient the right gripper and travel above the object Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -11.6, 92.0) cm, approach = (0.03, 0.28, -0.96), finger axis = (-1.00, 0.00, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (44.1, -21.0, 97.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1789",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (44, -21).",
+   "commands": [
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right fingertips now at (44.1, -21.0, 97.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second biggest doll into place 4 of 5 in the row, counting from the left: close the gripper Right now the 3 smallest dolls already stand in the row at the front, in order from the left, and the 2 bigger ones are still where they started.",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -11.6, 92.0) cm, approach = (0.03, 0.28, -0.96), finger axis = (-1.00, 0.00, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (44.0, -21.0, 81.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1853",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.73: something is between them (probably grasped)); right fingertips now at (44.0, -21.0, 81.9), opening 0.73",
+   "source_index": null
+  },
+  {
+   "turn": 56,
+   "label": "turn 56: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second biggest doll into place 4 of 5 in the row, counting from the left: lower the object onto the target Right now the 4 smallest dolls already stand in the row at the front, in order from the left, and the 1 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.8, -8.7, 91.1) cm, approach = (-0.02, 0.27, -0.96), finger axis = (-1.00, -0.10, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.7, -12.0, 90.6) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.02, 0.00), opening = 0.69 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1991\nRIGHT arm closed on an object with the fingertips at z = 81.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.9 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -8.2"
+   ],
+   "failed": [
+    "right move z -8.2"
+   ],
+   "effect": "right move z -8.2: FAILED (the target was not reached: the fingertips moved (+0.0, +0.8, -5.1) cm, i.e. only part of the way; remaining error 3.2 cm / 5 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (11.7, -11.2, 85.5), opening 0.705",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the second biggest doll into place 4 of 5 in the row, counting from the left: release the object Right now the 4 smallest dolls already stand in the row at the front, in order from the left, and the 1 bigger ones are still where they started.",
+   "images": [
+    "frame059_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.5, -8.0, 85.7) cm, approach = (-0.12, 0.17, -0.98), finger axis = (-0.99, -0.11, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.8, -12.0, 83.6) cm, approach = (-0.07, 0.11, -0.99), finger axis = (-1.00, -0.01, 0.07), opening = 0.73 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2070\nRIGHT arm closed on an object with the fingertips at z = 81.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.9 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (11.9, -11.9, 83.6), opening 0.865",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the biggest doll into place 5 of 5 in the row, counting from the left: orient the right gripper and travel above the object Right now the 4 smallest dolls already stand in the row at the front, in order from the left, and the 1 bigger ones are still where they started.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -8.0, 85.7) cm, approach = (-0.12, 0.17, -0.98), finger axis = (-0.99, -0.12, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.9, -11.9, 98.6) cm, approach = (-0.07, 0.11, -0.99), finger axis = (-1.00, -0.01, 0.07), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2116",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the matryoshka_dolls, then move at travel height until the fingertip cross in the head image is over (32, -12).",
+   "commands": [
+    "right point down",
+    "right move x +19.9"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x +19.9: ok; right fingertips now at (31.8, -12.0, 98.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 64,
+   "label": "turn 64: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the biggest doll into place 5 of 5 in the row, counting from the left: close the gripper Right now the 4 smallest dolls already stand in the row at the front, in order from the left, and the 1 bigger ones are still where they started.",
+   "images": [
+    "frame064_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -7.9, 85.7) cm, approach = (-0.12, 0.17, -0.98), finger axis = (-0.99, -0.12, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (31.8, -11.9, 84.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2220",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.82: something is between them (probably grasped)); right fingertips now at (31.8, -11.9, 84.0), opening 0.822",
+   "source_index": null
+  },
+  {
+   "turn": 68,
+   "label": "turn 68: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. | the biggest doll into place 5 of 5 in the row, counting from the left: release the object Right now all five dolls stand in one row, smallest at the left and biggest at the right.",
+   "images": [
+    "frame068_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-3.6, -7.9, 85.7) cm, approach = (-0.12, 0.17, -0.98), finger axis = (-0.99, -0.12, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.0, -12.0, 84.5) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.82 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2305\nRIGHT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (24.0, -12.0, 84.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 74,
+   "label": "turn 74: The five dolls end up in one straight row along the front of the table, smallest at the left and biggest at the right, evenly spaced with clear air between neighbours, every one still standing upright, and both arms back at their rest pose. They are set down in that order too, so the row grows left to right from the smallest. All 7 placements done. | open both hands and square the wrists to their start pose Right now all five dolls stand in one row, smallest at the left and biggest at the right.",
+   "images": [
+    "frame074_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-27.7, -20.7, 92.9) cm, approach = (-0.12, 0.17, -0.98), finger axis = (-0.99, -0.12, 0.10), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.0, 99.5) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2557",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (the target was not reached: the fingertips moved (-0.0, +1.3, -0.1) cm, i.e. only part of the way; remaining error 1.3 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-27.7, -20.7, 92.9), opening 1.0; right fingertips now at (30.0, -18.7, 99.4), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

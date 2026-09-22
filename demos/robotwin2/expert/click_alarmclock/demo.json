@@ -1,0 +1,86 @@
+{
+ "task": "click_alarmclock",
+ "instruction": "Click the top button of the alarm-clock with large numbers",
+ "kind": "task",
+ "source": {
+  "task": "click_alarmclock",
+  "task_config": "demo_clean",
+  "seed": 100023,
+  "instruction": "Click the top button of the alarm-clock with large numbers",
+  "turns": 3,
+  "commands": 7,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the alarm, which was at x = +15 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "alarm",
+   "x": 15.38
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Point right gripper downward, raise slightly, and move to (16, -18, 95) directly above the button.",
+   "commands": [
+    "right move z +1.0",
+    "right point down",
+    "right move x -15.0",
+    "right move y +1.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-15, +1, +1) cm, now 0 cm (horizontal) / +21 cm (vertical) from the alarm",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -19, 95) opening 0.95; table z = 74",
+   "plan": "Close right gripper to form a pressing tip.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +21 cm (vertical) from the alarm; closed the gripper (opening 0.00: nothing held)",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -19, 95) opening 0.00; table z = 74",
+   "plan": "Move right gripper slightly forward and down to z=91.5 to press the top button.",
+   "commands": [
+    "right move y +0.5",
+    "right move z -3.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

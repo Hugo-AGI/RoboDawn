@@ -1,0 +1,152 @@
+{
+ "task": "move_stapler_pad",
+ "instruction": "Place the blue and white stapler on the Green colored mat.",
+ "kind": "task",
+ "source": {
+  "task": "move_stapler_pad",
+  "task_config": "demo_clean",
+  "seed": 100018,
+  "instruction": "Place the blue and white stapler on the Green colored mat.",
+  "turns": 7,
+  "commands": 17,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the stapler, which was at x = -22 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "stapler",
+   "x": -21.78
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left arm to (-22, 0, 94) and orient gripper downwards with yaw +80 to align with stapler.",
+   "commands": [
+    "left move y +19.0",
+    "left move x +8.0",
+    "left point down",
+    "left rotate yaw +80.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+8, +19, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -1, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper downwards along z to 88 cm.",
+   "commands": [
+    "left move z -6.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -6) cm, now 0 cm (horizontal) / +14 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -1, 88) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left arm to z=78 cm and close gripper to grasp the stapler.",
+   "commands": [
+    "left move y +0.5",
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the stapler; closed the gripper (opening 0.18: holding the stapler)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -0, 78) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift left arm up to z=88 cm to clear the table.",
+   "commands": [
+    "left move z +9.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +0, +9) cm, now 0 cm (horizontal) / +4 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-22, -0, 88) opening 0.19; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm towards the green mat at (-10.5, -9.5, 88.5).",
+   "commands": [
+    "left move z +0.5",
+    "left move x +11.5",
+    "left move y -9.5",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+11, -9, +0) cm, now 0 cm (horizontal) / +4 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-11, -9, 88) opening 0.19; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw by +90 degrees to align orientation with the mat.",
+   "commands": [
+    "left rotate yaw +90.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +4 cm (vertical) from the stapler",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-11, -9, 88) opening 0.19; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower gripper to z=78 cm and open gripper to place the stapler on the mat.",
+   "commands": [
+    "left move x +0.5",
+    "left move z -10.0",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

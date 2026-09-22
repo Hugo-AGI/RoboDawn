@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100004,
+  100006,
+  100007,
+  100008,
+  100011,
+  100012,
+  100014,
+  100015,
+  100016,
+  100017,
+  100018,
+  100021,
+  100022,
+  100024,
+  100025,
+  100026,
+  100027,
+  100030,
+  100031,
+  100033,
+  100034,
+  100035,
+  100036,
+  100037,
+  100038,
+  100039,
+  100040,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100048,
+  100049,
+  100050,
+  100051,
+  100052,
+  100054,
+  100055,
+  100056,
+  100057,
+  100058,
+  100059,
+  100060,
+  100061,
+  100062
+ ],
+ "infos": [
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "107_soap/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "081_playingcards/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "107_soap/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "107_soap/base1",
+   "{B}": "077_phone/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base0",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "113_coffee-box/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "047_mouse/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "107_soap/base2",
+   "{B}": "048_stapler/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "086_woodenblock/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base0",
+   "{B}": "107_soap/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "113_coffee-box/base1",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base1",
+   "{B}": "075_bread/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "077_phone/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "107_soap/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "113_coffee-box/base1",
+   "{B}": "077_phone/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base3",
+   "{B}": "047_mouse/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base0",
+   "{B}": "077_phone/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "107_soap/base3",
+   "{B}": "077_phone/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "057_toycar/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base0",
+   "{B}": "113_coffee-box/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base1",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base2",
+   "{B}": "073_rubikscube/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "048_stapler/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "048_stapler/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "112_tea-box/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base3",
+   "{B}": "107_soap/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base2",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "113_coffee-box/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "048_stapler/base1",
+   "{B}": "107_soap/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "107_soap/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "113_coffee-box/base4",
+   "{B}": "048_stapler/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "075_bread/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "057_toycar/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "050_bell/base1",
+   "{B}": "073_rubikscube/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "077_phone/base1",
+   "{B}": "107_soap/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "107_soap/base1",
+   "{B}": "112_tea-box/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "048_stapler/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "113_coffee-box/base4",
+   "{B}": "086_woodenblock/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "047_mouse/base0",
+   "{B}": "112_tea-box/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base1",
+   "{B}": "048_stapler/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "077_phone/base0",
+   "{B}": "047_mouse/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base2",
+   "{B}": "073_rubikscube/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "113_coffee-box/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "112_tea-box/base4",
+   "{B}": "086_woodenblock/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "073_rubikscube/base2",
+   "{B}": "048_stapler/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "107_soap/base1",
+   "{B}": "113_coffee-box/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "107_soap/base2",
+   "{B}": "073_rubikscube/base1",
+   "{a}": "left"
+  }
+ ],
+ "next_seed": 100063
+}

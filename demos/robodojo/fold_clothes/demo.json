@@ -1,0 +1,613 @@
+{
+ "task": "fold_clothes",
+ "instruction": "Fold the clothes neatly.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 4408,
+  "decisions": 95,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: FOLD 1 of 3, 0 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the LEFT sleeve in: pinch the cuff at the far left end, carry it across and lay it down on the right half of the chest, so the sleeve doubles back over the front. On the table right now: the left sleeve is still spread out to the side, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the left gripper and point the fingers down",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Fold the left sleeve across the chest. Open the left gripper and point the fingers down.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: FOLD 1 of 3, 0 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the LEFT sleeve in: pinch the cuff at the far left end, carry it across and lay it down on the right half of the chest, so the sleeve doubles back over the front. On the table right now: the left sleeve is still spread out to the side, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the left cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 46",
+   "plan": "Fold the left sleeve across the chest. Line the left fingertip cross up over the left cuff.",
+   "commands": [
+    "left rotate yaw +30.0",
+    "left move x -0.4",
+    "left move y +8.4"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +30.0: ok; left move x -0.4: ok; left move y +8.4: ok; left fingertips now at (-30.4, -12.3, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: FOLD 1 of 3, 0 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the LEFT sleeve in: pinch the cuff at the far left end, carry it across and lay it down on the right half of the chest, so the sleeve doubles back over the front. On the table right now: the left sleeve is still spread out to the side, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. drop the left fingers onto the cloth, right down to the table so the jaw closes around the fabric and not above it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.4, -12.3, 92.1) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.87, -0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 115",
+   "plan": "Fold the left sleeve across the chest. Drop the left fingers onto the cloth, right down to the table so the jaw closes around the fabric and not above it.",
+   "commands": [
+    "left move z -16.6"
+   ],
+   "failed": [
+    "left move z -16.6"
+   ],
+   "effect": "left move z -16.6: FAILED (the target was not reached: the fingertips moved (+0.0, +0.6, -14.2) cm, i.e. only part of the way; remaining error 2.4 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.4, -11.7, 77.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: FOLD 1 of 3, 0 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the LEFT sleeve in: pinch the cuff at the far left end, carry it across and lay it down on the right half of the chest, so the sleeve doubles back over the front. On the table right now: the left sleeve is still spread out to the side, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. drop the left fingers onto the cloth, right down to the table so the jaw closes around the fabric and not above it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.4, -11.7, 77.9) cm, approach = (-0.00, 0.06, -1.00), finger axis = (-0.87, -0.50, -0.03), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 145",
+   "plan": "Fold the left sleeve across the chest. Drop the left fingers onto the cloth, right down to the table so the jaw closes around the fabric and not above it.",
+   "commands": [
+    "left move z -2.4"
+   ],
+   "failed": [
+    "left move z -2.4"
+   ],
+   "effect": "left move z -2.4: FAILED (the target was not reached: the fingertips moved (+0.1, +0.7, +0.2) cm, i.e. only part of the way; remaining error 2.7 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); left fingertips now at (-30.3, -11.0, 78.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: FOLD 1 of 3, 0 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the LEFT sleeve in: pinch the cuff at the far left end, carry it across and lay it down on the right half of the chest, so the sleeve doubles back over the front. On the table right now: the left sleeve is still spread out to the side, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the left cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -11.0, 78.1) cm, approach = (-0.00, 0.13, -0.99), finger axis = (-0.87, -0.50, -0.06), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 163",
+   "plan": "Fold the left sleeve across the chest. Pinch the left cuff.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-30.3, -11.0, 78.1), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: FOLD 1 of 3 IS MADE, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. let go of the left cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.7, -8.4, 78.5) cm, approach = (-0.01, 0.13, -0.99), finger axis = (-0.86, -0.50, -0.06), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 386",
+   "plan": "Fold the left sleeve across the chest. Let go of the left cuff.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (2.7, -8.4, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: FOLD 1 of 3 IS MADE, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. turn the left hand back to the way it was pointing at the start, before sending the arm to rest",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-29.4, -20.6, 92.0) cm, approach = (-0.01, 0.13, -0.99), finger axis = (-0.86, -0.50, -0.06), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 596",
+   "plan": "Fold the left sleeve across the chest. Turn the left hand back to the way it was pointing at the start, before sending the arm to rest.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-29.4, -20.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: FOLD 1 of 3 IS MADE, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-29.4, -20.6, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 636",
+   "plan": "Fold the left sleeve across the chest. Send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: FOLD 2 of 3, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the RIGHT sleeve in the same way: pinch the cuff at the far right end, carry it across and lay it on the left half of the chest, mirroring the sleeve already in. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the right gripper and point the fingers down",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 654",
+   "plan": "Fold the right sleeve across the chest. Open the right gripper and point the fingers down.",
+   "commands": [
+    "right gripper 1.00",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: ok; right fingertips now at (30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: FOLD 2 of 3, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the RIGHT sleeve in the same way: pinch the cuff at the far right end, carry it across and lay it on the left half of the chest, mirroring the sleeve already in. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the right fingertip cross up over the right cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 700",
+   "plan": "Fold the right sleeve across the chest. Line the right fingertip cross up over the right cuff.",
+   "commands": [
+    "right rotate yaw -60.0",
+    "right move x -7.5",
+    "right move y -0.9"
+   ],
+   "failed": [],
+   "effect": "right rotate yaw -60.0: ok; right move x -7.5: ok; right move y -0.9: ok; right fingertips now at (22.5, -21.6, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: FOLD 2 of 3, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the RIGHT sleeve in the same way: pinch the cuff at the far right end, carry it across and lay it on the left half of the chest, mirroring the sleeve already in. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the right cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (21.1, -18.4, 79.2) cm, approach = (-0.11, 0.31, -0.94), finger axis = (-0.49, 0.81, 0.33), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 847",
+   "plan": "Fold the right sleeve across the chest. Pinch the right cuff.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right fingertips now at (21.1, -18.4, 79.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: FOLD 2 of 3 IS MADE, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. let go of the right cuff",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-6.1, -10.8, 78.5) cm, approach = (-0.11, 0.31, -0.94), finger axis = (-0.49, 0.81, 0.33), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1055",
+   "plan": "Fold the right sleeve across the chest. Let go of the right cuff.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-6.3, -10.6, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: FOLD 2 of 3 IS MADE, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. turn the right hand back to the way it was pointing at the start, before sending the arm to rest",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -20.7, 92.0) cm, approach = (-0.13, 0.33, -0.94), finger axis = (-0.49, 0.80, 0.34), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1289",
+   "plan": "Fold the right sleeve across the chest. Turn the right hand back to the way it was pointing at the start, before sending the arm to rest.",
+   "commands": [
+    "right point forward"
+   ],
+   "failed": [],
+   "effect": "right point forward: ok; right fingertips now at (29.9, -20.7, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: FOLD 2 of 3 IS MADE, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. send the right arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (29.9, -20.7, 92.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1328",
+   "plan": "Fold the right sleeve across the chest. Send the right arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works.",
+   "commands": [
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: FOLD 3 of 3 IS ON HOLD, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the left gripper and point the fingers down",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1346",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Open the left gripper and point the fingers down.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: FOLD 3 of 3 IS ON HOLD, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1392",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left rotate yaw +60.0",
+    "left move x +10.0",
+    "left move x +10.0",
+    "left move x +0.3"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +60.0: ok; left move x +10.0: ok; left move x +10.0: ok; left move x +0.3: ok; left fingertips now at (-9.7, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: FOLD 3 of 3 IS ON HOLD, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.6, -15.1, 78.7) cm, approach = (0.13, 0.18, -0.98), finger axis = (-0.48, -0.85, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1583",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Pinch the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-8.6, -15.1, 78.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. the fabric slipped out of the fingers: open up and take hold of it again",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.5, -4.5, 87.5) cm, approach = (0.13, 0.18, -0.98), finger axis = (-0.48, -0.85, -0.22), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1683",
+   "plan": "The cloth is no longer under the fingertips -- the pinch let go part way through the fold, and the piece is lying back on the table well away from the hand. Open the gripper, go back down to where the fabric is now and take hold of it again; the fold is not made until the piece itself is lying in place.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-11.5, -4.5, 87.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the left gripper and point the fingers down",
+   "images": [
+    "frame044_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-11.5, -4.5, 87.5) cm, approach = (0.13, 0.18, -0.98), finger axis = (-0.48, -0.85, -0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1701",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Open the left gripper and point the fingers down.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left fingertips now at (-11.5, -4.5, 87.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-11.5, -4.5, 87.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1743",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left rotate yaw +60.0",
+    "left move z +4.5",
+    "left move x +1.4",
+    "left move y -10.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +60.0: ok; left move z +4.5: ok; left move x +1.4: ok; left move y -10.0: ok; left fingertips now at (-10.4, -15.1, 91.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.1, -17.5, 78.8) cm, approach = (0.15, 0.20, -0.97), finger axis = (-0.48, -0.84, -0.24), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1953",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Pinch the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-9.1, -17.5, 78.8), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 53,
+   "label": "turn 53: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. the fabric slipped out of the fingers: open up and take hold of it again",
+   "images": [
+    "frame053_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.4, -4.3, 87.5) cm, approach = (0.15, 0.20, -0.97), finger axis = (-0.48, -0.84, -0.24), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2074",
+   "plan": "The cloth is no longer under the fingertips -- the pinch let go part way through the fold, and the piece is lying back on the table well away from the hand. Open the gripper, go back down to where the fabric is now and take hold of it again; the fold is not made until the piece itself is lying in place.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-12.4, -4.3, 87.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the left gripper and point the fingers down",
+   "images": [
+    "frame054_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.4, -4.3, 87.5) cm, approach = (0.15, 0.20, -0.97), finger axis = (-0.48, -0.84, -0.24), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2092",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Open the left gripper and point the fingers down.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left fingertips now at (-12.4, -4.3, 87.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 55,
+   "label": "turn 55: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [
+    "frame055_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.4, -4.3, 87.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2134",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left rotate yaw +60.0",
+    "left move z +4.5",
+    "left move x +1.9",
+    "left move y -10.0"
+   ],
+   "failed": [
+    "left move x +1.9"
+   ],
+   "effect": "left rotate yaw +60.0: ok; left move z +4.5: ok; left move x +1.9: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -10.0: ok; left fingertips now at (-12.5, -14.4, 91.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 56,
+   "label": "turn 56: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -14.4, 91.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2236",
+   "plan": "'left move x +1.9' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left point down15: ok; left fingertips now at (-12.5, -14.4, 91.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-12.5, -14.4, 91.9) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2272",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Line the left fingertip cross up over the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left rotate yaw +60.0",
+    "left move x +2.0",
+    "left move y -5.1"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +60.0: ok; left move x +2.0: ok; left move y -5.1: ok; left fingertips now at (-10.5, -19.5, 91.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 60,
+   "label": "turn 60: FOLD 3 of 3 IS ON HOLD, 1 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. A sleeve has crept back out towards the side it came from: take that cuff across the chest again and leave it well inside the front before the bottom edge goes up, because once the bottom edge is up an arm going back to rest with a sleeve still out is scored as a failure. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve is still spread out to the side, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [
+    "frame060_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.7, -18.4, 78.5) cm, approach = (-0.12, 0.24, -0.96), finger axis = (-0.49, -0.86, -0.15), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2398",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Pinch the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-9.7, -18.4, 78.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 65,
+   "label": "turn 65: THAT CUFF IS BACK IN, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. let go of the right cuff, the one corner of the fold that is still lying short of where it belongs",
+   "images": [
+    "frame065_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-12.9, -2.5, 78.5) cm, approach = (-0.12, 0.24, -0.96), finger axis = (-0.49, -0.86, -0.15), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2566",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Let go of the right cuff, the one corner of the fold that is still lying short of where it belongs.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-12.9, -2.5, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 70,
+   "label": "turn 70: THAT CUFF IS BACK IN, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. turn the left hand back to the way it was pointing at the start, before sending the arm to rest",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -20.6, 92.0) cm, approach = (-0.13, 0.24, -0.96), finger axis = (-0.49, -0.86, -0.15), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2771",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Turn the left hand back to the way it was pointing at the start, before sending the arm to rest.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-30.1, -20.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 71,
+   "label": "turn 71: THAT CUFF IS BACK IN, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.1, -20.6, 92.0) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2810",
+   "plan": "Put the right cuff, the one corner of the fold that is still lying short of where it belongs back where this fold should have left it. Send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 72,
+   "label": "turn 72: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. open the left gripper and point the fingers down; open the right gripper and point the fingers down",
+   "images": [
+    "frame072_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2828",
+   "plan": "Take both bottom corners up to the shoulders. Open the left gripper and point the fingers down. Open the right gripper and point the fingers down.",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "right gripper 1.00",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; right gripper 1.00: ok (gripper opened); right point down: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0; right fingertips now at (30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 73,
+   "label": "turn 73: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. line the left fingertip cross up over the left bottom corner of the body; line the right fingertip cross up over the right bottom corner of the body",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2920",
+   "plan": "Take both bottom corners up to the shoulders. Line the left fingertip cross up over the left bottom corner of the body. Line the right fingertip cross up over the right bottom corner of the body.",
+   "commands": [
+    "left rotate yaw +75.0",
+    "left move x +10.0",
+    "right rotate yaw +75.0",
+    "right move x -10.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +75.0: ok; left move x +10.0: ok; right rotate yaw +75.0: ok; right move x -10.0: ok; left fingertips now at (-20.0, -20.7, 92.1), opening 1.0; right fingertips now at (20.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 78,
+   "label": "turn 78: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. One layer of cloth is thinner than the gripper can feel, so the closing report reads \"nothing between them\" even on a good pinch -- do not re-grasp because of it; press the fingertips down onto the table through the fabric before closing. pinch the left bottom corner of the body; pinch the right bottom corner of the body",
+   "images": [
+    "frame078_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-11.0, -17.1, 78.8) cm, approach = (0.14, 0.21, -0.97), finger axis = (-0.24, -0.94, -0.23), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.8, -23.7, 78.0) cm, approach = (-0.10, 0.07, -0.99), finger axis = (-0.26, -0.97, -0.04), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3278",
+   "plan": "Take both bottom corners up to the shoulders. Pinch the left bottom corner of the body. Pinch the right bottom corner of the body.",
+   "commands": [
+    "left gripper 0.00",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left fingertips now at (-11.0, -17.1, 78.8), opening 0.185; right fingertips now at (1.8, -23.7, 78.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 83,
+   "label": "turn 83: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. out of reach: tilt the fingers further forward at travel height",
+   "images": [
+    "frame083_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.4, -0.2, 78.5) cm, approach = (0.14, 0.21, -0.97), finger axis = (-0.23, -0.94, -0.23), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.2, -5.7, 87.5) cm, approach = (-0.10, 0.07, -0.99), finger axis = (-0.26, -0.97, -0.04), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3559",
+   "plan": "'right move y +3.3' had no IK solution, so this target is at the edge of the right arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "right move z +4.5",
+    "right point down15"
+   ],
+   "failed": [
+    "right move z +4.5"
+   ],
+   "effect": "right move z +4.5: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right point down15: ok; right fingertips now at (1.2, -5.7, 87.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 84,
+   "label": "turn 84: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.4, -0.2, 78.5) cm, approach = (0.14, 0.21, -0.97), finger axis = (-0.23, -0.94, -0.23), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.2, -5.7, 87.5) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3599",
+   "plan": "'right move z +4.5' had no IK solution, so this target is at the edge of the right arm's reach with the fingers pointing 'down15'. Return to travel height (z=92) and switch to 'point down30', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "right move z +4.5",
+    "right point down30"
+   ],
+   "failed": [],
+   "effect": "right move z +4.5: ok; right point down30: ok; right fingertips now at (1.2, -5.8, 92.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 86,
+   "label": "turn 86: FOLD 3 of 3, 2 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. Now this fold takes the BOTTOM EDGE up: both bottom corners are lifted at the same moment, one in each hand, and laid down level with the shoulders, so the edge turns over as one straight line parallel to the shoulder line. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is still down at the waist. let go of the left bottom corner of the body; lay the right bottom corner of the body down",
+   "images": [
+    "frame086_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.4, 1.8, 78.5) cm, approach = (0.14, 0.21, -0.97), finger axis = (-0.23, -0.94, -0.23), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.2, -2.4, 92.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3695",
+   "plan": "Take both bottom corners up to the shoulders. Let go of the left bottom corner of the body. Lay the right bottom corner of the body down.",
+   "commands": [
+    "left gripper 1.00",
+    "right move z -13.5"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); right move z -13.5: ok; left fingertips now at (-10.4, 2.0, 78.8), opening 0.958; right fingertips now at (1.1, -2.4, 78.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 88,
+   "label": "turn 88: FOLD 3 of 3 IS MADE, 3 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is up level with the shoulders. lift the empty left gripper away from the fold; let go of the right bottom corner of the body",
+   "images": [
+    "frame088_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.4, 2.0, 82.3) cm, approach = (0.14, 0.21, -0.97), finger axis = (-0.23, -0.94, -0.24), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.1, -0.4, 78.5) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3778",
+   "plan": "Take both bottom corners up to the shoulders. Lift the empty left gripper away from the fold. Let go of the right bottom corner of the body.",
+   "commands": [
+    "left move z +9.7",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left move z +9.7: ok; right gripper 1.00: ok (gripper opened); left fingertips now at (-10.4, 1.9, 92.0), opening 1.0; right fingertips now at (1.1, -0.4, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: FOLD 3 of 3 IS MADE, 3 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is up level with the shoulders. turn the left hand back to the way it was pointing at the start, before sending the arm to rest; walk the empty right gripper back out over the edge of the table where this arm started, clear of the folded top, before sending it to rest",
+   "images": [
+    "frame092_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -4.9, 92.4) cm, approach = (0.16, 0.27, -0.95), finger axis = (-0.22, -0.93, -0.30), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (1.1, -16.4, 92.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3958",
+   "plan": "Take both bottom corners up to the shoulders. Turn the left hand back to the way it was pointing at the start, before sending the arm to rest. Walk the empty right gripper back out over the edge of the table where this arm started, clear of the folded top, before sending it to rest.",
+   "commands": [
+    "left point forward",
+    "right move y -4.3",
+    "right move x +8.0"
+   ],
+   "failed": [
+    "left point forward"
+   ],
+   "effect": "left point forward: FAILED (a joint solution exists but no collision-free path was found by cuRobo; its collision world checks the table and self-collision, not tabletop objects. The arm did NOT move. Lift straight up a few cm first, move back toward the base, or take a smaller step.); right move y -4.3: ok; right move x +8.0: ok; left fingertips now at (-10.0, -4.9, 92.4), opening 1.0; right fingertips now at (9.1, -20.7, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 93,
+   "label": "turn 93: FOLD 3 of 3 IS MADE, 3 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is up level with the shoulders. send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works; walk the empty right gripper back out over the edge of the table where this arm started, clear of the folded top, before sending it to rest",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -4.9, 92.4) cm, approach = (0.16, 0.27, -0.95), finger axis = (-0.22, -0.93, -0.30), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.1, -20.7, 92.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4003",
+   "plan": "Take both bottom corners up to the shoulders. Send the left arm back to its rest pose: an arm left standing over the table drifts out of reach while the other one works. Walk the empty right gripper back out over the edge of the table where this arm started, clear of the folded top, before sending it to rest.",
+   "commands": [
+    "left home",
+    "right move x +8.0",
+    "right move x +8.0"
+   ],
+   "failed": [],
+   "effect": "left home: ok; right move x +8.0: ok; right move x +8.0: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (25.1, -20.7, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 95,
+   "label": "turn 95: FOLD 3 of 3 IS MADE, 3 of 3 done. Fixed sequence of 3 folds, and the order is part of the task: left sleeve in, then right sleeve in, and only once both sleeves lie on the chest does the bottom edge come up. Never park an arm at its rest pose while the bottom edge is up but a sleeve is still out. After every fold, walk the empty hand back out over the side of the table that arm started from before sending it to rest: an arm that swings home from out over the garment drags the fold it has just made back out with it. The hand has already let go of it, so there is nothing left to do to this fold: take the empty gripper back out over the side of the table this arm came from and leave it at rest there, without touching the top on the way. On the table right now: the left sleeve now lies folded in across the chest, the right sleeve now lies folded in across the chest, the bottom edge is up level with the shoulders. turn the right hand back to the way it was pointing at the start, before sending the arm to rest",
+   "images": [
+    "frame095_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.0) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4392",
+   "plan": "Take both bottom corners up to the shoulders. Turn the right hand back to the way it was pointing at the start, before sending the arm to rest.",
+   "commands": [
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "right point forward: FAILED (the target was not reached: the fingertips moved (-0.0, -0.0, -0.1) cm, i.e. only part of the way; remaining error 0.1 cm / 19 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (30.0, -20.7, 91.9), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

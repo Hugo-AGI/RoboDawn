@@ -1,0 +1,625 @@
+{
+ "task": "arrange_largest_number",
+ "instruction": "Arrange the numbers from left to right to form the largest possible number, and place them on the pad.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 4664,
+  "decisions": 125,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 9 onto mat 1 counting from the left: orient the left gripper and travel above the object Right now all 5 cards are still on the table, none on a mat yet.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (-24, -16).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +30.0",
+    "left move x +5.8",
+    "left move y +5.2"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +30.0: ok; left move x +5.8: ok; left move y +5.2: ok; left fingertips now at (-24.2, -15.5, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 9 onto mat 1 counting from the left: close the gripper Right now all 5 cards are still on the table, none on a mat yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.2, -15.5, 78.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 158",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); left fingertips now at (-24.2, -15.5, 78.3), opening 0.515",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 9 onto mat 1 counting from the left: carry the object over the target Right now all 5 cards are still on the table, none on a mat yet.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.2, -15.5, 90.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.86, -0.50, 0.00), opening = 0.52 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 199\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw -30.0",
+    "left move x +7.1",
+    "left move y +5.9"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -30.0: ok; left move x +7.1: ok; left move y +5.9: ok; left fingertips now at (-17.1, -9.6, 90.2), opening 0.515",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 9 onto mat 1 counting from the left: release the object Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 79.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.52 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 300\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-17.2, -9.6, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left (first set it down at the centre for the other arm): orient the right gripper and travel above the object Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 344",
+   "plan": "Point the right fingers down (down30) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (30, -6).",
+   "commands": [
+    "right point down30",
+    "right rotate yaw -60.0",
+    "right move y +14.8"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right rotate yaw -60.0: ok; right move y +14.8: ok; right fingertips now at (30.0, -5.9, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left (first set it down at the centre for the other arm): close the gripper Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -5.9, 78.3) cm, approach = (0.43, 0.25, -0.87), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 494",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.51: something is between them (probably grasped)); right fingertips now at (30.0, -5.9, 78.3), opening 0.513",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left (first set it down at the centre for the other arm): release the object Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -22.2, 78.8) cm, approach = (0.43, 0.25, -0.87), finger axis = (-0.50, 0.86, -0.00), opening = 0.51 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 651\nRIGHT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.1, -22.2, 78.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left (first set it down at the centre for the other arm): retreat and clear the way for the other arm Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -22.2, 78.8) cm, approach = (0.43, 0.25, -0.87), finger axis = (-0.50, 0.86, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 667",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left: orient the left gripper and travel above the object Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -9.6, 91.1) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 888",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (0, -22).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x +17.3",
+    "left move y -12.2"
+   ],
+   "failed": [
+    "left move x +17.3"
+   ],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move x +17.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -12.2: ok; left fingertips now at (-17.2, -21.8, 91.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left: restore the finger axis after the preset change Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-17.2, -21.8, 91.1) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1004",
+   "plan": "The preset reset the finger axis to x; turn it back across the narrow side.",
+   "commands": [
+    "left rotate yaw -60.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -60.0: ok; left fingertips now at (-17.2, -21.8, 91.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left: close the gripper Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.1, -21.8, 78.3) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1116",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.51: something is between them (probably grasped)); left fingertips now at (0.1, -21.8, 78.3), opening 0.511",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left: carry the object over the target Right now the 9 card is on its mat and the 4, 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.1, -21.8, 90.3) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.87, 0.00), opening = 0.51 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1157\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw +30.0",
+    "left move x -8.5",
+    "left move y +12.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +30.0: ok; left move x -8.5: ok; left move y +12.0: ok; left fingertips now at (-8.5, -9.7, 90.3), opening 0.509",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 4 onto mat 2 counting from the left: release the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-8.5, -9.7, 79.1) cm, approach = (0.13, 0.22, -0.97), finger axis = (-0.87, 0.50, 0.00), opening = 0.51 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1264\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-8.5, -9.7, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left: orient the left gripper and travel above the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-8.5, -9.7, 91.1) cm, approach = (0.13, 0.22, -0.97), finger axis = (-0.87, 0.50, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1308",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (-38, -15).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +15.0",
+    "left move x -20.0",
+    "left move x -9.9"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +15.0: ok; left move x -20.0: ok; left move x -9.9: ok; left fingertips now at (-38.4, -9.7, 91.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left: close the gripper Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-38.5, -14.8, 78.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1478",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); left fingertips now at (-38.5, -14.8, 78.3), opening 0.433",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left: carry the object over the target Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame037_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-38.5, -14.8, 90.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1519\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw -15.0",
+    "left move x +20.0",
+    "left move x +18.9",
+    "left move y +5.0"
+   ],
+   "failed": [
+    "left move y +5.0"
+   ],
+   "effect": "left rotate yaw -15.0: ok; left move x +20.0: ok; left move x +18.9: ok; left move y +5.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (0.4, -14.8, 90.3), opening 0.432",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left: release the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -13.9, 79.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.43 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1649\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (0.4, -13.9, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 42,
+   "label": "turn 42: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: orient the right gripper and travel above the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame042_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.4, -13.9, 91.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1696",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (9, -21).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move x -20.0",
+    "right move x -0.6"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +45.0: ok; right move x -20.0: ok; right move x -0.6: ok; right fingertips now at (9.8, -20.8, 92.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: close the gripper Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-1.8, -13.2, 80.4) cm, approach = (-0.20, -0.20, -0.96), finger axis = (-0.98, -0.03, 0.21), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.3, -21.3, 78.3) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-0.72, -0.70, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1946",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.43: something is between them (probably grasped)); right fingertips now at (9.3, -21.3, 78.3), opening 0.426",
+   "source_index": null
+  },
+  {
+   "turn": 51,
+   "label": "turn 51: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: object slipped, go back Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-1.8, -13.2, 80.4) cm, approach = (-0.20, -0.20, -0.96), finger axis = (-0.98, -0.03, 0.21), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.3, -21.3, 90.3) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-0.72, -0.70, -0.02), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1987\nRIGHT arm closed on an object with the fingertips at z = 78.3 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object stayed on the table after lifting; open and start the grasp again.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (9.3, -21.3, 90.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: orient the right gripper and travel above the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-1.8, -13.2, 80.4) cm, approach = (-0.20, -0.20, -0.96), finger axis = (-0.98, -0.03, 0.21), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (9.3, -21.3, 90.3) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-0.72, -0.70, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2005",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (7, -20).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +15.0",
+    "right move x -2.7",
+    "right move y +1.7"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +15.0: ok; right move x -2.7: ok; right move y +1.7: ok; right fingertips now at (6.6, -19.8, 90.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 55,
+   "label": "turn 55: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: close the gripper Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-2.9, -12.5, 79.3) cm, approach = (-0.21, -0.22, -0.95), finger axis = (-0.97, -0.05, 0.23), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.3, -19.7, 78.4) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-0.96, -0.27, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2140",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.38: something is between them (probably grasped)); right fingertips now at (6.3, -19.6, 78.5), opening 0.377",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: carry the object over the target Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame057_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.9, -12.5, 79.3) cm, approach = (-0.21, -0.22, -0.95), finger axis = (-0.97, -0.05, 0.23), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.3, -19.6, 90.5) cm, approach = (-0.02, 0.02, -1.00), finger axis = (-0.96, -0.27, 0.01), opening = 0.29 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2182\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right rotate yaw -45.0",
+    "right move x +2.6",
+    "right move y +10.1"
+   ],
+   "failed": [
+    "right move y +10.1"
+   ],
+   "effect": "right rotate yaw -45.0: ok; right move x +2.6: ok; right move y +10.1: FAILED (the target was not reached: the fingertips moved (-2.8, +7.6, +0.3) cm, i.e. only part of the way; remaining error 3.7 cm / 5 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (6.1, -12.0, 90.7), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: slipped twice, change the grasp Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-6.4, -9.7, 79.6) cm, approach = (-0.18, -0.23, -0.96), finger axis = (-0.96, -0.16, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.7, -12.2, 95.4) cm, approach = (0.01, 0.00, -1.00), finger axis = (-0.91, 0.41, -0.01), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2311\nRIGHT arm closed on an object with the fingertips at z = 78.5 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object slipped out twice; open, and grasp it again across its other side, a little deeper, then lift gently.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z -3.4"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z -3.4: ok; right fingertips now at (11.7, -12.2, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 60,
+   "label": "turn 60: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: orient the right gripper and travel above the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame060_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-6.4, -9.7, 79.6) cm, approach = (-0.18, -0.23, -0.96), finger axis = (-0.96, -0.16, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.7, -12.2, 92.0) cm, approach = (0.01, 0.00, -1.00), finger axis = (-0.91, 0.41, -0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2351",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (3, -18).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +60.0",
+    "right move x -8.8",
+    "right move y -5.8"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +60.0: ok; right move x -8.8: ok; right move y -5.8: ok; right fingertips now at (3.6, -17.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 63,
+   "label": "turn 63: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: close the gripper Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (3.6, -17.7, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.52, -0.86, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2513",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.63: something is between them (probably grasped)); right fingertips now at (3.6, -17.7, 77.8), opening 0.632",
+   "source_index": null
+  },
+  {
+   "turn": 67,
+   "label": "turn 67: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left: release the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -13.9, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.02, -1.00, -0.00), opening = 0.63 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2638\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (8.7, -13.9, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 69,
+   "label": "turn 69: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 1 onto mat 5 counting from the left: orient the right gripper and travel above the object Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [
+    "frame069_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.7, -13.9, 90.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.02, -1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2681",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (29, -17).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move x +20.0",
+    "right move y -3.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +45.0: ok; right move x +20.0: ok; right move y -3.0: ok; right fingertips now at (28.6, -16.9, 90.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 72,
+   "label": "turn 72: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 1 onto mat 5 counting from the left: close the gripper Right now the 9, 4 cards are on their mat and the 3, 2, 1 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (28.6, -16.9, 78.3) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2848",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.30: something is between them (probably grasped)); right fingertips now at (28.6, -16.9, 78.3), opening 0.3",
+   "source_index": null
+  },
+  {
+   "turn": 77,
+   "label": "turn 77: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 1 onto mat 5 counting from the left: release the object Right now the 9, 4, 1 cards are on their mat and the 3, 2 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (17.3, -9.3, 79.1) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.30 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3015\nRIGHT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (17.3, -9.3, 79.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 79,
+   "label": "turn 79: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): orient the right gripper and travel above the object Right now the 9, 4, 1 cards are on their mat and the 3, 2 still on the table.",
+   "images": [
+    "frame079_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (17.3, -9.3, 91.1) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3061",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (0, -14).",
+   "commands": [
+    "right point down",
+    "right rotate yaw +45.0",
+    "right move x -17.3",
+    "right move y -4.8"
+   ],
+   "failed": [
+    "right move x -17.3"
+   ],
+   "effect": "right point down: ok; right rotate yaw +45.0: ok; right move x -17.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right move y -4.8: ok; right fingertips now at (17.2, -14.1, 91.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 85,
+   "label": "turn 85: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): close the gripper Right now the 9, 4, 1 cards are on their mat and the 3, 2 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.2, -9.1, 79.7) cm, approach = (-0.17, -0.23, -0.96), finger axis = (-0.96, -0.18, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.1, 78.5) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3268",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.42: something is between them (probably grasped)); right fingertips now at (-0.0, -14.1, 78.5), opening 0.417",
+   "source_index": null
+  },
+  {
+   "turn": 93,
+   "label": "turn 93: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): release the object Right now the 9, 4, 3, 1 cards are on their mat and the 2 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -7.4, 78.8) cm, approach = (-0.16, -0.25, -0.96), finger axis = (-0.94, -0.25, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.8, -10.0, 80.5) cm, approach = (-0.02, 0.25, -0.97), finger axis = (-1.00, -0.07, 0.01), opening = 0.47 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3526\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (0.8, -10.0, 80.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 95,
+   "label": "turn 95: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left (it is still off the mat, put it back on): orient the right gripper and travel above the object Right now the 9, 4, 1 cards are on their mat and the 3, 2 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -7.4, 78.8) cm, approach = (-0.16, -0.25, -0.96), finger axis = (-0.94, -0.25, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.8, -10.0, 92.5) cm, approach = (-0.02, 0.25, -0.97), finger axis = (-1.00, -0.07, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3571",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (8, -14).",
+   "commands": [
+    "right point down",
+    "right move x +7.5",
+    "right move y -4.0"
+   ],
+   "failed": [
+    "right point down"
+   ],
+   "effect": "right point down: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right move x +7.5: ok; right move y -4.0: ok; right fingertips now at (8.3, -14.0, 92.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 99,
+   "label": "turn 99: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left (it is still off the mat, put it back on): close the gripper Right now the 9, 4, 1 cards are on their mat and the 3, 2 still on the table.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -7.4, 78.8) cm, approach = (-0.16, -0.25, -0.96), finger axis = (-0.94, -0.25, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.2, -14.0, 78.5) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3681",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.42: something is between them (probably grasped)); right fingertips now at (8.2, -14.1, 78.5), opening 0.422",
+   "source_index": null
+  },
+  {
+   "turn": 103,
+   "label": "turn 103: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 2 onto mat 4 counting from the left (it is still off the mat, put it back on): release the object Right now the 9, 4, 2, 1 cards are on their mat and the 3 still on the table.",
+   "images": [
+    "frame103_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -7.4, 78.8) cm, approach = (-0.16, -0.25, -0.96), finger axis = (-0.94, -0.25, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.8, -10.0, 79.9) cm, approach = (0.06, 0.26, -0.96), finger axis = (-0.97, 0.26, 0.01), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3809\nRIGHT arm closed on an object with the fingertips at z = 78.5 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (8.8, -10.0, 79.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 105,
+   "label": "turn 105: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): orient the left gripper and travel above the object Right now the 9, 4, 2, 1 cards are on their mat and the 3 still on the table.",
+   "images": [
+    "frame105_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.5, -7.4, 78.8) cm, approach = (-0.16, -0.25, -0.96), finger axis = (-0.94, -0.25, 0.22), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.8, -10.0, 91.9) cm, approach = (0.06, 0.26, -0.96), finger axis = (-0.97, 0.26, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3855",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the number, then move at travel height until the fingertip cross in the head image is over (-1, -8).",
+   "commands": [
+    "left point down",
+    "left move z +13.2",
+    "left move x +8.1",
+    "left move y -0.7"
+   ],
+   "failed": [
+    "left move x +8.1"
+   ],
+   "effect": "left point down: ok; left move z +13.2: ok; left move x +8.1: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -0.7: ok; left fingertips now at (-9.6, -8.1, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 112,
+   "label": "turn 112: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): close the gripper Right now the 9, 4, 2, 1 cards are on their mat and the 3 still on the table.",
+   "images": [
+    "frame112_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-1.7, -7.9, 78.4) cm, approach = (-0.05, 0.26, -0.96), finger axis = (-0.99, -0.14, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (15.4, -7.3, 91.8) cm, approach = (0.12, 0.24, -0.96), finger axis = (-0.91, 0.42, -0.01), opening = 0.85 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4115",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.41: something is between them (probably grasped)); left fingertips now at (-1.8, -7.8, 78.4), opening 0.406",
+   "source_index": null
+  },
+  {
+   "turn": 118,
+   "label": "turn 118: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. | the card showing 3 onto mat 3 counting from the left (it is still off the mat, put it back on): release the object Right now every card is on a mat, reading 9 4 3 2 1 from the left.",
+   "images": [
+    "frame118_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.2, -9.5, 80.2) cm, approach = (0.01, 0.32, -0.95), finger axis = (-0.99, -0.14, -0.06), opening = 0.41 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.0, -7.6, 89.6) cm, approach = (0.16, 0.18, -0.97), finger axis = (-0.90, 0.43, -0.07), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4278\nLEFT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (0.2, -9.5, 80.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 125,
+   "label": "turn 125: The cards spell the largest possible number when they are laid out left to right in descending order, so the mats get 9 then 4 then 3 then 2 then 1 reading from the leftmost mat across. Each card has to end up sitting on its own mat and turned square with it, not askew and not overhanging. All 9 placements done. | open both hands and square the wrists to their start pose Right now every card is on a mat, reading 9 4 3 2 1 from the left.",
+   "images": [
+    "frame125_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 93.1) cm, approach = (0.01, 0.32, -0.95), finger axis = (-0.99, -0.14, -0.06), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.9) cm, approach = (0.16, 0.18, -0.97), finger axis = (-0.90, 0.43, -0.07), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4592",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [
+    "right point forward"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: FAILED (the target was not reached: the fingertips moved (-0.0, +0.2, -0.2) cm, i.e. only part of the way; remaining error 0.3 cm / 16 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-30.0, -20.7, 93.1), opening 1.0; right fingertips now at (29.9, -20.5, 92.7), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

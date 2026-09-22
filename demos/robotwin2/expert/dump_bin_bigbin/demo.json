@@ -1,0 +1,207 @@
+{
+ "task": "dump_bin_bigbin",
+ "instruction": "Grab the tabletrashbin made of plastic and pour the balls.",
+ "kind": "task",
+ "source": {
+  "task": "dump_bin_bigbin",
+  "task_config": "demo_clean",
+  "seed": 100034,
+  "instruction": "Grab the tabletrashbin made of plastic and pour the balls.",
+  "turns": 10,
+  "commands": 30,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the deskbin, which was at x = -7 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "deskbin",
+   "x": -7.03
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper right towards x=-8 and forward to y=-16, pointing down.",
+   "commands": [
+    "left move x +11.0",
+    "left move x +11.0",
+    "left move y +3.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+22, +3, -0) cm, now 1 cm (horizontal) / +20 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -17, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left yaw +40 degrees and lower slightly by 1 cm to prepare for grasping the rim.",
+   "commands": [
+    "left rotate yaw +40.0",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -1) cm, now 1 cm (horizontal) / +19 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -17, 93) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move gripper down to z=85 and adjust x/y position to align around the bin rim.",
+   "commands": [
+    "left move y -4.5",
+    "left move x -1.0",
+    "left move z -8.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -4, -8) cm, now 4 cm (horizontal) / +11 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-9, -21, 85) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw +60 degrees for optimal grasp angle and close gripper completely.",
+   "commands": [
+    "left rotate yaw +60.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 3 cm (horizontal) / +11 cm (vertical) from the deskbin; closed the gripper (opening 0.07: holding the deskbin)",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-9, -21, 85) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift bin up to z=93 and move y/x back towards center table.",
+   "commands": [
+    "left move z +8.0",
+    "left move y +4.5",
+    "left move x +1.0",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +4, +8) cm, now 3 cm (horizontal) / +11 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -17, 93) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw +40 degrees to align for transport toward the trash/dump area on the left.",
+   "commands": [
+    "left rotate yaw +40.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 3 cm (horizontal) / +11 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-8, -17, 93) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift to z=100, roll wrist to start tilt, and translate left across table to x=-44.",
+   "commands": [
+    "left move z +6.5",
+    "left rotate roll +62.7",
+    "left move x -18.2",
+    "left move x -18.2"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-36, +0, +7) cm, now 11 cm (horizontal) / +4 cm (vertical) from the deskbin",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-44, -16, 100) opening 0.08; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move bin forward along y to y=+6 and adjust yaw/pitch to position directly above the bag.",
+   "commands": [
+    "left move y +11.0",
+    "left move y +11.0",
+    "left rotate yaw -23.0",
+    "left rotate pitch +17.2"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +22, -0) cm, now 5 cm (horizontal) / +100 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-45, 5, 100) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pitch and roll the wrist sharply to invert the bin and pour out the balls.",
+   "commands": [
+    "left rotate pitch +17.2",
+    "left rotate roll +21.0",
+    "left rotate roll +21.0",
+    "left rotate roll +21.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 5 cm (horizontal) / +100 cm (vertical) from the dustbin",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-45, 5, 100) opening 0.07; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Raise gripper slightly to ensure all balls have discharged.",
+   "commands": [
+    "left move z +2.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

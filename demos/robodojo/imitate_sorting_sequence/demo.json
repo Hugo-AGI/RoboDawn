@@ -1,0 +1,606 @@
+{
+ "task": "imitate_sorting_sequence",
+ "instruction": "Observe the object placement order, remember it, then place the corresponding objects into the basket in the same order.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 6487,
+  "decisions": 136,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: watching the third arm show the order, 0 of 5 far objects carried into the far basket so far (nothing yet) | nobody states the order: the far half holds five objects, a basket at its far right and a third arm working there, my half holds one twin of each of those objects and my own basket, and the order to copy is simply the order in which that arm drops its objects into the far basket | neither of my arms may leave its rest pose while it is still away from its own, so I only pass time, with tiny up/down fingertip moves that stay inside the rest pose and cost far fewer simulation steps than the same number of waits | the demonstration is over when all five far objects sit in the far basket and that arm has gone back to its rest position at the far edge; five pick-and-places still have to fit in the turn budget, so I start on the very next turn and do not keep watching",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The third arm is showing me the order: it carries one far object at a time into the far basket, and I repeat that same sequence with my own matching objects into my own basket. Its drops so far: nothing yet. Until it is back at its rest pose I may not leave mine -- that fails the episode outright -- so I only pass time, with tiny fingertip moves that stay inside the rest pose.",
+   "commands": [
+    "left move z +1.0",
+    "left move z -1.0",
+    "left move z +1.0",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "left move z +1.0: ok; left move z -1.0: ok; left move z +1.0: ok; left move z -1.0: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car) (first set it down at the centre for the other arm): orient the right gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -20.7, 92.1) cm, approach = (-0.01, 1.00, 0.00), finger axis = (-1.00, -0.01, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 768",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the toy_car, then move at travel height until the fingertip cross in the head image is over (35, -11).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -15.0",
+    "right move x +5.2",
+    "right move y +10.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -15.0: ok; right move x +5.2: ok; right move y +10.0: ok; right fingertips now at (35.2, -10.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car) (first set it down at the centre for the other arm): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -20.7, 92.1) cm, approach = (-0.01, 1.00, 0.00), finger axis = (-1.00, -0.01, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (35.2, -10.7, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 924",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.58: something is between them (probably grasped)); right fingertips now at (35.2, -10.7, 78.4), opening 0.58",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car) (first set it down at the centre for the other arm): release the object",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -20.7, 92.1) cm, approach = (-0.01, 1.00, 0.00), finger axis = (-1.00, -0.01, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -14.0, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 0.58 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1073\nRIGHT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.1, -14.0, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car) (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -20.7, 92.1) cm, approach = (-0.01, 1.00, 0.00), finger axis = (-1.00, -0.01, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -14.0, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1089",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): orient the left gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.3, -20.7, 92.1) cm, approach = (-0.01, 1.00, 0.00), finger axis = (-1.00, -0.01, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1322",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the toy_car, then move at travel height until the fingertip cross in the head image is over (-0, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -15.0",
+    "left move x +20.0",
+    "left move x +10.3"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -15.0: ok; left move x +20.0: ok; left move x +10.3: ok; left fingertips now at (-0.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -14.0, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, 0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1518",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.58: something is between them (probably grasped)); left fingertips now at (-0.1, -14.0, 78.5), opening 0.582",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): release the object",
+   "images": [
+    "frame030_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -15.0, 88.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1657\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.0, -15.0, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): the left wrist is out of position, reset it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -15.0, 100.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.97, 0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1703",
+   "plan": "The left fingertips have ended up outside the reachable space, where no further move can be planned; send that arm home and start this object again.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): orient the left gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1886",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the toy_car, then move at travel height until the fingertip cross in the head image is over (-45, -18).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +15.0",
+    "left move x -14.6",
+    "left move y +2.8"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +15.0: ok; left move x -14.6: ok; left move y +2.8: ok; left fingertips now at (-44.6, -17.9, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-44.6, -17.9, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1996",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -9.7"
+   ],
+   "failed": [
+    "left move z -9.7"
+   ],
+   "effect": "left move z -9.7: FAILED (the target was not reached: the fingertips moved (-0.4, +0.2, -6.6) cm, i.e. only part of the way; remaining error 3.1 cm / 6 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-45.0, -17.7, 85.5), opening 0.942",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-46.1, -17.0, 79.2) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-0.96, -0.28, 0.05), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2047",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers still moving (unresponsive); opening 1.00 is not a settled reading); left fingertips now at (-46.2, -17.0, 79.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): closed on nothing, retry",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-46.2, -17.0, 79.2) cm, approach = (-0.09, 0.11, -0.99), finger axis = (-0.96, -0.28, 0.05), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2109",
+   "plan": "The fingers closed on nothing. Open, lift 3 cm, re-read the offset on the wrist cross and try again.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +3.0",
+    "left move x +1.4",
+    "left move y -0.9"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +3.0: ok; left move x +1.4: ok; left move y -0.9: ok; left fingertips now at (-46.0, -17.4, 82.9), opening 0.989",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-45.6, -17.4, 83.8) cm, approach = (-0.18, 0.16, -0.97), finger axis = (-0.94, -0.33, 0.12), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2222",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -5.3"
+   ],
+   "failed": [
+    "left move z -5.3"
+   ],
+   "effect": "left move z -5.3: FAILED (the target was not reached: the fingertips moved (-0.9, +1.2, -3.9) cm, i.e. only part of the way; remaining error 2.0 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-46.5, -16.2, 79.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): orient the left gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-43.8, -15.9, 92.0) cm, approach = (-0.34, 0.36, -0.87), finger axis = (-0.89, -0.42, 0.18), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2416",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the toy_car, then move at travel height until the fingertip cross in the head image is over (-44, -17).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +30.0",
+    "left move y -0.8"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +30.0: ok; left move y -0.8: ok; left fingertips now at (-43.8, -16.8, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-43.8, -16.5, 78.9) cm, approach = (-0.00, 0.01, -1.00), finger axis = (-0.87, -0.50, -0.00), opening = 0.36 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2536",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.41: something is between them (probably grasped)); left fingertips now at (-43.5, -16.4, 78.9), opening 0.411",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: #1 of 5: my toy_car into my basket (the first thing the third arm carried into the far basket was a toy_car): give it up, it has taken 31 turns without finishing",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-43.5, -16.4, 90.9) cm, approach = (-0.00, 0.02, -1.00), finger axis = (-0.87, -0.49, -0.01), opening = 0.58 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2577\nLEFT arm closed on an object with the fingertips at z = 78.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.9 + (h - 76.5) before opening.",
+   "plan": "This object is not going to work out (it has taken 31 turns without finishing); leave it, return to travel height and spend the remaining time on the other objects.",
+   "commands": [
+    "left gripper 1.00",
+    "left move z +1.1"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left move z +1.1: ok; left fingertips now at (-43.5, -16.4, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-9.0, -8.1, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2795",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.52: something is between them (probably grasped)); left fingertips now at (-9.0, -8.1, 78.5), opening 0.518",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): release the object",
+   "images": [
+    "frame061_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.1, -15.1, 88.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, 0.00), opening = 0.52 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2938\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.1, -15.1, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 63,
+   "label": "turn 63: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): the left wrist is out of position, reset it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.1, -15.1, 100.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.96, -0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2984",
+   "plan": "The left fingertips have ended up outside the reachable space, where no further move can be planned; send that arm home and start this object again.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 67,
+   "label": "turn 67: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-36.6, -14.6, 79.2) cm, approach = (-0.01, 0.04, -1.00), finger axis = (-0.70, -0.72, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3328",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); left fingertips now at (-36.7, -14.6, 79.3), opening 0.673",
+   "source_index": null
+  },
+  {
+   "turn": 71,
+   "label": "turn 71: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): release the object",
+   "images": [
+    "frame071_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.8, -14.6, 88.3) cm, approach = (-0.01, 0.04, -1.00), finger axis = (-0.69, -0.72, -0.02), opening = 0.61 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3417\nLEFT arm closed on an object with the fingertips at z = 79.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.8, -14.6, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 73,
+   "label": "turn 73: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): the left wrist is out of position, reset it",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.8, -14.6, 100.3) cm, approach = (-0.01, 0.04, -1.00), finger axis = (-0.69, -0.72, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3463",
+   "plan": "The left fingertips have ended up outside the reachable space, where no further move can be planned; send that arm home and start this object again.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 77,
+   "label": "turn 77: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -13.5, 79.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3802",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.62: something is between them (probably grasped)); left fingertips now at (-40.4, -13.5, 78.9), opening 0.616",
+   "source_index": null
+  },
+  {
+   "turn": 81,
+   "label": "turn 81: #2 of 5: my action_camera into my basket (the second thing the third arm carried into the far basket was a action_camera): release the object",
+   "images": [
+    "frame081_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -14.3, 88.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 0.62 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3879\nLEFT arm closed on an object with the fingertips at z = 78.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.9 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.4, -14.3, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 87,
+   "label": "turn 87: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch) (first set it down at the centre for the other arm): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -14.3, 100.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (20.5, -7.4, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4102",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.73: something is between them (probably grasped)); right fingertips now at (20.5, -7.4, 78.5), opening 0.728",
+   "source_index": null
+  },
+  {
+   "turn": 91,
+   "label": "turn 91: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch) (first set it down at the centre for the other arm): release the object",
+   "images": [
+    "frame091_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -14.3, 100.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.4, -13.8, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, -0.71, 0.00), opening = 0.72 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4228\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (0.4, -13.8, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 92,
+   "label": "turn 92: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch) (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -14.3, 100.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.4, -13.8, 79.0) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.71, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4243",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 93,
+   "label": "turn 93: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch): orient the left gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.4, -14.3, 100.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4475",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the watch, then move at travel height until the fingertip cross in the head image is over (-0, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +45.0",
+    "left move x +20.0",
+    "left move x +20.0"
+   ],
+   "failed": [
+    "left move x +20.0"
+   ],
+   "effect": "left point down: ok; left rotate yaw +45.0: ok; left move x +20.0: ok; left move x +20.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-20.5, -14.3, 100.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 99,
+   "label": "turn 99: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch): close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -13.8, 78.5) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.71, -0.71, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4774",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.72: something is between them (probably grasped)); left fingertips now at (-0.0, -13.8, 78.5), opening 0.724",
+   "source_index": null
+  },
+  {
+   "turn": 103,
+   "label": "turn 103: #3 of 5: my watch into my basket (the third thing the third arm carried into the far basket was a watch): release the object",
+   "images": [
+    "frame103_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-39.8, -14.6, 88.3) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.70, -0.71, 0.00), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 4915\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-39.8, -14.6, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 108,
+   "label": "turn 108: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage) (first set it down at the centre for the other arm): close the gripper",
+   "images": [
+    "frame108_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-39.8, -14.6, 100.3) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.70, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (16.0, -18.8, 79.3) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5127",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.75: something is between them (probably grasped)); right fingertips now at (16.0, -18.8, 79.3), opening 0.748",
+   "source_index": null
+  },
+  {
+   "turn": 112,
+   "label": "turn 112: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage) (first set it down at the centre for the other arm): release the object",
+   "images": [
+    "frame112_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-39.8, -14.6, 100.3) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.70, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.0, 79.8) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 0.75 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5253\nRIGHT arm closed on an object with the fingertips at z = 79.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.0, -14.0, 79.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 113,
+   "label": "turn 113: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage) (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-39.8, -14.6, 100.3) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.70, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.0, 79.8) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.50, 0.86, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5268",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 114,
+   "label": "turn 114: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage): orient the left gripper and travel above the object",
+   "images": [
+    "frame114_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-39.8, -14.6, 100.3) cm, approach = (-0.18, 0.18, -0.97), finger axis = (-0.70, -0.71, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5508",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the garage, then move at travel height until the fingertip cross in the head image is over (-0, -14).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move x +20.0",
+    "left move x +19.8"
+   ],
+   "failed": [
+    "left move x +19.8"
+   ],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move x +20.0: ok; left move x +19.8: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-19.8, -14.6, 100.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 120,
+   "label": "turn 120: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage): close the gripper",
+   "images": [
+    "frame120_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (0.0, -14.0, 79.3) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5800",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.75: something is between them (probably grasped)); left fingertips now at (0.0, -14.0, 79.3), opening 0.749",
+   "source_index": null
+  },
+  {
+   "turn": 124,
+   "label": "turn 124: #4 of 5: my garage into my basket (the fourth thing the third arm carried into the far basket was a garage): release the object",
+   "images": [
+    "frame124_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -14.8, 88.3) cm, approach = (0.22, 0.13, -0.97), finger axis = (-0.50, 0.86, -0.00), opening = 0.75 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 5935\nLEFT arm closed on an object with the fingertips at z = 79.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.0, -14.8, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 130,
+   "label": "turn 130: #5 of 5: my phone into my basket (the fifth thing the third arm carried into the far basket was a phone): close the gripper",
+   "images": [
+    "frame130_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-19.7, -19.6, 78.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6178",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.62: something is between them (probably grasped)); left fingertips now at (-19.7, -19.6, 78.3), opening 0.621",
+   "source_index": null
+  },
+  {
+   "turn": 134,
+   "label": "turn 134: #5 of 5: my phone into my basket (the fifth thing the third arm carried into the far basket was a phone): release the object",
+   "images": [
+    "frame134_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.1, -15.1, 88.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, -0.97, 0.00), opening = 0.61 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6305\nLEFT arm closed on an object with the fingertips at z = 78.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.3 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-40.1, -15.1, 88.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 136,
+   "label": "turn 136: return both arms to their initial pose",
+   "images": [
+    "frame136_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.1, -15.1, 100.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (-0.26, -0.97, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 6351",
+   "plan": "Every placement is done and both grippers are open; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left home: FAILED (the target was not reached: the fingertips moved (+8.7, -5.5, -4.8) cm, i.e. only part of the way; remaining error 3.7 cm / 20 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-31.4, -20.6, 95.5), opening 1.0; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

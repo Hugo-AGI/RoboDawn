@@ -1,0 +1,304 @@
+{
+ "task": "stack_blocks_two",
+ "instruction": "Place red block in the middle, then stack green block on it.",
+ "kind": "task",
+ "source": {
+  "task": "stack_blocks_two",
+  "task_config": "demo_clean",
+  "seed": 100012,
+  "instruction": "Place red block in the middle, then stack green block on it.",
+  "turns": 16,
+  "commands": 43,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the block1, which was at x = +16 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "block1",
+   "x": 16.44
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper above red block at (17, -7, 94).",
+   "commands": [
+    "right move x -14.0",
+    "right move y +12.0",
+    "right point down",
+    "right rotate yaw +5.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-14, +12, -0) cm, now 0 cm (horizontal) / +17 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (17, -7, 94) opening 0.94; table z = 74",
+   "plan": "Lower right gripper to intermediate height z=86.",
+   "commands": [
+    "right move z -8.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -8) cm, now 0 cm (horizontal) / +9 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (17, -7, 86) opening 0.94; table z = 74",
+   "plan": "Lower right gripper to grasp height z=77 and close gripper.",
+   "commands": [
+    "right move z -9.0",
+    "right point down",
+    "right rotate yaw +5.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, -8) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block1; closed the gripper (opening 0.53: holding the block1)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -7, 78) opening 0.53; table z = 74",
+   "plan": "Lift red block up to z=85.",
+   "commands": [
+    "right move z +7.0",
+    "right point down",
+    "right rotate yaw +5.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +7) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (16, -7, 85) opening 0.54; table z = 74",
+   "plan": "Move red block to table center at (0, -12, 88).",
+   "commands": [
+    "right move z +3.5",
+    "right move x -16.0",
+    "right move y -5.5",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-16, -5, +3) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, -12, 88) opening 0.54; table z = 74",
+   "plan": "Lower red block down toward z=84.",
+   "commands": [
+    "right move z -4.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, -4) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, -12, 84) opening 0.54; table z = 74",
+   "plan": "Lower red block onto table (z=79) and open gripper to release.",
+   "commands": [
+    "right move z -5.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, -5) cm, now 0 cm (horizontal) / +2 cm (vertical) from the block1; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, -12, 79) opening 0.92; table z = 74",
+   "plan": "Lift right gripper up to z=86 to clear red block.",
+   "commands": [
+    "right move z +7.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +7) cm, now 0 cm (horizontal) / +9 cm (vertical) from the block1",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, -12, 86) opening 0.94; table z = 74",
+   "plan": "Move right gripper above green block at (26, 4, 85).",
+   "commands": [
+    "right move x +12.8",
+    "right move x +12.8",
+    "right move y +17.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+25, +17, -0) cm, now 0 cm (horizontal) / +9 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (26, 4, 85) opening 0.94; table z = 74",
+   "plan": "Rotate yaw by +65 deg to align with green block orientation.",
+   "commands": [
+    "right rotate yaw +65.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +9 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (26, 5, 86) opening 0.95; table z = 74",
+   "plan": "Lower right gripper to grasp height z=78 and close gripper.",
+   "commands": [
+    "right move z -9.0",
+    "right point down",
+    "right rotate yaw +65.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -8) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block2; closed the gripper (opening 0.53: holding the block2)",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (26, 5, 78) opening 0.53; table z = 74",
+   "plan": "Lift green block up to z=85.",
+   "commands": [
+    "right move z +7.0",
+    "right move x -0.5",
+    "right move y -0.5",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +7) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (26, 4, 85) opening 0.54; table z = 74",
+   "plan": "Align orientation to yaw +65 deg before transfer.",
+   "commands": [
+    "right rotate yaw +65.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +1 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (26, 4, 85) opening 0.54; table z = 74",
+   "plan": "Move green block above red block at center (1, -12, 88).",
+   "commands": [
+    "right move z +3.5",
+    "right move y -17.0",
+    "right move x -12.8",
+    "right move x -12.8"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-25, -17, +4) cm, now 0 cm (horizontal) / +1 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, -12, 88) opening 0.55; table z = 74",
+   "plan": "Orient downwards and minor z adjustment.",
+   "commands": [
+    "right point down",
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +1 cm (vertical) from the block2",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "turn 16",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, -12, 88) opening 0.54; table z = 74",
+   "plan": "Lower green block onto red block (z=83) and open gripper to release.",
+   "commands": [
+    "right move y -0.5",
+    "right move z -5.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 17,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame017_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

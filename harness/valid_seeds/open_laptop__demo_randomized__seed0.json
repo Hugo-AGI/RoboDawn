@@ -1,0 +1,258 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100004,
+  100006,
+  100007,
+  100008,
+  100009,
+  100011,
+  100012,
+  100013,
+  100014,
+  100015,
+  100016,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100031,
+  100032,
+  100033,
+  100034,
+  100035,
+  100038,
+  100039,
+  100040,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100049,
+  100051,
+  100052,
+  100054,
+  100055,
+  100056,
+  100057,
+  100058,
+  100059,
+  100060
+ ],
+ "infos": [
+  {
+   "{A}": "015_laptop/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base7",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base9",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base7",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base9",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base7",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base4",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base10",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base9",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base8",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "015_laptop/base1",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100061
+}

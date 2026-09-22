@@ -1,0 +1,289 @@
+{
+ "task": "place_can_basket",
+ "instruction": "Use the right arm to set the red can in the basket with rounded edges; another arm lifts the basket with rounded edges.",
+ "kind": "task",
+ "source": {
+  "task": "place_can_basket",
+  "task_config": "demo_clean",
+  "seed": 100016,
+  "instruction": "Use the right arm to set the red can in the basket with rounded edges; another arm lifts the basket with rounded edges.",
+  "turns": 15,
+  "commands": 38,
+  "sides": "LR",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the can, which was at x = +21 (right half of the table); the LEFT arm grasped the basket, which was at x = -2 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "can",
+   "x": 20.9
+  },
+  "left": {
+   "object": "basket",
+   "x": -1.61
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper above red can around (21, 3, 94) pointing down.",
+   "commands": [
+    "right move y +11.2",
+    "right move y +11.2",
+    "right move x -9.5",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-9, +22, +0) cm, now 1 cm (horizontal) / +20 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (21, 3, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw by 45 degrees and lower gripper to z = 86.5 cm.",
+   "commands": [
+    "right rotate yaw +45.0",
+    "right move z -7.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -8) cm, now 1 cm (horizontal) / +12 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (21, 3, 86) opening 0.94; table z = 74",
+   "plan": "Fine-adjust xy and descend to z = 81.5 cm to align with the can body.",
+   "commands": [
+    "right move x -0.5",
+    "right move y +0.5",
+    "right move z -5.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +1, -5) cm, now 0 cm (horizontal) / +8 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (21, 3, 82) opening 0.94; table z = 74",
+   "plan": "Adjust yaw slightly and close right gripper to grasp the can.",
+   "commands": [
+    "right rotate yaw +45.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +8 cm (vertical) from the can; closed the gripper (opening 0.48: holding the can)",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (21, 3, 82) opening 0.48; table z = 74",
+   "plan": "Lift can up to z = 95 cm, point forward, orient yaw, and translate left towards basket.",
+   "commands": [
+    "right move z +13.0",
+    "right point forward",
+    "right rotate yaw +85.0",
+    "right move x -20.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-21, +4, +14) cm, now 8 cm (horizontal) / +0 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (-0, 7, 95) opening 0.50; table z = 74",
+   "plan": "Shift right gripper closer to basket center in y and lift slightly to z = 100 cm.",
+   "commands": [
+    "right move y -3.5",
+    "right move z +5.0",
+    "right move y -3.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, -7, +5) cm, now 7 cm (horizontal) / +26 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (0, 0, 100) opening 0.50; table z = 74",
+   "plan": "Fine tune x position slightly by +1 cm.",
+   "commands": [
+    "right move x +1.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+1, -0, -0) cm, now 8 cm (horizontal) / +26 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, 0, 100) opening 0.49; table z = 74",
+   "plan": "Lower right arm down to z = 90 cm into the basket opening.",
+   "commands": [
+    "right move x +0.5",
+    "right move z -10.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, -0, -10) cm, now 8 cm (horizontal) / +0 cm (vertical) from the can",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, 0, 90) opening 0.49; table z = 74",
+   "plan": "Open right gripper to release red can into the basket.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 7 cm (horizontal) / +5 cm (vertical) from the can; opened the gripper",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (1, 0, 90) opening 0.90; table z = 74",
+   "plan": "Point left gripper down, rotate yaw to +75 deg, and move right towards basket.",
+   "commands": [
+    "left point down",
+    "left rotate yaw +75.0",
+    "left move x +14.0",
+    "left move x +14.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+28, +0, +0) cm, now 12 cm (horizontal) / +20 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -19, 94) opening 0.95; RIGHT fingertips (1, 0, 90) opening 0.94; table z = 74",
+   "plan": "Move left arm forward towards basket handle and send right arm home.",
+   "commands": [
+    "left move y +12.0",
+    "left move z -1.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +12, -0) cm, now 1 cm (horizontal) / +20 cm (vertical) from the basket; RIGHT fingertips moved by (+29, -20, +4) cm, now 35 cm (horizontal) / +20 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -8, 94) opening 0.94; RIGHT fingertips (30, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine tune xy and lower left gripper to z = 91.5 cm around the handle.",
+   "commands": [
+    "left move x +0.5",
+    "left move y +0.5",
+    "left move z -2.5",
+    "left point down"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -2) cm, now 0 cm (horizontal) / +17 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 92) opening 0.95; RIGHT fingertips (30, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw to align with handle and close left gripper.",
+   "commands": [
+    "left rotate yaw +70.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +17 cm (vertical) from the basket; closed the gripper (opening 0.15: holding the basket)",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 91) opening 0.15; RIGHT fingertips (30, -19, 94) opening 0.94; table z = 74",
+   "plan": "Close left gripper completely to secure grip.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 0 cm (horizontal) / +17 cm (vertical) from the basket",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, -7, 91) opening 0.15; RIGHT fingertips (30, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift left arm by +2 cm to lift basket off the table.",
+   "commands": [
+    "left move z +2.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

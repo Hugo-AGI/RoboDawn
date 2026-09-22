@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Evaluation output: videos, decision logs, per-run metrics. Hundreds of MB
+# per run and reproducible from the code and the shipped assets.
+/results/
+/experiments/
+/eval_result/
+/viz/
+*.mp4
+*.log
+
+# Credentials never enter the repository.
+secrets.json
+*.key
+*.pem
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

@@ -1,0 +1,6 @@
+[submodule "RoboTwin"]
+	path = RoboTwin
+	url = https://github.com/RoboTwin-Platform/RoboTwin.git
+[submodule "RoboDojo"]
+	path = RoboDojo
+	url = https://github.com/RoboDojo-Benchmark/RoboDojo.git

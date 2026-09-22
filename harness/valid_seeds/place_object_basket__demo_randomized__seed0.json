@@ -1,0 +1,358 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100002,
+  100003,
+  100007,
+  100008,
+  100009,
+  100012,
+  100013,
+  100014,
+  100018,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100028,
+  100029,
+  100030,
+  100031,
+  100032,
+  100036,
+  100038,
+  100040,
+  100042,
+  100043,
+  100044,
+  100047,
+  100048,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100055,
+  100056,
+  100059,
+  100060,
+  100064,
+  100065,
+  100066,
+  100069,
+  100072,
+  100074,
+  100077,
+  100078,
+  100082,
+  100085,
+  100086,
+  100088,
+  100089
+ ],
+ "infos": [
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base0",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base2",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "110_basket/base0",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base3",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base4",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base5",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "057_toycar/base1",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  },
+  {
+   "{A}": "081_playingcards/base1",
+   "{B}": "110_basket/base0",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "057_toycar/base0",
+   "{B}": "110_basket/base1",
+   "{a}": "right",
+   "{b}": "left"
+  },
+  {
+   "{A}": "081_playingcards/base2",
+   "{B}": "110_basket/base1",
+   "{a}": "left",
+   "{b}": "right"
+  }
+ ],
+ "next_seed": 100090
+}

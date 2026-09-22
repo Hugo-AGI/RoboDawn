@@ -1,0 +1,138 @@
+{
+ "task": "move_playingcard_away",
+ "instruction": "Grab the playingcards with red packaging and move it outward.",
+ "kind": "task",
+ "source": {
+  "task": "move_playingcard_away",
+  "task_config": "demo_clean",
+  "seed": 100017,
+  "instruction": "Grab the playingcards with red packaging and move it outward.",
+  "turns": 6,
+  "commands": 17,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the playingcards, which was at x = -9 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "playingcards",
+   "x": -9.03
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Orient left gripper downward, rotate yaw to match the card deck angle, and move closer toward the target.",
+   "commands": [
+    "left point down",
+    "left rotate yaw +25.0",
+    "left move z -5.0",
+    "left move y +11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +11, -5) cm, now 24 cm (horizontal) / +15 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -8, 89) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left arm horizontally to align above the playing cards at (-9, 3, 85).",
+   "commands": [
+    "left move y +11.0",
+    "left move x +10.5",
+    "left move x +10.5",
+    "left move z -4.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+21, +11, -4) cm, now 1 cm (horizontal) / +11 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-10, 3, 85) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left arm to grasp height z=78 cm and close gripper onto the playing cards.",
+   "commands": [
+    "left move x +0.5",
+    "left move z -7.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -7) cm, now 0 cm (horizontal) / +4 cm (vertical) from the playingcards; closed the gripper (opening 0.70: holding the playingcards)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-9, 3, 78) opening 0.70; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift cards up to z=88 cm and translate leftward toward x=-39 cm to move it outward.",
+   "commands": [
+    "left move z +10.5",
+    "left move x -15.0",
+    "left move x -15.0",
+    "left move y -0.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-30, -0, +10) cm, now 1 cm (horizontal) / +4 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-39, 2, 88) opening 0.72; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower the playing cards back onto the table surface to z=78 cm.",
+   "commands": [
+    "left move z -10.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -10) cm, now 0 cm (horizontal) / +4 cm (vertical) from the playingcards",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-39, 2, 78) opening 0.72; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Open left gripper to release the cards and complete the task.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

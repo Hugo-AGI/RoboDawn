@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100002,
+  100004,
+  100005,
+  100006,
+  100009,
+  100010,
+  100011,
+  100012,
+  100013,
+  100014,
+  100015,
+  100017,
+  100018,
+  100019,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100028,
+  100032,
+  100034,
+  100036,
+  100037,
+  100039,
+  100040,
+  100041,
+  100042,
+  100045,
+  100046,
+  100048,
+  100049,
+  100050,
+  100051,
+  100052,
+  100053,
+  100054,
+  100056,
+  100057,
+  100058,
+  100059,
+  100060,
+  100061,
+  100062,
+  100063,
+  100064,
+  100069
+ ],
+ "infos": [
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "048_stapler/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "047_mouse/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "048_stapler/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "048_stapler/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "047_mouse/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "047_mouse/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "047_mouse/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "048_stapler/base5",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "047_mouse/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "048_stapler/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "047_mouse/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "047_mouse/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "050_bell/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "048_stapler/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "048_stapler/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "047_mouse/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "047_mouse/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "047_mouse/base2",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "047_mouse/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "050_bell/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "048_stapler/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "047_mouse/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "048_stapler/base6",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "048_stapler/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "047_mouse/base2",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base0",
+   "{B}": "047_mouse/base1",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base1",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "050_bell/base0",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base6",
+   "{B}": "050_bell/base0",
+   "{a}": "left"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "072_electronicscale/base5",
+   "{B}": "048_stapler/base1",
+   "{a}": "left"
+  }
+ ],
+ "next_seed": 100070
+}

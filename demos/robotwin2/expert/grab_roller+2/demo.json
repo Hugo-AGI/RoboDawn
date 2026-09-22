@@ -1,0 +1,143 @@
+{
+ "task": "grab_roller",
+ "instruction": "Reach and grab the light brown wooden roller with both arms",
+ "kind": "task",
+ "source": {
+  "task": "grab_roller",
+  "task_config": "demo_clean",
+  "seed": 100015,
+  "instruction": "Reach and grab the light brown wooden roller with both arms",
+  "turns": 6,
+  "commands": 18,
+  "sides": "LL",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the roller, which was at x = -4 (left half of the table); the RIGHT arm grasped the roller, which was at x = -4 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "roller",
+   "x": -3.59
+  },
+  "right": {
+   "object": "roller",
+   "x": -3.59
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Orient left gripper downward, rotate yaw 90 degrees, and move to (-13, -15, 94) above the left end of the roller.",
+   "commands": [
+    "left point down",
+    "left rotate yaw +90.0",
+    "left move x +17.5",
+    "left move y +4.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+18, +4, +0) cm, now 9 cm (horizontal) / +20 cm (vertical) from the roller",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-13, -15, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lower left gripper to z=84 cm. Orient right gripper downward, rotate yaw 90 degrees, and move towards the right end of the roller.",
+   "commands": [
+    "left move z -10.5",
+    "right point down",
+    "right rotate yaw +90.0",
+    "right move x -12.8"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -10) cm, now 9 cm (horizontal) / +10 cm (vertical) from the roller; RIGHT fingertips moved by (-13, -0, +0) cm, now 22 cm (horizontal) / +20 cm (vertical) from the roller",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-12, -15, 84) opening 0.94; RIGHT fingertips (18, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move right gripper to align at (5, -15, 84) above the right side of the roller and lower to z=84 cm.",
+   "commands": [
+    "right move x -12.8",
+    "right move y +4.0",
+    "right move x +0.5",
+    "right move z -10.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-12, +4, -10) cm, now 9 cm (horizontal) / +10 cm (vertical) from the roller",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-12, -15, 84) opening 0.94; RIGHT fingertips (5, -15, 84) opening 0.94; table z = 74",
+   "plan": "Lower left gripper further to grasp height z=78 cm around the left end of the roller.",
+   "commands": [
+    "left move z -6.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +0, -6) cm, now 9 cm (horizontal) / +3 cm (vertical) from the roller",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-12, -15, 78) opening 0.91; RIGHT fingertips (5, -15, 84) opening 0.94; table z = 74",
+   "plan": "Lower right gripper to grasp height z=78 cm, then close both grippers to grasp the roller.",
+   "commands": [
+    "right move z -6.0",
+    "left gripper 0.00",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 9 cm (horizontal) / +3 cm (vertical) from the roller; closed the gripper (opening 0.26: holding the roller); RIGHT fingertips moved by (-0, +0, -6) cm, now 9 cm (horizontal) / +3 cm (vertical) from the roller; closed the gripper (opening 0.26: holding the roller)",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-12, -15, 78) opening 0.26; RIGHT fingertips (5, -15, 78) opening 0.26; table z = 74",
+   "plan": "Lift both arms to raise the roller off the tabletop.",
+   "commands": [
+    "left move z +10.5",
+    "right move z +0.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

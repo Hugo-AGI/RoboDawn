@@ -1,0 +1,614 @@
+{
+ "task": "pack_objects_into_box",
+ "instruction": "Place all the objects into the box with their front sides facing left.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 3689,
+  "decisions": 83,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: orient the left gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the shoe, then move at travel height until the fingertip cross in the head image is over (3, -17).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -30.0",
+    "left move x +20.0",
+    "left move x +12.6"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -30.0: ok; left move x +20.0: ok; left move x +12.6: ok; left fingertips now at (2.6, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: finish travelling above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -20.7, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 128",
+   "plan": "The head grid shows the cross -0.0 cm in x and +4.1 cm in y from the object; correct that at travel height.",
+   "commands": [
+    "left move y +4.1"
+   ],
+   "failed": [],
+   "effect": "left move y +4.1: ok; left fingertips now at (2.6, -16.6, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -16.6, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 153",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -8.5"
+   ],
+   "failed": [],
+   "effect": "left move z -8.5: ok; left fingertips now at (2.6, -16.6, 83.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -16.6, 83.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 183",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "left move z -4.0: ok; left fingertips now at (2.6, -16.6, 79.7), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -16.6, 79.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 203",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.68: something is between them (probably grasped)); left fingertips now at (2.6, -16.6, 79.7), opening 0.682",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.6, -16.6, 79.7) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, -0.00), opening = 0.68 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 216\nLEFT arm closed on an object with the fingertips at z = 79.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.7 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 14 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +14.0"
+   ],
+   "failed": [],
+   "effect": "left move z +14.0: ok; left fingertips now at (2.4, -16.7, 93.5), opening 0.681",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (2.4, -16.7, 93.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.87, 0.50, 0.00), opening = 0.68 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 255\nLEFT arm closed on an object with the fingertips at z = 79.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.7 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +30.0",
+    "left move x -20.0",
+    "left move x -4.7"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +30.0: ok; left move x -20.0: ok; left move x -4.7: ok; left fingertips now at (-22.3, -16.7, 93.5), opening 0.68",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -10.6, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.68 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 425\nLEFT arm closed on an object with the fingertips at z = 79.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.7 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y +10.3"
+   ],
+   "failed": [
+    "left move y +10.3"
+   ],
+   "effect": "left move y +10.3: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-22.8, -10.6, 93.4), opening 0.68",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: nothing yet; still waiting on the table: shoe, hammer, electric toothbrush, car. shoe into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.3, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.68 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 453\nLEFT arm closed on an object with the fingertips at z = 79.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.7 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left move y +4.0"
+   ],
+   "failed": [
+    "left move y +4.0"
+   ],
+   "effect": "left move y +4.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-22.8, -4.3, 93.4), opening 0.68",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. shoe into the box: it is over the floor of the box, let go",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.3, 81.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.68 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 483\nLEFT arm closed on an object with the fingertips at z = 79.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 79.7 + (h - 76.5) before opening.",
+   "plan": "Head grid and wrist view: the object is still -0.0 cm in x and +4.0 cm in y off the target; correct that before opening.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-22.8, -4.3, 81.4), opening 0.996",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer to the centre for the other arm: orient the right gripper and travel above the object",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.2, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 528",
+   "plan": "Point the right fingers down (down30) with the finger axis across the narrow side of the hammer, then move at travel height until the fingertip cross in the head image is over (7, -1).",
+   "commands": [
+    "right point down30",
+    "right rotate yaw +60.0",
+    "right move x -20.0",
+    "right move x -3.1"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right rotate yaw +60.0: ok; right move x -20.0: ok; right move x -3.1: ok; right fingertips now at (6.9, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer to the centre for the other arm: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.2, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.9, -1.3, 77.9) cm, approach = (-0.44, 0.25, -0.86), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 736",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.37: something is between them (probably grasped)); right fingertips now at (6.9, -1.3, 77.9), opening 0.37",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer to the centre for the other arm: release the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.2, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.1, -19.4, 78.2) cm, approach = (-0.44, 0.25, -0.86), finger axis = (-0.50, -0.87, -0.00), opening = 0.37 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 860\nRIGHT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-5.1, -19.4, 78.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer to the centre for the other arm: retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.2, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.1, -19.4, 78.2) cm, approach = (-0.44, 0.25, -0.86), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 877",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer into the box: orient the left gripper and travel above the object",
+   "images": [
+    "frame026_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.8, -4.2, 93.4) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1052",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the hammer, then move at travel height until the fingertip cross in the head image is over (-5, -20).",
+   "commands": [
+    "left point down",
+    "left rotate yaw +60.0",
+    "left move y -15.0"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +60.0: ok; left move y -15.0: ok; left fingertips now at (-22.9, -19.2, 93.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer into the box: close the gripper",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.4, -20.0, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1256",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.37: something is between them (probably grasped)); left fingertips now at (-5.4, -20.0, 77.8), opening 0.369",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.4, -20.0, 91.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, -0.87, -0.00), opening = 0.37 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1297\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left rotate yaw -60.0",
+    "left move x -16.7",
+    "left move y +8.8"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left rotate yaw -60.0: ok; left move x -16.7: ok; left move y +8.8: ok; left fingertips now at (-22.1, -11.2, 91.8), opening 0.369",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe; still waiting on the table: hammer, electric toothbrush, car. hammer into the box: release the object",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 87.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 0.37 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1473\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-22.2, -7.0, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. hammer into the box: retreat upward",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 87.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1490",
+   "plan": "Released; lift the empty gripper straight up so it clears the placed object.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [
+    "left move z +12.0"
+   ],
+   "effect": "left move z +12.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-22.2, -7.0, 87.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. out of reach: tilt the fingers further forward at travel height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 87.2) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-0.00, 1.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1490",
+   "plan": "'left move z +12.0' had no IK solution, so this target is at the edge of the left arm's reach with the fingers pointing 'down'. Return to travel height (z=92) and switch to 'point down15', which reaches further forward, then re-align (the preset resets the finger axis, so re-check the yaw).",
+   "commands": [
+    "left move z +4.8",
+    "left point down15"
+   ],
+   "failed": [],
+   "effect": "left move z +4.8: ok; left point down15: ok; left fingertips now at (-22.2, -7.0, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush to the centre for the other arm: orient the right gripper and travel above the object",
+   "images": [
+    "frame038_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1554",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the electric_toothbrush, then move at travel height until the fingertip cross in the head image is over (40, -10).",
+   "commands": [
+    "right point down",
+    "right rotate yaw -60.0",
+    "right move x +9.6",
+    "right move y +10.6"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right rotate yaw -60.0: ok; right move x +9.6: ok; right move y +10.6: ok; right fingertips now at (39.6, -10.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush to the centre for the other arm: close the gripper",
+   "images": [
+    "frame041_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (39.6, -10.1, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.87, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1730",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.30: something is between them (probably grasped)); right fingertips now at (39.6, -10.1, 77.8), opening 0.305",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush to the centre for the other arm: release the object",
+   "images": [
+    "frame046_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.5, -19.9, 78.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.86, 0.00), opening = 0.30 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1929\nRIGHT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-5.5, -19.9, 78.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush to the centre for the other arm: retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.5, -19.9, 78.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.86, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1947",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 48,
+   "label": "turn 48: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush into the box: orient the left gripper and travel above the object",
+   "images": [
+    "frame048_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -7.0, 92.0) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2175",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the electric_toothbrush, then move at travel height until the fingertip cross in the head image is over (-5, -20).",
+   "commands": [
+    "left point down",
+    "left rotate yaw -60.0",
+    "left move y -12.3"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw -60.0: ok; left move y -12.3: ok; left fingertips now at (-22.2, -19.3, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush into the box: close the gripper",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.4, -19.9, 77.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.86, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2357",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.31: something is between them (probably grasped)); left fingertips now at (-5.4, -19.9, 77.8), opening 0.311",
+   "source_index": null
+  },
+  {
+   "turn": 54,
+   "label": "turn 54: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer; still waiting on the table: electric toothbrush, car. electric_toothbrush into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.5, -19.9, 91.8) cm, approach = (0.00, 0.00, -1.00), finger axis = (-0.50, 0.86, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2398\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left rotate yaw +60.0",
+    "left move x -16.8",
+    "left move y +8.6"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left rotate yaw +60.0: ok; left move x -16.8: ok; left move y +8.6: ok; left fingertips now at (-22.3, -11.3, 91.7), opening 0.311",
+   "source_index": null
+  },
+  {
+   "turn": 57,
+   "label": "turn 57: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. electric_toothbrush into the box: release the object",
+   "images": [
+    "frame057_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.7, 79.9) cm, approach = (0.00, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 0.31 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2583\nLEFT arm closed on an object with the fingertips at z = 77.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.8 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-22.2, -6.7, 80.0), opening 0.632",
+   "source_index": null
+  },
+  {
+   "turn": 59,
+   "label": "turn 59: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car to the centre for the other arm: orient the right gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.6, 92.0) cm, approach = (0.01, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2630",
+   "plan": "Point the right fingers down (down30) with the finger axis across the narrow side of the car, then move at travel height until the fingertip cross in the head image is over (24, -0).",
+   "commands": [
+    "right point down30",
+    "right move x -5.9",
+    "right move y +20.0"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right move x -5.9: ok; right move y +20.0: ok; right fingertips now at (24.1, -0.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car to the centre for the other arm: close the gripper",
+   "images": [
+    "frame062_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.6, 92.0) cm, approach = (0.01, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.1, -0.7, 78.1) cm, approach = (-0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2770",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.72: something is between them (probably grasped)); right fingertips now at (24.1, -0.7, 78.0), opening 0.724",
+   "source_index": null
+  },
+  {
+   "turn": 67,
+   "label": "turn 67: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car to the centre for the other arm: release the object",
+   "images": [
+    "frame067_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.6, 92.0) cm, approach = (0.01, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.4, -20.1, 78.5) cm, approach = (0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 0.72 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2941\nRIGHT arm closed on an object with the fingertips at z = 78.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.0 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-5.4, -20.1, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 68,
+   "label": "turn 68: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car to the centre for the other arm: retreat and clear the way for the other arm",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.6, 92.0) cm, approach = (0.01, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-5.4, -20.1, 78.5) cm, approach = (0.00, 0.50, -0.87), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2956",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 69,
+   "label": "turn 69: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car into the box: orient the left gripper and travel above the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-22.2, -6.6, 92.0) cm, approach = (0.01, 0.02, -1.00), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3148",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the car, then move at travel height until the fingertip cross in the head image is over (-5, -20).",
+   "commands": [
+    "left point down",
+    "left move y -12.8"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left move y -12.8: ok; left fingertips now at (-22.3, -19.4, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 73,
+   "label": "turn 73: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car into the box: close the gripper",
+   "images": [
+    "frame073_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-5.4, -19.9, 78.1) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3310",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.72: something is between them (probably grasped)); left fingertips now at (-5.4, -19.9, 78.1), opening 0.724",
+   "source_index": null
+  },
+  {
+   "turn": 76,
+   "label": "turn 76: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car into the box: carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-5.4, -19.9, 92.0) cm, approach = (-0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3354\nLEFT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "left rotate yaw +90.0",
+    "left move x -16.2",
+    "left move y +8.5"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left move x -16.2: ok; left move y +8.5: ok; left fingertips now at (-21.6, -11.4, 92.0), opening 0.723",
+   "source_index": null
+  },
+  {
+   "turn": 78,
+   "label": "turn 78: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. In the carton so far: shoe, hammer, electric toothbrush; still waiting on the table: car. car into the box: lower the object onto the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-21.6, -4.0, 91.9) cm, approach = (-0.00, -0.00, -1.00), finger axis = (0.00, -1.00, 0.00), opening = 0.72 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3476\nLEFT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "left move z -12.3"
+   ],
+   "failed": [
+    "left move z -12.3"
+   ],
+   "effect": "left move z -12.3: FAILED (the target was not reached: the fingertips moved (+0.0, +0.8, -10.7) cm, i.e. only part of the way; remaining error 1.8 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-21.6, -3.2, 81.3), opening 0.49",
+   "source_index": null
+  },
+  {
+   "turn": 79,
+   "label": "turn 79: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. All four are lying in the carton (shoe, hammer, electric toothbrush, car) and the table is clear, so the only thing left is to open both grippers and put both arms back in the pose they started in. car into the box: it is over the floor of the box, let go",
+   "images": [
+    "frame079_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-21.6, -3.2, 81.3) cm, approach = (0.01, 0.05, -1.00), finger axis = (0.01, -1.00, -0.05), opening = 0.49 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3506\nLEFT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "Head grid and wrist view: the object is still +1.8 cm in x and -1.5 cm in y off the target; correct that before opening.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-21.6, -3.1, 81.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 81,
+   "label": "turn 81: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. All four are lying in the carton (shoe, hammer, electric toothbrush, car) and the table is clear, so the only thing left is to open both grippers and put both arms back in the pose they started in. lift both hands clear before turning them",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-21.6, -3.1, 93.6) cm, approach = (0.01, 0.06, -1.00), finger axis = (0.01, -1.00, -0.06), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3552",
+   "plan": "Raise both hands straight up until they are above everything on the table. Turning a hand sweeps the forearm round in a quarter circle, which would knock over what was just built if the hand is still down among it.",
+   "commands": [
+    "left move z +5.4",
+    "right move z +6.8"
+   ],
+   "failed": [
+    "left move z +5.4"
+   ],
+   "effect": "left move z +5.4: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); right move z +6.8: ok; left fingertips now at (-21.6, -3.1, 93.6), opening 1.0; right fingertips now at (30.0, -20.7, 98.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 82,
+   "label": "turn 82: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. All four are lying in the carton (shoe, hammer, electric toothbrush, car) and the table is clear, so the only thing left is to open both grippers and put both arms back in the pose they started in. open both hands and square the wrists to their start pose",
+   "images": [
+    "frame082_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-21.6, -3.1, 93.6) cm, approach = (0.01, 0.06, -1.00), finger axis = (0.01, -1.00, -0.06), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 98.9) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3577",
+   "plan": "Every placement is done. Open both grippers and turn both wrists back to the forward pose the arms started in, so that the reset only has to move them, not turn them.",
+   "commands": [
+    "left gripper 1.00",
+    "right gripper 1.00",
+    "left point forward",
+    "right point forward"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); right gripper 1.00: ok (gripper opened); left point forward: ok; right point forward: ok; left fingertips now at (-21.7, -3.0, 93.6), opening 1.0; right fingertips now at (30.0, -20.7, 98.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 83,
+   "label": "turn 83: Pack all four objects - the toy car, the electric toothbrush, the hammer and the shoe - into the open carton; every one that ends up in it counts. An object only counts when it lies flat inside, its long axis along the carton's long side and its front end - the car's nose, the toothbrush's bristle head, the hammer's head, the shoe's toe - pointing at the LEFT edge of the table. The carton is light and its walls are low: never rest an object against a wall and never shove the carton, it has to stay put and stay square with the table edge. Anything too far across the table for the arm on the carton's side is first set down bare in the middle of the table for that arm. All four will not fit flat on the floor, so each later one lies on top of what is already inside, clearly below the rim. All four are lying in the carton (shoe, hammer, electric toothbrush, car) and the table is clear, so the only thing left is to open both grippers and put both arms back in the pose they started in. return both arms to their initial pose",
+   "images": [
+    "frame083_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-21.7, -3.0, 93.6) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 98.9) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 3657",
+   "plan": "The wrists are already at the starting orientation; send both arms home (the task requires the arms reset), then declare done.",
+   "commands": [
+    "left home",
+    "right home"
+   ],
+   "failed": [
+    "left home"
+   ],
+   "effect": "left home: FAILED (the target was not reached: the fingertips moved (-2.1, -2.8, +2.4) cm, i.e. only part of the way; remaining error 16.5 cm / 0 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-23.8, -5.9, 96.0), opening 1.0; right fingertips now at (30.0, -20.7, 98.9), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

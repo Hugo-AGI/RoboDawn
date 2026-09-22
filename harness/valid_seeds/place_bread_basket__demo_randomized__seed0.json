@@ -1,0 +1,342 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100000,
+  100001,
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100008,
+  100009,
+  100010,
+  100011,
+  100012,
+  100013,
+  100014,
+  100015,
+  100016,
+  100017,
+  100018,
+  100019,
+  100020,
+  100021,
+  100022,
+  100023,
+  100024,
+  100025,
+  100026,
+  100027,
+  100028,
+  100029,
+  100030,
+  100031,
+  100032,
+  100033,
+  100035,
+  100036,
+  100037,
+  100038,
+  100039,
+  100040,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100048,
+  100049,
+  100051,
+  100052
+ ],
+ "infos": [
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "left",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base0",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base1",
+   "{a}": "dual",
+   "{C}": "075_bread/base5"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base6",
+   "{a}": "left",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base3",
+   "{a}": "dual",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base5",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "dual",
+   "{C}": "075_bread/base6"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base3",
+   "{a}": "left",
+   "{C}": "075_bread/base6"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "left",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base1",
+   "{a}": "right",
+   "{C}": "075_bread/base5"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "dual",
+   "{C}": "075_bread/base6"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "left",
+   "{C}": "075_bread/base3"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "dual",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base5",
+   "{a}": "right",
+   "{C}": "075_bread/base6"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "dual",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base6",
+   "{a}": "dual",
+   "{C}": "075_bread/base3"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base5",
+   "{a}": "left",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base0",
+   "{a}": "left",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "right",
+   "{C}": "075_bread/base5"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base3",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "left"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base1",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base5",
+   "{a}": "dual",
+   "{C}": "075_bread/base6"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base3",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "right",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base6",
+   "{a}": "dual",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base2",
+   "{B}": "075_bread/base1",
+   "{a}": "left",
+   "{C}": "075_bread/base5"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base0",
+   "{a}": "dual",
+   "{C}": "075_bread/base3"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base5",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base1",
+   "{B}": "075_bread/base1",
+   "{a}": "right",
+   "{C}": "075_bread/base3"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base1",
+   "{a}": "dual",
+   "{C}": "075_bread/base1"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base6",
+   "{a}": "dual",
+   "{C}": "075_bread/base0"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base3",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base4",
+   "{B}": "075_bread/base5",
+   "{a}": "dual",
+   "{C}": "075_bread/base5"
+  },
+  {
+   "{A}": "076_breadbasket/base0",
+   "{B}": "075_bread/base1",
+   "{a}": "right"
+  },
+  {
+   "{A}": "076_breadbasket/base3",
+   "{B}": "075_bread/base0",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100053
+}

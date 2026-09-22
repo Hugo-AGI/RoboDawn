@@ -1,0 +1,137 @@
+{
+ "task": "place_a2b_left",
+ "instruction": "Set the square bread with light spots down to the left of the rubikscube for twisting and turning",
+ "kind": "task",
+ "source": {
+  "task": "place_a2b_left",
+  "task_config": "demo_clean",
+  "seed": 100023,
+  "instruction": "Set the square bread with light spots down to the left of the rubikscube for twisting and turning",
+  "turns": 6,
+  "commands": 16,
+  "sides": "R",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the object, which was at x = +8 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "object",
+   "x": 7.8
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move the right gripper above the bread to (8, -8, 94) and point straight down.",
+   "commands": [
+    "right move x -11.5",
+    "right move x -11.5",
+    "right move y +11.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-23, +11, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -8, 94) opening 0.94; table z = 74",
+   "plan": "Rotate yaw by +40 degrees to align with the bread, and lower to z = 87.5 cm.",
+   "commands": [
+    "right rotate yaw +40.0",
+    "right move z -6.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -7) cm, now 0 cm (horizontal) / +13 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -8, 87) opening 0.95; table z = 74",
+   "plan": "Lower gripper further to grasp height z = 78 cm and close gripper to grab the bread.",
+   "commands": [
+    "right move z -9.5",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -9) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object; closed the gripper (opening 0.70: holding the object)",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -8, 78) opening 0.70; table z = 74",
+   "plan": "Lift the bread up to z = 87.5 cm.",
+   "commands": [
+    "right move z +9.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, +9) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (8, -8, 87) opening 0.71; table z = 74",
+   "plan": "Move the bread to (10, -20, 87), which is directly to the left of the Rubik's cube.",
+   "commands": [
+    "right move z +0.5",
+    "right move y -11.5",
+    "right move x +2.0",
+    "right point down"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+2, -11, +0) cm, now 0 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (10, -20, 87) opening 0.69; table z = 74",
+   "plan": "Lower the bread to the table (z = 80 cm) and open the gripper to place it.",
+   "commands": [
+    "right move x +0.5",
+    "right move z -7.5",
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

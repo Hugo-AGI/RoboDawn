@@ -1,0 +1,613 @@
+{
+ "task": "store_tools_in_toolbox",
+ "instruction": "Place each tool into its matching position in the toolbox.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 2866,
+  "decisions": 64,
+  "frames": 40,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: none yet. Still on the table: the claw hammer, the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | aim the left hand at the claw hammer with the black rubber grip",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "The claw hammer with the black rubber grip belongs in the long hammer-shaped channel on the left of the tray - the empty recess moulded to its own outline. Every tool ends up lying flat down inside its own recess, nothing draped over a divider and nothing standing above the rim of the tray. Turn the left fingers to point down at the table and swing the jaw opening so it lies ACROSS the claw hammer",
+   "commands": [
+    "left point down",
+    "left rotate yaw +15.0",
+    "left move y +17.8"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left rotate yaw +15.0: ok; left move y +17.8: ok; left fingertips now at (-30.0, -2.9, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: none yet. Still on the table: the claw hammer, the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | lower the open jaws around the claw hammer with the black rubber grip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -2.9, 92.2) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 98",
+   "plan": "Come down until the jaws straddle the tool - you should see them level with its sides in the wrist view, not resting on top of it. If the hand stops short, the fingers are on the tool rather than around it and it needs lining up again.",
+   "commands": [
+    "left move z -9.7"
+   ],
+   "failed": [],
+   "effect": "left move z -9.7: ok; left fingertips now at (-30.0, -2.9, 82.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: none yet. Still on the table: the claw hammer, the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the claw hammer with the black rubber grip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -2.9, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 146",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); left fingertips now at (-30.0, -2.9, 78.4), opening 0.32",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: none yet. In the left hand right now: the claw hammer. Still on the table: the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | let the claw hammer with the black rubber grip down into the long hammer-shaped channel on the left of the tray",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.7, -3.4, 85.6) cm, approach = (-0.00, -0.01, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.28 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 330\nLEFT arm closed on an object with the fingertips at z = 78.4 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "Open the jaws here, a finger's width above the floor of the compartment, so the tool drops the last short distance and settles flat. It is right when the tool lies down inside the long hammer-shaped channel on the left of the tray with nothing draped over the divider and nothing standing above the rim of the tray; if it ends up propped at an angle it is resting on a moulding.",
+   "commands": [
+    "left move z -2.2",
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left move z -2.2: ok; left gripper 1.00: ok (gripper opened); left fingertips now at (-7.8, -3.4, 83.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. Still on the table: the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | lift the empty hand clear",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.8, -3.4, 83.4) cm, approach = (-0.00, -0.01, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 370",
+   "plan": "Raise the empty gripper until it is well above the rim of the tray, so it does not drag across what is already lying in there on the way to the next tool.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [
+    "left move z +12.0"
+   ],
+   "effect": "left move z +12.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-7.8, -3.4, 83.4), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. Still on the table: the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | take the left arm back to its own side",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-7.8, -3.4, 83.4) cm, approach = (-0.00, -0.01, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 370",
+   "plan": "With the hand out over the tray the wrist cannot be turned to point straight down. Send the left arm back to its rest pose first - you will see it swing back beside the robot - and start the next tool's approach from there.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. Still on the table: the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | aim the left hand at the adjustable wrench with the chrome head",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 575",
+   "plan": "The adjustable wrench with the chrome head belongs in the narrow channel just right of the hammer's - the empty recess moulded to its own outline. Every tool ends up lying flat down inside its own recess, nothing draped over a divider and nothing standing above the rim of the tray. Turn the left fingers to point down at the table and swing the jaw opening so it lies ACROSS the adjustable wrench wi",
+   "commands": [
+    "left point down15",
+    "left move x -9.3",
+    "left move y +10.1"
+   ],
+   "failed": [],
+   "effect": "left point down15: ok; left move x -9.3: ok; left move y +10.1: ok; left fingertips now at (-39.3, -10.6, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. Still on the table: the adjustable wrench, the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the adjustable wrench with the chrome head",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-39.3, -10.6, 77.9) cm, approach = (-0.00, 0.26, -0.96), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 712",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); left fingertips now at (-39.3, -10.6, 77.9), opening 0.316",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. In the left hand right now: the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | squeeze the jaws again so the tool hangs level",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-39.3, -10.6, 85.3) cm, approach = (-0.00, 0.26, -0.96), finger axis = (-1.00, -0.00, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 750\nLEFT arm closed on an object with the fingertips at z = 77.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 77.9 + (h - 76.5) before opening.",
+   "plan": "A tool that has slid in the jaws hangs nose-down, and lowering it like that drives the low end into a divider and flips it over. Close the gripper once more on the pose it has settled into: it is right again when the tool hangs level under the hand.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.31: something is between them (probably grasped)); left fingertips now at (-39.3, -10.6, 85.3), opening 0.314",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. In the left hand right now: the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | carry the adjustable wrench with the chrome head over to the narrow channel just right of the hammer's",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-39.3, -10.6, 85.3) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 756\nLEFT arm closed on an object with the fingertips at z = 85.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.3 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the adjustable wrench with the chrome head floats squarely over the narrow channel just right of the hammer's with no part of it hanging over a neighbouring divider; while it is still short of th",
+   "commands": [
+    "left gripper 0.00",
+    "left move x +5.0",
+    "left move x +5.0",
+    "left move x +5.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.31: something is between them (probably grasped)); left move x +5.0: ok; left move x +5.0: ok; left move x +5.0: ok; left fingertips now at (-24.4, -10.6, 85.2), opening 0.315",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. In the left hand right now: the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | carry the adjustable wrench with the chrome head over to the narrow channel just right of the hammer's",
+   "images": [
+    "frame018_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, -10.6, 85.2) cm, approach = (-0.00, 0.26, -0.97), finger axis = (-1.00, -0.00, -0.00), opening = 0.32 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 822\nLEFT arm closed on an object with the fingertips at z = 85.3 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.3 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the adjustable wrench with the chrome head floats squarely over the narrow channel just right of the hammer's with no part of it hanging over a neighbouring divider; while it is still short of th",
+   "commands": [
+    "left gripper 0.00",
+    "left move x +5.0",
+    "left move x +5.0",
+    "left move x +5.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); left move x +5.0: ok; left move x +5.0: ok; left move x +5.0: ok; left fingertips now at (-9.4, -10.7, 85.1), opening 0.316",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. In the left hand right now: the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | carry the adjustable wrench with the chrome head over to the narrow channel just right of the hammer's",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.0, -5.7, 85.0) cm, approach = (0.06, 0.25, -0.97), finger axis = (-0.97, 0.25, 0.00), opening = 0.32 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 973\nLEFT arm closed on an object with the fingertips at z = 85.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.2 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the adjustable wrench with the chrome head floats squarely over the narrow channel just right of the hammer's with no part of it hanging over a neighbouring divider; while it is still short of th",
+   "commands": [
+    "left gripper 0.00",
+    "left move x +0.4",
+    "left move y +1.9"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.32: something is between them (probably grasped)); left move x +0.4: ok; left move y +1.9: ok; left fingertips now at (-1.6, -3.8, 84.9), opening 0.314",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer. In the left hand right now: the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | let the adjustable wrench with the chrome head down into the narrow channel just right of the hammer's",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-1.6, -3.8, 84.9) cm, approach = (0.06, 0.24, -0.97), finger axis = (-0.97, 0.25, 0.00), opening = 0.31 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1015\nLEFT arm closed on an object with the fingertips at z = 84.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.9 + (h - 76.5) before opening.",
+   "plan": "Open the jaws here, a finger's width above the floor of the compartment, so the tool drops the last short distance and settles flat. It is right when the tool lies down inside the narrow channel just right of the hammer's with nothing draped over the divider and nothing standing above the rim of the tray; if it ends up propped at an angle it is resting on a moulding.",
+   "commands": [
+    "left gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left fingertips now at (-1.6, -3.8, 84.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | lift the empty hand clear",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-1.6, -3.8, 84.9) cm, approach = (0.06, 0.24, -0.97), finger axis = (-0.97, 0.25, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1032",
+   "plan": "Raise the empty gripper until it is well above the rim of the tray, so it does not drag across what is already lying in there on the way to the next tool.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [
+    "left move z +12.0"
+   ],
+   "effect": "left move z +12.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-1.6, -3.8, 84.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | take the left arm back to its own side",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-1.6, -3.8, 84.9) cm, approach = (0.06, 0.24, -0.97), finger axis = (-0.97, 0.25, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1032",
+   "plan": "With the hand out over the tray the wrist cannot be turned to point straight down. Send the left arm back to its rest pose first - you will see it swing back beside the robot - and start the next tool's approach from there.",
+   "commands": [
+    "left home"
+   ],
+   "failed": [],
+   "effect": "left home: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | aim the right hand at the yellow tape measure",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1222",
+   "plan": "The yellow tape measure belongs in the square compartment at the far right corner of the tray - the empty recess moulded to its own outline. Every tool ends up lying flat down inside its own recess, nothing draped over a divider and nothing standing above the rim of the tray. Turn the right fingers to point down at the table and swing the jaw opening so it lies ACROSS the yellow tape measure, not ",
+   "commands": [
+    "right point down30",
+    "right rotate yaw -15.0",
+    "right move x +4.2",
+    "right move y +20.0"
+   ],
+   "failed": [],
+   "effect": "right point down30: ok; right rotate yaw -15.0: ok; right move x +4.2: ok; right move y +20.0: ok; right fingertips now at (34.2, -0.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the yellow tape measure",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.2, 1.8, 78.2) cm, approach = (0.13, 0.48, -0.87), finger axis = (-0.97, 0.26, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1403",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.69: something is between them (probably grasped)); right fingertips now at (34.2, 1.8, 78.2), opening 0.692",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. In the right hand right now: the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | squeeze the jaws again so the tool hangs level",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.2, 1.8, 85.6) cm, approach = (0.13, 0.48, -0.87), finger axis = (-0.97, 0.26, -0.00), opening = 0.68 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1441\nRIGHT arm closed on an object with the fingertips at z = 78.2 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.2 + (h - 76.5) before opening.",
+   "plan": "A tool that has slid in the jaws hangs nose-down, and lowering it like that drives the low end into a divider and flips it over. Close the gripper once more on the pose it has settled into: it is right again when the tool hangs level under the hand.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.68: something is between them (probably grasped)); right fingertips now at (34.2, 1.7, 85.5), opening 0.681",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. In the right hand right now: the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | carry the yellow tape measure over to the square compartment at the far right corner of the tray",
+   "images": [
+    "frame031_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (34.2, 1.7, 85.5) cm, approach = (0.13, 0.48, -0.87), finger axis = (-0.97, 0.26, -0.00), opening = 0.68 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1447\nRIGHT arm closed on an object with the fingertips at z = 85.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.5 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the yellow tape measure floats squarely over the square compartment at the far right corner of the tray with no part of it hanging over a neighbouring divider; while it is still short of the comp",
+   "commands": [
+    "right gripper 0.00",
+    "right move x -5.0",
+    "right move x -5.0",
+    "right move x -5.0"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.68: something is between them (probably grasped)); right move x -5.0: ok; right move x -5.0: ok; right move x -5.0: ok; right fingertips now at (19.1, 1.7, 85.3), opening 0.673",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. In the right hand right now: the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | carry the yellow tape measure over to the square compartment at the far right corner of the tray",
+   "images": [
+    "frame033_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.9, 1.6, 85.1) cm, approach = (0.00, 0.49, -0.87), finger axis = (-1.00, -0.00, -0.01), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1596\nRIGHT arm closed on an object with the fingertips at z = 85.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.5 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the yellow tape measure floats squarely over the square compartment at the far right corner of the tray with no part of it hanging over a neighbouring divider; while it is still short of the comp",
+   "commands": [
+    "right gripper 0.00",
+    "right move x -0.5",
+    "right move y +4.5"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right move x -0.5: ok; right move y +4.5: ok; right fingertips now at (6.4, 6.0, 84.8), opening 0.673",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. In the right hand right now: the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | squeeze the jaws again so the tool hangs level",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.4, 6.0, 84.8) cm, approach = (0.00, 0.48, -0.88), finger axis = (-1.00, -0.00, -0.01), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1643\nRIGHT arm closed on an object with the fingertips at z = 85.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 85.0 + (h - 76.5) before opening.",
+   "plan": "A tool that has slid in the jaws hangs nose-down, and lowering it like that drives the low end into a divider and flips it over. Close the gripper once more on the pose it has settled into: it is right again when the tool hangs level under the hand.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right fingertips now at (6.4, 6.0, 84.8), opening 0.673",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. In the right hand right now: the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | lower the yellow tape measure into the square compartment at the far right corner of the tray",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.4, 6.0, 84.8) cm, approach = (0.00, 0.48, -0.88), finger axis = (-1.00, -0.00, -0.01), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1649\nRIGHT arm closed on an object with the fingertips at z = 84.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.8 + (h - 76.5) before opening.",
+   "plan": "Lower until the tool is down in the compartment. It is seated when it lies flat on the floor of the square compartment at the far right corner of the tray with its top below the rim of the tray; if the hand stops early the tool is resting on a moulding and will sit proud.",
+   "commands": [
+    "right move z -7.3"
+   ],
+   "failed": [
+    "right move z -7.3"
+   ],
+   "effect": "right move z -7.3: FAILED (the target was not reached: the fingertips moved (-0.6, +0.3, -4.4) cm, i.e. only part of the way; remaining error 3.0 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (5.8, 6.3, 80.3), opening 0.603",
+   "source_index": null
+  },
+  {
+   "turn": 36,
+   "label": "turn 36: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | lower the open jaws around the yellow tape measure",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.8, 6.3, 80.3) cm, approach = (-0.02, 0.52, -0.85), finger axis = (-1.00, -0.01, 0.02), opening = 0.60 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1674\nRIGHT arm closed on an object with the fingertips at z = 84.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.8 + (h - 76.5) before opening.",
+   "plan": "Come down until the jaws straddle the tool - you should see them level with its sides in the wrist view, not resting on top of it. If the hand stops short, the fingers are on the tool rather than around it and it needs lining up again.",
+   "commands": [
+    "right move z -2.8"
+   ],
+   "failed": [
+    "right move z -2.8"
+   ],
+   "effect": "right move z -2.8: FAILED (the target was not reached: the fingertips moved (-0.4, +0.5, +0.1) cm, i.e. only part of the way; remaining error 3.0 cm / 3 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (5.5, 6.9, 80.4), opening 0.574",
+   "source_index": null
+  },
+  {
+   "turn": 37,
+   "label": "turn 37: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | open the jaws and try the approach again",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.5, 6.9, 80.4) cm, approach = (-0.04, 0.57, -0.82), finger axis = (-1.00, -0.01, 0.04), opening = 0.57 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1692\nRIGHT arm closed on an object with the fingertips at z = 84.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.8 + (h - 76.5) before opening.",
+   "plan": "The grip did not take. Open the gripper, lift clear of the table and line the fingertip cross up on the tool again before closing.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (5.7, 6.9, 80.5), opening 0.625",
+   "source_index": null
+  },
+  {
+   "turn": 38,
+   "label": "turn 38: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench. Still on the table: the yellow tape measure, the pliers. Finish with both grippers open and both arms back at their rest pose. | lower the open jaws around the yellow tape measure",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.7, 6.9, 80.5) cm, approach = (-0.04, 0.57, -0.82), finger axis = (-1.00, -0.01, 0.04), opening = 0.62 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1707",
+   "plan": "Come down until the jaws straddle the tool - you should see them level with its sides in the wrist view, not resting on top of it. If the hand stops short, the fingers are on the tool rather than around it and it needs lining up again.",
+   "commands": [
+    "right move z -3.0"
+   ],
+   "failed": [
+    "right move z -3.0"
+   ],
+   "effect": "right move z -3.0: FAILED (the target was not reached: the fingertips moved (-0.4, +0.6, +0.2) cm, i.e. only part of the way; remaining error 3.2 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (5.3, 7.5, 80.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 40,
+   "label": "turn 40: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | take the right arm back to its own side",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (5.3, 7.5, 92.6) cm, approach = (-0.06, 0.61, -0.79), finger axis = (-1.00, -0.01, 0.06), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1753",
+   "plan": "With the hand out over the tray the wrist cannot be turned to point straight down. Send the right arm back to its rest pose first - you will see it swing back beside the robot - and start the next tool's approach from there.",
+   "commands": [
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 41,
+   "label": "turn 41: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | stand the right jaws up to take the pliers with the yellow handles by its handles",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1946",
+   "plan": "The pliers with the yellow handles belongs in the compartment on the right of the tray, nearest the robot, and ends up lying flat down inside it with nothing over a divider and nothing above the rim. Stand the right jaws up on edge, so the two of them face each other like flat plates. Bring them down so one plate is outside each handle, just below the point where the handles cross. You are lined u",
+   "commands": [
+    "right point down75",
+    "right rotate yaw +30.0",
+    "right move x -6.8",
+    "right move y +9.9"
+   ],
+   "failed": [],
+   "effect": "right point down75: ok; right rotate yaw +30.0: ok; right move x -6.8: ok; right move y +9.9: ok; right fingertips now at (23.2, -10.8, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 44,
+   "label": "turn 44: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the pliers with the yellow handles",
+   "images": [
+    "frame044_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.2, -10.8, 78.4) cm, approach = (-0.48, 0.84, -0.26), finger axis = (-0.87, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2123",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.65: something is between them (probably grasped)); right fingertips now at (23.2, -10.8, 78.4), opening 0.647",
+   "source_index": null
+  },
+  {
+   "turn": 46,
+   "label": "turn 46: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | open the jaws and try the approach again",
+   "images": [
+    "frame046_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.2, -10.8, 85.9) cm, approach = (-0.49, 0.84, -0.26), finger axis = (-0.86, -0.50, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2166\nRIGHT arm closed on an object with the fingertips at z = 78.4 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The grip did not take. Open the gripper, lift clear of the table and line the fingertip cross up on the tool again before closing.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (23.2, -10.8, 85.9), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 47,
+   "label": "turn 47: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | stand the right jaws up to take the pliers with the yellow handles by its handles",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.2, -10.8, 85.9) cm, approach = (-0.49, 0.84, -0.26), finger axis = (-0.86, -0.50, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2184",
+   "plan": "The pliers with the yellow handles belongs in the compartment on the right of the tray, nearest the robot, and ends up lying flat down inside it with nothing over a divider and nothing above the rim. Stand the right jaws up on edge, so the two of them face each other like flat plates. Bring them down so one plate is outside each handle, just below the point where the handles cross. You are lined u",
+   "commands": [
+    "right point down75",
+    "right rotate yaw +15.0",
+    "right move z +6.1",
+    "right move x +1.4"
+   ],
+   "failed": [],
+   "effect": "right point down75: ok; right rotate yaw +15.0: ok; right move z +6.1: ok; right move x +1.4: ok; right fingertips now at (24.5, -10.8, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 50,
+   "label": "turn 50: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the pliers with the yellow handles",
+   "images": [
+    "frame050_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.5, -10.6, 78.2) cm, approach = (-0.25, 0.94, -0.25), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2352",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.65: something is between them (probably grasped)); right fingertips now at (24.5, -10.6, 78.4), opening 0.647",
+   "source_index": null
+  },
+  {
+   "turn": 52,
+   "label": "turn 52: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | open the jaws and try the approach again",
+   "images": [
+    "frame052_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.5, -10.6, 85.9) cm, approach = (-0.25, 0.94, -0.24), finger axis = (-0.97, -0.26, -0.00), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2397\nRIGHT arm closed on an object with the fingertips at z = 78.4 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 78.4 + (h - 76.5) before opening.",
+   "plan": "The grip did not take. Open the gripper, lift clear of the table and line the fingertip cross up on the tool again before closing.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z +6.1"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z +6.1: ok; right fingertips now at (24.5, -10.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 53,
+   "label": "turn 53: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | stand the right jaws up to take the pliers with the yellow handles by its handles",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (24.5, -10.6, 92.0) cm, approach = (-0.25, 0.94, -0.24), finger axis = (-0.97, -0.26, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2443",
+   "plan": "The pliers with the yellow handles belongs in the compartment on the right of the tray, nearest the robot, and ends up lying flat down inside it with nothing over a divider and nothing above the rim. Stand the right jaws up on edge, so the two of them face each other like flat plates. Bring them down so one plate is outside each handle, just below the point where the handles cross. You are lined u",
+   "commands": [
+    "right point down75",
+    "right rotate yaw -15.0",
+    "right move x -0.5"
+   ],
+   "failed": [],
+   "effect": "right point down75: ok; right rotate yaw -15.0: ok; right move x -0.5: ok; right fingertips now at (24.0, -10.6, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 56,
+   "label": "turn 56: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. Still on the table: the pliers. Finish with both grippers open and both arms back at their rest pose. | close the jaws on the pliers with the yellow handles",
+   "images": [
+    "frame056_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.9, -10.4, 78.1) cm, approach = (0.25, 0.94, -0.25), finger axis = (-0.97, 0.26, 0.01), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2570",
+   "plan": "Close the gripper. It has worked when the jaws stop against the tool and the report says something is between them; if they close all the way to each other, they met only bare table and the tool has to be lined up again.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right fingertips now at (23.9, -10.4, 78.1), opening 0.674",
+   "source_index": null
+  },
+  {
+   "turn": 58,
+   "label": "turn 58: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. In the right hand right now: the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | squeeze the jaws again so the tool hangs level",
+   "images": [
+    "frame058_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (23.9, -10.4, 84.1) cm, approach = (0.25, 0.94, -0.25), finger axis = (-0.97, 0.26, 0.00), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2611\nRIGHT arm closed on an object with the fingertips at z = 78.1 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.1 + (h - 76.5) before opening.",
+   "plan": "A tool that has slid in the jaws hangs nose-down, and lowering it like that drives the low end into a divider and flips it over. Close the gripper once more on the pose it has settled into: it is right again when the tool hangs level under the hand.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right fingertips now at (23.9, -10.4, 84.0), opening 0.673",
+   "source_index": null
+  },
+  {
+   "turn": 60,
+   "label": "turn 60: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. In the right hand right now: the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | carry the pliers with the yellow handles over to the compartment on the right of the tray, nearest the robot",
+   "images": [
+    "frame060_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (8.9, -10.5, 83.9) cm, approach = (-0.00, 0.97, -0.25), finger axis = (-1.00, -0.00, 0.00), opening = 0.68 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2705\nRIGHT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Squeeze the jaws once more first, so the tool is held on the pose it has settled into and stops sliding. Move across in short hops, high enough that the tool clears the rim of the tray. You are there when the pliers with the yellow handles floats squarely over the compartment on the right of the tray, nearest the robot with no part of it hanging over a neighbouring divider; while it is still short",
+   "commands": [
+    "right gripper 0.00",
+    "right move x -1.8",
+    "right move y +4.5"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right move x -1.8: ok; right move y +4.5: ok; right fingertips now at (7.1, -6.1, 83.7), opening 0.671",
+   "source_index": null
+  },
+  {
+   "turn": 61,
+   "label": "turn 61: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. In the right hand right now: the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | squeeze the jaws again so the tool hangs level",
+   "images": [
+    "frame061_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.1, -6.1, 83.7) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, -0.00), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2749\nRIGHT arm closed on an object with the fingertips at z = 83.8 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.8 + (h - 76.5) before opening.",
+   "plan": "A tool that has slid in the jaws hangs nose-down, and lowering it like that drives the low end into a divider and flips it over. Close the gripper once more on the pose it has settled into: it is right again when the tool hangs level under the hand.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.67: something is between them (probably grasped)); right fingertips now at (7.1, -6.1, 83.7), opening 0.672",
+   "source_index": null
+  },
+  {
+   "turn": 62,
+   "label": "turn 62: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure. In the right hand right now: the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | lower the pliers with the yellow handles into the compartment on the right of the tray, nearest the robot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (7.1, -6.1, 83.7) cm, approach = (-0.00, 0.97, -0.26), finger axis = (-1.00, -0.00, -0.00), opening = 0.67 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2755\nRIGHT arm closed on an object with the fingertips at z = 83.7 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 83.7 + (h - 76.5) before opening.",
+   "plan": "Lower until the tool is down in the compartment. It is seated when it lies flat on the floor of the compartment on the right of the tray, nearest the robot with its top below the rim of the tray; if the hand stops early the tool is resting on a moulding and will sit proud.",
+   "commands": [
+    "right move z -6.2"
+   ],
+   "failed": [
+    "right move z -6.2"
+   ],
+   "effect": "right move z -6.2: FAILED (the target was not reached: the fingertips moved (-0.6, +0.8, +0.6) cm, i.e. only part of the way; remaining error 6.8 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first. The descent stopped early: the fingers are resting ON something - most likely the top of the object (the fingers are not straddling it) or the table. Open, lift 3 cm, shift by the offset the wrist-camera cross shows, and descend again.); right fingertips now at (6.5, -5.3, 84.2), opening 0.185",
+   "source_index": null
+  },
+  {
+   "turn": 63,
+   "label": "turn 63: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure, the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | let go of the pliers with the yellow handles",
+   "images": [
+    "frame063_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.5, -5.3, 84.2) cm, approach = (-0.02, 0.99, -0.14), finger axis = (-0.99, -0.00, 0.11), opening = 0.18 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2780\nRIGHT arm closed on an object with the fingertips at z = 83.7 (but the fingers are now closed on nothing, so the object was LOST). To set it down on a surface at height h, lower the fingertips to z = 83.7 + (h - 76.5) before opening.",
+   "plan": "Open the jaws and leave the tool where it is. It is right when the pliers with the yellow handles stays put, lying flat in the compartment on the right of the tray, nearest the robot with nothing over the divider and nothing above the rim.",
+   "commands": [
+    "right gripper 1.00",
+    "right move z +7.8"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right move z +7.8: ok; right fingertips now at (6.5, -5.3, 92.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 64,
+   "label": "turn 64: Four tools go into the open grey toolbox tray in the middle of the table, each lying flat down in its own moulded compartment with nothing draped over a divider and nothing standing proud of the rim. Already lying in the tray: the claw hammer, the adjustable wrench, the yellow tape measure, the pliers. Still on the table: none. Finish with both grippers open and both arms back at their rest pose. | take the right arm back to its own side",
+   "images": [
+    "frame064_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (6.5, -5.3, 92.0) cm, approach = (-0.02, 0.99, -0.14), finger axis = (-0.99, -0.00, 0.11), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 2823",
+   "plan": "With the hand out over the tray the wrist cannot be turned to point straight down. Send the right arm back to its rest pose first - you will see it swing back beside the robot - and start the next tool's approach from there.",
+   "commands": [
+    "right home"
+   ],
+   "failed": [
+    "right home"
+   ],
+   "effect": "right home: FAILED (the target was not reached: the fingertips moved (+8.5, -1.9, +4.7) cm, i.e. only part of the way; remaining error 20.8 cm / 9 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); right fingertips now at (15.0, -7.2, 96.8), opening 1.0",
+   "source_index": null
+  }
+ ]
+}

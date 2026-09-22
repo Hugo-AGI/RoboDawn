@@ -1,0 +1,303 @@
+{
+ "task": "put_object_cabinet",
+ "instruction": "Pull out the drawer of the slanted wooden cabinet and set the tea-box with smooth glossy finish into it.",
+ "kind": "task",
+ "source": {
+  "task": "put_object_cabinet",
+  "task_config": "demo_clean",
+  "seed": 100093,
+  "instruction": "Pull out the drawer of the slanted wooden cabinet and set the tea-box with smooth glossy finish into it.",
+  "turns": 15,
+  "commands": 53,
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the RIGHT arm grasped the object, which was at x = +31 (right half of the table); the LEFT arm grasped the cabinet, which was at x = +5 (right half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "right": {
+   "object": "object",
+   "x": 30.99
+  },
+  "left": {
+   "object": "cabinet",
+   "x": 4.86
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "move right gripper over tea-box and orient it pointing downward",
+   "commands": [
+    "right move y +5.0",
+    "right move x +0.5",
+    "right point down",
+    "right rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+1, +5, -0) cm, now 0 cm (horizontal) / +20 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -14, 94) opening 0.95; table z = 74",
+   "plan": "lower right gripper to z=78.5 cm and grasp tea-box",
+   "commands": [
+    "right move z -15.5",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -15) cm, now 0 cm (horizontal) / +5 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.94; RIGHT fingertips (31, -14, 79) opening 0.77; table z = 74",
+   "plan": "move left gripper toward front of drawer handle",
+   "commands": [
+    "left move x +17.8",
+    "left move x +17.8",
+    "left move y +17.5",
+    "left rotate yaw -11.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+36, +17, +0) cm, now 18 cm (horizontal) / -2 cm (vertical) from the cabinet",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (6, -2, 94) opening 0.94; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "pitch left gripper down to align fingers horizontally with handle",
+   "commands": [
+    "left rotate pitch -30.0",
+    "left rotate pitch -30.0",
+    "left rotate pitch -30.0",
+    "left rotate roll -9.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, +1, +0) cm, now 17 cm (horizontal) / -1 cm (vertical) from the cabinet",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (5, -2, 94) opening 0.94; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "lower left gripper to z=87.5 cm and advance slightly in y",
+   "commands": [
+    "left move x -0.5",
+    "left move z -6.5",
+    "left move x +0.2",
+    "left move y +1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +1, -6) cm, now 16 cm (horizontal) / -8 cm (vertical) from the cabinet",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (5, -0, 88) opening 0.95; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "move left gripper forward onto handle and grasp",
+   "commands": [
+    "left move x +0.2",
+    "left move y +1.5",
+    "left move x +0.2",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, +1, -0) cm, now 15 cm (horizontal) / -8 cm (vertical) from the cabinet; closed the gripper (opening 0.24: holding the cabinet)",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (6, 1, 88) opening 0.24; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "pull drawer handle backward along -y direction",
+   "commands": [
+    "left move z +0.5",
+    "left move y -4.0",
+    "left move x +1.0",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -4, -0) cm, now 18 cm (horizontal) / -8 cm (vertical) from the cabinet",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -3, 87) opening 0.17; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "continue pulling drawer handle backward along -y",
+   "commands": [
+    "left move z +0.5",
+    "left move y -4.0",
+    "left move x +0.5",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -4, -0) cm, now 22 cm (horizontal) / -9 cm (vertical) from the cabinet",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -6, 87) opening 0.15; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "continue pulling drawer backward along -y",
+   "commands": [
+    "left move z +0.5",
+    "left move y -4.5",
+    "left move x +0.5",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -4, -1) cm, now 24 cm (horizontal) / +12 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -11, 87) opening 0.01; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "pull drawer handle backward to fully extend it",
+   "commands": [
+    "left move z +1.5",
+    "left move y -4.0",
+    "left move z -1.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -4, -0) cm, now 24 cm (horizontal) / +12 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -14, 86) opening 0.00; RIGHT fingertips (31, -14, 79) opening 0.79; table z = 74",
+   "plan": "lift right arm with tea-box up to z=94 cm",
+   "commands": [
+    "right move z +15.0",
+    "right point down",
+    "right rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, +0, +15) cm, now 0 cm (horizontal) / +5 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -14, 87) opening 0.04; RIGHT fingertips (31, -14, 94) opening 0.79; table z = 74",
+   "plan": "move right gripper over open drawer interior",
+   "commands": [
+    "right move x -13.0",
+    "right move x -13.0",
+    "right point down",
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-26, +10, +0) cm, now 1 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -14, 87) opening 0.06; RIGHT fingertips (5, -5, 94) opening 0.79; table z = 74",
+   "plan": "lower tea-box into drawer and adjust y forward",
+   "commands": [
+    "right move y +1.0",
+    "right move x +0.5",
+    "right move z -3.5",
+    "right move y +1.0"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (+0, +0, -3) cm, now 1 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -14, 87) opening 0.07; RIGHT fingertips (5, -5, 91) opening 0.79; table z = 74",
+   "plan": "advance slightly and lower into final placement position",
+   "commands": [
+    "right move x +0.5",
+    "right move y +1.5",
+    "right point down",
+    "right move z -0.5"
+   ],
+   "failed": [],
+   "effect": "RIGHT fingertips moved by (-0, -0, -0) cm, now 1 cm (horizontal) / +4 cm (vertical) from the object",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (7, -14, 87) opening 0.07; RIGHT fingertips (5, -5, 90) opening 0.79; table z = 74",
+   "plan": "release gripper to complete placement",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

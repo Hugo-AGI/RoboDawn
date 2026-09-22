@@ -1,0 +1,519 @@
+{
+ "task": "plug_in_charger",
+ "instruction": "Plug the charger into the power strip.",
+ "kind": "task",
+ "source": {
+  "success": true,
+  "steps_used": 1314,
+  "decisions": 35,
+  "frames": 35,
+  "images_scaled": true
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): orient the right gripper and travel above the object",
+   "images": [
+    "frame001_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 0",
+   "plan": "Point the right fingers down (down) with the finger axis across the narrow side of the charger, then move at travel height until the fingertip cross in the head image is over (27, -17).",
+   "commands": [
+    "right point down",
+    "right move x -3.1",
+    "right move y +3.8"
+   ],
+   "failed": [],
+   "effect": "right point down: ok; right move x -3.1: ok; right move y +3.8: ok; right fingertips now at (26.9, -16.9, 92.1), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 2,
+   "label": "turn 2: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (26.9, -16.9, 92.1) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 80",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "right move z -9.6"
+   ],
+   "failed": [],
+   "effect": "right move z -9.6: ok; right fingertips now at (26.9, -16.9, 82.6), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 3,
+   "label": "turn 3: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (26.9, -16.9, 82.6) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 106",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "right move z -4.1"
+   ],
+   "failed": [],
+   "effect": "right move z -4.1: ok; right fingertips now at (26.9, -16.9, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 4,
+   "label": "turn 4: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): close the gripper",
+   "images": [
+    "frame004_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (26.9, -16.9, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 126",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "right gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); right fingertips now at (26.9, -16.9, 78.5), opening 0.564",
+   "source_index": null
+  },
+  {
+   "turn": 5,
+   "label": "turn 5: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (26.9, -16.9, 78.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 139\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "right move z +12.0"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right fingertips now at (26.9, -16.9, 90.5), opening 0.563",
+   "source_index": null
+  },
+  {
+   "turn": 6,
+   "label": "turn 6: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. charger into the power strip (first set it down at the centre for the other arm): carry the object over the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (26.9, -16.9, 90.5) cm, approach = (-0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 167\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Carry at travel height until the HELD object sits over the target in the head view -- judge it by the object, not by the fingertips, which hang behind whatever they are holding.",
+   "commands": [
+    "right move x -20.0",
+    "right move x -6.9",
+    "right move y +2.9"
+   ],
+   "failed": [],
+   "effect": "right move x -20.0: ok; right move x -6.9: ok; right move y +2.9: ok; right fingertips now at (-0.0, -14.1, 90.4), opening 0.563",
+   "source_index": null
+  },
+  {
+   "turn": 7,
+   "label": "turn 7: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. charger into the power strip (first set it down at the centre for the other arm): lower the object onto the target",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.1, 90.4) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 244\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The held object is above its target; lower it until its underside just meets the surface it has to rest on -- in the wrist view the gap under it closes -- before opening the fingers.",
+   "commands": [
+    "right move z -11.4"
+   ],
+   "failed": [],
+   "effect": "right move z -11.4: ok; right fingertips now at (-0.0, -14.1, 79.0), opening 0.563",
+   "source_index": null
+  },
+  {
+   "turn": 8,
+   "label": "turn 8: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prong tips have started into the hole but the body has not come down yet. charger into the power strip (first set it down at the centre for the other arm): release the object",
+   "images": [
+    "frame008_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.1, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 272\nRIGHT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The object rests on the target; open the gripper.",
+   "commands": [
+    "right gripper 1.00"
+   ],
+   "failed": [],
+   "effect": "right gripper 1.00: ok (gripper opened); right fingertips now at (-0.0, -14.1, 79.0), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 9,
+   "label": "turn 9: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 2 of 7: the strip is on the other arm's side of the table, so set the charger down in the middle first, get out of the way, and let the other hand take it from there. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip (first set it down at the centre for the other arm): retreat and clear the way for the other arm",
+   "images": [
+    "frame009_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (-0.0, -14.1, 79.0) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 288",
+   "plan": "Released at the centre; lift the empty gripper and send this arm home so it does not block the other arm's approach.",
+   "commands": [
+    "right move z +12.0",
+    "right home"
+   ],
+   "failed": [],
+   "effect": "right move z +12.0: ok; right home: ok; right fingertips now at (30.0, -20.7, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 10,
+   "label": "turn 10: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 1 of 7: pick the charger up off the table - fingers closing across its narrow side and biting high up on its body, so that later, with it standing in the strip, they are still well clear of it. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip: orient the left gripper and travel above the object",
+   "images": [
+    "frame010_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 521",
+   "plan": "Point the left fingers down (down) with the finger axis across the narrow side of the charger, then move at travel height until the fingertip cross in the head image is over (0, -14).",
+   "commands": [
+    "left point down",
+    "left move x +20.0",
+    "left move x +10.0",
+    "left move y +6.6"
+   ],
+   "failed": [],
+   "effect": "left point down: ok; left move x +20.0: ok; left move x +10.0: ok; left move y +6.6: ok; left fingertips now at (0.0, -14.1, 92.2), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 11,
+   "label": "turn 11: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 1 of 7: pick the charger up off the table - fingers closing across its narrow side and biting high up on its body, so that later, with it standing in the strip, they are still well clear of it. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip: lower to just above the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.0, -14.1, 92.2) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 645",
+   "plan": "Aligned in the head view; come down to just above the object, close enough that the wrist camera shows it under the cross but not yet touching it.",
+   "commands": [
+    "left move z -9.7"
+   ],
+   "failed": [],
+   "effect": "left move z -9.7: ok; left fingertips now at (0.0, -14.1, 82.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 12,
+   "label": "turn 12: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 1 of 7: pick the charger up off the table - fingers closing across its narrow side and biting high up on its body, so that later, with it standing in the strip, they are still well clear of it. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip: descend to the grasp height",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (0.0, -14.1, 82.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 675",
+   "plan": "The cross is on the object with the jaw axis across its narrow side; come down until the finger pads straddle it at about its mid-height.",
+   "commands": [
+    "left move z -4.0"
+   ],
+   "failed": [],
+   "effect": "left move z -4.0: ok; left fingertips now at (-0.0, -14.1, 78.5), opening 1.0",
+   "source_index": null
+  },
+  {
+   "turn": 13,
+   "label": "turn 13: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 3 of 7: hold it up over clear table, well away from the strip, and swing it until it hangs straight down from the fingers with both prongs pointing at the table. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip: close the gripper",
+   "images": [
+    "frame013_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -14.1, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 695",
+   "plan": "Close the gripper; the result must say something is between the fingers, otherwise open, lift 3 cm and re-align.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left fingertips now at (-0.0, -14.1, 78.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 14,
+   "label": "turn 14: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 3 of 7: hold it up over clear table, well away from the strip, and swing it until it hangs straight down from the fingers with both prongs pointing at the table. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. charger into the power strip: lift the object",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -14.1, 78.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 708\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Object held; lift straight up 12 cm to travel height before moving sideways.",
+   "commands": [
+    "left move z +12.0"
+   ],
+   "failed": [],
+   "effect": "left move z +12.0: ok; left fingertips now at (-0.0, -14.1, 90.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 15,
+   "label": "turn 15: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 3 of 7: hold it up over clear table, well away from the strip, and swing it until it hangs straight down from the fingers with both prongs pointing at the table. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. carry the charger to the staging spot",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-0.0, -14.1, 90.5) cm, approach = (0.00, 0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 736\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Carry the charger at travel height to clear table on the left side, well away from the power strip, where the arm has room to swing it upright.",
+   "commands": [
+    "left move x -14.0"
+   ],
+   "failed": [],
+   "effect": "left move x -14.0: ok; left fingertips now at (-14.0, -14.1, 90.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 16,
+   "label": "turn 16: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 3 of 7: hold it up over clear table, well away from the strip, and swing it until it hangs straight down from the fingers with both prongs pointing at the table. Right now the charger is still lying flat, prongs pointing sideways, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. swing the charger upright so both prongs hang straight down",
+   "images": [
+    "frame016_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.0, -14.1, 90.5) cm, approach = (0.00, -0.00, -1.00), finger axis = (-1.00, -0.00, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 766\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "'point forward' turns the hand from fingers-down to fingers-forward about the finger axis through the fingertip centre, so the charger swings about the grip and ends up hanging vertically with its prongs pointing straight down. Being an absolute preset it also cancels any tilt the wrist has picked up.",
+   "commands": [
+    "left point forward"
+   ],
+   "failed": [],
+   "effect": "left point forward: ok; left fingertips now at (-14.0, -14.1, 90.4), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 17,
+   "label": "turn 17: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is square on end with both prongs pointing straight down, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. turn the prong line parallel to the strip",
+   "images": [
+    "frame017_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.0, -14.1, 90.4) cm, approach = (-0.00, 1.00, -0.00), finger axis = (-1.00, -0.00, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 818\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The two prongs sit in a line across the charger and the outlet slots run along the strip; yaw the hanging charger until those two lines look parallel, before lowering it.",
+   "commands": [
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left rotate yaw -15.0: ok; left fingertips now at (-14.0, -14.1, 90.4), opening 0.561",
+   "source_index": null
+  },
+  {
+   "turn": 18,
+   "label": "turn 18: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-14.0, -14.1, 90.4) cm, approach = (0.26, 0.97, -0.00), finger axis = (-0.97, 0.26, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 844\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [],
+   "effect": "left move z -2.5: ok; left fingertips now at (-14.1, -14.1, 87.9), opening 0.561",
+   "source_index": null
+  },
+  {
+   "turn": 19,
+   "label": "turn 19: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [
+    "frame019_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.1, -14.1, 87.9) cm, approach = (0.26, 0.97, -0.00), finger axis = (-0.97, 0.26, 0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 869\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [
+    "left move z -2.5"
+   ],
+   "effect": "left move z -2.5: FAILED (the target was not reached: the fingertips moved (-0.0, -0.1, -4.2) cm, i.e. only part of the way; remaining error 1.7 cm / 4 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left fingertips now at (-14.1, -14.1, 83.7), opening 0.561",
+   "source_index": null
+  },
+  {
+   "turn": 20,
+   "label": "turn 20: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. bring the prongs over the outlet",
+   "images": [
+    "frame020_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-14.1, -14.1, 83.7) cm, approach = (0.26, 0.96, -0.07), finger axis = (-0.97, 0.26, 0.03), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 894\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Move sideways until the hanging charger - not the fingertips - is directly over the outlet, with the prong line still parallel to the strip.",
+   "commands": [
+    "left move x -10.4",
+    "left move y +4.3"
+   ],
+   "failed": [
+    "left move x -10.4"
+   ],
+   "effect": "left move x -10.4: FAILED (the target was not reached: the fingertips moved (-10.4, -0.5, -4.2) cm, i.e. only part of the way; remaining error 4.3 cm / 11 deg (see CURRENT STATE for the actual pose). Try a smaller step, a different direction, or move away from the table/robot body first.); left move y +4.3: ok; left fingertips now at (-24.5, -10.4, 79.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 21,
+   "label": "turn 21: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is up on end but still leaning, the prong line is still turned across the slots, it is not over the strip yet, and the prongs are in and the body is sitting down on the strip. the charger has drifted off vertical, trim it before going lower",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, -10.4, 79.5) cm, approach = (0.26, 0.93, -0.26), finger axis = (-0.96, 0.26, -0.01), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 946\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "The wrist has drifted a little on the way down and the prongs would meet the outlet at an angle. Lift clear of the strip and trim the charger back to square before trying again.",
+   "commands": [
+    "left move z +12.5"
+   ],
+   "failed": [],
+   "effect": "left move z +12.5: ok; left fingertips now at (-24.5, -10.4, 92.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 22,
+   "label": "turn 22: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is up on end but still leaning, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. square the prong line with the slots before going down",
+   "images": [
+    "frame022_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, -10.4, 92.0) cm, approach = (0.26, 0.93, -0.26), finger axis = (-0.96, 0.26, -0.01), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 982\nLEFT arm closed on an object with the fingertips at z = 78.5 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 78.5 + (h - 76.5) before opening.",
+   "plan": "Rotation commands only come in whole 15 degree steps, and the prong line is still visibly across the slots - enough for a flat blade to sit on the rim instead of going in. Rotations about different world axes do not commute, so a short round trip about two of them brings the charger back to vertical but a few degrees turned about it: 'rotate pitch -15.0' now, 3 more to follow. One step per turn, a",
+   "commands": [
+    "left gripper 0.00",
+    "left rotate pitch -15.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left rotate pitch -15.0: ok; left fingertips now at (-24.5, -10.3, 92.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 23,
+   "label": "turn 23: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is up on end but still leaning, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. square the prong line with the slots before going down",
+   "images": [
+    "frame023_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.5, -10.3, 92.0) cm, approach = (0.31, 0.93, -0.18), finger axis = (-0.93, 0.26, -0.25), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1010\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Rotation commands only come in whole 15 degree steps, and the prong line is still visibly across the slots - enough for a flat blade to sit on the rim instead of going in. Rotations about different world axes do not commute, so a short round trip about two of them brings the charger back to vertical but a few degrees turned about it: 'rotate yaw +30.0' now, 2 more to follow. One step per turn, and",
+   "commands": [
+    "left gripper 0.00",
+    "left rotate yaw +30.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left rotate yaw +30.0: ok; left fingertips now at (-24.6, -10.3, 92.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 24,
+   "label": "turn 24: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is up on end but still leaning, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. square the prong line with the slots before going down",
+   "images": [
+    "frame024_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 92.0) cm, approach = (-0.19, 0.96, -0.18), finger axis = (-0.94, -0.24, -0.25), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1050\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Rotation commands only come in whole 15 degree steps, and the prong line is still visibly across the slots - enough for a flat blade to sit on the rim instead of going in. Rotations about different world axes do not commute, so a short round trip about two of them brings the charger back to vertical but a few degrees turned about it: 'rotate pitch +15.0' now, 1 more to follow. One step per turn, a",
+   "commands": [
+    "left gripper 0.00",
+    "left rotate pitch +15.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left rotate pitch +15.0: ok; left fingertips now at (-24.6, -10.3, 92.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 25,
+   "label": "turn 25: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 4 of 7: still away from the strip, turn the hanging charger about the vertical until the line through its two prongs looks parallel to the strip's long side - the three outlet slots run that way, and a prong line across them will not go in. Right now the charger is square on end with both prongs pointing straight down, the prong line is still turned across the slots, it is not over the strip yet, and nothing has gone into a hole yet. square the prong line with the slots before going down",
+   "images": [
+    "frame025_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 92.0) cm, approach = (-0.24, 0.96, -0.13), finger axis = (-0.97, -0.24, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1081\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Rotation commands only come in whole 15 degree steps, and the prong line is still visibly across the slots - enough for a flat blade to sit on the rim instead of going in. Rotations about different world axes do not commute, so a short round trip about two of them brings the charger back to vertical but a few degrees turned about it: 'rotate yaw -15.0' now, 0 more to follow. One step per turn, and",
+   "commands": [
+    "left gripper 0.00",
+    "left rotate yaw -15.0"
+   ],
+   "failed": [],
+   "effect": "left gripper 0.00: ok (fingers stopped at opening 0.56: something is between them (probably grasped)); left rotate yaw -15.0: ok; left fingertips now at (-24.6, -10.3, 92.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 26,
+   "label": "turn 26: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 92.0) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1115\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [],
+   "effect": "left move z -2.5: ok; left fingertips now at (-24.6, -10.3, 89.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 27,
+   "label": "turn 27: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 89.5) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1137\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [],
+   "effect": "left move z -2.5: ok; left fingertips now at (-24.6, -10.3, 87.0), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 28,
+   "label": "turn 28: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 87.0) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1159\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -2.5"
+   ],
+   "failed": [],
+   "effect": "left move z -2.5: ok; left fingertips now at (-24.6, -10.3, 84.5), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 29,
+   "label": "turn 29: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. come down to crossing height while still away from the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 84.5) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1184\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Do the long part of the descent here, away from the strip, where overshooting costs nothing: come down a little at a time until the prong tips hang just clear of the strip's top face.",
+   "commands": [
+    "left move z -0.7"
+   ],
+   "failed": [],
+   "effect": "left move z -0.7: ok; left fingertips now at (-24.6, -10.3, 83.8), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 30,
+   "label": "turn 30: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 5 of 7: carry it across at a height that just clears the strip's top face and stop when the hanging charger, not the fingertips, is directly over one outlet. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is not over the strip yet, and nothing has gone into a hole yet. bring the prongs over the outlet",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.6, -10.3, 83.8) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1202\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Move sideways until the hanging charger - not the fingertips - is directly over the outlet, with the prong line still parallel to the strip.",
+   "commands": [
+    "left move x +0.3",
+    "left move y +4.0"
+   ],
+   "failed": [],
+   "effect": "left move x +0.3: ok; left move y +4.0: ok; left fingertips now at (-24.3, -6.3, 83.8), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 31,
+   "label": "turn 31: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 6 of 7: come straight down in short steps and press the prongs in until the charger's body comes to rest on the strip - no sideways moves from here on. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is over an outlet, and nothing has gone into a hole yet. lower the prongs onto the outlet, a short step at a time",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.3, -6.3, 83.8) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1238\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Right over the strip a long vertical move overshoots, so come down only a short step at a time until the prong tips are all but touching its top face.",
+   "commands": [
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "left move z -1.0: ok; left fingertips now at (-24.4, -6.3, 82.8), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 32,
+   "label": "turn 32: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 6 of 7: come straight down in short steps and press the prongs in until the charger's body comes to rest on the strip - no sideways moves from here on. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is over an outlet, and nothing has gone into a hole yet. lower the prongs onto the outlet, a short step at a time",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, -6.3, 82.8) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1256\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Right over the strip a long vertical move overshoots, so come down only a short step at a time until the prong tips are all but touching its top face.",
+   "commands": [
+    "left move z -0.7"
+   ],
+   "failed": [],
+   "effect": "left move z -0.7: ok; left fingertips now at (-24.4, -6.3, 82.1), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 33,
+   "label": "turn 33: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 6 of 7: come straight down in short steps and press the prongs in until the charger's body comes to rest on the strip - no sideways moves from here on. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is over an outlet, and nothing has gone into a hole yet. press the charger into the outlet until its body sits down on the strip",
+   "images": [],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, -6.3, 82.1) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1274\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Push straight down about a centimetre so the prongs go further into the outlet; they are home when the charger's body comes to rest on the strip. The move may report stopping early once the body seats, which is exactly right.",
+   "commands": [
+    "left move z -0.8"
+   ],
+   "failed": [],
+   "effect": "left move z -0.8: ok; left fingertips now at (-24.4, -6.3, 81.3), opening 0.562",
+   "source_index": null
+  },
+  {
+   "turn": 34,
+   "label": "turn 34: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 6 of 7: come straight down in short steps and press the prongs in until the charger's body comes to rest on the strip - no sideways moves from here on. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is over an outlet, and the prong tips have started into the hole but the body has not come down yet. press the charger into the outlet until its body sits down on the strip",
+   "images": [
+    "frame034_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, -6.3, 81.3) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1292\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Push straight down about a centimetre so the prongs go further into the outlet; they are home when the charger's body comes to rest on the strip. The move may report stopping early once the body seats, which is exactly right.",
+   "commands": [
+    "left move z -0.8"
+   ],
+   "failed": [],
+   "effect": "left move z -0.8: ok; left fingertips now at (-24.4, -6.3, 80.4), opening 0.561",
+   "source_index": null
+  },
+  {
+   "turn": 35,
+   "label": "turn 35: Task rule: the charger is plugged in only when it stands on its own two prongs inside one of the power strip's outlets, body pointing up, pushed down far enough that its base disappears below the strip's top face, and both arms are back where they started - lying flat on the table beside the strip does not count. ORDER MATTERS HERE: aim first, push last. Standing it on its prongs, and turning the line through the two prongs parallel to the slots, both happen in clear air away from the strip; once the prongs hang over an outlet the hand only moves straight down, because a nudge sideways or a twist down there leaves the prongs standing on the strip's face. STEP 6 of 7: come straight down in short steps and press the prongs in until the charger's body comes to rest on the strip - no sideways moves from here on. Right now the charger is square on end with both prongs pointing straight down, the prong line looks parallel to the strip, it is over an outlet, and the prong tips have started into the hole but the body has not come down yet. press the charger into the outlet until its body sits down on the strip",
+   "images": [
+    "frame035_cam_head.jpg"
+   ],
+   "state": "LEFT gripper position (fingertip centre) = (-24.4, -6.3, 80.4) cm, approach = (0.02, 0.99, -0.13), finger axis = (-1.00, 0.02, -0.00), opening = 0.56 (an empty closed gripper reads 0.18)\nRIGHT gripper position (fingertip centre) = (30.0, -20.7, 92.2) cm, approach = (-0.00, 1.00, 0.00), finger axis = (-1.00, -0.00, -0.00), opening = 1.00 (an empty closed gripper reads 0.18)\ntable top at z = 76.5\nsteps used: 1310\nLEFT arm closed on an object with the fingertips at z = 92.0 (still holding it). To set it down on a surface at height h, lower the fingertips to z = 92.0 + (h - 76.5) before opening.",
+   "plan": "Push straight down about a centimetre so the prongs go further into the outlet; they are home when the charger's body comes to rest on the strip. The move may report stopping early once the body seats, which is exactly right.",
+   "commands": [
+    "left move z -0.8"
+   ],
+   "failed": [],
+   "effect": "left move z -0.8: ok; left fingertips now at (-24.4, -6.3, 80.1), opening 0.56",
+   "source_index": null
+  }
+ ]
+}

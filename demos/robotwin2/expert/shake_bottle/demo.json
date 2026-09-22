@@ -1,0 +1,137 @@
+{
+ "task": "shake_bottle",
+ "instruction": "Grab the brown bottle and give it a shake.",
+ "kind": "task",
+ "source": {
+  "task": "shake_bottle",
+  "task_config": "demo_clean",
+  "seed": 100035,
+  "instruction": "Grab the brown bottle and give it a shake.",
+  "turns": 6,
+  "commands": 16,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the bottle, which was at x = -12 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "bottle",
+   "x": -11.75
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper in x and y toward the brown bottle position at roughly (-7, 4, 94).",
+   "commands": [
+    "left move x +11.8",
+    "left move x +11.8",
+    "left move y +11.5",
+    "left move y +11.5"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+23, +23, +0) cm, now 13 cm (horizontal) / +16 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, 3, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left gripper orientation to align fingers with the angled bottle neck/body.",
+   "commands": [
+    "left rotate yaw -3.9",
+    "left rotate pitch +21.7",
+    "left rotate roll -25.9",
+    "left rotate roll -25.9"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+1, -0, -0) cm, now 13 cm (horizontal) / +16 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 3, 94) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Fine-tune roll orientation, lower gripper along z to 88 cm, and adjust x slightly.",
+   "commands": [
+    "left rotate roll -25.9",
+    "left move z -5.5",
+    "left move x -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -0, -6) cm, now 12 cm (horizontal) / +10 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 3, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left gripper forward +1.0 cm in y to better center the bottle grasp.",
+   "commands": [
+    "left move y +1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +1, +0) cm, now 13 cm (horizontal) / +10 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 4, 88) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move slightly forward in y, lower z to 78 cm around the bottle, and close gripper to grasp.",
+   "commands": [
+    "left move y +2.5",
+    "left move z -10.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +2, -10) cm, now 15 cm (horizontal) / -0 cm (vertical) from the bottle",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, 6, 78) opening 0.82; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Lift bottle by moving z +3.0 cm to begin the shaking motion.",
+   "commands": [
+    "left move z +3.0"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

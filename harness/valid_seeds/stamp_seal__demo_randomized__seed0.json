@@ -1,0 +1,308 @@
+{
+ "seed_base": 100000,
+ "seeds": [
+  100003,
+  100004,
+  100005,
+  100006,
+  100007,
+  100010,
+  100011,
+  100012,
+  100013,
+  100015,
+  100017,
+  100021,
+  100022,
+  100028,
+  100029,
+  100030,
+  100031,
+  100033,
+  100034,
+  100035,
+  100036,
+  100037,
+  100038,
+  100039,
+  100041,
+  100042,
+  100043,
+  100044,
+  100045,
+  100046,
+  100047,
+  100049,
+  100051,
+  100053,
+  100054,
+  100055,
+  100056,
+  100061,
+  100062,
+  100064,
+  100065,
+  100066,
+  100067,
+  100070,
+  100072,
+  100073,
+  100074,
+  100076,
+  100078,
+  100082
+ ],
+ "infos": [
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Blue",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Yellow",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Maroon",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Orange",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Purple",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Yellow",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Cyan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Purple",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Brown",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Teal",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Maroon",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Red",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Teal",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Lime",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Blue",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Teal",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Maroon",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Pink",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Orange",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Brown",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Magenta",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Tan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Cyan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Gray",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Black",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Teal",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Pink",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Black",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Cyan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Cyan",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Purple",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Red",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Turquoise",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Pink",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Yellow",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Coral",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Black",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Green",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Green",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Silver",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Olive",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Magenta",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Blue",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Indigo",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base2",
+   "{B}": "Cyan",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base6",
+   "{B}": "Turquoise",
+   "{a}": "left"
+  },
+  {
+   "{A}": "100_seal/base3",
+   "{B}": "Orange",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base4",
+   "{B}": "Orange",
+   "{a}": "right"
+  },
+  {
+   "{A}": "100_seal/base0",
+   "{B}": "Green",
+   "{a}": "right"
+  }
+ ],
+ "next_seed": 100083
+}

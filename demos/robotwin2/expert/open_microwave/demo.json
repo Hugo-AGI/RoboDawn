@@ -1,0 +1,335 @@
+{
+ "task": "open_microwave",
+ "instruction": "Grab the kitchen microwave with slanted shape's handle and pull to open it.",
+ "kind": "task",
+ "source": {
+  "task": "open_microwave",
+  "task_config": "demo_clean",
+  "seed": 100016,
+  "instruction": "Grab the kitchen microwave with slanted shape's handle and pull to open it.",
+  "turns": 17,
+  "commands": 60,
+  "sides": "L",
+  "table_z_cm": 74.0
+ },
+ "arm_note": "ARM CHOICE in this demonstration: the LEFT arm grasped the microwave, which was at x = -4 (left half of the table). The arm was chosen by the object's x position (x < 0 -> LEFT arm, x > 0 -> RIGHT arm; each arm reaches only ~15 cm past the centre line). In YOUR scene the objects may be on the other side: choose the arm from your own object positions, not from the demonstration.",
+ "grasps": {
+  "left": {
+   "object": "microwave",
+   "x": -4.1
+  }
+ },
+ "frames": [
+  {
+   "turn": 1,
+   "label": "turn 1",
+   "images": [
+    "frame001_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-30, -19, 94) opening 0.93; RIGHT fingertips (31, -19, 94) opening 0.93; table z = 74",
+   "plan": "Move left gripper forward and right towards (1, 4, 94).",
+   "commands": [
+    "left move x +15.5",
+    "left move x +15.5",
+    "left move y +11.8",
+    "left move y +11.8"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+31, +23, +0) cm, now 16 cm (horizontal) / +8 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 2,
+   "label": "turn 2",
+   "images": [
+    "frame002_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (1, 4, 94) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Rotate left gripper roll to align with the slanted handle and lower slightly.",
+   "commands": [
+    "left rotate roll -49.1",
+    "left move y -0.5",
+    "left move z -1.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, -0, -1) cm, now 16 cm (horizontal) / +7 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 3,
+   "label": "turn 3",
+   "images": [
+    "frame003_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (1, 4, 93) opening 0.95; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move left gripper forward and down towards the handle.",
+   "commands": [
+    "left move y +1.9",
+    "left move z -2.0",
+    "left move y +1.9",
+    "left move z -2.0"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (+0, +3, -4) cm, now 13 cm (horizontal) / +3 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 4,
+   "label": "turn 4",
+   "images": [
+    "frame004_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (1, 7, 90) opening 0.94; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move forward and down into grasping position, then close gripper.",
+   "commands": [
+    "left move y +1.9",
+    "left move z -2.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, +1, -2) cm, now 13 cm (horizontal) / +1 cm (vertical) from the microwave; closed the gripper (opening 0.24: holding the microwave)",
+   "scene": ""
+  },
+  {
+   "turn": 5,
+   "label": "turn 5",
+   "images": [
+    "frame005_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (1, 7, 87) opening 0.24; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Adjust pitch, move slightly back and left while maintaining grip.",
+   "commands": [
+    "left move y -1.0",
+    "left move x -0.5",
+    "left rotate pitch -4.6",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, +0) cm, now 13 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 6,
+   "label": "turn 6",
+   "images": [
+    "frame006_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (1, 7, 87) opening 0.17; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pull back and left to begin swinging door open.",
+   "commands": [
+    "left move y -1.5",
+    "left move x -0.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -1, -0) cm, now 14 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 7,
+   "label": "turn 7",
+   "images": [
+    "frame007_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (0, 5, 87) opening 0.13; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pull backward and left while rotating yaw to follow the door's arc.",
+   "commands": [
+    "left move y -1.5",
+    "left move x -0.5",
+    "left rotate yaw -7.2",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-0, -1, -0) cm, now 15 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 8,
+   "label": "turn 8",
+   "images": [
+    "frame008_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (0, 4, 87) opening 0.17; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue pulling along the circular trajectory: move x -1.0, y -1.5, rotate yaw.",
+   "commands": [
+    "left move y -1.5",
+    "left move x -1.0",
+    "left rotate yaw -5.0",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, -0) cm, now 17 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 9,
+   "label": "turn 9",
+   "images": [
+    "frame009_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-1, 3, 87) opening 0.15; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue arc motion: move x -1.0, y -1.0, rotate yaw.",
+   "commands": [
+    "left move x -1.0",
+    "left move y -1.0",
+    "left rotate yaw -4.9",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, -0) cm, now 17 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 10,
+   "label": "turn 10",
+   "images": [
+    "frame010_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-1, 2, 87) opening 0.16; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pull left and back: move x -1.0, y -1.5, rotate yaw -4.5.",
+   "commands": [
+    "left move y -1.5",
+    "left move x -1.0",
+    "left rotate yaw -4.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, +0) cm, now 18 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 11,
+   "label": "turn 11",
+   "images": [
+    "frame011_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-2, 1, 87) opening 0.16; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move x -1.0, y -1.0 and rotate yaw -4.9.",
+   "commands": [
+    "left move x -1.0",
+    "left move y -1.0",
+    "left rotate yaw -4.9",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, -0) cm, now 19 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 12,
+   "label": "turn 12",
+   "images": [
+    "frame012_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-3, -0, 87) opening 0.17; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pull further along arc: move x -1.5, y -1.0, rotate pitch and yaw.",
+   "commands": [
+    "left move x -1.5",
+    "left move y -1.0",
+    "left rotate pitch -3.1",
+    "left rotate yaw -4.6"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, -0) cm, now 20 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 13,
+   "label": "turn 13",
+   "images": [
+    "frame013_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-4, -1, 87) opening 0.18; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Maintain firm grasp on the handle.",
+   "commands": [
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips stayed in place, now 20 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 14,
+   "label": "turn 14",
+   "images": [
+    "frame014_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-4, -1, 87) opening 0.17; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Pull left and back: move x -1.5, y -1.0, rotate yaw -4.4.",
+   "commands": [
+    "left move x -1.5",
+    "left move y -1.0",
+    "left rotate yaw -4.4",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, +0) cm, now 21 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 15,
+   "label": "turn 15",
+   "images": [
+    "frame015_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-5, -2, 87) opening 0.16; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Move x -1.5, y -0.5, rotate yaw -4.5 to finish opening.",
+   "commands": [
+    "left move x -1.5",
+    "left move y -0.5",
+    "left rotate yaw -4.5",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, +0) cm, now 22 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 16,
+   "label": "turn 16",
+   "images": [
+    "frame016_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-6, -3, 87) opening 0.15; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Continue final pull: move x -1.5, y -0.5, rotate yaw -4.3.",
+   "commands": [
+    "left move x -1.5",
+    "left move y -0.5",
+    "left rotate yaw -4.3",
+    "left gripper 0.00"
+   ],
+   "failed": [],
+   "effect": "LEFT fingertips moved by (-1, -1, +0) cm, now 22 cm (horizontal) / +1 cm (vertical) from the microwave",
+   "scene": ""
+  },
+  {
+   "turn": 17,
+   "label": "turn 17",
+   "images": [
+    "frame017_agent_camera.jpg"
+   ],
+   "state": "LEFT fingertips (-7, -3, 87) opening 0.15; RIGHT fingertips (31, -19, 94) opening 0.94; table z = 74",
+   "plan": "Perform final small pull leftward to complete the opening motion.",
+   "commands": [
+    "left move x -1.5",
+    "left move y -0.5"
+   ],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  },
+  {
+   "turn": 18,
+   "label": "final state (task checker registered success)",
+   "images": [
+    "frame018_agent_camera.jpg"
+   ],
+   "state": "",
+   "plan": "",
+   "commands": [],
+   "failed": [],
+   "effect": "",
+   "scene": ""
+  }
+ ]
+}

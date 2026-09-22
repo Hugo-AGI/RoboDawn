@@ -1,0 +1,474 @@
+{
+ "note": "One entry per task: the expert demonstration the reported one-shot number of that task was measured with (gpt-6-astra, seed 0, fixed layouts 0-4 (a layout RoboDojo classifies as unstable is replaced by the next one; see `layouts`), one demonstration in context). demo_md5 is the MD5 of the entry's demo.json as shipped; successes/score are the task's result over the five layouts.",
+ "tasks": {
+  "align_blocks": {
+   "dimension": "Open",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 80.0,
+   "frames": 14,
+   "images": 16,
+   "demo_md5": "d4a5bff049edf2d80a7a7335dc4f57b7"
+  },
+  "arrange_largest_number": {
+   "dimension": "Generalization",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "5cd9e166742b77812375f75aa5d99326"
+  },
+  "build_tower": {
+   "dimension": "Precision",
+   "successes": 2,
+   "episodes": 5,
+   "success_rate": 40.0,
+   "score": 54.0,
+   "frames": 14,
+   "images": 16,
+   "demo_md5": "0405070efab81a7acbc682b126d4a04b"
+  },
+  "classify_objects": {
+   "dimension": "Long-Horizon",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 83.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "fe3cfb5edd431119faa735d9991ef82c"
+  },
+  "classify_objects_by_language": {
+   "dimension": "Open",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 44.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "d75f7344d0b9572e1f41566baafc1193"
+  },
+  "cover_blocks": {
+   "dimension": "Memory",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "1e9dbf121e8f24b1b8dbac22012fc8a2"
+  },
+  "deposit_coin": {
+   "dimension": "Precision",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 16.0,
+   "frames": 10,
+   "images": 16,
+   "demo_md5": "dbb1f1ce5bde24681bf9a2ddd66203e2"
+  },
+  "fasten_screws": {
+   "dimension": "Precision",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 34.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "7bc2f7dac9d3f8e11224232f99d53313"
+  },
+  "fold_clothes": {
+   "dimension": "Generalization",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 36.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "2fff859523a95da714ac19d64f664f18"
+  },
+  "general_pickup": {
+   "dimension": "Open",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 6,
+   "images": 9,
+   "demo_md5": "eca8da2c3e835162432770b35feeb70a"
+  },
+  "hang_mugs": {
+   "dimension": "Generalization",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 14.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "80d11ce6a78f01b143d5850fbff6b908"
+  },
+  "imitate_sorting_sequence": {
+   "dimension": "Memory",
+   "successes": 3,
+   "episodes": 5,
+   "success_rate": 60.0,
+   "score": 66.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "483d0da670b0900cb7ef8f45309a7fc4",
+   "layouts": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "layout_note": "RoboDojo classified layout 4 as unstable on every attempt; its runner then substitutes the next layout, so layout 5 is the fifth episode."
+  },
+  "insert_tubes": {
+   "dimension": "Precision",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 88.0,
+   "frames": 48,
+   "images": 16,
+   "demo_md5": "dca6c7ed43e2e74d9c325689ee9c20bd"
+  },
+  "make_kong": {
+   "dimension": "Long-Horizon",
+   "successes": 3,
+   "episodes": 5,
+   "success_rate": 60.0,
+   "score": 60.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "e7474deaa2fd0cd6f5636573f22e652c"
+  },
+  "make_toast": {
+   "dimension": "Generalization",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 20.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "2291a3bc7633638afad77cb41a584d0d"
+  },
+  "match_and_pick_from_conveyor": {
+   "dimension": "Memory",
+   "successes": 2,
+   "episodes": 5,
+   "success_rate": 40.0,
+   "score": 40.0,
+   "frames": 10,
+   "images": 12,
+   "demo_md5": "338fb0a695dedb1cd1dd2f600006eb9c"
+  },
+  "organize_table": {
+   "dimension": "Long-Horizon",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 75.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "b4b7e734d87ba3971453ccd2c87be54a"
+  },
+  "pack_objects_into_box": {
+   "dimension": "Generalization",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 19.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "6a97043a0e7624321cdfe0570158e55c"
+  },
+  "play_Xylophone": {
+   "dimension": "Precision",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 80.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "d4cb50cc4b9b6043638aa53d2ae9f88e"
+  },
+  "play_stacking_toy": {
+   "dimension": "Long-Horizon",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 10.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "ad0551c47a25b56f0e0fb2ec91ae5bfd"
+  },
+  "play_tic_tac_toe": {
+   "dimension": "Long-Horizon",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "dff6a141362ea3b4068091d1240cadce"
+  },
+  "plug_in_charger": {
+   "dimension": "Precision",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 0.0,
+   "frames": 35,
+   "images": 16,
+   "demo_md5": "84ccbaadb4b73059d33ac1101464615f"
+  },
+  "pour_balls_into_vase": {
+   "dimension": "Precision",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 0.0,
+   "frames": 38,
+   "images": 16,
+   "demo_md5": "9f8aed235a06e24c1f3eb2e0e3854248"
+  },
+  "pour_by_language": {
+   "dimension": "Open",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "82adb70e1b310813aa688deba905c31f"
+  },
+  "pour_liquid_into_cup": {
+   "dimension": "Generalization",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 80.0,
+   "frames": 27,
+   "images": 16,
+   "demo_md5": "2f2e9c92cac502b2380b05d14a78b6fe"
+  },
+  "press_by_number": {
+   "dimension": "Memory",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "5ac2ee49c516e32a77fb3917042a2f40"
+  },
+  "push_T": {
+   "dimension": "Generalization",
+   "successes": 2,
+   "episodes": 5,
+   "success_rate": 40.0,
+   "score": 40.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "5da4c0c6a8ead2d929a4dd0e6b087311"
+  },
+  "put_bottles_into_dustbin": {
+   "dimension": "Long-Horizon",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 88.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "cb754adf05b15bdc89bb2ffdd89dc1cd"
+  },
+  "solve_equation": {
+   "dimension": "Open",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 10,
+   "images": 15,
+   "demo_md5": "1c72b348aa3a230bc6131aad967f7c8c"
+  },
+  "sort_nesting_dolls_by_size": {
+   "dimension": "Generalization",
+   "successes": 4,
+   "episodes": 5,
+   "success_rate": 80.0,
+   "score": 80.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "2682953aa7281d117af401d0ad2c1b65"
+  },
+  "stack_blocks": {
+   "dimension": "Generalization",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 32,
+   "images": 16,
+   "demo_md5": "7b0af9d851275ba836d56085ec644d73"
+  },
+  "stack_blocks_by_language": {
+   "dimension": "Open",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 14,
+   "images": 16,
+   "demo_md5": "9380741f933e251df0803da8ee22bd07"
+  },
+  "stack_bowls": {
+   "dimension": "Generalization",
+   "successes": 5,
+   "episodes": 5,
+   "success_rate": 100.0,
+   "score": 100.0,
+   "frames": 21,
+   "images": 16,
+   "demo_md5": "8a70fbeebc4e24b7063a8939cc865840"
+  },
+  "store_tools_in_toolbox": {
+   "dimension": "Open",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 20.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "008a9a12e080e6094a51be6aafe9c6c2"
+  },
+  "swap_T": {
+   "dimension": "Memory",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 20.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "b81b7a841967ee50d2bd8f6312fd0a6a"
+  },
+  "sweep_blocks": {
+   "dimension": "Generalization",
+   "successes": 3,
+   "episodes": 5,
+   "success_rate": 60.0,
+   "score": 60.0,
+   "frames": 40,
+   "images": 16,
+   "demo_md5": "d65fbcbb585ab267657da16db3466d91"
+  },
+  "fill_egg_holder": {
+   "dimension": "Long-Horizon",
+   "successes": 1,
+   "episodes": 5,
+   "success_rate": 20.0,
+   "score": 37.0,
+   "frames": 45,
+   "images": 16,
+   "demo_md5": "4dd9153fdb502a5dc91a7646b1a8fbb0"
+  },
+  "insert_key": {
+   "dimension": "Precision",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 15.0,
+   "frames": 31,
+   "images": 16,
+   "demo_md5": "04abe382458daffd317fc1ace5e8694b"
+  },
+  "swap_blocks": {
+   "dimension": "Memory",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 0.0,
+   "frames": 26,
+   "images": 12,
+   "demo_md5": "acaa6b2d7ddf23e306fa081dcf715aa9"
+  },
+  "fill_pen_holder": {
+   "dimension": "Long-Horizon",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 26.0,
+   "frames": 48,
+   "images": 16,
+   "demo_md5": "e34f7ee9915b7e0814ed41f24db7baf8"
+  },
+  "store_laptop_and_headphones": {
+   "dimension": "Generalization",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 12.0,
+   "frames": 49,
+   "images": 16,
+   "demo_md5": "07dc8aa097806e7f6befb9298afcbc03"
+  },
+  "pick_from_conveyor_by_image": {
+   "dimension": "Open",
+   "successes": 0,
+   "episodes": 5,
+   "success_rate": 0.0,
+   "score": 0.0,
+   "frames": 15,
+   "images": 12,
+   "demo_md5": "0aeb57f0cf9c8c6d80641211b6c69f9f"
+  }
+ },
+ "by_dimension": {
+  "Open": {
+   "tasks": 8,
+   "successes": 25,
+   "episodes": 40,
+   "success_rate": 62.5,
+   "score": 68.0
+  },
+  "Memory": {
+   "tasks": 6,
+   "successes": 16,
+   "episodes": 30,
+   "success_rate": 53.33,
+   "score": 54.33
+  },
+  "Long-Horizon": {
+   "tasks": 8,
+   "successes": 18,
+   "episodes": 40,
+   "success_rate": 45.0,
+   "score": 59.88
+  },
+  "Generalization": {
+   "tasks": 12,
+   "successes": 30,
+   "episodes": 60,
+   "success_rate": 50.0,
+   "score": 55.08
+  },
+  "Precision": {
+   "tasks": 8,
+   "successes": 10,
+   "episodes": 40,
+   "success_rate": 25.0,
+   "score": 35.88
+  }
+ },
+ "dimension_mean": {
+  "success_rate": 47.17,
+  "score": 54.63
+ }
+}
