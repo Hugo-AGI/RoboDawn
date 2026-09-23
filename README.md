@@ -1,59 +1,110 @@
-# Transferring the Intelligence of VLMs to Robotic Control
+<p align="center">
+  <img src="assets/readme/logo.png" width="84" alt="RoboDawn">
+</p>
 
-**RoboDawn**: a frozen vision-language model controls a robot in closed loop
-through a handful of discrete commands (move, rotate, grip) and a few
-demonstrations, without task-specific robot training.
+<h1 align="center">Transferring the Intelligence of VLMs to Robotic Control</h1>
 
-[Project page](https://robodawn.top) · [Paper](https://arxiv.org/abs/2609.22966) · [All evaluation episodes](https://robodawn.top/results)
+<p align="center">
+  <b>RoboDawn</b>: a frozen vision-language model drives a robot through a handful of<br>
+  human-intuitive commands (move, rotate, grip) and learns a task from one demonstration in context.<br>
+  <b>No task-specific robot training.</b>
+</p>
+
+<p align="center">
+  Meng-Hao Guo<sup>1</sup> · Zhe-Han Mo<sup>1</sup> · Jia-Jun Wang<sup>1</sup> · Yi Zhang<sup>1</sup> · Kejin Wang<sup>1</sup> · Yi-Xuan Deng<sup>1</sup> · Jia-Peng Zhang<sup>1</sup> · Yongming Rao<sup>2</sup> · Shi-Min Hu<sup>1,*</sup><br>
+  <sup>1</sup>Tsinghua University &nbsp; <sup>2</sup>Tencent Hunyuan &nbsp; <sup>*</sup>Corresponding author
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2609.22966"><img src="https://img.shields.io/badge/arXiv-2609.22966-b31b1b?logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <a href="https://robodawn.top"><img src="https://img.shields.io/badge/Project%20page-robodawn.top-f15b2b" alt="Project page"></a>
+  <a href="https://robodawn.top/results"><img src="https://img.shields.io/badge/Episodes-710%20replays-2f7a47" alt="All evaluation episodes"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-3b6fb6" alt="MIT license"></a>
+</p>
+
+<p align="center">
+  <img src="assets/readme/teaser.jpg" width="100%" alt="RoboDawn overview: digital-world intelligence reaches physical robot actions through a human-intuitive interface and in-context demonstrations">
+</p>
+
+## Highlights
+
+<table>
+  <tr>
+    <td align="center" width="25%"><h3>73.6%</h3>RoboTwin 2.0 C2R<br>one demonstration<br><sub>GPT-6 Astra</sub></td>
+    <td align="center" width="25%"><h3>53.2%</h3>RoboTwin 2.0 C2R<br>zero-shot<br><sub>π0.5 trained on the full set: 46.0%</sub></td>
+    <td align="center" width="25%"><h3>47.17%</h3>RoboDojo success<br>one demonstration<br><sub>35.67% zero-shot · DM0.5: 19.34%</sub></td>
+    <td align="center" width="25%"><h3>9 / 10</h3>Real Franka<br>block in basket<br><sub>zero-shot, Gemini 3.8 Flash</sub></td>
+  </tr>
+</table>
+
+- **A human-intuitive interface.** Every turn the model sees the camera images and the robot state and replies with a few commands such as `left move z -5`, `right point down` or `left gripper close`. Each command runs as one complete planned motion, and the model sees the result.
+- **In-context learning.** One expert demonstration of the task in the context lifts RoboTwin 2.0 from 53.2% to 73.6% and RoboDojo from 35.67% to 47.17%, above policies post-trained on the whole benchmark.
+- **Everything open.** Code, prompts, the 128 in-context demonstrations, the evaluation seeds, and all 710 evaluation episodes, failures included, replayable turn by turn at [robodawn.top/results](https://robodawn.top/results).
+
+## News
+
+- **2026-09-22** Code, prompts, demonstrations and evaluation seeds released.
+- **2026-09-19** Paper on arXiv: [2609.22966](https://arxiv.org/abs/2609.22966).
+
+## Episodes
+
+<p align="center">
+  <img src="assets/readme/episodes.gif" width="100%" alt="Six successful evaluation episodes: RoboDojo pour, stack bowls, tic-tac-toe; RoboTwin 2.0 hang mug, stack three blocks, hand over block">
+</p>
+
+Every evaluation episode behind the paper's numbers is online at
+**[robodawn.top/results](https://robodawn.top/results)**: 500 RoboTwin 2.0 and
+210 RoboDojo episodes, failures included, together with the 128 in-context
+demonstrations they were run with. Each one replays turn by turn: the images
+the model saw, the plan it wrote, the commands it issued and the execution
+feedback it got back.
+
+<p align="center">
+  <a href="https://robodawn.top/results"><img src="assets/readme/results-browser.jpg" width="88%" alt="The results browser at robodawn.top/results"></a>
+</p>
+
+## How it works
+
+<p align="center">
+  <img src="assets/readme/framework.jpg" width="100%" alt="The RoboDawn framework">
+</p>
+
+A multimodal LLM controls the robot in closed loop through a tiny discrete
+command grammar (a). One expert demonstration of the task is placed in the
+context (b). Every turn the model receives the camera views, the robot state
+and the instruction (c), reasons over them together with the previous
+feedback and its memory (d), and replies with a few commands (e). Each command
+becomes one planned motion (f), and the execution feedback and memory update
+go into the next turn (g).
+
+```text
+<arm> move <x|y|z> <cm>          <arm> rotate <roll|pitch|yaw> <deg>
+<arm> point down|forward|...     <arm> gripper open|close
+<arm> home      wait      done   (<arm> is left or right; world frame)
+```
 
 This repository contains the code, prompts, in-context demonstrations and
 evaluation seeds behind the paper's results on two bimanual manipulation
 benchmarks, [RoboTwin 2.0](https://github.com/RoboTwin-Platform/RoboTwin) and
-[RoboDojo](https://github.com/RoboDojo-Benchmark/RoboDojo). A multimodal LLM
-controls the robot in closed loop through a tiny discrete command grammar:
-every turn it sees the camera images and the robot state, replies with a few
-commands such as `left move z -5`, `right point down` or `left gripper close`,
-each command is executed as one complete planned motion, and the model sees
-the result. One expert demonstration of the task is placed in the context.
-
-Everything needed to reproduce the reported numbers is in the tree or pinned
-as a submodule: the harnesses, the exact demonstrations each number was
-measured with, the evaluation seeds / layouts, and the benchmark commits.
-
-## Repository layout
-
-```
-harness/                       RoboTwin 2.0 harness
-├── core/                      command grammar, environment interface, watchdog
-├── agent/                     LLM client, prompts, memory, demonstration loader, control loop
-├── robotwin/                  RoboTwin 2.0 behind the discrete interface (official protocol, cameras, overlays)
-├── configs/                   robot profile (prompt facts), task list, real-robot profile template
-├── examples/                  real-robot skeleton (--mock dry run)
-├── valid_seeds/               expert-validated evaluation seeds, one file per task and scene config
-├── run_robotwin_eval.py       evaluation entry point
-└── scripts/aggregate_results.py  per-task and overall success rate of a run directory
-evaluation/policies/vlm_agent/ RoboDojo policy (XPolicyLab policy server + Isaac Sim client side)
-scripts/robodojo/              RoboDojo setup, launch and experiment scripts
-demos/                         the in-context demonstrations (see demos/README.md)
-├── robotwin2/expert           one or two expert demonstrations per RoboTwin task
-├── robotwin2/primer           the task-independent command primer
-└── robodojo/                  one expert demonstration per RoboDojo task, with MANIFEST.json
-RoboTwin/                      submodule: official RoboTwin 2.0 at the evaluated commit
-RoboDojo/                      submodule: official RoboDojo at the evaluated commit
-tests/                         offline tests (no simulator, no model calls)
-```
+[RoboDojo](https://github.com/RoboDojo-Benchmark/RoboDojo). Everything needed
+to reproduce the reported numbers is in the tree or pinned as a submodule: the
+harnesses, the exact demonstrations each number was measured with, the
+evaluation seeds / layouts, and the benchmark commits.
 
 ## Results
 
-The numbers below are the ones of the [project page](https://robodawn.top),
-which plots the same comparisons. Every evaluation episode behind them is
-online and can be replayed turn by turn — the images the model saw, the plan
-it wrote, the commands it issued and the execution feedback it got back — at
-<https://robodawn.top/results>: 500 RoboTwin 2.0 and 210 RoboDojo episodes,
-failures included, together with the 128 in-context demonstrations they were
-run with.
-
 ### RoboTwin 2.0
+
+<p align="center">
+  <img src="assets/readme/robotwin.png" width="100%" alt="RoboTwin 2.0 C2R success rates">
+</p>
+
+<p align="center">
+  <img src="assets/readme/ablations.png" width="100%" alt="Ablations on RoboTwin 2.0: number of demonstrations, backbone model, harness components">
+</p>
+
+<details>
+<summary><b>Tables: the runs of this repository, the published baselines, the ablations</b></summary>
 
 The runs of this repository, one task demonstration in context.
 50 tasks x 10 episodes on the seeds in `harness/valid_seeds/` (`demo_randomized`
@@ -109,7 +160,24 @@ Harness components, with Gemini 3.8 Flash, zero-shot:
 | --- | --- | --- | --- | --- |
 | Success rate | 47.0% | 44.0% | 34.8% | 32.4% |
 
+</details>
+
 ### RoboDojo
+
+<p align="center">
+  <img src="assets/readme/robodojo.png" width="100%" alt="RoboDojo success rates">
+</p>
+
+<p align="center"><sub>Success rate (%) over the 42 RoboDojo tasks.</sub></p>
+
+<p align="center">Test-time scaling: success keeps rising with the per-episode command budget (Fig. 3 of the paper).</p>
+
+<p align="center">
+  <img src="assets/readme/scaling.png" width="52%" alt="RoboDojo success rate under varying per-episode command budgets">
+</p>
+
+<details>
+<summary><b>Tables: the five dimensions, the published baselines, test-time scaling</b></summary>
 
 gpt-6-astra, seed 0, the five fixed evaluation layouts of every task (layouts
 0-4; when RoboDojo classifies a layout as unstable its runner substitutes the
@@ -168,6 +236,8 @@ configuration.
 | One demonstration | 31.2% | 47.2% |
 | Zero-shot | 23.7% | 35.7% |
 
+</details>
+
 ### Real robots
 
 The same harness on physical robots with Gemini 3.8 Flash, zero-shot: no
@@ -181,7 +251,8 @@ paper). This repository ships the real-robot skeleton only
 | Block stacking | Franka | 5 / 10 |
 | Cloth folding | Piper | 0 / 10 |
 
-### Inference and execution time
+<details>
+<summary><b>Inference and execution time</b></summary>
 
 Per decision, averaged over the 50 RoboTwin 2.0 tasks, with Seed-2.1-Pro as
 RoboDawn's model (Table 2 of the paper). The inference-to-motion ratio says
@@ -197,6 +268,31 @@ inference could be overlapped with motion for streaming execution.
 | Motus | 1.93 s | 16.0 steps | 0.96 s | 2.01 |
 | LingBot-VA | 8.89 s | 22.2 steps | 1.33 s | 6.67 |
 | **RoboDawn (Seed-2.1-Pro)** | 9.74 s | 3.4 commands | 2.09 s | 4.65 |
+
+</details>
+
+## Repository layout
+
+```
+harness/                       RoboTwin 2.0 harness
+├── core/                      command grammar, environment interface, watchdog
+├── agent/                     LLM client, prompts, memory, demonstration loader, control loop
+├── robotwin/                  RoboTwin 2.0 behind the discrete interface (official protocol, cameras, overlays)
+├── configs/                   robot profile (prompt facts), task list, real-robot profile template
+├── examples/                  real-robot skeleton (--mock dry run)
+├── valid_seeds/               expert-validated evaluation seeds, one file per task and scene config
+├── run_robotwin_eval.py       evaluation entry point
+└── scripts/aggregate_results.py  per-task and overall success rate of a run directory
+evaluation/policies/vlm_agent/ RoboDojo policy (XPolicyLab policy server + Isaac Sim client side)
+scripts/robodojo/              RoboDojo setup, launch and experiment scripts
+demos/                         the in-context demonstrations (see demos/README.md)
+├── robotwin2/expert           one or two expert demonstrations per RoboTwin task
+├── robotwin2/primer           the task-independent command primer
+└── robodojo/                  one expert demonstration per RoboDojo task, with MANIFEST.json
+RoboTwin/                      submodule: official RoboTwin 2.0 at the evaluated commit
+RoboDojo/                      submodule: official RoboDojo at the evaluated commit
+tests/                         offline tests (no simulator, no model calls)
+```
 
 ## Setup
 
@@ -304,13 +400,15 @@ experiment bookkeeping.
 
 ## Citation
 
+If you find RoboDawn useful, please cite:
+
 ```bibtex
 @article{guo2026robodawn,
   title   = {Transferring the Intelligence of VLMs to Robotic Control},
   author  = {Guo, Meng-Hao and Mo, Zhe-Han and Wang, Jia-Jun and
              Zhang, Yi and Wang, Kejin and Deng, Yi-Xuan and
              Zhang, Jia-Peng and Rao, Yongming and Hu, Shi-Min},
-  journal = {Technical Report},
+  journal = {arXiv preprint arXiv:2609.22966},
   year    = {2026}
 }
 ```
